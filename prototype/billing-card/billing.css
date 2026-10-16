@@ -114,37 +114,6 @@
   font-weight: bold;
 }
 
-/* ---------- 상태 선택 줄 (01~04) ---------- */
-
-.state-tabs {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.state-tab {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 26px;
-  padding: 0 12px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #777777;
-  border: 1px dashed #b7b8c0;
-  background-color: transparent;
-  white-space: nowrap;
-}
-
-.state-tab.is-active {
-  border-style: solid;
-  border-color: #3140d6;
-  background-color: #3140d6;
-  color: #ffffff;
-}
-
 /* ---------- 배지 ---------- */
 
 .badge {
