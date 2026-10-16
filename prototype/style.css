@@ -127,9 +127,9 @@ body {
 }
 
 .tbd-section {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px dashed #c4c5cb;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #c4c5cb;
 }
 
 .tbd-section h3 {
