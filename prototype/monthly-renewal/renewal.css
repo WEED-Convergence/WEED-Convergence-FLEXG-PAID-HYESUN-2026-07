@@ -1,0 +1,285 @@
+/* 월 자동 결제 프로토타입 - 전용 컴포넌트 스타일
+   레이아웃(3단, 좌/중/우)과 기본 색/폰트는 ../style.css 를 재사용합니다. */
+
+/* ---------- 좌측 인덱스: 펼침/닫힘 그룹 (다른 기능과 공용) ---------- */
+
+.index-group {
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.index-group > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #222222;
+  list-style: none;
+}
+
+.index-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.index-group > summary::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 11px;
+  color: #999999;
+}
+
+.index-group[open] > summary::before {
+  content: "▾";
+}
+
+.index-group .index-list {
+  padding-bottom: 8px;
+}
+
+.index-group .index-list li {
+  border-bottom: none;
+}
+
+.index-group .index-list li a {
+  padding: 8px 16px 8px 30px;
+  font-size: 13px;
+}
+
+/* ---------- 좌측 인덱스: 그룹 헤더가 바로 링크인 형태 (월 자동 결제) ---------- */
+
+.index-group-static {
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.index-group-static .index-group-link {
+  display: block;
+  padding: 12px 16px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+}
+
+.index-group-static .index-list {
+  padding-bottom: 8px;
+}
+
+.index-group-static .index-list li {
+  border-bottom: none;
+}
+
+.index-group-static .index-list li a {
+  padding: 8px 16px 8px 30px;
+  font-size: 13px;
+}
+
+/* ---------- 화면 제목 / 본문 뼈대 ---------- */
+
+.screen-header {
+  padding: 24px 24px 0;
+}
+
+.screen-header h1 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.screen-header .desc {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.screen-body {
+  padding: 20px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-box {
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  background-color: #fafafb;
+  padding: 16px 18px;
+}
+
+.section-box .section-title {
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+/* ---------- 빨간 원 번호 ---------- */
+
+.num-mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e02020;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ---------- 배지 ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.badge-success { background-color: #e4f5e9; color: #1a8a3f; }
+.badge-warning { background-color: #fff6d8; color: #9a7400; }
+.badge-danger  { background-color: #fde6e6; color: #c81e1e; }
+.badge-neutral { background-color: #eceef2; color: #666666; }
+
+/* ---------- ① 갱신 정보: 키-값 목록 ---------- */
+
+.kv-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kv-row {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.kv-row dt {
+  flex: 0 0 70px;
+  margin: 0;
+  color: #888888;
+}
+
+.kv-row dd {
+  margin: 0;
+  flex: 1 1 auto;
+  color: #222222;
+}
+
+.mono {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #777777;
+}
+
+/* ---------- ② 갱신 청구 항목: 표 ---------- */
+
+table.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.price-table td {
+  padding: 8px 0;
+  color: #333333;
+}
+
+table.price-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+tr.price-total-row td {
+  border-top: 1px solid #e3e4e8;
+  padding-top: 14px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #111111;
+}
+
+/* ---------- ③ 이용 기간 ---------- */
+
+.period-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #222222;
+}
+
+/* ---------- ④ 안내 문구 박스 ---------- */
+
+.info-box {
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ---------- ⑤ 버튼 ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #3140d6;
+  background-color: #3140d6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-row-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 우측 화면설명 ---------- */
+
+.desc-trigger {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d12f2f;
+}
+
+.desc-body {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.desc-body:last-child {
+  margin-bottom: 0;
+}
+
+.desc-pending {
+  margin: 0;
+  font-size: 13px;
+  color: #999999;
+}
