@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>03 결제 권한 없음 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="billing.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+    <ul class="index-list">
+      <li class="is-current"><a href="01.html">정기결제 카드 등록/변경</a></li>
+    </ul>
+  </div>
+
+  <div class="main-center">
+    <div class="center-stack">
+      <div class="state-tabs">
+        <a href="01.html" class="state-tab">01</a>
+        <a href="02.html" class="state-tab">02</a>
+        <a href="03.html" class="state-tab is-active">03</a>
+        <a href="04.html" class="state-tab">04</a>
+      </div>
+
+      <div class="screen-canvas">
+        <div class="screen-header">
+          <div>
+            <h1>정기결제 카드 등록/변경</h1>
+            <p class="desc">정기결제에 사용할 카드를 계정 단위로 등록하고, 사이트별 계약에 연결합니다.</p>
+          </div>
+          <span class="btn btn-disabled">카드 등록 <span class="num-mark">3</span></span>
+        </div>
+
+        <div class="screen-body">
+
+          <div class="banner banner-warning">
+            결제수단을 변경할 권한이 없습니다. 카드 등록, 변경, 삭제는 결제 권한이 있는 계정만 할 수 있습니다. 변경이 필요하시면 결제 권한이 있는 계정에 문의해 주십시오.
+            <span class="num-mark">1</span>
+          </div>
+
+          <p style="margin:-8px 0 0; font-size:12px; color:#888888;">
+            결제 권한이 있는 계정 · <span class="masked-account">o•••@flexg-sample.kr</span>
+            <span class="num-mark">2</span>
+          </p>
+
+          <div>
+            <h2 class="section-title">등록된 카드 2</h2>
+            <div class="card-list">
+              <div class="card-row">
+                <div class="card-icon"></div>
+                <div class="card-main">
+                  <div class="card-num">샘플카드 ••••1234 <span class="badge badge-success">정상</span></div>
+                  <p class="card-sub">개인카드 · 등록일 2026-10-12</p>
+                </div>
+                <div class="card-mid">
+                  연결 사이트 3개
+                  <span class="card-mid-sub">플렉스 스토어 외 2개</span>
+                </div>
+                <div class="card-actions">
+                  <span class="btn btn-disabled">변경</span>
+                  <span class="btn btn-disabled">삭제</span>
+                </div>
+              </div>
+              <div class="card-row">
+                <div class="card-icon"></div>
+                <div class="card-main">
+                  <div class="card-num">샘플카드 ••••5678 <span class="badge badge-success">정상</span></div>
+                  <p class="card-sub">개인카드 · 등록일 2026-09-20</p>
+                </div>
+                <div class="card-mid">
+                  연결 사이트 0개
+                  <span class="card-mid-sub">연결된 사이트 없음</span>
+                </div>
+                <div class="card-actions">
+                  <span class="btn btn-disabled">변경</span>
+                  <span class="btn btn-disabled">삭제</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">4</span></h2>
+            <p class="section-desc">계약과 청구는 사이트 단위로 이루어지며, 여러 사이트가 같은 카드를 함께 사용할 수 있습니다.</p>
+            <div class="table-wrap">
+              <table class="site-table">
+                <thead>
+                  <tr>
+                    <th>사이트</th>
+                    <th>플랜</th>
+                    <th>상태</th>
+                    <th>월 구독료 (VAT 별도)</th>
+                    <th>다음 결제 예정일</th>
+                    <th>연결 결제수단</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-info">Pro</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>23,900원</td>
+                    <td>2026-11-05</td>
+                    <td>샘플카드 ••••1234</td>
+                  </tr>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-neutral">Basic</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>12,900원</td>
+                    <td>2026-11-05</td>
+                    <td>샘플카드 ••••1234</td>
+                  </tr>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">팝업스토어</span><span class="site-domain">popup.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-info">Pro</span></td>
+                    <td><span class="badge badge-warning">체험 중 · D-9</span></td>
+                    <td>체험 종료 후 23,900원</td>
+                    <td>2026-10-25<br>(체험 종료 후 첫 결제)</td>
+                    <td>샘플카드 ••••1234</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>

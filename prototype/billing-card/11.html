@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>11 카드 삭제 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="billing.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+    <ul class="index-list">
+      <li class="is-current"><a href="01.html">정기결제 카드 등록/변경</a></li>
+    </ul>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="screen-header">
+        <div>
+          <h1>카드 삭제</h1>
+          <p class="desc">카드에 연결된 사이트가 있는지에 따라 두 가지 팝업이 나타납니다. 배경은 카드 목록 화면입니다.</p>
+        </div>
+      </div>
+
+      <div class="modal-stage">
+        <div class="modal-slot">
+          <div class="modal-slot-label">케이스 A · 연결 사이트 없음 (••••5678) <span class="num-mark">1</span></div>
+          <div class="modal-panel">
+            <h3>카드를 삭제하시겠습니까?</h3>
+            <p>샘플카드 ••••5678을 삭제합니다. 삭제한 카드는 복구할 수 없으며, 다시 사용하시려면 새로 등록해야 합니다.</p>
+            <div class="btn-row">
+              <a href="01.html" class="btn">취소</a>
+              <a href="01.html" class="btn btn-danger">삭제</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-slot">
+          <div class="modal-slot-label">케이스 B · 연결 사이트 있음 (••••1234) <span class="num-mark">2</span></div>
+          <div class="modal-panel">
+            <h3>연결된 사이트가 있어 삭제할 수 없습니다</h3>
+            <p>아래 사이트가 이 카드로 결제 중입니다. 다른 카드로 변경한 뒤 삭제해 주십시오.</p>
+            <div class="site-mini-list">
+              <div class="site-mini-row">플렉스 스토어 <span class="site-mini-domain">store.flexg-sample.kr</span></div>
+              <div class="site-mini-row">브랜드 소개 홈페이지 <span class="site-mini-domain">brand.flexg-sample.kr</span></div>
+              <div class="site-mini-row">팝업스토어 <span class="site-mini-domain">popup.flexg-sample.kr</span></div>
+            </div>
+            <div class="btn-row">
+              <a href="01.html" class="btn">닫기</a>
+              <a href="05-C.html" class="btn btn-primary">카드 변경</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>

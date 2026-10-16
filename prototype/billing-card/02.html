@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>02 미등록 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="billing.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+    <ul class="index-list">
+      <li class="is-current"><a href="01.html">정기결제 카드 등록/변경</a></li>
+    </ul>
+  </div>
+
+  <div class="main-center">
+    <div class="center-stack">
+      <div class="state-tabs">
+        <a href="01.html" class="state-tab">01</a>
+        <a href="02.html" class="state-tab is-active">02</a>
+        <a href="03.html" class="state-tab">03</a>
+        <a href="04.html" class="state-tab">04</a>
+      </div>
+
+      <div class="screen-canvas">
+        <div class="screen-header">
+          <div>
+            <h1>정기결제 카드 등록/변경</h1>
+            <p class="desc">정기결제에 사용할 카드를 계정 단위로 등록하고, 사이트별 계약에 연결합니다.</p>
+          </div>
+        </div>
+
+        <div class="screen-body">
+
+          <div class="empty-state">
+            <div class="empty-icon"></div>
+            <h3>등록된 결제수단이 없습니다 <span class="num-mark">1</span></h3>
+            <p>정기결제 카드를 등록하면 사이트 계약에 연결하여 구독료를 자동으로 결제할 수 있습니다.</p>
+            <a href="05-R.html" class="btn btn-primary">카드 등록 <span class="num-mark">2</span></a>
+          </div>
+
+          <div>
+            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">3</span></h2>
+            <p class="section-desc">계약과 청구는 사이트 단위로 이루어지며, 여러 사이트가 같은 카드를 함께 사용할 수 있습니다.</p>
+            <div class="table-wrap">
+              <table class="site-table">
+                <thead>
+                  <tr>
+                    <th>사이트</th>
+                    <th>플랜</th>
+                    <th>상태</th>
+                    <th>월 구독료 (VAT 별도)</th>
+                    <th>다음 결제 예정일</th>
+                    <th>연결 결제수단</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-info">Pro</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>23,900원</td>
+                    <td>–</td>
+                    <td><span class="badge badge-warning">미연결</span></td>
+                  </tr>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-neutral">Basic</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>12,900원</td>
+                    <td>–</td>
+                    <td><span class="badge badge-warning">미연결</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>
