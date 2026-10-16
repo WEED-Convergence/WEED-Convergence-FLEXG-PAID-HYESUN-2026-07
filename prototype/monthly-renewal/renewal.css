@@ -191,15 +191,27 @@ tr.price-total-row td {
 /* ---------- ③ 이용 기간 ---------- */
 
 .period-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
   border: 1px solid #e3e4e8;
   border-radius: 8px;
   padding: 14px 16px;
   font-size: 13px;
   color: #222222;
+}
+
+.period-row .period-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.period-row .period-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 /* ---------- ④ 안내 문구 박스 ---------- */
