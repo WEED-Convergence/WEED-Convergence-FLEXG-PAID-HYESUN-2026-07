@@ -78,6 +78,19 @@
   gap: 8px;
 }
 
+.section-box {
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  background-color: #fafafb;
+  padding: 16px 18px;
+}
+
+.section-box .section-title {
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
 /* ---------- 빨간 원 번호 ---------- */
 
 .num-mark {
