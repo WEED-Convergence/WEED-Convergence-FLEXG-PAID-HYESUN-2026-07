@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>첫 결제 (결제 권한 없음) - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+    <ul class="index-list">
+      <li class="is-current"><a href="01.html">첫 결제</a></li>
+    </ul>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="chip-row">
+        <a href="01.html" class="chip">결제 가능</a>
+        <a href="02.html" class="chip is-active">결제 권한 없음</a>
+      </div>
+
+      <div class="screen-header">
+        <h1>첫 결제</h1>
+        <p class="desc">선택하신 내용으로 첫 결제를 진행합니다. 결제 전에 아래 내용을 확인해 주십시오.</p>
+      </div>
+
+      <div class="screen-body">
+
+        <div>
+          <h2 class="section-title">결제 대상 <span class="num-mark">1</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>사이트</dt><dd>샘플 쇼핑몰 <span class="mono">sample.flexg-sample.kr</span></dd></div>
+            <div class="kv-row"><dt>플랜</dt><dd>Pro (쇼핑몰)</dd></div>
+            <div class="kv-row"><dt>옵션</dt><dd>선택 없음</dd></div>
+            <div class="kv-row"><dt>계약</dt><dd>신규 계약 · C-20261016-0042</dd></div>
+          </dl>
+        </div>
+
+        <div>
+          <h2 class="section-title">결제 금액 <span class="num-mark">2</span></h2>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td>월 구독료 정상가 (VAT 별도)</td>
+                <td class="price-strike">23,900원</td>
+              </tr>
+              <tr>
+                <td>출시가 적용 (VAT 별도) <span class="badge badge-info">출시가 대상 · 12개월</span></td>
+                <td>17,900원</td>
+              </tr>
+              <tr>
+                <td>부가세 (10%)</td>
+                <td>1,790원</td>
+              </tr>
+              <tr class="price-total-row">
+                <td>결제 금액 (부가세 포함)</td>
+                <td>19,690원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h2 class="section-title">결제수단 <span class="num-mark">3</span></h2>
+          <div class="pay-method">
+            <div class="pm-icon"></div>
+            <div>
+              <div class="pm-main">샘플카드 ••••1234</div>
+              <p class="pm-sub">정기결제 카드 · 개인카드</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title">결제 전 확인 <span class="num-mark">4</span></h2>
+          <div class="confirm-list">
+            <div class="confirm-row is-fail">
+              <span class="confirm-icon">!</span>
+              <div>
+                <div class="confirm-label">결제 권한</div>
+                <p class="confirm-desc">결제 권한이 없는 계정입니다. 결제 권한이 있는 계정(o•••@flexg-sample.kr)에 문의해 주십시오.</p>
+              </div>
+            </div>
+            <div class="confirm-row">
+              <span class="confirm-icon">✓</span>
+              <div>
+                <div class="confirm-label">선택 사이트</div>
+                <p class="confirm-desc">'샘플 쇼핑몰'이 선택되어 있습니다.</p>
+              </div>
+            </div>
+            <div class="confirm-row">
+              <span class="confirm-icon">✓</span>
+              <div>
+                <div class="confirm-label">최종 플랜</div>
+                <p class="confirm-desc">Pro 플랜으로 확정되었습니다.</p>
+              </div>
+            </div>
+            <div class="confirm-row">
+              <span class="confirm-icon">✓</span>
+              <div>
+                <div class="confirm-label">금액 · 옵션</div>
+                <p class="confirm-desc">서버에서 계산한 금액과 선택한 옵션이 일치합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-row-right">
+          <span class="btn btn-disabled">19,690원 결제하기</span>
+          <span class="num-mark">5</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>

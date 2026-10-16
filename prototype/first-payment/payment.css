@@ -1,0 +1,278 @@
+/* 첫 결제 프로토타입 - 전용 컴포넌트 스타일
+   레이아웃(3단, 좌/중/우)과 기본 색/폰트는 ../style.css 를 재사용합니다. */
+
+/* ---------- 상단 칩 ---------- */
+
+.chip-row {
+  display: flex;
+  gap: 8px;
+  padding: 20px 24px 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 14px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #c4c5cb;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+.chip.is-active {
+  background-color: #3140d6;
+  border-color: #3140d6;
+  color: #ffffff;
+}
+
+/* ---------- 화면 제목 / 본문 뼈대 ---------- */
+
+.screen-header {
+  padding: 16px 24px 0;
+}
+
+.screen-header h1 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.screen-header .desc {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.screen-body {
+  padding: 20px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 빨간 원 번호 ---------- */
+
+.num-mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e02020;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ---------- 배지 ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.badge-info {
+  background-color: #e6eaff;
+  color: #3140d6;
+}
+
+/* ---------- ① 결제 대상: 키-값 목록 ---------- */
+
+.kv-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kv-row {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.kv-row dt {
+  flex: 0 0 60px;
+  margin: 0;
+  color: #888888;
+}
+
+.kv-row dd {
+  margin: 0;
+  flex: 1 1 auto;
+  color: #222222;
+}
+
+.mono {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #777777;
+}
+
+/* ---------- ② 결제 금액: 표 ---------- */
+
+table.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.price-table td {
+  padding: 8px 0;
+  color: #333333;
+}
+
+table.price-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.price-strike {
+  text-decoration: line-through;
+  color: #aaaaae;
+}
+
+tr.price-total-row td {
+  border-top: 1px solid #e3e4e8;
+  padding-top: 14px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #111111;
+}
+
+/* ---------- ③ 결제수단 ---------- */
+
+.pay-method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pay-method .pm-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #333944;
+}
+
+.pay-method .pm-main {
+  font-weight: bold;
+}
+
+.pay-method .pm-sub {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #888888;
+}
+
+/* ---------- ④ 결제 전 확인 ---------- */
+
+.confirm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirm-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+}
+
+.confirm-row.is-fail {
+  border-color: #f3b4b4;
+  background-color: #fdeded;
+}
+
+.confirm-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1a8a3f;
+}
+
+.confirm-row.is-fail .confirm-icon {
+  background-color: #d12f2f;
+}
+
+.confirm-row .confirm-label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.confirm-row .confirm-desc {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.confirm-row.is-fail .confirm-desc {
+  color: #b91c1c;
+}
+
+/* ---------- 버튼 ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #3140d6;
+  background-color: #3140d6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-disabled {
+  background-color: #eceef2;
+  border-color: #eceef2;
+  color: #aaaaae;
+  pointer-events: none;
+}
+
+.btn-row-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 우측 화면설명: 추후 작성 ---------- */
+
+.desc-pending {
+  margin: 0;
+  font-size: 13px;
+  color: #999999;
+}
