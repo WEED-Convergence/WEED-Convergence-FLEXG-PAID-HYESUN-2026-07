@@ -46,36 +46,6 @@
   font-size: 13px;
 }
 
-/* ---------- 상단 칩 ---------- */
-
-.chip-row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 20px 24px 0;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  height: 28px;
-  padding: 0 14px;
-  border-radius: 14px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  border: 1px solid #c4c5cb;
-  color: #666666;
-  background-color: #ffffff;
-  white-space: nowrap;
-}
-
-.chip.is-active {
-  background-color: #3140d6;
-  border-color: #3140d6;
-  color: #ffffff;
-}
-
 /* ---------- 빨간 원 번호 ---------- */
 
 .num-mark {
