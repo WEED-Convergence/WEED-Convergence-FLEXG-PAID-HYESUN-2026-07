@@ -584,7 +584,25 @@ table.site-table tr:last-child td {
   justify-content: flex-end;
 }
 
-/* ---------- 우측 화면설명: 추후 작성 ---------- */
+/* ---------- 우측 화면설명 ---------- */
+
+.desc-trigger {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d12f2f;
+}
+
+.desc-body {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.desc-body:last-child {
+  margin-bottom: 0;
+}
 
 .desc-pending {
   margin: 0;
