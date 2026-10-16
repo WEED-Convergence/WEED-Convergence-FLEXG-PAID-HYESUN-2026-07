@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>결제 실패 · 취소 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="status.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정기결제 카드 등록/변경</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음</a></li>
+        <li><a href="../billing-card/02.html">2 미등록</a></li>
+        <li><a href="../billing-card/03.html">3 결제 권한 없음</a></li>
+        <li><a href="../billing-card/04.html">4 미납 · 유예</a></li>
+        <li><a href="../billing-card/07.html">5 처리 중</a></li>
+        <li><a href="../billing-card/08.html">6 완료</a></li>
+        <li><a href="../billing-card/10.html">7 실패</a></li>
+        <li><a href="../billing-card/11.html">8 카드 삭제</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>첫 결제</summary>
+      <ul class="index-list">
+        <li><a href="../first-payment/01.html">9 결제 가능</a></li>
+        <li><a href="../first-payment/02.html">10 결제 권한 없음</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제 실패/취소/지연/중복 결제 방지</summary>
+      <ul class="index-list">
+        <li class="is-current"><a href="01.html">11 결제 실패 · 취소</a></li>
+        <li><a href="02.html">12 처리 중 (지연)</a></li>
+        <li><a href="03.html">13 진행 중인 거래</a></li>
+        <li><a href="04.html">14 이미 완료된 결제</a></li>
+        <li><a href="05.html">15 결제 완료</a></li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="chip-row">
+        <a href="01.html" class="chip is-active">결제 실패 · 취소</a>
+        <a href="02.html" class="chip">처리 중 (지연)</a>
+        <a href="03.html" class="chip">진행 중인 거래</a>
+        <a href="04.html" class="chip">이미 완료된 결제</a>
+        <a href="05.html" class="chip">결제 완료</a>
+      </div>
+
+      <div class="status-stage">
+        <div class="status-card">
+
+          <div class="status-head">
+            <span class="num-mark">1</span>
+            <div class="status-icon is-danger">!</div>
+            <h1>카드 오류로 결제되지 않았습니다</h1>
+            <p class="desc">카드 정보가 올바르지 않거나 사용할 수 없는 카드입니다. 청구된 금액은 없습니다.</p>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">2</span>
+            <table class="status-table">
+              <tbody>
+                <tr>
+                  <th>사유</th>
+                  <td>카드 오류</td>
+                </tr>
+                <tr>
+                  <th>결제 확인</th>
+                  <td><span class="badge badge-danger">실패 확인됨</span><span class="cell-sub">거래번호 T-20261016-0007</span></td>
+                </tr>
+                <tr>
+                  <th>결제 금액</th>
+                  <td>19,690원</td>
+                </tr>
+                <tr>
+                  <th>청구 여부</th>
+                  <td>청구되지 않음</td>
+                </tr>
+                <tr>
+                  <th>사이트 개설</th>
+                  <td><span class="badge badge-neutral">진행되지 않음</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">3</span>
+            <div class="info-box">카드 번호, 유효기간, 카드 사용 가능 여부를 확인해 주십시오. 문제가 계속되면 다른 카드로 변경해 주십시오.</div>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">4</span>
+            <div class="btn-row-center">
+              <span class="btn btn-primary">카드 변경</span>
+              <span class="btn">다시 결제</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="padding: 0 24px 32px;">
+        <div class="proto-note-block">
+          <div class="proto-note-title">프로토타입 전용 · 실패 사유별 문구 정의</div>
+          <table class="reason-table">
+            <thead>
+              <tr>
+                <th>사유</th>
+                <th>제목</th>
+                <th>설명</th>
+                <th>안내</th>
+                <th>버튼</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>카드 오류</td>
+                <td>카드 오류로 결제되지 않았습니다</td>
+                <td>카드 정보가 올바르지 않거나 사용할 수 없는 카드입니다. 청구된 금액은 없습니다.</td>
+                <td>카드 번호, 유효기간, 카드 사용 가능 여부를 확인해 주십시오. 문제가 계속되면 다른 카드로 변경해 주십시오.</td>
+                <td>카드 변경, 다시 결제</td>
+              </tr>
+              <tr>
+                <td>한도 초과</td>
+                <td>카드 한도 초과로 결제되지 않았습니다</td>
+                <td>카드 한도를 초과하여 승인되지 않았습니다. 청구된 금액은 없습니다.</td>
+                <td>카드사에서 결제 한도를 확인하시거나 다른 카드로 변경해 주십시오.</td>
+                <td>카드 변경, 다시 결제</td>
+              </tr>
+              <tr>
+                <td>인증 실패</td>
+                <td>카드 인증이 완료되지 않았습니다</td>
+                <td>본인 인증이 완료되지 않아 승인되지 않았습니다. 청구된 금액은 없습니다.</td>
+                <td>인증 정보를 확인하시고 인증을 다시 진행해 주십시오. 인증 시간이 지났다면 처음부터 다시 시도해 주십시오.</td>
+                <td>다시 결제</td>
+              </tr>
+              <tr>
+                <td>PG 오류</td>
+                <td>결제대행사 오류로 결제되지 않았습니다</td>
+                <td>결제대행사에서 승인되지 않은 것으로 확인되었습니다. 청구된 금액은 없습니다.</td>
+                <td>일시적인 오류일 수 있습니다. 잠시 후 다시 결제해 주십시오. 같은 오류가 반복되면 문의해 주십시오.</td>
+                <td>다시 결제, 문의하기</td>
+              </tr>
+              <tr>
+                <td>결제 취소</td>
+                <td>결제가 취소되었습니다</td>
+                <td>결제창에서 결제가 취소되어 진행되지 않았습니다. 청구된 금액은 없습니다. (결제 확인 배지: 취소 확인됨)</td>
+                <td>결제를 계속하시려면 다시 결제해 주십시오.</td>
+                <td>다시 결제</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>

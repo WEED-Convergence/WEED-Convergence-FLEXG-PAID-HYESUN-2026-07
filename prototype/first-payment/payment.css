@@ -201,59 +201,21 @@ tr.price-total-row td {
   color: #888888;
 }
 
-/* ---------- ④ 결제 전 확인 ---------- */
+/* ---------- 결제 권한 없음 배너 ---------- */
 
-.confirm-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.confirm-row {
+.banner {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 12px 14px;
-  border: 1px solid #e3e4e8;
+  gap: 8px;
+  padding: 14px 16px;
   border-radius: 8px;
-}
-
-.confirm-row.is-fail {
-  border-color: #f3b4b4;
-  background-color: #fdeded;
-}
-
-.confirm-icon {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #1a8a3f;
-}
-
-.confirm-row.is-fail .confirm-icon {
-  background-color: #d12f2f;
-}
-
-.confirm-row .confirm-label {
-  font-weight: bold;
   font-size: 13px;
+  line-height: 1.6;
 }
 
-.confirm-row .confirm-desc {
-  margin: 2px 0 0;
-  font-size: 12px;
-  color: #666666;
-}
-
-.confirm-row.is-fail .confirm-desc {
-  color: #b91c1c;
+.banner-warning {
+  background-color: #fff8e1;
+  color: #8a6a00;
 }
 
 /* ---------- 버튼 ---------- */

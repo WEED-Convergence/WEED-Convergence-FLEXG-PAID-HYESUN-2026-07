@@ -1,0 +1,312 @@
+/* 결제 실패/취소/지연/중복 결제 방지 프로토타입 - 전용 컴포넌트 스타일
+   레이아웃(3단, 좌/중/우)과 기본 색/폰트는 ../style.css 를 재사용합니다. */
+
+/* ---------- 좌측 인덱스: 펼침/닫힘 그룹 ---------- */
+
+.index-group {
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.index-group > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #222222;
+  list-style: none;
+}
+
+.index-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.index-group > summary::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 11px;
+  color: #999999;
+}
+
+.index-group[open] > summary::before {
+  content: "▾";
+}
+
+.index-group .index-list {
+  padding-bottom: 8px;
+}
+
+.index-group .index-list li {
+  border-bottom: none;
+}
+
+.index-group .index-list li a {
+  padding: 8px 16px 8px 30px;
+  font-size: 13px;
+}
+
+/* ---------- 상단 칩 ---------- */
+
+.chip-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 20px 24px 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 14px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #c4c5cb;
+  color: #666666;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+.chip.is-active {
+  background-color: #3140d6;
+  border-color: #3140d6;
+  color: #ffffff;
+}
+
+/* ---------- 빨간 원 번호 ---------- */
+
+.num-mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e02020;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ---------- 배지 ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.badge-success { background-color: #e4f5e9; color: #1a8a3f; }
+.badge-warning { background-color: #fff6d8; color: #9a7400; }
+.badge-danger  { background-color: #fde6e6; color: #c81e1e; }
+.badge-neutral { background-color: #eceef2; color: #666666; }
+
+/* ---------- 가운데 정렬 좁은 카드 ---------- */
+
+.status-stage {
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px 40px;
+}
+
+.status-card {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ① 상태 아이콘 + 제목 + 설명 */
+
+.status-head {
+  text-align: center;
+  position: relative;
+}
+
+.status-head .num-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.status-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.status-icon.is-danger { background-color: #d12f2f; }
+.status-icon.is-warning { background-color: #c99a00; }
+.status-icon.is-success { background-color: #1a8a3f; }
+
+.status-head h1 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.status-head .desc {
+  margin: 0;
+  font-size: 13px;
+  color: #666666;
+}
+
+/* 번호가 붙는 블록 공통 */
+
+.status-block {
+  position: relative;
+  padding-left: 28px;
+}
+
+.status-block > .num-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+/* ② 상태 표 */
+
+table.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.status-table th,
+table.status-table td {
+  padding: 10px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ededf0;
+}
+
+table.status-table tr:last-child th,
+table.status-table tr:last-child td {
+  border-bottom: none;
+}
+
+table.status-table th {
+  width: 100px;
+  color: #888888;
+  font-weight: normal;
+}
+
+table.status-table td {
+  color: #222222;
+}
+
+.cell-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* ③ / ⑤ 안내 문구 박스 */
+
+.info-box {
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ④ 버튼 영역 */
+
+.btn-row-center {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #c4c5cb;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #3140d6;
+  border-color: #3140d6;
+  color: #ffffff;
+}
+
+.btn-disabled {
+  background-color: #eceef2;
+  border-color: #eceef2;
+  color: #aaaaae;
+  pointer-events: none;
+}
+
+/* ---------- 프로토타입 전용 · 실패 사유별 참조 표 ---------- */
+
+.proto-note-block {
+  border: 1px dashed #c4c5cb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.proto-note-block .proto-note-title {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+table.reason-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table.reason-table th,
+table.reason-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ededf0;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.reason-table tbody tr:last-child th,
+table.reason-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table.reason-table thead th {
+  background-color: #f7f7f9;
+  color: #777777;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+/* ---------- 우측 화면설명: 추후 작성 ---------- */
+
+.desc-pending {
+  margin: 0;
+  font-size: 13px;
+  color: #999999;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>결제 완료 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="status.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정기결제 카드 등록/변경</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음</a></li>
+        <li><a href="../billing-card/02.html">2 미등록</a></li>
+        <li><a href="../billing-card/03.html">3 결제 권한 없음</a></li>
+        <li><a href="../billing-card/04.html">4 미납 · 유예</a></li>
+        <li><a href="../billing-card/07.html">5 처리 중</a></li>
+        <li><a href="../billing-card/08.html">6 완료</a></li>
+        <li><a href="../billing-card/10.html">7 실패</a></li>
+        <li><a href="../billing-card/11.html">8 카드 삭제</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>첫 결제</summary>
+      <ul class="index-list">
+        <li><a href="../first-payment/01.html">9 결제 가능</a></li>
+        <li><a href="../first-payment/02.html">10 결제 권한 없음</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제 실패/취소/지연/중복 결제 방지</summary>
+      <ul class="index-list">
+        <li><a href="01.html">11 결제 실패 · 취소</a></li>
+        <li><a href="02.html">12 처리 중 (지연)</a></li>
+        <li><a href="03.html">13 진행 중인 거래</a></li>
+        <li><a href="04.html">14 이미 완료된 결제</a></li>
+        <li class="is-current"><a href="05.html">15 결제 완료</a></li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="chip-row">
+        <a href="01.html" class="chip">결제 실패 · 취소</a>
+        <a href="02.html" class="chip">처리 중 (지연)</a>
+        <a href="03.html" class="chip">진행 중인 거래</a>
+        <a href="04.html" class="chip">이미 완료된 결제</a>
+        <a href="05.html" class="chip is-active">결제 완료</a>
+      </div>
+
+      <div class="status-stage">
+        <div class="status-card">
+
+          <div class="status-head">
+            <span class="num-mark">1</span>
+            <div class="status-icon is-success">✓</div>
+            <h1>결제가 정상적으로 완료되었습니다</h1>
+            <p class="desc">결제가 확인되어 사이트 개설까지 완료되었습니다. 같은 계약으로 다시 청구되지 않습니다.</p>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">2</span>
+            <table class="status-table">
+              <tbody>
+                <tr>
+                  <th>사유</th>
+                  <td>정상 결제</td>
+                </tr>
+                <tr>
+                  <th>결제 확인</th>
+                  <td><span class="badge badge-success">결제 완료</span><span class="cell-sub">거래번호 T-20261016-0007</span></td>
+                </tr>
+                <tr>
+                  <th>결제 금액</th>
+                  <td>19,690원</td>
+                </tr>
+                <tr>
+                  <th>청구 여부</th>
+                  <td>청구 완료 · 19,690원</td>
+                </tr>
+                <tr>
+                  <th>사이트 개설</th>
+                  <td><span class="badge badge-success">완료</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">3</span>
+            <div class="info-box">결제 내역은 어드민의 결제 내역에서 확인하실 수 있습니다.</div>
+          </div>
+
+          <div class="status-block">
+            <span class="num-mark">4</span>
+            <div class="btn-row-center">
+              <span class="btn btn-primary">어드민으로 이동</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-pending">내용은 추후 작성합니다.</p>
+  </div>
+
+</div>
+</body>
+</html>
