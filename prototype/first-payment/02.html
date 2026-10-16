@@ -11,9 +11,28 @@
 
   <div class="sidebar-left">
     <div class="panel-title">화면 목록</div>
-    <ul class="index-list">
-      <li class="is-current"><a href="01.html">첫 결제</a></li>
-    </ul>
+
+    <details class="index-group" open>
+      <summary>정기결제 카드 등록/변경</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">01 카드 있음</a></li>
+        <li><a href="../billing-card/02.html">02 미등록</a></li>
+        <li><a href="../billing-card/03.html">03 결제 권한 없음</a></li>
+        <li><a href="../billing-card/04.html">04 미납 · 유예</a></li>
+        <li><a href="../billing-card/07.html">07 처리 중</a></li>
+        <li><a href="../billing-card/08.html">08 완료</a></li>
+        <li><a href="../billing-card/10.html">10 실패</a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>첫 결제</summary>
+      <ul class="index-list">
+        <li><a href="01.html">01 결제 가능</a></li>
+        <li class="is-current"><a href="02.html">02 결제 권한 없음</a></li>
+      </ul>
+    </details>
   </div>
 
   <div class="main-center">
