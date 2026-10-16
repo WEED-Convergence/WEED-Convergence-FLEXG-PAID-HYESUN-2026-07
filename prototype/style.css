@@ -135,7 +135,8 @@ body {
 .tbd-section h3 {
   margin: 0 0 6px;
   font-size: 13px;
-  color: #999999;
+  color: #e02020;
+  font-weight: bold;
 }
 
 .tbd-section p {
