@@ -80,7 +80,6 @@ body {
 
 .screen-canvas {
   width: 100%;
-  max-width: 480px;
   min-height: 100%;
   background-color: #ffffff;
   color: #222222;
