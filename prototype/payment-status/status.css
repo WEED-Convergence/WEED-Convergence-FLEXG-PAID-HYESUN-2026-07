@@ -84,6 +84,15 @@
 .badge-danger  { background-color: #fde6e6; color: #c81e1e; }
 .badge-neutral { background-color: #eceef2; color: #666666; }
 
+/* ---------- 중앙 컨텐츠 뼈대 ---------- */
+
+.center-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* ---------- 가운데 정렬 좁은 카드 ---------- */
 
 .status-stage {

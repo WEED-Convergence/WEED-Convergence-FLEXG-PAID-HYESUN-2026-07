@@ -92,13 +92,44 @@ body {
   color: #999999;
 }
 
-/* ---------- 환경설정 좌측 메뉴 (실제 서비스 화면 내부 메뉴) ---------- */
+/* ---------- 어드민 GNB/LNB (실제 서비스 화면 내부 메뉴) ---------- */
+
+.admin-shell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.admin-gnb {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 20px;
+  height: 44px;
+  background-color: #20242e;
+  color: #b9bbc5;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.admin-gnb .gnb-item {
+  flex-shrink: 0;
+}
+
+.admin-gnb .gnb-item.is-active {
+  color: #ffffff;
+  font-weight: bold;
+}
 
 .canvas-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
-  min-height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .settings-nav {

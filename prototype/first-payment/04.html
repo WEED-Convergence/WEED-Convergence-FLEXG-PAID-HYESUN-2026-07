@@ -68,7 +68,92 @@
   </div>
 
   <div class="main-center">
-    <div class="screen-canvas">
+    <div class="screen-canvas is-popup">
+    <div class="admin-shell">
+    <div class="admin-gnb">
+      <span class="gnb-item">상품</span>
+      <span class="gnb-item">주문</span>
+      <span class="gnb-item">발주</span>
+      <span class="gnb-item">CS</span>
+      <span class="gnb-item">정산</span>
+      <span class="gnb-item">매출</span>
+      <span class="gnb-item">통계</span>
+      <span class="gnb-item">회원</span>
+      <span class="gnb-item">CRM</span>
+      <span class="gnb-item">LIVE</span>
+      <span class="gnb-item">메시지</span>
+      <span class="gnb-item">게시판</span>
+      <span class="gnb-item">APP</span>
+      <span class="gnb-item">셀러</span>
+      <span class="gnb-item">제휴</span>
+      <span class="gnb-item is-active">환경설정</span>
+    </div>
+    <div class="canvas-row">
+      <nav class="settings-nav">
+      <div class="settings-nav-title">환경설정</div>
+      <ul class="settings-nav-list">
+        <li>기본정보</li>
+        <li>운영정책</li>
+        <li>결제/무통장 설정</li>
+        <li>
+          정기결제 관리
+          <ul class="settings-nav-sublist">
+            <li><a href="../billing-card/01.html">카드 관리</a></li>
+            <li class="is-active"><a href="../subscription/01.html">서비스 이용료 정기결제</a></li>
+            <li>캐시 자동충전</li>
+          </ul>
+        </li>
+        <li>PG 서비스 신청</li>
+        <li>성인(사용자)인증 신청</li>
+        <li>배송 관리</li>
+      </ul>
+    </nav>
+      <div class="screen-main">
+
+      <div class="screen-header">
+        <h1>구독 관리</h1>
+        <p class="desc">현재 플랜과 다음 결제일을 확인합니다.</p>
+      </div>
+
+      <div class="screen-body">
+
+        <div class="section-box">
+          <h2 class="section-title">현재 플랜 <span class="num-mark">1</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>사이트</dt><dd>—</dd></div>
+            <div class="kv-row"><dt>플랜</dt><dd>신청한 플랜 없음</dd></div>
+            <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-neutral">미신청</span></dd></div>
+            <div class="kv-row"><dt>이용 기간</dt><dd>—</dd></div>
+          </dl>
+        </div>
+
+        <div class="section-box">
+          <h2 class="section-title">다음 결제 <span class="num-mark">2</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>다음 결제일</dt><dd>—</dd></div>
+            <div class="kv-row"><dt>다음 결제 금액</dt><dd>—</dd></div>
+          </dl>
+        </div>
+
+        <div class="info-box">
+          Basic 또는 Pro 플랜을 14일 체험으로 시작할 수 있습니다. 체험은 계정당 최초 1회만 제공됩니다.
+          <span class="num-mark">3</span>
+        </div>
+
+        <div class="btn-row-right">
+          <a href="../subscription/02.html" class="btn btn-primary">체험 시작</a>
+          <span class="num-mark">4</span>
+        </div>
+
+      </div>
+    
+      </div>
+    </div>
+  </div>
+    <div class="popup-overlay">
+      <div class="popup-modal popup-modal-wide">
+        <a href="../subscription/01.html" class="popup-close" aria-label="닫기">×</a>
+
       <div class="process-center">
         <div class="ring"></div>
         <span class="num-mark" style="margin-bottom:12px; display:inline-block;">1</span>
@@ -91,7 +176,10 @@
         </div>
       </div>
       <p style="text-align:center; margin:12px 0 0;"><span class="num-mark">3</span></p>
+    
+      </div>
     </div>
+  </div>
   </div>
 
   <div class="sidebar-right">

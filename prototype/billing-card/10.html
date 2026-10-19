@@ -68,7 +68,125 @@
   </div>
 
   <div class="main-center">
-    <div class="screen-canvas">
+    <div class="screen-canvas is-popup">
+    <div class="admin-shell">
+    <div class="admin-gnb">
+      <span class="gnb-item">상품</span>
+      <span class="gnb-item">주문</span>
+      <span class="gnb-item">발주</span>
+      <span class="gnb-item">CS</span>
+      <span class="gnb-item">정산</span>
+      <span class="gnb-item">매출</span>
+      <span class="gnb-item">통계</span>
+      <span class="gnb-item">회원</span>
+      <span class="gnb-item">CRM</span>
+      <span class="gnb-item">LIVE</span>
+      <span class="gnb-item">메시지</span>
+      <span class="gnb-item">게시판</span>
+      <span class="gnb-item">APP</span>
+      <span class="gnb-item">셀러</span>
+      <span class="gnb-item">제휴</span>
+      <span class="gnb-item is-active">환경설정</span>
+    </div>
+    <div class="canvas-row">
+      <nav class="settings-nav">
+      <div class="settings-nav-title">환경설정</div>
+      <ul class="settings-nav-list">
+        <li>기본정보</li>
+        <li>운영정책</li>
+        <li>결제/무통장 설정</li>
+        <li>
+          정기결제 관리
+          <ul class="settings-nav-sublist">
+            <li class="is-active"><a href="01.html">카드 관리</a></li>
+            <li><a href="../subscription/01.html">서비스 이용료 정기결제</a></li>
+            <li>캐시 자동충전</li>
+          </ul>
+        </li>
+        <li>PG 서비스 신청</li>
+        <li>성인(사용자)인증 신청</li>
+        <li>배송 관리</li>
+      </ul>
+    </nav>
+      <div class="screen-main">
+
+        <div class="screen-header">
+          <div>
+            <h1>정기결제 카드 등록/변경 <span class="num-mark">1</span></h1>
+            <p class="desc">등록한 카드는 계정의 모든 사이트에 자동으로 적용됩니다.</p>
+          </div>
+        </div>
+
+        <div class="screen-body">
+
+          <div>
+            <h2 class="section-title">등록된 카드 <span class="num-mark">2</span></h2>
+            <div class="card-list">
+              <div class="card-row">
+                <div class="card-icon"></div>
+                <div class="card-main">
+                  <div class="card-num">샘플카드 ••••1234 <span class="badge badge-success">정상</span></div>
+                  <p class="card-sub">개인카드 · 등록일 2026-10-12</p>
+                </div>
+                <div class="card-mid">
+                  연결 사이트 2개
+                </div>
+                <div class="card-actions">
+                  <a href="../billing-card/05.html" class="btn">변경</a>
+                  <a href="../billing-card/11.html" class="btn btn-text-danger">삭제</a>
+                  <span class="num-mark">3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box">
+            카드번호는 FLEXG에 저장되지 않으며, 결제대행사(PG)가 발급한 빌링키로만 결제됩니다. 화면에는 카드번호 끝 4자리만 표시됩니다.
+            <span class="num-mark">4</span>
+          </div>
+
+          <div>
+            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">5</span></h2>
+            <div class="table-wrap">
+              <table class="site-table">
+                <thead>
+                  <tr>
+                    <th>사이트</th>
+                    <th>플랜</th>
+                    <th>상태</th>
+                    <th>월 구독료 (VAT 별도)</th>
+                    <th>다음 결제 예정일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-info">Pro</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>23,900원</td>
+                    <td>2026-11-05</td>
+                  </tr>
+                  <tr>
+                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
+                    <td><span class="badge badge-info">Pro</span></td>
+                    <td><span class="badge badge-success">이용 중</span></td>
+                    <td>플랜에 포함</td>
+                    <td>2026-11-05</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      
+      </div>
+    </div>
+  </div>
+    <div class="popup-overlay">
+      <div class="popup-modal">
+        <a href="01.html" class="popup-close" aria-label="닫기">×</a>
+
       <div class="result-center">
         <div class="result-icon is-danger">!</div>
         <h1>카드 연결에 실패했습니다 <span class="num-mark">1</span></h1>
@@ -80,7 +198,10 @@
           <span class="num-mark">3</span>
         </div>
       </div>
+    
+      </div>
     </div>
+  </div>
   </div>
 
   <div class="sidebar-right">
