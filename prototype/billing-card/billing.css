@@ -360,6 +360,12 @@ table.site-table tr:last-child td {
   font-weight: bold;
 }
 
+.cell-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
 /* ---------- PG 결제창 참조 프레임 (06) ---------- */
 
 .pg-frame {
