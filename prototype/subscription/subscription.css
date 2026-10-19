@@ -206,6 +206,79 @@
   color: #ffffff;
 }
 
+.btn-danger {
+  border-color: #d12f2f;
+  background-color: #d12f2f;
+  color: #ffffff;
+}
+
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  border: 1px solid #c4c5cb;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.select-box {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #d4d5d9;
+  background-color: #fafafb;
+  font-size: 13px;
+  color: #333333;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-wrap {
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.data-table th,
+table.data-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #ededf0;
+}
+
+table.data-table th {
+  background-color: #f7f7f9;
+  color: #777777;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fine-print {
+  margin: 0;
+  font-size: 12px;
+  color: #888888;
+  line-height: 1.6;
+}
+
 .btn-disabled {
   background-color: #eceef2;
   border-color: #eceef2;

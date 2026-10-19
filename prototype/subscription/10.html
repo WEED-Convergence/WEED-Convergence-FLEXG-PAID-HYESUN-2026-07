@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>10 체험 종료 · 결제 실패 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="subscription.css">
+</head>
+<body>
+<div class="layout">
+
+    <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정기결제 카드 등록/변경</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음</a></li>
+        <li><a href="../billing-card/02.html">2 미등록</a></li>
+        <li><a href="../billing-card/03.html">3 결제 권한 없음</a></li>
+        <li><a href="../billing-card/04.html">4 미납 · 유예</a></li>
+        <li><a href="../billing-card/05.html">5 카드 등록/변경 시작</a></li>
+        <li><a href="../billing-card/06.html">6 PG 결제창</a></li>
+        <li><a href="../billing-card/07.html">7 처리 중</a></li>
+        <li><a href="../billing-card/08.html">8 완료</a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결)</a></li>
+        <li><a href="../billing-card/10.html">10 실패</a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제하기</summary>
+      <ul class="index-list">
+        <li><a href="../first-payment/01.html">12 결제 가능</a></li>
+        <li><a href="../first-payment/02.html">13 결제 권한 없음</a></li>
+        <li><a href="../first-payment/03.html">14 결제 확인 중</a></li>
+        <li><a href="../first-payment/04.html">15 결제 확인됨 · 사이트 개설 중</a></li>
+        <li><a href="../first-payment/05.html">16 결제 완료 · 개설 실패 복구</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제 실패/취소/지연/중복 결제 방지</summary>
+      <ul class="index-list">
+        <li><a href="../payment-status/01.html">17 결제 실패 · 취소</a></li>
+        <li><a href="../payment-status/02.html">18 처리 중 (지연)</a></li>
+        <li><a href="../payment-status/03.html">19 진행 중인 거래</a></li>
+        <li><a href="../payment-status/04.html">20 이미 완료된 결제</a></li>
+        <li><a href="../payment-status/05.html">21 결제 완료</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary><a href="01.html">구독 관리</a></summary>
+      <ul class="index-list">
+        <li><a href="01.html">22 미신청</a></li>
+        <li><a href="02.html">23 체험 중</a></li>
+        <li class="is-current"><a href="10.html">24 체험 종료 · 결제 실패</a></li>
+        <li><a href="03.html">25 결제 확인 중</a></li>
+        <li><a href="04.html">26 이용 중</a></li>
+        <li><a href="05.html">27 유예</a></li>
+        <li><a href="06.html">28 변경</a></li>
+        <li><a href="11.html">29 해지 예약 확인</a></li>
+        <li><a href="07.html">30 종료 예약</a></li>
+        <li><a href="08.html">31 만료</a></li>
+        <li><a href="09.html">32 이용 중 (결제 권한 없음)</a></li>
+        <li><a href="12.html">33 결제 내역</a></li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+    <div class="admin-shell">
+    <div class="admin-gnb">
+      <span class="gnb-item">상품</span>
+      <span class="gnb-item">주문</span>
+      <span class="gnb-item">발주</span>
+      <span class="gnb-item">CS</span>
+      <span class="gnb-item">정산</span>
+      <span class="gnb-item">매출</span>
+      <span class="gnb-item">통계</span>
+      <span class="gnb-item">회원</span>
+      <span class="gnb-item">CRM</span>
+      <span class="gnb-item">LIVE</span>
+      <span class="gnb-item">메시지</span>
+      <span class="gnb-item">게시판</span>
+      <span class="gnb-item">APP</span>
+      <span class="gnb-item">셀러</span>
+      <span class="gnb-item">제휴</span>
+      <span class="gnb-item is-active">환경설정</span>
+    </div>
+    <div class="canvas-row">
+      <nav class="settings-nav">
+      <div class="settings-nav-title">환경설정</div>
+      <ul class="settings-nav-list">
+        <li>기본정보</li>
+        <li>운영정책</li>
+        <li>결제/무통장 설정</li>
+        <li>
+          정기결제 관리
+          <ul class="settings-nav-sublist">
+            <li><a href="../billing-card/01.html">카드 관리</a></li>
+            <li class="is-active"><a href="01.html">서비스 이용료 정기결제</a></li>
+            <li>캐시 자동충전</li>
+          </ul>
+        </li>
+        <li>PG 서비스 신청</li>
+        <li>성인(사용자)인증 신청</li>
+        <li>배송 관리</li>
+      </ul>
+    </nav>
+      <div class="screen-main">
+
+      <div class="screen-header">
+        <h1>구독 관리</h1>
+        <p class="desc">첫 결제가 완료되지 않아 체험이 종료되었습니다.</p>
+      </div>
+
+      <div class="screen-body">
+
+        <div class="section-box">
+          <h2 class="section-title">현재 플랜 <span class="num-mark">1</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>사이트</dt><dd>플렉스 스토어<br>브랜드 소개 홈페이지</dd></div>
+            <div class="kv-row"><dt>플랜</dt><dd>Pro</dd></div>
+            <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-danger">체험 종료</span></dd></div>
+            <div class="kv-row"><dt>이용 기간</dt><dd>2027-03-05 ~ 2027-03-18 (14일)</dd></div>
+          </dl>
+        </div>
+
+        <div class="section-box">
+          <h2 class="section-title">다음 결제 <span class="num-mark">2</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>전환 결제 시도일</dt><dd>2027-03-19</dd></div>
+            <div class="kv-row"><dt>결제 확인</dt><dd><span class="badge badge-danger">실패 확인됨</span></dd></div>
+            <div class="kv-row"><dt>결제 시도 금액</dt><dd>17,900원 (VAT 별도)</dd></div>
+            <div class="kv-row"><dt>결제수단</dt><dd>샘플카드 ••••1234</dd></div>
+            <div class="kv-row"><dt>거래 ID</dt><dd><span class="mono">T-20270319-0001</span></dd></div>
+          </dl>
+        </div>
+
+        <div class="info-box">
+          결제수단을 변경하거나 결제하시면 바로 이용을 다시 시작할 수 있습니다. 쇼핑몰 데이터는 보관됩니다.
+          <span class="num-mark">3</span>
+        </div>
+
+        <div class="btn-row-right">
+          <a href="../billing-card/05.html" class="btn btn-primary">카드 변경</a>
+          <a href="../first-payment/01.html" class="btn">지금 결제</a>
+          <span class="num-mark">4</span>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">체험 종료 후 자동 전환 결제가 실패했을 때 표시됩니다.</p>
+    <p class="desc-body">결제수단을 변경하거나 다시 결제하면 바로 이용을 다시 시작할 수 있습니다. 그동안의 쇼핑몰 데이터는 보관됩니다.</p>
+  </div>
+
+</div>
+</body>
+</html>
