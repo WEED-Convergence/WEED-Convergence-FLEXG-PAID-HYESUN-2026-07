@@ -280,6 +280,36 @@ table.data-table tr:last-child td {
   line-height: 1.6;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.pagination .page-arrow,
+.pagination .page-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.pagination .page-arrow {
+  color: #aaaaae;
+}
+
+.pagination .page-num.is-active {
+  background-color: #3140d6;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .btn-disabled {
   background-color: #eceef2;
   border-color: #eceef2;
