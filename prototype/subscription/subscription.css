@@ -319,3 +319,10 @@ table.data-table tr:last-child td {
   font-size: 13px;
   color: #999999;
 }
+
+.desc-tbd {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a56db;
+}
