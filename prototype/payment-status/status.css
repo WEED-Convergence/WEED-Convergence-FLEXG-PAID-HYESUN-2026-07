@@ -209,6 +209,13 @@ table.status-table td {
   gap: 8px;
 }
 
+.status-note {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

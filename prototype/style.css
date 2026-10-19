@@ -64,6 +64,37 @@ body {
   color: #3140d6;
 }
 
+.index-list li.index-group-label {
+  padding: 10px 16px 4px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.index-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.index-sublist li {
+  border-bottom: none;
+}
+
+.index-sublist li a {
+  display: block;
+  padding: 8px 16px 8px 30px;
+  font-size: 13px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.index-sublist li.is-current a {
+  background-color: #e4e6fb;
+  font-weight: bold;
+  color: #3140d6;
+}
+
 /* ---------- 중앙: 화면 영역 ---------- */
 
 .main-center {
