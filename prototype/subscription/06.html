@@ -2,9 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>나의 플랜 (정상 갱신) - 프로토타입</title>
+<title>06 변경 - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="renewal.css">
+<link rel="stylesheet" href="subscription.css">
 </head>
 <body>
 <div class="layout">
@@ -49,12 +49,17 @@
     </details>
 
     <details class="index-group" open>
-      <summary><a href="01.html">나의 플랜</a></summary>
+      <summary><a href="01.html">구독 관리</a></summary>
       <ul class="index-list">
-        <li class="is-current"><a href="01.html">19 정상 갱신</a></li>
-        <li><a href="02.html">20 해지 예약</a></li>
-        <li><a href="04.html">21 체험 중 (전환 예정)</a></li>
-        <li><a href="05.html">22 체험 종료 · 결제 실패</a></li>
+        <li><a href="01.html">19 미신청</a></li>
+        <li><a href="02.html">20 체험 중</a></li>
+        <li><a href="03.html">21 결제 확인 중</a></li>
+        <li><a href="04.html">22 이용 중</a></li>
+        <li><a href="05.html">23 유예</a></li>
+        <li class="is-current"><a href="06.html">24 변경</a></li>
+        <li><a href="07.html">25 종료 예약</a></li>
+        <li><a href="08.html">26 만료</a></li>
+        <li><a href="09.html">27 이용 중 (결제 권한 없음)</a></li>
       </ul>
     </details>
   </div>
@@ -62,53 +67,38 @@
   <div class="main-center">
     <div class="screen-canvas">
       <div class="screen-header">
-        <h1>나의 플랜</h1>
-        <p class="desc">다음 결제일에 등록된 카드로 자동 갱신됩니다.</p>
+        <h1>구독 관리</h1>
+        <p class="desc">플랜 변경이 예정되어 있습니다.</p>
       </div>
 
       <div class="screen-body">
 
         <div class="section-box">
-          <h2 class="section-title">갱신 정보 <span class="num-mark">1</span></h2>
+          <h2 class="section-title">현재 플랜 <span class="num-mark">1</span></h2>
           <dl class="kv-list">
-            <div class="kv-row"><dt>사이트</dt><dd>플렉스 스토어 · Pro<br>브랜드 소개 홈페이지 · Pro</dd></div>
-            <div class="kv-row"><dt>갱신 회차</dt><dd>2회차</dd></div>
-            <div class="kv-row"><dt>결제일</dt><dd>2026-11-16</dd></div>
-            <div class="kv-row"><dt>결제수단</dt><dd>샘플카드 ••••1234</dd></div>
-            <div class="kv-row"><dt>거래 ID</dt><dd><span class="mono">R-202611-S0001-03</span></dd></div>
+            <div class="kv-row"><dt>사이트</dt><dd>브랜드 소개 홈페이지<br>플렉스 스토어 (변경 후 추가)</dd></div>
+            <div class="kv-row"><dt>플랜</dt><dd>Basic → Pro</dd></div>
+            <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-info">변경</span></dd></div>
+            <div class="kv-row"><dt>이용 기간</dt><dd>2027-05-19 ~ 2027-06-18 (3회차)</dd></div>
           </dl>
         </div>
 
         <div class="section-box">
-          <h2 class="section-title">갱신 청구 항목 <span class="num-mark">2</span></h2>
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <td>Pro 월 구독료</td>
-                <td>17,900원</td>
-              </tr>
-              <tr>
-                <td>부가세 (10%)</td>
-                <td>1,790원</td>
-              </tr>
-              <tr class="price-total-row">
-                <td>갱신 청구 금액 (부가세 포함)</td>
-                <td>19,690원</td>
-              </tr>
-            </tbody>
-          </table>
+          <h2 class="section-title">다음 결제 <span class="num-mark">2</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>변경 적용일</dt><dd>2027-06-19</dd></div>
+            <div class="kv-row"><dt>다음 결제일</dt><dd>2027-06-19</dd></div>
+            <div class="kv-row"><dt>다음 결제 금액</dt><dd>17,900원 (VAT 별도) <span class="badge badge-warning">예상</span></dd></div>
+          </dl>
         </div>
 
-        <div class="period-row">
-          <div class="period-title">이용 기간 <span class="num-mark">3</span></div>
-          <div class="period-body">
-            <span>2026-11-16 ~ 2026-12-15</span>
-            <span class="badge badge-neutral">갱신 예정</span>
-          </div>
+        <div class="info-box">
+          변경은 다음 결제일부터 적용됩니다. Pro에서 Basic으로의 변경은 제공하지 않습니다.
+          <span class="num-mark">3</span>
         </div>
 
         <div class="btn-row-right">
-          <a href="../billing-card/05.html" class="btn">결제수단 변경</a>
+          <a href="04.html" class="btn btn-primary">변경 취소</a>
           <span class="num-mark">4</span>
         </div>
 
@@ -118,8 +108,6 @@
 
   <div class="sidebar-right">
     <h2>화면 설명</h2>
-    <p class="desc-trigger">다음 결제일에 정상적으로 자동 갱신될 예정일 때 표시됩니다.</p>
-    <p class="desc-body">등록된 카드로 결제될 예정 금액과 이용 기간을 보여줍니다. [결제수단 변경]을 누르면 카드 변경 화면으로 이동합니다.</p>
   </div>
 
 </div>

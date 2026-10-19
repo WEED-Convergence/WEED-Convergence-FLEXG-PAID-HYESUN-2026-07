@@ -1,4 +1,4 @@
-/* 월 자동 결제 프로토타입 - 전용 컴포넌트 스타일
+/* 구독 관리 프로토타입 - 전용 컴포넌트 스타일
    레이아웃(3단, 좌/중/우)과 기본 색/폰트는 ../style.css 를 재사용합니다. */
 
 /* ---------- 좌측 인덱스: 펼침/닫힘 그룹 (다른 기능과 공용) ---------- */
@@ -127,10 +127,10 @@
 .badge-success { background-color: #e4f5e9; color: #1a8a3f; }
 .badge-warning { background-color: #fff6d8; color: #9a7400; }
 .badge-danger  { background-color: #fde6e6; color: #c81e1e; }
-.badge-neutral { background-color: #eceef2; color: #666666; }
 .badge-info    { background-color: #e6eaff; color: #3140d6; }
+.badge-neutral { background-color: #eceef2; color: #666666; }
 
-/* ---------- ① 갱신 정보: 키-값 목록 ---------- */
+/* ---------- ① 현재 플랜: 키-값 목록 ---------- */
 
 .kv-list {
   margin: 0;
@@ -146,7 +146,7 @@
 }
 
 .kv-row dt {
-  flex: 0 0 70px;
+  flex: 0 0 110px;
   margin: 0;
   color: #888888;
 }
@@ -163,63 +163,7 @@
   color: #777777;
 }
 
-/* ---------- ② 갱신 청구 항목: 표 ---------- */
-
-table.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-
-table.price-table td {
-  padding: 8px 0;
-  color: #333333;
-}
-
-table.price-table td:last-child {
-  text-align: right;
-  white-space: nowrap;
-}
-
-tr.price-total-row td {
-  border-top: 1px solid #e3e4e8;
-  padding-top: 14px;
-  font-weight: bold;
-  font-size: 17px;
-  color: #111111;
-}
-
-/* ---------- ③ 이용 기간 ---------- */
-
-.period-row {
-  border: 1px solid #e3e4e8;
-  border-radius: 8px;
-  padding: 14px 16px;
-  font-size: 13px;
-  color: #222222;
-}
-
-.period-row .period-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bold;
-  font-size: 13px;
-  margin: 0 0 10px;
-}
-
-.period-row .period-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.period-row .period-body + .period-body {
-  margin-top: 8px;
-}
-
-/* ---------- ④ 안내 문구 박스 ---------- */
+/* ---------- ③ 안내 문구 박스 ---------- */
 
 .info-box {
   background-color: #f4f5f7;
@@ -230,7 +174,17 @@ tr.price-total-row td {
   line-height: 1.6;
 }
 
-/* ---------- ⑤ 버튼 ---------- */
+.info-box-danger {
+  background-color: #fdeded;
+  border: 1px solid #f5c6c6;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 12px;
+  color: #b91c1c;
+  line-height: 1.6;
+}
+
+/* ---------- ④ 버튼 ---------- */
 
 .btn {
   display: inline-flex;
@@ -240,10 +194,23 @@ tr.price-total-row td {
   border-radius: 6px;
   font-size: 14px;
   font-weight: bold;
-  border: 1px solid #3140d6;
+  border: 1px solid #c4c5cb;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn-primary {
+  border-color: #3140d6;
   background-color: #3140d6;
   color: #ffffff;
-  text-decoration: none;
+}
+
+.btn-disabled {
+  background-color: #eceef2;
+  border-color: #eceef2;
+  color: #aaaaae;
+  pointer-events: none;
 }
 
 .btn-row-right {

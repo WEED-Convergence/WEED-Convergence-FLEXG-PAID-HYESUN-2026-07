@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>05 유예 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="subscription.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정기결제 카드 등록/변경</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음</a></li>
+        <li><a href="../billing-card/02.html">2 미등록</a></li>
+        <li><a href="../billing-card/03.html">3 결제 권한 없음</a></li>
+        <li><a href="../billing-card/04.html">4 미납 · 유예</a></li>
+        <li><a href="../billing-card/05.html">5 카드 등록/변경 시작</a></li>
+        <li><a href="../billing-card/06.html">6 PG 결제창</a></li>
+        <li><a href="../billing-card/07.html">7 처리 중</a></li>
+        <li><a href="../billing-card/08.html">8 완료</a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결)</a></li>
+        <li><a href="../billing-card/10.html">10 실패</a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제하기</summary>
+      <ul class="index-list">
+        <li><a href="../first-payment/01.html">12 결제 가능</a></li>
+        <li><a href="../first-payment/02.html">13 결제 권한 없음</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제 실패/취소/지연/중복 결제 방지</summary>
+      <ul class="index-list">
+        <li><a href="../payment-status/01.html">14 결제 실패 · 취소</a></li>
+        <li><a href="../payment-status/02.html">15 처리 중 (지연)</a></li>
+        <li><a href="../payment-status/03.html">16 진행 중인 거래</a></li>
+        <li><a href="../payment-status/04.html">17 이미 완료된 결제</a></li>
+        <li><a href="../payment-status/05.html">18 결제 완료</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary><a href="01.html">구독 관리</a></summary>
+      <ul class="index-list">
+        <li><a href="01.html">19 미신청</a></li>
+        <li><a href="02.html">20 체험 중</a></li>
+        <li><a href="03.html">21 결제 확인 중</a></li>
+        <li><a href="04.html">22 이용 중</a></li>
+        <li class="is-current"><a href="05.html">23 유예</a></li>
+        <li><a href="06.html">24 변경</a></li>
+        <li><a href="07.html">25 종료 예약</a></li>
+        <li><a href="08.html">26 만료</a></li>
+        <li><a href="09.html">27 이용 중 (결제 권한 없음)</a></li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="screen-header">
+        <h1>구독 관리</h1>
+        <p class="desc">결제에 실패해 유예 중입니다.</p>
+      </div>
+
+      <div class="screen-body">
+
+        <div class="section-box">
+          <h2 class="section-title">현재 플랜 <span class="num-mark">1</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>사이트</dt><dd>플렉스 스토어<br>브랜드 소개 홈페이지</dd></div>
+            <div class="kv-row"><dt>플랜</dt><dd>Pro</dd></div>
+            <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-warning">유예</span></dd></div>
+            <div class="kv-row"><dt>이용 기간</dt><dd>2027-05-19 ~ 2027-06-18 (3회차)</dd></div>
+          </dl>
+        </div>
+
+        <div class="section-box">
+          <h2 class="section-title">다음 결제 <span class="num-mark">2</span></h2>
+          <dl class="kv-list">
+            <div class="kv-row"><dt>다음 결제일</dt><dd>결제 실패 · 재시도 필요</dd></div>
+            <div class="kv-row"><dt>유예 종료 예정일</dt><dd>2027-06-30</dd></div>
+            <div class="kv-row"><dt>결제 예정 금액</dt><dd>17,900원 (VAT 별도) <span class="badge badge-warning">예상</span></dd></div>
+            <div class="kv-row"><dt>적용 가격</dt><dd>출시가 17,900원 (VAT 별도) · 3/12회</dd></div>
+            <div class="kv-row"><dt>정상가</dt><dd>23,900원 (VAT 별도)</dd></div>
+            <div class="kv-row"><dt>정상가 전환 예정</dt><dd>13회차 (2028-03-19 결제부터)</dd></div>
+          </dl>
+        </div>
+
+        <div class="info-box">
+          유예 종료 예정일까지 결제수단을 변경하고 결제를 다시 시도해 주십시오.
+          <span class="num-mark">3</span>
+        </div>
+
+        <div class="btn-row-right">
+          <a href="../billing-card/05.html" class="btn btn-primary">카드 변경</a>
+          <a href="../first-payment/01.html" class="btn">다시 결제</a>
+          <span class="num-mark">4</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+  </div>
+
+</div>
+</body>
+</html>

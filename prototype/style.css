@@ -92,6 +92,122 @@ body {
   color: #999999;
 }
 
+/* ---------- 환경설정 좌측 메뉴 (실제 서비스 화면 내부 메뉴) ---------- */
+
+.canvas-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100%;
+}
+
+.settings-nav {
+  flex: 0 0 180px;
+  width: 180px;
+  border-right: 1px solid #e3e4e8;
+  padding: 20px 0;
+}
+
+.settings-nav-title {
+  padding: 0 20px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.settings-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-nav-list > li {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.settings-nav-sublist {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.settings-nav-sublist li {
+  padding: 8px 10px 8px 20px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.settings-nav-sublist a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.settings-nav-sublist li.is-active {
+  background-color: #e4e6fb;
+  color: #3140d6;
+  font-weight: bold;
+}
+
+.screen-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+}
+
+/* ---------- 팝업(모달) ---------- */
+
+.screen-canvas.is-popup {
+  position: relative;
+}
+
+.popup-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(20, 20, 24, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.popup-modal {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.popup-modal.popup-modal-wide {
+  max-width: 640px;
+}
+
+.popup-modal-body {
+  padding: 24px 24px 20px;
+}
+
+.popup-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  line-height: 1;
+  color: #555555;
+  text-decoration: none;
+}
+
 /* ---------- 우측: 화면 설명 ---------- */
 
 .sidebar-right {
