@@ -248,6 +248,30 @@ body {
   width: 100%;
 }
 
+/* ---------- 콘텐츠 영역 상단 탭 ---------- */
+
+.content-tabs {
+  display: flex;
+  gap: 24px;
+  padding: 0 24px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.content-tab {
+  display: inline-block;
+  padding: 14px 2px;
+  font-size: 14px;
+  color: #999999;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+a.content-tab.is-active {
+  color: #222222;
+  font-weight: bold;
+  border-bottom-color: #3140d6;
+}
+
 /* ---------- 팝업(모달) ---------- */
 
 .screen-canvas.is-popup {
