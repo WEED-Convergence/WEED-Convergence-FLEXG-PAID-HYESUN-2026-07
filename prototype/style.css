@@ -65,15 +65,12 @@ body {
 }
 
 .index-done-flag {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 4px;
-  padding: 1px 6px;
-  border-radius: 8px;
-  background-color: #e4f5e9;
-  color: #1a8a3f;
-  font-size: 10px;
-  font-weight: bold;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background-color: #1a8a3f;
   vertical-align: middle;
 }
 
