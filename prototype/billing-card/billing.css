@@ -589,6 +589,27 @@ table.site-table tr:last-child td {
   justify-content: flex-end;
 }
 
+.popup-modal-body .screen-header {
+  display: block;
+  padding: 0 0 14px;
+}
+
+.popup-modal-body h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.popup-modal-body p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.popup-modal-body .btn-row {
+  justify-content: flex-end;
+}
+
 /* ---------- 우측 화면설명 ---------- */
 
 .desc-trigger {
