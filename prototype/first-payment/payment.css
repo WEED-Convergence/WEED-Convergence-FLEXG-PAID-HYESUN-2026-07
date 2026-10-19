@@ -266,6 +266,128 @@ tr.price-total-row td {
   gap: 8px;
 }
 
+/* ---------- 처리 중 화면 ---------- */
+
+.process-center {
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.ring {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 4px solid #e3e4e8;
+  border-top-color: #3140d6;
+}
+
+.process-center h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.process-center .desc {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #888888;
+}
+
+.process-center .desc-sub {
+  margin: 0 0 28px;
+  font-size: 12px;
+  color: #aaaaae;
+}
+
+/* ---------- 진행 단계 목록 ---------- */
+
+.step-list {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #ededf0;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* ---------- 결과 화면 ---------- */
+
+.result-center {
+  padding: 48px 24px 32px;
+  text-align: center;
+}
+
+.result-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.result-icon.is-success { background-color: #1a8a3f; }
+
+.result-center h1 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.result-center .desc {
+  margin: 0 auto 24px;
+  font-size: 13px;
+  color: #777777;
+  max-width: 420px;
+}
+
+.site-status-list {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.site-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid #ededf0;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.result-center .fine-print {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: #888888;
+}
+
+.result-center .btn-row {
+  justify-content: center;
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+}
+
 /* ---------- 우측 화면설명 ---------- */
 
 .desc-trigger {
