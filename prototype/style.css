@@ -64,6 +64,39 @@ body {
   color: #3140d6;
 }
 
+.index-done-flag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 1px 6px;
+  border-radius: 8px;
+  background-color: #e4f5e9;
+  color: #1a8a3f;
+  font-size: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.desc-numbered {
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desc-numbered-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.desc-numbered-row .num-mark {
+  margin-top: 1px;
+}
+
 .index-list li.index-group-label {
   padding: 10px 16px 4px;
   font-size: 13px;
