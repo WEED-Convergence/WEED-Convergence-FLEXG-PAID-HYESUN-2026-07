@@ -128,3 +128,129 @@
   font-size: 11px;
   font-weight: bold;
 }
+
+.result-mark-left { margin: -8px 0 0; }
+
+/* ---------- 시작 체크리스트 ---------- */
+
+.home-cl {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.home-cl li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f2;
+}
+
+.home-cl li:last-child { border-bottom: none; }
+.home-cl a { color: #3140d6; text-decoration: none; }
+
+/* ---------- 단계 표시 (회원 기능 설정) ---------- */
+
+.stepper {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepper li {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #888888;
+}
+
+.stepper li span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #eceef2;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.stepper li.is-active { border-color: #3140d6; color: #3140d6; font-weight: bold; }
+.stepper li.is-active span { background-color: #3140d6; color: #ffffff; }
+
+/* ---------- 배포 체크리스트 ---------- */
+
+.cl-wrap {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.cl-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e3e4e8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cl-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #f0f0f2;
+  font-size: 13px;
+}
+
+.cl-list li:last-child { border-bottom: none; }
+.cl-list li.is-current { background-color: #f5f6ff; font-weight: bold; }
+.cl-no { width: 18px; color: #888888; }
+.cl-name { flex: 1 1 auto; }
+
+.cl-check {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.cl-notes {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* ---------- 배포 · 판매 방식 ---------- */
+
+.path-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.path-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid #e3e4e8;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #555555;
+  cursor: pointer;
+}
+
+.path-card b { font-size: 15px; color: #222222; }

@@ -1011,3 +1011,41 @@
   font-size: 12px;
   color: #888888;
 }
+
+/* ---------- 플랜 제공 범위 비교표 ---------- */
+
+.compare-plan {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.compare-plan th,
+.compare-plan td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ededf0;
+  text-align: center;
+}
+
+.compare-plan th { background-color: #f7f7f9; color: #666666; font-weight: normal; }
+.compare-plan td:first-child, .compare-plan th:first-child { text-align: left; color: #555555; }
+
+/* ---------- 사이트 정보 입력 ---------- */
+
+.signup-input.is-readonly {
+  justify-content: space-between;
+  background-color: #f6f6f8;
+  color: #888888;
+  font-size: 13px;
+}
+
+.note-box {
+  margin-top: 4px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #f6f6f8;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555555;
+}
