@@ -647,3 +647,13 @@
 .result .num-mark {
   margin-left: 4px;
 }
+
+/* 링크(<a>)로 된 붉은 버튼도 글자를 흰색으로 */
+.front-page a.signup-btn,
+.front-page a.front-cta {
+  color: #ffffff;
+}
+
+.front-page .signup-btn.is-line {
+  color: #222222;
+}
