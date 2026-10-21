@@ -1,5 +1,15 @@
 /* 빌링정책서 - 문서형 화면 스타일 */
 
+.main-center {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.main-center .screen-canvas {
+  border: none;
+  min-height: auto;
+}
+
 .policy-doc {
   max-width: 920px;
   margin: 0 auto;
