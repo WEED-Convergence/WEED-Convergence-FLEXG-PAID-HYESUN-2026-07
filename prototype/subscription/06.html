@@ -158,15 +158,15 @@
         <div class="section-box">
           <h2 class="section-title">다음 결제 <span class="num-mark">2</span></h2>
           <dl class="kv-list">
-            <div class="kv-row"><dt>정상가</dt><dd>23,900원 (VAT 별도)</dd></div>
-            <div class="kv-row"><dt>정상가 전환 예정</dt><dd>13회차 (2028-03-19 결제부터)</dd></div>
+            <div class="kv-row is-sub"><dt>정상가</dt><dd>23,900원 (VAT 별도)</dd></div>
+            <div class="kv-row is-sub"><dt>정상가 전환 예정</dt><dd>13회차 (2028-03-19 결제부터)</dd></div>
             <div class="kv-row is-strong"><dt>다음 결제일</dt><dd>2027-06-19 (변경 적용)</dd></div>
-            <div class="kv-row is-strong"><dt>다음 결제 금액</dt><dd>17,900원 (VAT 별도) · 출시가 적용 3/12회 (예상 · 사용량 별도)</dd></div>
+            <div class="kv-row is-strong"><dt>다음 결제 금액</dt><dd>17,900원 (VAT 별도) · 출시가 적용 3/12회 <span class="kv-note">(예상 · 사용량 별도)</span></dd></div>
           </dl>
         </div>
 
         <div class="btn-row-right">
-          <a href="04.html" class="btn btn-primary">변경 취소</a>
+          <button type="button" class="btn btn-primary" onclick="alert('변경 예약이 취소되었습니다. Basic 플랜을 계속 이용합니다.')">변경 취소</button>
           <span class="num-mark">3</span>
         </div>
 
@@ -181,7 +181,7 @@
   <div class="sidebar-right">
     <h2>화면 설명</h2>
     <p class="desc-trigger">플랜 변경이 다음 결제일부터 적용되도록 예약되어 있을 때 표시됩니다.</p>
-    <p class="desc-body">변경 적용 전까지는 현재 플랜으로 계속 이용합니다.</p>
+    <p class="desc-body">변경 적용 전까지는 현재 플랜으로 계속 이용합니다. [변경 취소]를 누르면 예약 취소 알럿이 뜨고 Basic 플랜을 계속 이용합니다.</p>
   </div>
 
 </div>

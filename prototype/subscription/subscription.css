@@ -332,13 +332,6 @@ table.data-table tr:last-child td {
   font-weight: bold;
 }
 
-.ref-block {
-  margin-top: 8px;
-  padding: 14px 16px;
-  border: 1px dashed #c4c5cb;
-  border-radius: 8px;
-  background-color: #fafafb;
-}
 
 .two-col {
   display: grid;
@@ -352,4 +345,16 @@ table.data-table tr:last-child td {
   flex-direction: column;
   gap: 24px;
   min-width: 0;
+}
+
+.kv-row.is-sub dt,
+.kv-row.is-sub dd {
+  font-size: 12px;
+  color: #999999;
+}
+
+.kv-note {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
 }
