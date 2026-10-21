@@ -307,19 +307,6 @@ table.data-table tr:last-child td {
   color: #d12f2f;
 }
 
-.usage-bar {
-  height: 10px;
-  margin: 4px 0 8px;
-  border-radius: 5px;
-  background-color: #eceef2;
-  overflow: hidden;
-}
-
-.usage-bar-fill {
-  display: block;
-  height: 100%;
-  background-color: #c81e1e;
-}
 
 .usage-caption {
   margin: 0 0 12px;

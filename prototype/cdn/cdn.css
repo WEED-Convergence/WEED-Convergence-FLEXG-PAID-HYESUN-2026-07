@@ -1,0 +1,161 @@
+/* CDN 사용량 프로토타입 - 전용 컴포넌트 스타일
+   공통 레이아웃은 ../style.css, 기본 컴포넌트는 ../subscription/subscription.css 를 재사용합니다. */
+
+.cdn-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cdn-header-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 4px;
+}
+
+/* ---------- 배너 ---------- */
+
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.banner-info    { background-color: #eef1ff; color: #2b3ac2; }
+.banner-warning { background-color: #fff8e1; color: #8a6a00; }
+.banner-danger  { background-color: #fdeded; color: #b91c1c; }
+
+/* ---------- 사용량 막대 (전체 폭 = 125GB, 눈금 = 100GB) ---------- */
+
+.usage-track {
+  position: relative;
+  height: 12px;
+  margin: 8px 0 26px;
+  border-radius: 6px;
+  background-color: #eceef2;
+}
+
+.usage-fill {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.usage-fill.is-normal  { background-color: #3140d6; }
+.usage-fill.is-caution { background-color: #e0a100; }
+.usage-fill.is-over    { background-color: #c81e1e; }
+.usage-fill.is-delay   { background-color: #9a9db0; }
+
+.usage-tick {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: 80%;
+  width: 2px;
+  background-color: #333333;
+}
+
+.usage-tick-label {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: #666666;
+  white-space: nowrap;
+}
+
+/* ---------- 섹션 제목 + 우측 버튼 ---------- */
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.section-box .section-head .section-title {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+
+.section-sub {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #888888;
+}
+
+/* ---------- 안내 문구 ---------- */
+
+.cdn-notes {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cdn-notes li + li {
+  margin-top: 4px;
+}
+
+.cdn-notes .btn-sm {
+  margin-left: 4px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ---------- 트래픽 상세 내역 팝업 ---------- */
+
+.cdn-popup-overlay {
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.cdn-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px 14px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.cdn-modal-head h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cdn-popup-overlay .popup-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cdn-scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+}
+
+.cdn-scroll table.data-table th {
+  position: sticky;
+  top: 0;
+}
+
+.pct-over {
+  color: #c81e1e;
+  font-weight: bold;
+}
+
+.cdn-mark-right {
+  margin: -6px 0 0;
+  text-align: right;
+}
