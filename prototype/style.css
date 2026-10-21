@@ -74,6 +74,11 @@ body {
   vertical-align: middle;
 }
 
+.kv-row.is-strong dt,
+.kv-row.is-strong dd {
+  font-weight: bold;
+}
+
 .desc-numbered {
   margin: 0 0 16px;
   display: flex;
