@@ -339,3 +339,17 @@ table.data-table tr:last-child td {
   border-radius: 8px;
   background-color: #fafafb;
 }
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.two-col .col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
