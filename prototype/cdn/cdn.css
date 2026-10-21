@@ -232,3 +232,7 @@ table.data-table .num {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+.invoice-discount td {
+  color: #1a8a3f;
+}
