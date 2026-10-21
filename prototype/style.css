@@ -521,3 +521,8 @@ body {
   margin: 0;
   color: #999999;
 }
+
+button.btn {
+  font-family: inherit;
+  cursor: pointer;
+}
