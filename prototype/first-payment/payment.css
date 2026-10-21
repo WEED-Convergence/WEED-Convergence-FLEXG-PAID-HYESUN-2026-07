@@ -130,9 +130,8 @@ table.price-table td:last-child {
   white-space: nowrap;
 }
 
-.price-strike {
-  text-decoration: line-through;
-  color: #aaaaae;
+.price-discount {
+  color: #1a8a3f;
 }
 
 tr.price-total-row td {
