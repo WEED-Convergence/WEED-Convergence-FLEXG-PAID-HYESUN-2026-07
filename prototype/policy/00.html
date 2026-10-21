@@ -231,6 +231,23 @@
           </table>
         </div>
 
+        <div class="policy-section">
+          <h2>8. 결제 후 개설 · 권한 · CDN 적용</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>항목</th><th>정책</th><th>관련 화면</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">계약 반영 시점</td><td>서버에서 결제 성공을 확인한 뒤에 계약을 반영하고 사이트 개설을 시작한다. (PAY-02)</td><td><a href="../first-payment/04.html">결제 확인됨 · 사이트 개설 중</a></td></tr>
+              <tr><td class="cell-item">플랜 권한 범위</td><td>플랜 권한은 메뉴, URL, API, 데이터 소스, 컴포넌트, 배포까지 모든 경로에 똑같이 적용한다. (PLT-03)</td><td>—</td></tr>
+              <tr><td class="cell-item">기본 CDN</td><td>Basic은 50GB, Pro는 100GB를 집계 기간마다 기본으로 적용한다.</td><td><a href="../cdn/01.html">CDN 사용량</a></td></tr>
+              <tr><td class="cell-item">개설과 배포</td><td>사이트 개설 완료와 배포 상태는 따로 관리한다. 개설이 끝났다고 배포가 끝난 것은 아니다. (PLT-01)</td><td><a href="../payment-status/05.html">결제 완료</a></td></tr>
+              <tr><td class="cell-item">개설·기본량 적용 실패</td><td>같은 계약으로 복구한다. 다시 결제하거나 사이트를 새로 만들지 않는다.</td><td><a href="../first-payment/05.html">개설 실패 복구</a></td></tr>
+              <tr><td class="cell-item">FLEXG Page 워크스페이스</td><td>FLEXG에 가입하면 FLEXG Page 워크스페이스를 자동으로 만들고 연동한다. Basic, Pro, 체험 모두 같다. 연동에 실패해도 가입·개설·결제는 그대로 두고 연동만 다시 시도한다. (10/14 결정)</td><td>—</td></tr>
+              <tr><td class="cell-item">기존 워크스페이스 보유</td><td>이미 FLEXG Page 워크스페이스가 있어도 항상 새로 만든다. 기존 FLEXG Page 디자인은 양도나 복제로 옮긴다. (10/14 결정)</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </div>
   </div>
