@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>12 구독관리 정책서 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="policy.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li class="is-current"><a href="subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/06.html">36 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">37 청구 내역</a></li>
+      </ul>
+    </details>
+  </div>
+
+
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="policy-doc">
+
+        <h1>구독관리 정책서</h1>
+        <p class="policy-lead">구독 상태가 어떤 뜻인지, 상태가 언제 바뀌는지, 구독 관리 화면에 무엇을 보여주는지 정리한 문서입니다. 결제 자체의 규칙은 <a href="00.html">빌링정책서</a>를 따릅니다.</p>
+
+        <div class="policy-section">
+          <h2>1. 구독 기본</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>항목</th><th>정책</th><th>관련 화면</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">구독 단위</td><td>구독은 계정 단위로 관리한다. 계정의 모든 사이트가 같은 플랜, 같은 결제일, 같은 카드를 쓴다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
+              <tr><td class="cell-item">플랜</td><td>플랜은 Basic, Pro 두 가지다.</td><td>—</td></tr>
+              <tr><td class="cell-item">기존 고객</td><td>기존 고객은 구독 상태가 "미신청"으로 보이고, Basic/Pro 플랜 결제는 생기지 않는다.</td><td><a href="../subscription/01.html">미신청</a></td></tr>
+              <tr><td class="cell-item">권한</td><td>결제 권한이 있는 소유자만 플랜 변경, 해지 예약, 해지 예약 취소를 할 수 있다. 권한이 없으면 해당 버튼을 보여주지 않고, 소유자에게 요청하라고 안내한다.</td><td><a href="../subscription/09.html">이용 중 (결제 권한 없음)</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>2. 구독 상태</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>상태</th><th>뜻 · 할 수 있는 것</th><th>관련 화면</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item"><span class="badge badge-neutral">미신청</span></td><td>구독 중인 플랜이 없다. 다음 결제도 없다.</td><td><a href="../subscription/01.html">미신청</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-info">체험 중</span></td><td>무료 체험 중이다. 체험이 끝나면 같은 플랜으로 자동 결제된다. 결제수단 변경, 플랜 변경, 해지 예약을 할 수 있다.</td><td><a href="../subscription/02.html">체험 중</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-danger">체험 종료</span></td><td>체험이 끝났는데 자동 결제에 실패했다. 이용이 멈춘다. 카드를 바꾸거나 다시 결제하면 바로 다시 쓸 수 있다.</td><td><a href="../subscription/10.html">체험 종료 · 결제 실패</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-warning">결제 확인 중</span></td><td>결제 결과를 아직 모른다. 확인이 끝날 때까지 다시 결제할 수 없다.</td><td><a href="../subscription/03.html">결제 확인 중</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-success">이용 중</span></td><td>정상 구독 중이다. 해지 예약, 결제수단 변경, 청구 내역 확인을 할 수 있다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-danger">갱신 지연</span></td><td>결제는 됐는데 이용 기간 반영이 늦어지고 있다. 시스템이 자동으로 다시 처리하고, 다시 청구하지 않는다.</td><td><a href="../subscription/13.html">결제 완료 · 갱신 지연</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-warning">유예</span></td><td>정기결제에 실패해 7일 유예 중이다. 유예 종료일까지는 쓸 수 있고, 카드를 바꾸고 다시 결제하면 이용 중으로 돌아간다.</td><td><a href="../subscription/05.html">유예</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-info">변경</span></td><td>플랜 변경이 예약돼 있다. 다음 결제일부터 바뀐 플랜이 적용되고, 그 전까지는 지금 플랜을 쓴다. 변경을 취소할 수 있다.</td><td><a href="../subscription/06.html">변경</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-warning">해지 예약</span></td><td>해지가 예약돼 있다. 이용 종료일까지는 쓸 수 있고, 다음 결제는 없다. 직접 예약했으면 [해지 예약 취소]로, 카드 삭제로 예약됐으면 새 카드 등록으로 취소된다.</td><td><a href="../subscription/07.html">해지 예약</a><br><a href="../subscription/14.html">해지 예약 (카드 삭제)</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-neutral">만료</span></td><td>이용 기간이 끝났다. 다시 쓰려면 플랜을 새로 신청해야 한다.</td><td><a href="../subscription/08.html">만료</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>3. 상태가 바뀌는 경우</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>지금 상태</th><th>일어난 일</th><th>바뀌는 상태</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">미신청 · 만료</td><td>플랜을 신청하고 결제한다.</td><td>결제 확인 중 → 이용 중</td></tr>
+              <tr><td class="cell-item">체험 중</td><td>체험이 끝나 자동 결제를 시도한다.</td><td>성공: 이용 중<br>실패: 체험 종료</td></tr>
+              <tr><td class="cell-item">이용 중</td><td>정기결제에 실패한다.</td><td>유예</td></tr>
+              <tr><td class="cell-item">유예</td><td>유예 종료일 전에 다시 결제에 성공한다.</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">이용 중 · 체험 중</td><td>해지를 예약하거나, 카드를 삭제한다.</td><td>해지 예약</td></tr>
+              <tr><td class="cell-item">해지 예약</td><td>이용 종료일 전에 해지 예약을 취소하거나 새 카드를 등록한다.</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">해지 예약</td><td>이용 종료일이 지난다.</td><td>만료</td></tr>
+              <tr><td class="cell-item">이용 중</td><td>플랜 변경을 예약한다.</td><td>변경 → (다음 결제일) 이용 중</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>4. 구독 관리 화면에 보여주는 항목</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>항목</th><th>보여주는 내용</th><th>비고</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">현재 플랜</td><td>사이트, 플랜, 구독 상태, 이용 기간 4가지를 모든 상태에서 같은 순서로 보여준다.</td><td>—</td></tr>
+              <tr><td class="cell-item">다음 결제</td><td>정상가, 정상가 전환 예정, 다음 결제일, 다음 결제 금액 4가지를 모든 상태에서 같은 순서로 보여준다. 상태마다 필요한 정보(유예 종료 예정일, 결제수단, 거래 ID 등)는 그 아래에 덧붙인다.</td><td>다음 결제일·금액은 굵게</td></tr>
+              <tr><td class="cell-item">출시가 회차</td><td>출시가가 적용되면 다음 결제 금액에 "출시가 적용 n/12회"를 함께 적는다.</td><td>—</td></tr>
+              <tr><td class="cell-item">예상 금액</td><td>앞으로 청구될 금액에는 "(예상 · 사용량 별도)"를 붙인다. 사용량에 따라 추가 요금이 생길 수 있기 때문이다.</td><td>—</td></tr>
+              <tr><td class="cell-item">해당 없음</td><td>값이 없는 항목은 지우지 않고 "—"로 보여준다.</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">좌측 화면 목록의 [12 구독관리 정책서]를 눌렀을 때 표시됩니다.</p>
+    <p class="desc-body">구독 상태의 뜻, 상태가 바뀌는 경우, 구독 관리 화면의 표시 항목을 한곳에 모은 문서입니다. 결제 규칙은 빌링정책서에서 다룹니다.</p>
+  </div>
+
+</div>
+</body>
+</html>
