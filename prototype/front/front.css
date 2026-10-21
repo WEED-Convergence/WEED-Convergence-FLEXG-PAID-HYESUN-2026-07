@@ -892,3 +892,107 @@
   line-height: 1.6;
   color: #555555;
 }
+
+/* ---------- 템플릿 선택 (Pro) ---------- */
+
+.tpl {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tpl-hello {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.tpl-lead {
+  margin: 0 0 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.tpl-lead b { color: #e04848; }
+
+.tpl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 128px);
+  justify-content: center;
+  gap: 16px 16px;
+  text-align: left;
+}
+
+.tpl-phone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 230px;
+  padding: 10px 10px 12px;
+  border: 1px solid #d8d4cc;
+  border-radius: 14px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.tpl-phone span { display: block; border-radius: 2px; }
+.tpl-bar { height: 8px; background-color: #e5e1da; }
+.tpl-hero { height: 62px; }
+.tpl-mid { height: 40px; }
+.tpl-low { height: 28px; }
+.tpl-line { height: 4px; width: 75%; margin-top: auto; background-color: #e5e1da; }
+.tpl-line + .tpl-line { width: 50%; margin-top: 0; }
+
+.tpl-phone.is-hover::after {
+  content: "";
+  position: absolute;
+  inset: 26px 10px 58px;
+  border-radius: 2px;
+  background-color: rgba(40, 36, 44, 0.72);
+}
+
+.tpl-hover {
+  position: absolute;
+  inset: 26px 10px 58px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tpl-preview {
+  padding: 3px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.front-page a.tpl-apply {
+  padding: 3px 14px;
+  border-radius: 999px;
+  background-color: #e5242b;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.tpl-name {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.co-change-inline {
+  margin-left: 6px;
+  font-size: 12px;
+  color: #e04848 !important;
+  text-decoration: underline !important;
+}
