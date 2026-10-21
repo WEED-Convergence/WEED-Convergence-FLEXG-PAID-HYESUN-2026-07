@@ -1,0 +1,196 @@
+/* 회원가입 사용자 동선 - 흐름도 화면 전용 스타일 */
+
+.main-center {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.main-center .screen-canvas {
+  border: none;
+  min-height: auto;
+}
+
+.flow-doc {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 36px 48px;
+}
+
+.flow-doc h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.flow-lead {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.flow-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.flow-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.lg { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+.lg-main { background-color: #ffffff; border: 2px solid #e04848; }
+.lg-branch { background-color: #fff6d8; border: 1px solid #e0c060; }
+.lg-popup { background-color: #ffffff; border: 1px dashed #888888; }
+.lg-auto { background-color: #f1f2f6; border: 1px solid #c4c5cb; }
+.lg-dec { width: 12px; height: 12px; border: 1px solid #3140d6; background-color: #eef1ff; transform: rotate(45deg); }
+
+/* ---------- 흐름 ---------- */
+
+.flow {
+  display: flex;
+  flex-direction: column;
+}
+
+.fr {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.fn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+}
+
+.fn b {
+  flex-shrink: 0;
+  min-width: 26px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.fn:hover { box-shadow: 0 0 0 3px rgba(49, 64, 214, 0.15); }
+
+.fn-main { border: 2px solid #e04848; background-color: #ffffff; }
+.fn-branch { border: 1px solid #e0c060; background-color: #fff6d8; }
+.fn-popup { border: 1px dashed #888888; background-color: #ffffff; }
+.fn-auto { border: 1px solid #c4c5cb; background-color: #f1f2f6; }
+
+.fdec {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 56px;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background-color: #eef1ff;
+  color: #2b3ac2;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.farrow {
+  position: relative;
+  width: 260px;
+  padding: 14px 0 14px;
+  text-align: center;
+  font-size: 12px;
+  color: #3140d6;
+}
+
+.farrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  left: 50%;
+  border-left: 2px solid #c4c5cb;
+}
+
+.farrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 6px);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #c4c5cb;
+}
+
+.farrow > span {
+  position: relative;
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+.farrow small { color: #888888; }
+
+.fside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.fcond {
+  position: relative;
+  padding-left: 30px;
+  color: #666666;
+}
+
+.fcond::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  border-top: 2px dashed #c4c5cb;
+}
+
+.fend { color: #888888; }
+
+.fgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---------- 우측 화면 설명 ---------- */
+
+.desc-trigger {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d12f2f;
+}
+
+.desc-body {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.desc-tbd {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a56db;
+}

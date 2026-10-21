@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>회원가입 사용자 동선 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="flow.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">36 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">37 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">38 청구 내역</a></li>
+        <li class="index-group-label">
+          CDN 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">39 정상</a></li>
+            <li><a href="../cdn/02.html">40 주의 (80% 도달)</a></li>
+            <li><a href="../cdn/03.html">41 초과</a></li>
+            <li><a href="../cdn/04.html">42 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">43 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">44 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">45 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">46 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">47 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li class="is-current"><a href="flow.html">48 회원가입 사용자 동선</a></li>
+            <li><a href="01.html">49 회원가입</a></li>
+            <li><a href="02.html">50 회원가입 · 이미 가입된 회원 (팝업)</a></li>
+            <li><a href="04.html">51 가입 완료 · 신규</a></li>
+            <li><a href="06.html">52 플랜 선택</a></li>
+            <li><a href="10.html">53 템플릿 선택 (Pro)</a></li>
+            <li><a href="08.html">54 결제 전 확인 · 정기결제 동의</a></li>
+            <li><a href="09.html">55 약관 보기 (팝업)</a></li>
+            <li><a href="11.html">56 신청 확인 중</a></li>
+            <li><a href="12.html">57 사이트 개설 중</a></li>
+            <li><a href="13.html">58 개설 완료</a></li>
+            <li class="index-group-label">
+              분기 · 예외 상황
+              <ul class="index-subsublist">
+                <li><a href="14.html">59 가입 완료 · 기존 고객 (EXT)</a></li>
+                <li><a href="17.html">60 개설 복구 대기</a></li>
+                <li><a href="05.html">61 진행 중인 신청 있음</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 온보딩</summary>
+      <ul class="index-list">
+        <li><a href="../admin/01.html">62 어드민 홈 (Pro)</a></li>
+        <li><a href="../admin/02.html">63 어드민 홈 (Basic)</a></li>
+        <li><a href="../admin/03.html">64 어드민 홈 (Pro · 체험 중)</a></li>
+        <li><a href="../admin/04.html">65 어드민 홈 (집계 지연)</a></li>
+        <li><a href="../admin/05.html">66 회원 기능 설정</a></li>
+        <li><a href="../admin/06.html">67 Basic 배포 체크리스트</a></li>
+        <li><a href="../admin/07.html">68 Pro 배포 · 판매 개시</a></li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="flow-doc">
+
+        <h1>회원가입 사용자 동선</h1>
+        <p class="flow-lead">회원가입부터 어드민 홈까지 사용자가 지나는 화면 순서입니다. 상자를 누르면 해당 화면으로 이동합니다.</p>
+
+        <div class="flow-legend">
+          <span><i class="lg lg-main"></i>메인 흐름</span>
+          <span><i class="lg lg-branch"></i>분기 · 예외</span>
+          <span><i class="lg lg-popup"></i>팝업</span>
+          <span><i class="lg lg-auto"></i>자동으로 넘어가는 화면</span>
+          <span><i class="lg lg-dec"></i>판단</span>
+        </div>
+
+        <div class="flow">
+
+          <div class="fr">
+            <a class="fn fn-main" href="01.html"><b>49</b>회원가입</a>
+            <div class="fside"><span class="fcond">담당자 인증 시 이미 가입된 계정이 있으면</span><a class="fn fn-popup" href="02.html"><b>50</b>이미 가입된 회원 (팝업)</a><span class="fend">→ 로그인</span></div>
+          </div>
+          <div class="farrow"><span>[회원가입 완료]</span></div>
+
+          <div class="fr">
+            <div class="fdec">보유 사이트 · 계약?</div>
+            <div class="fside"><span class="fcond">있음</span><a class="fn fn-branch" href="14.html"><b>59</b>가입 완료 · 기존 고객 (EXT)</a><span class="fend">→ 구독 관리</span></div>
+          </div>
+          <div class="farrow"><span>없음</span></div>
+
+          <div class="fr">
+            <a class="fn fn-main" href="04.html"><b>51</b>가입 완료 · 신규</a>
+            <div class="fside"><span class="fcond">홈페이지 요금제에서 플랜을 고르고 가입했으면</span><span class="fend">이 화면을 건너뛰고 플랜 선택으로</span></div>
+          </div>
+          <div class="farrow"><span>[사이트 만들기]</span></div>
+
+          <div class="fr">
+            <a class="fn fn-main" href="06.html"><b>52</b>플랜 선택 · 14일 무료 체험</a>
+            <div class="fside"><span class="fcond">진행 중인 결제 · 개설 요청이 있으면</span><a class="fn fn-branch" href="05.html"><b>61</b>진행 중인 신청 있음</a></div>
+          </div>
+          <div class="farrow"><span>[선택한 플랜으로 14일 무료 체험 시작]</span></div>
+
+          <div class="fr">
+            <div class="fdec">플랜?</div>
+            <div class="fside"><span class="fcond">Pro</span><a class="fn fn-main" href="10.html"><b>53</b>템플릿 선택 (Pro)</a><span class="fend">→ [적용]</span></div>
+          </div>
+          <div class="farrow"><span>Basic</span></div>
+
+          <div class="fr">
+            <a class="fn fn-main" href="08.html"><b>54</b>결제 전 확인 · 정기결제 동의</a>
+            <div class="fside"><span class="fcond">약관 [보기]</span><a class="fn fn-popup" href="09.html"><b>55</b>약관 보기 (팝업)</a></div>
+          </div>
+          <div class="farrow"><span>카드 등록 + 필수 약관 동의 → [14일 무료 체험 시작]<br><small>체험을 이미 쓴 계정은 [19,690원 결제하기]</small></span></div>
+
+          <div class="fr">
+            <a class="fn fn-auto" href="11.html"><b>56</b>신청 확인 중</a>
+          </div>
+          <div class="farrow"><span>자동</span></div>
+
+          <div class="fr">
+            <a class="fn fn-auto" href="12.html"><b>57</b>사이트 개설 중</a>
+            <div class="fside"><span class="fcond">개설 · 권한 · CDN 적용 중 문제</span><a class="fn fn-branch" href="17.html"><b>60</b>개설 복구 대기</a><span class="fend">→ 같은 계약으로 복구 후 개설 완료</span></div>
+          </div>
+          <div class="farrow"><span>자동</span></div>
+
+          <div class="fr">
+            <a class="fn fn-main" href="13.html"><b>58</b>개설 완료</a>
+          </div>
+          <div class="farrow"><span>[어드민으로 이동]</span></div>
+
+          <div class="fr">
+            <div class="fgroup">
+              <a class="fn fn-main" href="../admin/03.html"><b>64</b>어드민 홈 (Pro · 체험 중)</a>
+              <a class="fn fn-main" href="../admin/02.html"><b>63</b>어드민 홈 (Basic)</a>
+              <a class="fn fn-main" href="../admin/01.html"><b>62</b>어드민 홈 (Pro)</a>
+            </div>
+            <div class="fside"><span class="fend">체험 중이면 체험 중 어드민 홈, 결제로 시작했으면 플랜별 어드민 홈</span></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">좌측 화면 목록의 [48 회원가입 사용자 동선]을 눌렀을 때 표시됩니다.</p>
+    <p class="desc-body">회원가입 화면들의 순서와 분기를 한 장에 정리한 흐름도입니다. 상자의 번호는 좌측 화면 목록 번호와 같고, 누르면 해당 화면으로 이동합니다.</p>
+    <p class="desc-body">가운데 세로줄이 메인 흐름이고, 오른쪽은 조건에 따라 갈라지는 분기 · 예외 · 팝업입니다. 마름모는 서버가 판단하는 지점입니다.</p>
+    <p class="desc-body">기존 고객(EXT)은 계정당 사이트가 1개이므로 새 사이트 구매 흐름으로 보내지 않고 구독 관리로 안내합니다. 초대받은 제작자는 FLEXG Page 로그인 경로로 들어오므로 이 흐름에 없습니다.</p>
+    <p class="desc-tbd">TBD : 가입 완료에서 [나중에 하기]를 누른 뒤 다시 시작하는 위치, 결제(체험을 이미 쓴 계정) 실패 시 프론트 안내 화면.</p>
+  </div>
+
+</div>
+<script src="../index-scroll.js"></script>
+</body>
+</html>
