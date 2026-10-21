@@ -395,6 +395,30 @@ body {
   width: 100%;
 }
 
+/* ---------- 화면 내 탭 (구독 관리) ---------- */
+
+.page-tabs {
+  display: flex;
+  gap: 4px;
+  margin: 8px 24px 0;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.page-tab {
+  margin-bottom: -1px;
+  padding: 10px 14px;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.page-tab.is-active {
+  border-bottom-color: #3140d6;
+  color: #3140d6;
+  font-weight: bold;
+}
+
 /* ---------- 팝업(모달) ---------- */
 
 .screen-canvas.is-popup {
