@@ -298,3 +298,11 @@ table.data-table tr:last-child td {
   font-size: 13px;
   color: #999999;
 }
+
+.policy-pending {
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #d12f2f;
+}
