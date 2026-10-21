@@ -762,29 +762,7 @@
   margin-bottom: 14px;
 }
 
-/* ---------- 약관 목록 · 약관 동의 ---------- */
-
-.co-terms {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 13px;
-}
-
-.co-terms li {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px 0;
-  border-bottom: 1px solid #f0f0f2;
-}
-
-.co-terms li:last-child { border-bottom: none; }
-
-.co-terms a {
-  font-size: 12px;
-  color: #666666 !important;
-  text-decoration: underline !important;
-}
+/* ---------- 약관 동의 ---------- */
 
 .co-check {
   display: flex;
@@ -1094,3 +1072,22 @@
 }
 
 .welcome-done b { color: #e04848; }
+
+.co-check-text { flex: 1 1 auto; }
+
+.co-view {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #666666 !important;
+  text-decoration: underline !important;
+}
+
+.tpl-back {
+  margin: -18px 0 24px;
+  font-size: 12px;
+}
+
+.tpl-back a {
+  color: #666666 !important;
+  text-decoration: underline !important;
+}
