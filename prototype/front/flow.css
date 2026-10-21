@@ -194,3 +194,17 @@
   font-weight: bold;
   color: #1a56db;
 }
+
+.fgroup-row {
+  flex-direction: row;
+  width: 540px;
+}
+
+.fgroup-row .fn { flex: 1 1 0; }
+
+.fn small {
+  display: block;
+  font-weight: normal;
+  color: #888888;
+  font-size: 11px;
+}
