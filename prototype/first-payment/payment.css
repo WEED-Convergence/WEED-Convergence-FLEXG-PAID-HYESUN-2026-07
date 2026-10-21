@@ -291,6 +291,7 @@ tr.price-total-row td {
 }
 
 .result-icon.is-success { background-color: #1a8a3f; }
+.result-icon.is-warning { background-color: #c99a00; }
 
 .result-center h1 {
   margin: 0 0 8px;
