@@ -172,15 +172,16 @@
             <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
             <thead><tr><th>상태</th><th>뜻 · 할 수 있는 것</th><th>관련 화면</th></tr></thead>
             <tbody>
-              <tr><td class="cell-item"><span class="badge badge-neutral">미신청</span></td><td>구독 중인 플랜이 없다. 다음 결제도 없다.</td><td><a href="../subscription/01.html">미신청</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-neutral">미신청</span></td><td>기존 고객이라 구독 중인 플랜이 없다. 다음 결제도 없다.</td><td><a href="../subscription/01.html">미신청</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-info">체험 중</span></td><td>무료 체험 중이다. 체험이 끝나면 같은 플랜으로 자동 결제된다. 결제수단 변경, 해지 예약을 할 수 있다. Basic 체험 중이면 Pro로 플랜 변경도 할 수 있다.</td><td><a href="../subscription/02.html">체험 중</a></td></tr>
-              <tr><td class="cell-item"><span class="badge badge-danger">체험 종료</span></td><td>체험이 끝났는데 자동 결제에 실패했다. 이용이 멈춘다. 카드를 바꾸거나 다시 결제하면 바로 다시 쓸 수 있다.</td><td><a href="../subscription/10.html">체험 종료 · 결제 실패</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-danger">체험 종료</span></td><td>체험이 끝났는데 자동 결제에 실패했다. 이용이 멈춘다. 카드를 바꾸거나 다시 결제하면 바로 다시 쓸 수 있다.</td><td><a href="../subscription/10.html">체험 종료 · 결제 실패</a><br><a href="../subscription/21.html">재결제 (팝업)</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-warning">결제 확인 중</span></td><td>결제 결과를 아직 모른다. 확인이 끝날 때까지 다시 결제할 수 없다.</td><td><a href="../subscription/03.html">결제 확인 중</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-success">이용 중</span></td><td>정상 구독 중이다. 해지 예약, 결제수단 변경, 청구 내역 확인을 할 수 있다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-danger">갱신 지연</span></td><td>결제는 됐는데 이용 기간 반영이 늦어지고 있다. 시스템이 자동으로 다시 처리하고, 다시 청구하지 않는다.</td><td><a href="../subscription/13.html">결제 완료 · 갱신 지연</a></td></tr>
-              <tr><td class="cell-item"><span class="badge badge-warning">유예</span></td><td>정기결제에 실패해 7일 유예 중이다. 유예 종료일까지는 쓸 수 있고, 카드를 바꾸고 다시 결제하면 이용 중으로 돌아간다.</td><td><a href="../subscription/05.html">유예</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-warning">유예</span></td><td>정기결제에 실패해 7일 유예 중이다. 유예 종료일까지는 쓸 수 있다. 카드를 바꾸면 자동으로 다시 결제되고, 같은 카드로 [다시 결제]할 수도 있다. 성공하면 이용 중으로 돌아간다.</td><td><a href="../subscription/05.html">유예</a><br><a href="../subscription/21.html">재결제 (팝업)</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-danger">이용 중단</span></td><td>유예 종료일까지 결제되지 않아 이용이 멈췄다. 미납 결제를 마치면 바로 다시 쓸 수 있고, 쇼핑몰 데이터는 보관된다. 데이터 보관 기간과 만료로 넘어가는 시점은 아직 정하지 않았다. <span class="policy-tbd">TBD</span></td><td><a href="../subscription/18.html">이용 중단 (유예 종료)</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-info">변경</span></td><td>Basic에서 Pro로 플랜 변경이 예약돼 있다. 다음 결제일부터 바뀐 플랜이 적용되고, 그 전까지는 지금 플랜을 쓴다. 변경을 취소할 수 있다.</td><td><a href="../subscription/06.html">변경</a></td></tr>
-              <tr><td class="cell-item"><span class="badge badge-warning">해지 예약</span></td><td>해지가 예약돼 있다. 이용 종료일까지는 쓸 수 있고, 다음 결제는 없다. [해지 예약 취소]로 취소할 수 있다.</td><td><a href="../subscription/07.html">해지 예약</a></td></tr>
+              <tr><td class="cell-item"><span class="badge badge-warning">해지 예약</span></td><td>해지가 예약돼 있다. 이용 종료일까지는 쓸 수 있고, 다음 결제는 없다. [해지 예약 취소]로 취소할 수 있다. 체험 중에 해지를 예약하면 체험 종료일까지 쓰고 결제되지 않는다.</td><td><a href="../subscription/07.html">해지 예약</a><br><a href="../subscription/20.html">해지 예약 (체험 중)</a></td></tr>
               <tr><td class="cell-item"><span class="badge badge-neutral">만료</span></td><td>이용 기간이 끝났다. 다시 쓰려면 플랜을 새로 신청해야 한다.</td><td><a href="../subscription/08.html">만료</a></td></tr>
             </tbody>
           </table>
@@ -192,12 +193,15 @@
             <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
             <thead><tr><th>지금 상태</th><th>일어난 일</th><th>바뀌는 상태</th></tr></thead>
             <tbody>
-              <tr><td class="cell-item">미신청 · 만료</td><td>플랜을 신청하고 결제한다.</td><td>결제 확인 중 → 이용 중</td></tr>
-              <tr><td class="cell-item">체험 중</td><td>체험이 끝나 자동 결제를 시도한다.</td><td>성공: 이용 중<br>실패: 체험 종료</td></tr>
+              <tr><td class="cell-item">만료</td><td>플랜을 신청하고 결제한다.</td><td>결제 확인 중 → 이용 중</td></tr>
+              <tr><td class="cell-item">체험 중</td><td>체험이 끝나 자동 결제를 시도한다.</td><td>결제 확인 중 → 성공: 이용 중<br>실패: 체험 종료</td></tr>
+              <tr><td class="cell-item">체험 종료</td><td>카드를 바꾸거나 다시 결제해 성공한다.</td><td>이용 중</td></tr>
               <tr><td class="cell-item">이용 중</td><td>정기결제에 실패한다.</td><td>유예</td></tr>
-              <tr><td class="cell-item">유예</td><td>유예 종료일 전에 다시 결제에 성공한다.</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">유예</td><td>유예 종료일 전에 카드를 바꾸거나 다시 결제해 성공한다.</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">유예</td><td>유예 종료일까지 결제되지 않는다.</td><td>이용 중단</td></tr>
+              <tr><td class="cell-item">이용 중단</td><td>카드를 바꾸거나 다시 결제해 성공한다.</td><td>이용 중</td></tr>
               <tr><td class="cell-item">이용 중 · 체험 중</td><td>해지를 예약한다. 카드 삭제로는 해지되지 않는다.</td><td>해지 예약</td></tr>
-              <tr><td class="cell-item">해지 예약</td><td>이용 종료일 전에 해지 예약을 취소하거나 새 카드를 등록한다.</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">해지 예약</td><td>이용 종료일 전에 해지 예약을 취소한다.</td><td>이용 중 (체험 중이었으면 체험 중)</td></tr>
               <tr><td class="cell-item">해지 예약</td><td>이용 종료일이 지난다.</td><td>만료</td></tr>
               <tr><td class="cell-item">이용 중</td><td>Basic에서 Pro로 플랜 변경을 예약한다.</td><td>변경 → (다음 결제일) 이용 중</td></tr>
             </tbody>
