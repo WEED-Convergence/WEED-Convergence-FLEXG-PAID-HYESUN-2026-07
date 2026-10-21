@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>07 플랜 선택 (홈페이지에서 플랜 선택) - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="front.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">36 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">37 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">38 청구 내역</a></li>
+        <li class="index-group-label">
+          CDN 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">39 정상</a></li>
+            <li><a href="../cdn/02.html">40 주의 (80% 도달)</a></li>
+            <li><a href="../cdn/03.html">41 초과</a></li>
+            <li><a href="../cdn/04.html">42 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">43 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">44 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">45 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">46 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">47 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="01.html">48 회원가입</a></li>
+            <li><a href="02.html">49 가입 완료 · 기존 고객 (EXT)</a></li>
+            <li><a href="03.html">50 가입 완료 · 초대 (INV)</a></li>
+            <li><a href="04.html">51 가입 완료 · 신규</a></li>
+            <li><a href="05.html">52 가입 완료 · 신규 (진행 중인 신청 있음)</a></li>
+            <li><a href="06.html">53 플랜 선택</a></li>
+            <li class="is-current"><a href="07.html">54 플랜 선택 (홈페이지에서 플랜 선택)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center is-front">
+    <div class="screen-canvas">
+    <div class="front-page">
+
+      <header class="front-header">
+        <a class="front-logo" href="#"><span class="front-logo-mark">F</span>FLEX-G</a>
+        <nav class="front-nav">
+          <a href="#">서비스</a>
+          <a href="#">요금</a>
+          <a href="#">고객사례</a>
+          <a href="#">고객지원</a>
+          <a href="#">제휴·제안</a>
+        </nav>
+        <div class="front-header-right">
+          <a href="#">로그인</a>
+          <a class="front-cta" href="#">쇼핑몰 만들기</a>
+        </div>
+      </header>
+
+      <main class="front-main">
+        <div class="recommend">
+          <h1 class="signup-title">플랜 선택</h1>
+          <p class="rec-lead">홈페이지에서 고른 플랜을 미리 선택해 두었습니다. 추천 문항은 생략했습니다. <span class="num-mark">1</span></p>
+          <div class="plan-cards">
+            <label class="plan-card is-selected">
+              <div class="plan-card-head"><input type="radio" name="plan" checked><span class="plan-card-name">Basic</span><span class="plan-badge">선택한 플랜</span></div>
+              <p class="plan-card-for">회사·브랜드 소개 홈페이지</p>
+              <p class="plan-card-price"><b>월 9,900원</b> <s>12,900원</s> <span>VAT 별도</span></p>
+              <ul class="plan-card-feat">
+                <li>CDN 50GB 포함</li>
+                <li>FLEXG Page Builder 포함 <em>(필수)</em></li>
+              </ul>
+            </label>
+            <label class="plan-card">
+              <div class="plan-card-head"><input type="radio" name="plan"><span class="plan-card-name">Pro</span></div>
+              <p class="plan-card-for">브랜드몰 · 상품 판매(커머스)</p>
+              <p class="plan-card-price"><b>월 17,900원</b> <s>23,900원</s> <span>VAT 별도</span></p>
+              <ul class="plan-card-feat">
+                <li>CDN 100GB 포함</li>
+                <li>FLEXG Page <em>(선택 옵션)</em></li>
+              </ul>
+              <span class="plan-card-option"><input type="checkbox"> FLEXG Page 추가 · 월 #{Page 옵션 가격}원</span>
+            </label>
+          </div>
+          <p class="price-note">2/18~4/30 가입 고객은 12회 결제까지 출시가가 적용됩니다. 표시 가격은 VAT 별도이며, 정상가는 취소선으로 함께 표기했습니다.</p>
+
+          <div class="addon-box">
+            <label class="addon-row"><input type="checkbox"> <span><b>CDN 추가 용량 50GB</b> · 월 정기형 · 월 #{추가 50GB 월 요금}원</span></label>
+            <p class="addon-note">추가 CDN을 구매하지 않아도 첫 배포를 할 수 있습니다.</p>
+          </div>
+
+          <div class="signup-submit">
+            <button type="button" class="signup-btn">선택한 플랜으로 계속</button>
+          </div>
+          <p class="result-mark"><span class="num-mark">2</span></p>
+          <p class="rec-retry">어떤 플랜이 맞는지 모르겠다면 <a href="06.html">추천 받아 보기</a> <span class="num-mark">3</span></p>
+        </div>
+      </main>
+
+      <footer class="front-footer">
+        <div class="front-footer-top">
+          <div class="front-footer-links">
+            <a href="#">서비스</a>
+            <a href="#">요금</a>
+            <a href="#">고객사례</a>
+            <a href="#">고객지원</a>
+            <a href="#">제휴·제안</a>
+          </div>
+          <div class="front-footer-links">
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+        </div>
+        <div class="front-footer-bottom">
+          <div>
+            <p class="front-footer-brand">FLEX-G</p>
+            <p class="front-footer-info">서울특별시 금천구 벚꽃로 298 대륭포스트타워6차 313호<br>
+            대표이사 김형준·김동재 &nbsp;|&nbsp; 사업자번호 158-86-01603<br>
+            고객센터 070-7771-5866 &nbsp;|&nbsp; 운영시간 평일 10:00~18:00</p>
+          </div>
+          <div class="front-footer-actions">
+            <a class="front-icon-btn" href="#" aria-label="채팅 상담">💬</a>
+            <a class="front-icon-btn" href="#" aria-label="위치">⌖</a>
+            <a class="front-family" href="#">Family Site <span aria-hidden="true">⌄</span></a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">FLEXG 홈페이지 요금제에서 플랜을 고르고 넘어와 플랜 값이 함께 전달됐을 때 표시됩니다(WEB-06).</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 홈페이지에서 고른 플랜이 전달되면 추천 문항을 생략하고, 그 플랜을 미리 선택해 둡니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 전달된 플랜에 [선택한 플랜] 배지를 붙입니다. 다른 플랜으로 바꿀 수도 있습니다. 가격·Page·추가 CDN 표기는 플랜 선택 화면과 같습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> [추천 받아 보기]를 누르면 추천 문항이 있는 플랜 선택 화면으로 이동합니다.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
