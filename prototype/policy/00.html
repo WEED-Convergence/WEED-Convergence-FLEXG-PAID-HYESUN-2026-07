@@ -167,11 +167,11 @@
             <thead><tr><th>항목</th><th>정책</th><th>관련 화면</th></tr></thead>
             <tbody>
               <tr><td class="cell-item">등록 개수</td><td>카드는 계정당 1개만 등록할 수 있다.</td><td><a href="../billing-card/01.html">카드 있음</a><br><a href="../billing-card/02.html">미등록</a></td></tr>
-              <tr><td class="cell-item">적용 범위</td><td>계정당 사이트는 1개만 연결할 수 있다. 등록한 카드는 그 사이트의 구독 결제에 쓴다.</td><td><a href="../billing-card/01.html">카드 있음</a></td></tr>
+              <tr><td class="cell-item">적용 범위</td><td>계정당 사이트는 1개만 연결할 수 있다. 등록한 카드는 그 사이트의 구독료와 사용량 추가 요금(CDN 초과 · 추가 용량) 결제에 함께 쓴다.</td><td><a href="../billing-card/01.html">카드 있음</a></td></tr>
               <tr><td class="cell-item">등록·변경</td><td>카드를 등록하거나 바꾸면 토스페이먼츠에서 카드 인증을 거친다. 인증이 끝나면 완료 또는 실패 화면으로 자동 이동한다.</td><td><a href="../billing-card/07.html">처리 중</a><br><a href="../billing-card/08.html">완료</a></td></tr>
               <tr><td class="cell-item">등록 실패</td><td>카드사 인증에 실패하면 카드는 바뀌지 않고 기존 카드가 그대로 유지된다.</td><td><a href="../billing-card/10.html">실패</a></td></tr>
               <tr><td class="cell-item">카드 삭제</td><td>구독 중(체험 중 · 이용 중 · 유예 · 해지 예약)에는 카드를 삭제할 수 없다. 카드는 변경만 할 수 있고, 그만두려면 구독 관리에서 해지한다. 구독이 만료된 뒤에는 삭제할 수 있다.</td><td><a href="../billing-card/11.html">카드 삭제 불가</a></td></tr>
-              <tr><td class="cell-item">미납 중 카드 변경</td><td>결제가 밀린 상태에서 카드를 바꾸면, 바꾼 뒤 바로 밀린 결제를 다시 시도하도록 안내한다.</td><td><a href="../billing-card/09.html">완료 (미납 재시도 연결)</a></td></tr>
+              <tr><td class="cell-item">미납 중 카드 변경</td><td>결제가 밀린 상태에서 카드를 바꾸면, 별도 버튼 없이 밀린 결제를 자동으로 다시 시도한다. 성공하면 유예가 풀리고, 실패하면 유예가 계속된다.</td><td><a href="../billing-card/09.html">완료 · 미납 결제 완료</a><br><a href="../billing-card/16.html">완료 · 미납 결제 실패</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -184,6 +184,8 @@
             <tbody>
               <tr><td class="cell-item">체험 횟수</td><td>체험은 계정당 처음 1번만 할 수 있다.</td><td><a href="../subscription/02.html">체험 중</a></td></tr>
               <tr><td class="cell-item">체험 기간</td><td>체험 기간은 14일이다.</td><td><a href="../subscription/02.html">체험 중</a></td></tr>
+              <tr><td class="cell-item">체험 플랜</td><td>Basic, Pro 모두 14일 무료 체험으로 시작할 수 있다. 체험 중에는 결제 금액이 0원이다.</td><td><a href="../front/06.html">플랜 선택</a></td></tr>
+              <tr><td class="cell-item">카드 등록</td><td>체험을 시작하려면 카드를 먼저 등록해야 한다. 체험이 끝나면 이 카드로 첫 결제가 된다. (POL-13)</td><td><a href="../front/08.html">결제 전 확인 · 정기결제 동의</a><br><a href="../billing-card/12.html">카드 있음 · 체험 중</a></td></tr>
               <tr><td class="cell-item">자동 유료 전환</td><td>체험이 끝나면 체험하던 플랜 그대로 자동 결제된다.</td><td><a href="../subscription/02.html">체험 중</a><br><a href="../subscription/03.html">결제 확인 중</a></td></tr>
               <tr><td class="cell-item">전환 결제 실패</td><td>체험이 끝나고 결제에 실패하면 이용이 멈춘다. 카드를 바꾸거나 다시 결제하면 바로 다시 쓸 수 있고, 쇼핑몰 데이터는 그대로 보관된다.</td><td><a href="../subscription/10.html">체험 종료 · 결제 실패</a></td></tr>
             </tbody>
@@ -197,7 +199,8 @@
             <thead><tr><th>항목</th><th>정책</th><th>관련 화면</th></tr></thead>
             <tbody>
               <tr><td class="cell-item">결제 주기</td><td>한 달에 한 번, 이용 기간이 끝나는 다음 날 자동으로 결제된다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
-              <tr><td class="cell-item">출시가</td><td>처음 12회 결제까지는 출시가(Pro 월 17,900원, VAT 별도)를 적용하고, 13회차 결제부터 정상가(월 23,900원, VAT 별도)로 바뀐다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
+              <tr><td class="cell-item">출시가</td><td>2/18~4/30에 가입한 고객은 처음 12회 결제까지 출시가를 적용하고, 13회차 결제부터 정상가로 바뀐다. Basic 출시가 9,900원 → 정상가 12,900원, Pro 출시가 17,900원 → 정상가 23,900원 (VAT 별도). (POL-01)</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
+              <tr><td class="cell-item">출시가 표기</td><td>결제 화면과 청구서에는 정상가를 먼저 쓰고, 그 아래에 출시가 할인 금액을 따로 적는다. (BIL-09)</td><td><a href="../first-payment/01.html">결제 가능</a></td></tr>
               <tr><td class="cell-item">부가세</td><td>표시 가격은 VAT 별도다. 실제 결제할 때 부가세 10%를 더한다. (예: 17,900원 + 1,790원 = 19,690원)</td><td><a href="../first-payment/01.html">결제 가능</a></td></tr>
               <tr><td class="cell-item">사용량 추가 요금</td><td>월 구독료 외에 사용량에 따라 추가 요금이 생길 수 있다. 그래서 화면의 다음 결제 금액은 사용량이 확정되기 전의 예상 금액이다.</td><td><a href="../subscription/04.html">이용 중</a></td></tr>
               <tr><td class="cell-item">결제 확인 중</td><td>결제 결과를 아직 모를 때는 다시 결제할 수 없다. 이미 결제됐을 수 있기 때문이다.</td><td><a href="../subscription/03.html">결제 확인 중</a><br><a href="../payment-status/02.html">처리 중 (지연)</a></td></tr>
@@ -218,7 +221,7 @@
               <tr><td class="cell-item">실패 사유</td><td>카드 오류, 한도 초과, 인증 실패, PG 오류, 결제 취소 5가지로 나눠 안내한다. 실패하면 청구되는 금액은 없다.</td><td><a href="../payment-status/01.html">결제 실패 · 취소</a></td></tr>
               <tr><td class="cell-item">유예</td><td>정기결제에 실패하면 바로 멈추지 않고 유예 상태가 된다. 유예 종료일까지는 계속 쓸 수 있다.</td><td><a href="../subscription/05.html">유예</a><br><a href="../billing-card/04.html">미납 · 유예</a></td></tr>
               <tr><td class="cell-item">유예 기간</td><td>유예 기간은 7일이다.</td><td><a href="../subscription/05.html">유예</a></td></tr>
-              <tr><td class="cell-item">유예 중 해결</td><td>유예 종료일 전에 카드를 바꾸고 결제를 다시 시도하면 정상 이용으로 돌아간다.</td><td><a href="../subscription/05.html">유예</a><br><a href="../billing-card/09.html">완료 (미납 재시도 연결)</a></td></tr>
+              <tr><td class="cell-item">유예 중 해결</td><td>유예 종료일 전에 카드를 바꾸면 밀린 결제가 자동으로 다시 진행되고, 성공하면 정상 이용으로 돌아간다.</td><td><a href="../billing-card/04.html">미납 · 유예</a><br><a href="../billing-card/09.html">완료 · 미납 결제 완료</a></td></tr>
               <tr><td class="cell-item">유예 종료</td><td>유예 종료일까지 결제가 안 되면 이용이 중단될 수 있다.</td><td><a href="../subscription/05.html">유예</a></td></tr>
             </tbody>
           </table>
@@ -246,6 +249,8 @@
             <tbody>
               <tr><td class="cell-item">조회</td><td>기간을 골라 결제 내역을 볼 수 있다.</td><td><a href="../subscription/12.html">청구 내역</a></td></tr>
               <tr><td class="cell-item">매출전표</td><td>매출전표는 결제 건마다 [보기]를 눌러 확인한다.</td><td><a href="../subscription/12.html">청구 내역</a></td></tr>
+              <tr><td class="cell-item">이용 내역서</td><td>이용 내역서는 요금 명세만 보여준다. 세금 증빙은 카드 매출전표로 한다. (POL-08)</td><td><a href="../cdn/07.html">이용 내역 상세 (예상)</a></td></tr>
+              <tr><td class="cell-item">예상 · 정정</td><td>사용량이 확정되기 전 금액은 [예상]으로 표시한다. 발행 뒤 금액이 바뀌면 정정 이력으로 남긴다. (BIL-07)</td><td><a href="../cdn/08.html">이용 내역 상세 (확정 · 정정 이력)</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -258,11 +263,26 @@
             <tbody>
               <tr><td class="cell-item">계약 반영 시점</td><td>서버에서 결제 성공을 확인한 뒤에 계약을 반영하고 사이트 개설을 시작한다. (PAY-02)</td><td><a href="../first-payment/03.html">결제 확인 · 사이트 개설 중</a></td></tr>
               <tr><td class="cell-item">플랜 권한 범위</td><td>플랜 권한은 메뉴, URL, API, 데이터 소스, 컴포넌트, 배포까지 모든 경로에 똑같이 적용한다. (PLT-03)</td><td>—</td></tr>
-              <tr><td class="cell-item">기본 CDN</td><td>Basic은 50GB, Pro는 100GB를 집계 기간마다 기본으로 적용한다.</td><td><a href="../cdn/01.html">CDN 사용량</a></td></tr>
+              <tr><td class="cell-item">기본 CDN</td><td>Basic은 50GB, Pro는 100GB를 매달 기본으로 적용한다. 기본 제공량은 따로 청구하지 않는다. (C04)</td><td><a href="../cdn/01.html">CDN 사용량</a></td></tr>
               <tr><td class="cell-item">개설과 배포</td><td>사이트 개설 완료와 배포 상태는 따로 관리한다. 개설이 끝났다고 배포가 끝난 것은 아니다. (PLT-01)</td><td><a href="../first-payment/03.html">결제 확인 · 사이트 개설 중</a></td></tr>
               <tr><td class="cell-item">개설·기본량 적용 실패</td><td>같은 계약으로 복구한다. 다시 결제하거나 사이트를 새로 만들지 않는다.</td><td><a href="../first-payment/05.html">개설 복구 대기</a></td></tr>
               <tr><td class="cell-item">FLEXG Page 워크스페이스</td><td>FLEXG에 가입하면 FLEXG Page 워크스페이스를 자동으로 만들고 연동한다. Basic, Pro, 체험 모두 같다. 연동에 실패해도 가입·개설·결제는 그대로 두고 연동만 다시 시도한다. (10/14 결정)</td><td>—</td></tr>
               <tr><td class="cell-item">기존 워크스페이스 보유</td><td>이미 FLEXG Page 워크스페이스가 있어도 항상 새로 만든다. 기존 FLEXG Page 디자인은 양도나 복제로 옮긴다. (10/14 결정)</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>9. CDN 사용량 · 추가 용량</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-screen"></colgroup>
+            <thead><tr><th>항목</th><th>정책</th><th>관련 화면</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">집계 주기</td><td>CDN 사용량은 하루에 한 번(1일 단위) 갱신한다.</td><td><a href="../cdn/01.html">CDN 사용량</a></td></tr>
+              <tr><td class="cell-item">초과 요금</td><td>기본 제공량을 넘으면 넘은 만큼 GB당 500원(VAT 별도)을 다음 결제에 더한다.</td><td><a href="../cdn/03.html">초과</a></td></tr>
+              <tr><td class="cell-item">추가 용량</td><td>추가 용량은 월 구독으로 산다. 사면 바로 적용되고, 이번 달 1개월 요금 전액을 다음 결제에 더한다(일할 계산 없음). 그다음부터는 플랜 결제일에 함께 결제된다. (POL-06)</td><td><a href="../cdn/09.html">추가 용량 구매</a></td></tr>
+              <tr><td class="cell-item">자동 구매 금지</td><td>추가 용량은 자동으로 사지 않는다. 고객이 직접 동의해야만 산다.</td><td><a href="../cdn/09.html">추가 용량 구매</a></td></tr>
+              <tr><td class="cell-item">추가 용량 가격</td><td>추가 50GB 월 요금은 아직 정하지 않았다. <span class="policy-tbd">TBD</span></td><td>—</td></tr>
             </tbody>
           </table>
         </div>
