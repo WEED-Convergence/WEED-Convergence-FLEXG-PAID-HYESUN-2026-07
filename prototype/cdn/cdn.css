@@ -106,12 +106,6 @@
   margin-top: 4px;
 }
 
-.cdn-notes .btn-sm {
-  margin-left: 4px;
-  font-family: inherit;
-  cursor: pointer;
-}
-
 /* ---------- 트래픽 상세 내역 팝업 ---------- */
 
 .cdn-popup-overlay {
