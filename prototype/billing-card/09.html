@@ -138,7 +138,7 @@
         <div class="screen-header">
           <div>
             <h1>결제수단 관리 <span class="num-mark">1</span></h1>
-            <p class="desc">등록한 카드는 계정의 모든 사이트에 자동으로 적용됩니다.</p>
+            <p class="desc">등록한 카드는 계정에 연결된 사이트의 구독 결제에 사용됩니다.</p>
           </div>
         </div>
 
@@ -163,35 +163,18 @@
           </div>
 
           <div>
-            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">4</span></h2>
-            <div class="table-wrap">
-              <table class="site-table">
-                <thead>
-                  <tr>
-                    <th>사이트</th>
-                    <th>플랜</th>
-                    <th>구독 상태</th>
-                    <th>월 구독료 (VAT 별도)</th>
-                    <th>다음 결제 예정일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-warning">유예</span><span class="cell-sub cell-danger">유예 종료일 2027-06-26</span></td>
-                    <td>23,900원</td>
-                    <td>2026-11-05</td>
-                  </tr>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-warning">유예</span><span class="cell-sub cell-danger">유예 종료일 2027-06-26</span></td>
-                    <td>플랜에 포함</td>
-                    <td>2026-11-05</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h2 class="section-title">이용 중인 요금제 <span class="num-mark">4</span></h2>
+            <div class="plan-current">
+              <div class="plan-current-head"><span class="plan-name">Pro</span><span class="badge badge-warning">유예</span></div>
+              <dl class="plan-meta">
+                <div><dt>월 구독료</dt><dd>17,900원 (VAT 별도) · 출시가 적용 3/12회</dd></div>
+                <div><dt>유예 종료일</dt><dd><span class="cell-danger">2027-06-26</span></dd></div>
+              </dl>
+            </div>
+            <h3 class="plan-other-title">다른 요금제</h3>
+            <div class="plan-option">
+              <div class="plan-option-main"><span class="plan-name">Basic</span><span class="plan-option-price">월 #{Basic 가격}원 (VAT 별도)</span></div>
+              <a href="../subscription/15.html" class="btn">이 요금제로 변경</a>
             </div>
           </div>
 
@@ -207,7 +190,7 @@
       <div class="result-center">
         <div class="result-icon is-success">✓</div>
         <h1>카드가 연결되었습니다 <span class="num-mark">1</span></h1>
-        <p class="desc">계정의 모든 사이트에 새 카드가 연결되었습니다.</p>
+        <p class="desc">새 카드가 등록되었습니다.</p>
 
         <div class="summary-card">
           <div class="card-icon"></div>
@@ -218,7 +201,7 @@
         </div>
 
         <div class="banner banner-info" style="max-width:420px; margin:16px auto 0;">
-          미납 중인 사이트의 결제를 다시 시도할 수 있습니다. 유예 종료 예정일은 2027-06-26입니다.
+          미납된 결제를 다시 시도할 수 있습니다. 유예 종료 예정일은 2027-06-26입니다.
           <span class="num-mark">3</span>
         </div>
 
@@ -238,11 +221,11 @@
   <div class="sidebar-right">
     <h2>화면 설명</h2>
     <p class="desc-trigger">미납 · 유예 상태에서 카드를 변경한 뒤 등록이 완료되었을 때 표시됩니다.</p>
-    <p class="desc-body">카드 변경은 성공했지만 미납된 결제가 아직 남아 있어, 결제 재시도를 바로 이어서 안내합니다. 결제 재시도 전까지는 사이트별 구독 상태가 유예로 유지됩니다. [결제 재시도]는 결제 처리 화면으로 연결되며 이번 프로토타입 범위에서는 제외됩니다.</p>
+    <p class="desc-body">카드 변경은 성공했지만 미납된 결제가 아직 남아 있어, 결제 재시도를 바로 이어서 안내합니다. 결제 재시도 전까지는 구독 상태가 유예로 유지됩니다. [결제 재시도]는 결제 처리 화면으로 연결되며 이번 프로토타입 범위에서는 제외됩니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 카드 연결 완료를 알리는 제목입니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 새로 연결된 카드 번호입니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> 미납 중인 사이트와 유예 종료 예정일을 안내하는 배너입니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 미납된 결제와 유예 종료 예정일을 안내하는 배너입니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">4</span> 결제 재시도 또는 나중에 하기를 선택하는 버튼입니다.</div>
     </div>
   </div>

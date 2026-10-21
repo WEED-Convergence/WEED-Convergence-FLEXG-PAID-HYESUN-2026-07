@@ -138,7 +138,7 @@
         <div class="screen-header">
           <div>
             <h1>결제수단 관리 <span class="num-mark">1</span></h1>
-            <p class="desc">등록한 카드는 계정의 모든 사이트에 자동으로 적용됩니다.</p>
+            <p class="desc">등록한 카드는 계정에 연결된 사이트의 구독 결제에 사용됩니다.</p>
           </div>
         </div>
 
@@ -163,35 +163,18 @@
           </div>
 
           <div>
-            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">4</span></h2>
-            <div class="table-wrap">
-              <table class="site-table">
-                <thead>
-                  <tr>
-                    <th>사이트</th>
-                    <th>플랜</th>
-                    <th>구독 상태</th>
-                    <th>월 구독료 (VAT 별도)</th>
-                    <th>다음 결제 예정일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-success">이용 중</span></td>
-                    <td>23,900원</td>
-                    <td>2026-11-05</td>
-                  </tr>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-success">이용 중</span></td>
-                    <td>플랜에 포함</td>
-                    <td>2026-11-05</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h2 class="section-title">이용 중인 요금제 <span class="num-mark">4</span></h2>
+            <div class="plan-current">
+              <div class="plan-current-head"><span class="plan-name">Pro</span><span class="badge badge-success">이용 중</span></div>
+              <dl class="plan-meta">
+                <div><dt>월 구독료</dt><dd>17,900원 (VAT 별도) · 출시가 적용 3/12회</dd></div>
+                <div><dt>다음 결제일</dt><dd>2027-06-19</dd></div>
+              </dl>
+            </div>
+            <h3 class="plan-other-title">다른 요금제</h3>
+            <div class="plan-option">
+              <div class="plan-option-main"><span class="plan-name">Basic</span><span class="plan-option-price">월 #{Basic 가격}원 (VAT 별도)</span></div>
+              <a href="../subscription/15.html" class="btn">이 요금제로 변경</a>
             </div>
           </div>
 
@@ -207,7 +190,7 @@
       <div class="result-center">
         <div class="result-icon is-success">✓</div>
         <h1>카드가 연결되었습니다 <span class="num-mark">1</span></h1>
-        <p class="desc">계정의 모든 사이트에 새 카드가 연결되었습니다.</p>
+        <p class="desc">새 카드가 등록되었습니다.</p>
 
         <div class="summary-card">
           <div class="card-icon"></div>

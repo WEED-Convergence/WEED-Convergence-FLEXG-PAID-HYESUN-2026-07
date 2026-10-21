@@ -139,7 +139,7 @@
         <div class="screen-header">
           <div>
             <h1>결제수단 관리</h1>
-            <p class="desc">등록한 카드는 계정의 모든 사이트에 자동으로 적용됩니다.</p>
+            <p class="desc">등록한 카드는 계정에 연결된 사이트의 구독 결제에 사용됩니다.</p>
           </div>
         </div>
 
@@ -153,35 +153,18 @@
           </div>
 
           <div>
-            <h2 class="section-title">사이트별 연결 현황 <span class="num-mark">3</span></h2>
-            <div class="table-wrap">
-              <table class="site-table">
-                <thead>
-                  <tr>
-                    <th>사이트</th>
-                    <th>플랜</th>
-                    <th>구독 상태</th>
-                    <th>월 구독료 (VAT 별도)</th>
-                    <th>다음 결제 예정일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">플렉스 스토어</span><span class="site-domain">store.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-warning">해지 예약</span> · 2027-06-18까지 이용</td>
-                    <td>결제 없음</td>
-                    <td>결제 없음</td>
-                  </tr>
-                  <tr>
-                    <td class="site-cell"><span class="site-name">브랜드 소개 홈페이지</span><span class="site-domain">brand.flexg-sample.kr</span></td>
-                    <td><span class="badge badge-info">Pro</span></td>
-                    <td><span class="badge badge-warning">해지 예약</span> · 2027-06-18까지 이용</td>
-                    <td>결제 없음</td>
-                    <td>결제 없음</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h2 class="section-title">이용 중인 요금제 <span class="num-mark">3</span></h2>
+            <div class="plan-current">
+              <div class="plan-current-head"><span class="plan-name">Pro</span><span class="badge badge-warning">해지 예약</span></div>
+              <dl class="plan-meta">
+                <div><dt>월 구독료</dt><dd>결제 없음 (해지 예약)</dd></div>
+                <div><dt>이용 종료일</dt><dd>2027-06-18</dd></div>
+              </dl>
+            </div>
+            <h3 class="plan-other-title">다른 요금제</h3>
+            <div class="plan-option">
+              <div class="plan-option-main"><span class="plan-name">Basic</span><span class="plan-option-price">월 #{Basic 가격}원 (VAT 별도)</span></div>
+              <a href="../subscription/15.html" class="btn">이 요금제로 변경</a>
             </div>
           </div>
 
@@ -200,7 +183,7 @@
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 카드 삭제로 해지가 예약되었음과 새 카드 등록 시 자동 취소됨을 안내합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 카드 등록 버튼입니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> 사이트별 해지 예약 상태와 이용 종료일을 표시합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 이용 중인 요금제의 해지 예약 상태·이용 종료일과 다른 요금제를 표시합니다.</div>
     </div>
   </div>
 

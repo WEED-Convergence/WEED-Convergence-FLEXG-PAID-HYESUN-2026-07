@@ -254,65 +254,88 @@
   line-height: 1.6;
 }
 
-/* ---------- 표 ---------- */
+/* ---------- 이용 중인 요금제 / 다른 요금제 ---------- */
 
-.table-wrap {
+.plan-current {
   border: 1px solid #e3e4e8;
   border-radius: 8px;
-  overflow: hidden;
+  background-color: #fafafb;
+  padding: 16px 18px;
 }
 
-.table-empty {
-  padding: 32px 20px;
-  text-align: center;
-  color: #999999;
-  font-size: 13px;
+.plan-current-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
-table.site-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-
-table.site-table th,
-table.site-table td {
-  padding: 10px 14px;
-  text-align: left;
-  border-bottom: 1px solid #ededf0;
-}
-
-table.site-table th {
-  background-color: #f7f7f9;
-  color: #777777;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-table.site-table tr:last-child td {
-  border-bottom: none;
-}
-
-.site-cell .site-name {
+.plan-name {
+  font-size: 15px;
   font-weight: bold;
+  color: #222222;
 }
 
-.site-cell .site-domain {
-  display: block;
-  margin-top: 2px;
-  font-size: 12px;
-  color: #999999;
+.plan-current-note {
+  margin: 0;
+  font-size: 13px;
+  color: #666666;
+}
+
+.plan-meta {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.plan-meta > div {
+  display: flex;
+  gap: 16px;
+}
+
+.plan-meta dt {
+  flex: 0 0 80px;
+  color: #888888;
+}
+
+.plan-meta dd {
+  margin: 0;
+  color: #222222;
+}
+
+.plan-other-title {
+  margin: 18px 0 8px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.plan-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  border: 1px solid #e3e4e8;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.plan-option-main {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.plan-option-price {
+  font-size: 13px;
+  color: #666666;
 }
 
 .cell-danger {
   color: #c81e1e;
   font-weight: bold;
-}
-
-.cell-sub {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
 }
 
 /* ---------- PG 결제창 참조 프레임 (06) ---------- */
