@@ -159,3 +159,76 @@
   margin: -6px 0 0;
   text-align: right;
 }
+
+/* ---------- 이용 내역서 ---------- */
+
+.cdn-header-badge .badge + .badge {
+  margin-left: 2px;
+}
+
+table.data-table .num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.invoice-sum td {
+  background-color: #fafafb;
+  color: #555555;
+}
+
+.invoice-total td {
+  background-color: #f4f5f7;
+  font-weight: bold;
+  color: #222222;
+}
+
+.cell-strike {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+/* ---------- 추가 용량 구매 ---------- */
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border: 1px solid #3140d6;
+  border-radius: 8px;
+  background-color: #f5f6ff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.option-main {
+  flex: 1 1 auto;
+}
+
+.option-price {
+  color: #555555;
+}
+
+.compare-table .kv-note {
+  display: block;
+  margin-top: 2px;
+}
+
+.compare-note {
+  margin: 8px 0 0;
+}
+
+.agree-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #222222;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

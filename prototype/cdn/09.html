@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>09 추가 용량 구매 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../subscription/subscription.css">
+<link rel="stylesheet" href="cdn.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">36 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">37 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">38 청구 내역</a></li>
+        <li class="index-group-label">
+          CDN 사용량
+          <ul class="index-sublist">
+            <li><a href="01.html">39 정상</a></li>
+            <li><a href="02.html">40 주의 (80% 도달)</a></li>
+            <li><a href="03.html">41 초과</a></li>
+            <li><a href="04.html">42 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="05.html">43 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="06.html">44 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="07.html">45 이용 내역 상세 (예상)</a></li>
+            <li><a href="08.html">46 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li class="is-current"><a href="09.html">47 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas">
+    <div class="admin-shell">
+    <div class="admin-gnb">
+      <span class="gnb-home" aria-hidden="true"></span>
+      <span class="gnb-item">상품<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">주문<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">발주<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">CS</span>
+      <span class="gnb-item">정산</span>
+      <span class="gnb-item">매출</span>
+      <span class="gnb-item">통계</span>
+      <span class="gnb-item">회원</span>
+      <span class="gnb-item">CRM<span class="gnb-badge">N</span></span>
+      <span class="gnb-item gnb-item-live">LIVE<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">메시지</span>
+      <span class="gnb-item">게시판</span>
+      <span class="gnb-item">APP</span>
+      <span class="gnb-item">셀러</span>
+      <span class="gnb-item">제휴<span class="gnb-badge">N</span></span>
+    </div>
+    <div class="canvas-row">
+      <nav class="settings-nav">
+      <div class="settings-nav-title">
+        <span>환경설정</span>
+        <span class="settings-nav-guide" aria-hidden="true">가이드</span>
+      </div>
+      <ul class="settings-nav-list">
+        <li>기본정보</li>
+        <li>운영정책</li>
+        <li>결제/무통장 설정</li>
+        <li>
+          정기결제 관리
+          <ul class="settings-nav-sublist">
+            <li><a href="../billing-card/01.html">결제수단 관리</a></li>
+            <li>캐시 자동충전</li>
+          </ul>
+        </li>
+        <li>
+          구독/청구
+          <ul class="settings-nav-sublist">
+            <li><a href="../subscription/01.html">구독 관리</a></li>
+            <li><a href="../subscription/12.html">청구 내역</a></li>
+            <li class="is-active"><a href="01.html">CDN 사용량</a></li>
+          </ul>
+        </li>
+        <li>PG 서비스 신청</li>
+        <li>성인(사용자)인증 신청</li>
+        <li>배송 관리</li>
+      </ul>
+    </nav>
+      <div class="screen-main">
+
+      <div class="screen-header cdn-header">
+        <div>
+          <h1>추가 용량 구매</h1>
+          <p class="desc">CDN 추가 용량을 월 정기형으로 구매합니다.</p>
+        </div>
+      </div>
+
+      <div class="screen-body">
+
+        <div class="two-col">
+          <div class="section-box">
+            <h2 class="section-title">현재 제공량 <span class="num-mark">1</span></h2>
+            <dl class="kv-list">
+              <div class="kv-row is-strong"><dt>제공량</dt><dd>기본 50GB 포함 + 추가 50GB = 총 100GB</dd></div>
+              <div class="kv-row"><dt>사용량</dt><dd>109.6GB (109.6%) · <span class="usage-over">9.6GB 초과</span></dd></div>
+              <div class="kv-row"><dt>이용 기간</dt><dd>2027-05-19 ~ 2027-06-18 (3회차)</dd></div>
+            </dl>
+          </div>
+
+          <div class="section-box">
+            <h2 class="section-title">구매할 용량 <span class="num-mark">2</span></h2>
+            <label class="option-row">
+              <input type="radio" name="addon" checked>
+              <span class="option-main"><b>추가 50GB</b> · 월 정기형</span>
+              <span class="option-price">월 #{추가 50GB 월 요금}원 (VAT 별도)</span>
+            </label>
+            <dl class="kv-list">
+              <div class="kv-row is-strong"><dt>적용 후 제공량</dt><dd>기본 50GB 포함 + 추가 100GB = 총 150GB</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="section-box">
+          <h2 class="section-title">이번 달 요금 비교 <span class="num-mark">3</span></h2>
+          <div class="table-wrap">
+            <table class="data-table compare-table">
+              <thead>
+                <tr><th>구분</th><th>구매하지 않을 때</th><th>추가 50GB 구매할 때</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>총 제공량</td><td>100GB</td><td>150GB</td></tr>
+                <tr><td>예상 초과 비용</td><td>4,800원 <span class="badge badge-info">예상</span><span class="kv-note">9.6GB × GB당 500원</span></td><td>0원 <span class="badge badge-info">예상</span><span class="kv-note">제공량 이내</span></td></tr>
+                <tr><td>추가 용량 요금 (이번 달분)</td><td>—</td><td>#{추가 50GB 월 요금}원<span class="kv-note">1개월 요금 · 일할 없음</span></td></tr>
+                <tr class="invoice-total"><td>다음 청구서(2027-06-19)에 합산되는 금액</td><td>4,800원 <span class="badge badge-info">예상</span></td><td>#{추가 50GB 월 요금}원</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="section-sub compare-note">모든 금액은 VAT 별도입니다. 초과 비용은 집계 중인 사용량 기준 예상 금액입니다.</p>
+        </div>
+
+        <div class="info-box">
+          <ul class="cdn-notes">
+            <li>구매하면 바로 적용되어 이번 이용 기간의 제공량이 늘어납니다.</li>
+            <li>이번 달분 1개월 요금은 일할 계산 없이 다음 청구서(2027-06-19)에 합산됩니다.</li>
+            <li>이후에는 매월 플랜과 같은 갱신일에 함께 청구됩니다.</li>
+          </ul>
+          <span class="num-mark">4</span>
+        </div>
+
+        <label class="agree-row">
+          <input type="checkbox" id="agree" onchange="document.getElementById('buy').disabled = !this.checked">
+          위 내용을 확인했으며, 추가 용량 구매와 매월 정기 청구에 동의합니다.
+          <span class="num-mark">5</span>
+        </label>
+
+        <div class="btn-row-right">
+          <a href="03.html" class="btn">취소</a>
+          <button type="button" id="buy" class="btn btn-primary" disabled onclick="alert('추가 용량 구매가 완료되었습니다. 총 제공량이 150GB로 바뀝니다.')">구매하기</button>
+          <span class="num-mark">6</span>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">CDN 사용량에서 [추가 용량 구매]를 눌렀을 때 표시됩니다. 플랜 출시일(2/18)에 함께 제공됩니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 현재 제공량을 '기본 + 추가 = 총' 형식으로 보여줍니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 월 정기형 추가 50GB를 선택합니다. 구매 후 제공량(기본 + 추가 = 총)을 미리 보여줍니다. 월 요금은 정해지지 않아 비워 두었습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 이번 달 추가 용량 요금과 구매하지 않을 때의 예상 초과 비용을 나란히 비교합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 구매 즉시 적용, 이번 달분 1개월 요금은 일할 없이 다음 청구서에 합산, 이후 플랜과 같은 갱신일에 함께 청구됨을 안내합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> 자동 구매는 하지 않으며, 고객이 동의 체크를 해야 구매할 수 있습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">6</span> 동의 전에는 [구매하기]가 비활성입니다. 동의 후 누르면 구매 완료 알럿이 뜹니다. [취소]는 CDN 사용량(초과) 화면으로 돌아갑니다.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
