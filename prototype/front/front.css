@@ -771,3 +771,124 @@
 .rec-details[open] > summary {
   margin-bottom: 14px;
 }
+
+/* ---------- 약관 목록 · 약관 동의 ---------- */
+
+.co-terms {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.co-terms li {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #f0f0f2;
+}
+
+.co-terms li:last-child { border-bottom: none; }
+
+.co-terms a {
+  font-size: 12px;
+  color: #666666 !important;
+  text-decoration: underline !important;
+}
+
+.co-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.co-check em {
+  font-style: normal;
+  color: #e5242b;
+}
+
+.co-check-all {
+  margin-bottom: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+/* ---------- 약관 팝업 ---------- */
+
+.terms-overlay {
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.terms-modal-head {
+  padding: 18px 24px 12px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.terms-modal-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.terms-modal-body {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 16px 24px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.terms-modal-body h3 {
+  margin: 14px 0 4px;
+  font-size: 13px;
+}
+
+.terms-modal-body p { margin: 0; }
+
+.terms-tbd {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #fde8e8;
+  color: #d12f2f !important;
+  font-weight: bold;
+}
+
+.terms-modal-foot {
+  padding: 12px 24px 18px;
+  text-align: center;
+}
+
+/* ---------- 이미 가입된 회원 팝업 ---------- */
+
+.member-modal {
+  max-width: 440px;
+}
+
+.member-body {
+  padding: 28px 28px 24px;
+  text-align: center;
+}
+
+.member-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.member-desc {
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555555;
+}

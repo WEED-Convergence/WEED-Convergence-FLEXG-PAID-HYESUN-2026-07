@@ -105,15 +105,16 @@
           회원가입
           <ul class="index-sublist">
             <li><a href="01.html">48 회원가입</a></li>
-            <li><a href="04.html">49 가입 완료 · 신규</a></li>
-            <li><a href="06.html">50 플랜 선택</a></li>
-            <li class="is-current"><a href="08.html">51 결제 전 확인 · 정기결제 동의</a></li>
+            <li><a href="02.html">49 회원가입 · 이미 가입된 회원 (팝업)</a></li>
+            <li><a href="04.html">50 가입 완료 · 신규</a></li>
+            <li><a href="06.html">51 플랜 선택</a></li>
+            <li class="is-current"><a href="08.html">52 결제 전 확인 · 정기결제 동의</a></li>
+            <li><a href="09.html">53 약관 보기 (팝업)</a></li>
             <li class="index-group-label">
               가입 후 분기 (예외)
               <ul class="index-subsublist">
-                <li><a href="02.html">52 기존 고객 (EXT)</a></li>
-                <li><a href="03.html">53 초대 (INV)</a></li>
-                <li><a href="05.html">54 신규 · 진행 중인 신청 있음</a></li>
+                <li><a href="03.html">54 초대 (INV)</a></li>
+                <li><a href="05.html">55 신규 · 진행 중인 신청 있음</a></li>
               </ul>
             </li>
           </ul>
@@ -124,10 +125,10 @@
     <details class="index-group" open>
       <summary>어드민 홈</summary>
       <ul class="index-list">
-        <li><a href="../admin/01.html">55 어드민 홈 (Pro)</a></li>
-        <li><a href="../admin/02.html">56 어드민 홈 (Basic)</a></li>
-        <li><a href="../admin/03.html">57 어드민 홈 (Pro · 체험 중)</a></li>
-        <li><a href="../admin/04.html">58 어드민 홈 (집계 지연)</a></li>
+        <li><a href="../admin/01.html">56 어드민 홈 (Pro)</a></li>
+        <li><a href="../admin/02.html">57 어드민 홈 (Basic)</a></li>
+        <li><a href="../admin/03.html">58 어드민 홈 (Pro · 체험 중)</a></li>
+        <li><a href="../admin/04.html">59 어드민 홈 (집계 지연)</a></li>
       </ul>
     </details>
   </div>
@@ -173,7 +174,6 @@
               <tbody>
                 <tr><td>Pro 월 구독료 (정상가)</td><td class="num">23,900원</td></tr>
                 <tr class="is-discount"><td>출시가 할인 (12회 결제까지)</td><td class="num">-6,000원</td></tr>
-                <tr><td>공급가액</td><td class="num">17,900원</td></tr>
                 <tr><td>부가세 (10%)</td><td class="num">1,790원</td></tr>
                 <tr class="is-total"><td>결제 금액 (부가세 포함)</td><td class="num">19,690원</td></tr>
               </tbody>
@@ -197,18 +197,40 @@
               <span>정기결제 카드가 등록되어 있지 않습니다.</span>
               <button type="button" class="signup-btn is-line">카드 등록</button>
             </div>
-            <p class="co-note">카드 등록은 토스페이먼츠 화면에서 진행됩니다. 카드는 계정당 1개만 등록할 수 있습니다.</p>
           </div>
 
-          <label class="co-agree">
-            <input type="checkbox" onchange="document.getElementById('pay').classList.toggle('is-disabled', !this.checked)">
-            <span><b>[필수]</b> 위 요금과 결제 조건을 확인했으며, 매월 정기결제에 동의합니다.</span>
-            <span class="num-mark">5</span>
-          </label>
+          <div class="co-box">
+            <p class="co-title">약관 <span class="num-mark">5</span></p>
+            <ul class="co-terms">
+              <li><span>유료 서비스 이용약관</span><a href="09.html">보기</a></li>
+              <li><span>정기결제(자동결제) 이용약관</span><a href="09.html">보기</a></li>
+              <li><span>전자금융거래 이용약관</span><a href="09.html">보기</a></li>
+              <li><span>개인정보 제3자 제공 (토스페이먼츠)</span><a href="09.html">보기</a></li>
+            </ul>
+          </div>
+
+          <div class="co-box co-consent">
+            <p class="co-title">약관 동의 <span class="num-mark">6</span></p>
+            <label class="co-check co-check-all">
+              <input type="checkbox" onchange="var on=this.checked; document.querySelectorAll('.co-req').forEach(function (c) { c.checked = on; }); coPay();">
+              <b>전체 동의</b>
+            </label>
+            <label class="co-check"><input type="checkbox" class="co-req" onchange="coPay()"> <span><em>[필수]</em> 유료 서비스 이용약관 동의</span></label>
+            <label class="co-check"><input type="checkbox" class="co-req" onchange="coPay()"> <span><em>[필수]</em> 정기결제(자동결제) 이용 동의</span></label>
+            <label class="co-check"><input type="checkbox" class="co-req" onchange="coPay()"> <span><em>[필수]</em> 전자금융거래 이용약관 동의</span></label>
+            <label class="co-check"><input type="checkbox" class="co-req" onchange="coPay()"> <span><em>[필수]</em> 개인정보 제3자 제공 동의 (토스페이먼츠)</span></label>
+            <label class="co-check"><input type="checkbox" class="co-req" onchange="coPay()"> <span><em>[필수]</em> 위 요금과 결제 조건을 확인했으며, 매월 정기결제에 동의합니다.</span></label>
+          </div>
 
           <div class="signup-submit">
-            <a id="pay" href="../admin/01.html" class="signup-btn is-disabled">19,690원 결제하기</a> <span class="num-mark">6</span>
+            <a id="pay" href="../admin/01.html" class="signup-btn is-disabled">19,690원 결제하기</a> <span class="num-mark">7</span>
           </div>
+          <script>
+            function coPay() {
+              var all = Array.prototype.every.call(document.querySelectorAll('.co-req'), function (c) { return c.checked; });
+              document.getElementById('pay').classList.toggle('is-disabled', !all);
+            }
+          </script>
         </div>
       </main>
 
@@ -252,11 +274,12 @@
     <p class="desc-trigger">플랜 선택 화면에서 [선택한 플랜으로 계속]을 눌렀을 때 표시됩니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 플랜 선택에서 고른 플랜과 옵션을 보여줍니다. [플랜 다시 선택]은 플랜 선택 화면으로 돌아갑니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 플랜 기본료는 정상가로, 출시가는 할인 항목으로 표시하고 부가세는 따로 적습니다(POL-01, BIL-09).</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 플랜 기본료는 정상가로, 출시가는 할인 항목으로 표시하고 부가세는 따로 적습니다. 공급가액 행은 두지 않습니다(POL-01, BIL-09).</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 정기결제·사용량 추가 요금·개설·해지 조건을 결제 전에 안내합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">4</span> 등록된 카드가 없으면 토스페이먼츠 카드 등록을 안내합니다. 카드 등록 화면은 아직 없어 동작하지 않습니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">5</span> 정기결제 동의는 필수이며, 동의하지 않으면 결제할 수 없습니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">6</span> 동의 전에는 [결제하기]가 비활성입니다. 결제와 사이트 개설이 끝나면 어드민 홈으로 이동합니다. 결제 진행·실패 화면은 TBD입니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 등록된 카드가 없으면 카드 등록을 안내합니다. 카드 등록 화면은 아직 없어 동작하지 않습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> 결제에 필요한 약관 목록입니다. [보기]를 누르면 약관 팝업이 열립니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">6</span> 약관 동의 영역입니다. [전체 동의]를 체크하면 아래 항목이 모두 체크되며, 필수 항목에 모두 동의해야 결제할 수 있습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">7</span> 필수 항목에 모두 동의하기 전에는 [결제하기]가 비활성입니다. 결제와 사이트 개설이 끝나면 어드민 홈으로 이동합니다. 결제 진행·실패 화면은 TBD입니다.</div>
     </div>
   </div>
 
