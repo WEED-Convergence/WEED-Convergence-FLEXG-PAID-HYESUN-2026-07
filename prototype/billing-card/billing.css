@@ -464,6 +464,7 @@
 }
 
 .result-icon.is-success { background-color: #1a8a3f; }
+.result-icon.is-warning { background-color: #c99a00; }
 .result-icon.is-danger { background-color: #c81e1e; }
 
 .result-center h1 {
