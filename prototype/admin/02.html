@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>02 어드민 홈 (Basic) - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../subscription/subscription.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">36 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">37 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">38 청구 내역</a></li>
+        <li class="index-group-label">
+          CDN 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">39 정상</a></li>
+            <li><a href="../cdn/02.html">40 주의 (80% 도달)</a></li>
+            <li><a href="../cdn/03.html">41 초과</a></li>
+            <li><a href="../cdn/04.html">42 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">43 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">44 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">45 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">46 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">47 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="../front/01.html">48 회원가입</a></li>
+            <li><a href="../front/04.html">49 가입 완료 · 신규</a></li>
+            <li><a href="../front/06.html">50 플랜 선택</a></li>
+            <li><a href="../front/07.html">51 플랜 선택 (홈페이지에서 플랜 선택)</a></li>
+            <li><a href="../front/08.html">52 결제 전 확인 · 정기결제 동의</a></li>
+            <li class="index-group-label">
+              가입 후 분기 (예외)
+              <ul class="index-subsublist">
+                <li><a href="../front/02.html">53 기존 고객 (EXT)</a></li>
+                <li><a href="../front/03.html">54 초대 (INV)</a></li>
+                <li><a href="../front/05.html">55 신규 · 진행 중인 신청 있음</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 홈</summary>
+      <ul class="index-list">
+        <li><a href="01.html">56 어드민 홈 (Pro)</a></li>
+        <li class="is-current"><a href="02.html">57 어드민 홈 (Basic)</a></li>
+        <li><a href="03.html">58 어드민 홈 (Pro · 체험 중)</a></li>
+        <li><a href="04.html">59 어드민 홈 (집계 지연)</a></li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center">
+    <div class="screen-canvas">
+    <div class="admin-shell">
+    <div class="admin-gnb">
+      <span class="gnb-home" aria-hidden="true"></span>
+      <span class="gnb-item">상품<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">주문<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">발주<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">CS</span>
+      <span class="gnb-item">정산</span>
+      <span class="gnb-item">매출</span>
+      <span class="gnb-item">통계</span>
+      <span class="gnb-item">회원</span>
+      <span class="gnb-item">CRM<span class="gnb-badge">N</span></span>
+      <span class="gnb-item gnb-item-live">LIVE<span class="gnb-badge">N</span></span>
+      <span class="gnb-item">메시지</span>
+      <span class="gnb-item">게시판</span>
+      <span class="gnb-item">APP</span>
+      <span class="gnb-item">셀러</span>
+      <span class="gnb-item">제휴<span class="gnb-badge">N</span></span>
+    </div>
+      <div class="home-main">
+
+        <div class="home-head">
+          <h1>어드민 홈</h1>
+          <p class="home-site">플렉스 스토어 <span>store.flexg-sample.kr</span></p>
+        </div>
+
+        <div class="home-cards">
+          <div class="home-card">
+            <h2 class="home-card-title">내 플랜 <span class="num-mark">1</span></h2>
+            <p class="home-plan">Basic <span class="badge badge-success">이용 중</span></p>
+            <dl class="home-kv">
+              <div><dt>다음 결제일</dt><dd>2027-06-19</dd></div>
+            </dl>
+            <a class="home-link" href="../subscription/04.html">구독 관리</a>
+          </div>
+          <div class="home-card">
+            <h2 class="home-card-title">CDN <span class="num-mark">2</span></h2>
+            <dl class="home-kv">
+              <div><dt>기본량</dt><dd>50GB <span class="tag-tbd">TBD</span></dd></div>
+              <div><dt>사용량</dt><dd>12.4GB (24.8%)</dd></div>
+            </dl>
+            <a class="home-link" href="../cdn/01.html">CDN 사용량</a>
+          </div>
+          <div class="home-card">
+            <h2 class="home-card-title">개설 · 배포 <span class="num-mark">3</span></h2>
+            <dl class="home-kv">
+              <div><dt>사이트 개설</dt><dd><span class="badge badge-success">완료</span></dd></div>
+              <div><dt>배포</dt><dd><span class="badge badge-neutral">배포 전</span></dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="home-start">
+          <h2 class="home-card-title">사이트 만들기 <span class="num-mark">4</span></h2>
+          <p class="home-start-desc">Page Builder로 홈페이지를 만들어 보세요.</p>
+          <button type="button" class="btn btn-primary">Page Builder로 만들기</button>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">결제와 사이트 개설이 끝난 Basic 고객이 어드민에 들어왔을 때 표시됩니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 현재 플랜과 상태, 다음 결제일을 보여줍니다. [구독 관리]는 구독 관리 화면으로 이동합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> CDN 기본량(Basic 50GB / Pro 100GB)과 사용량을 보여줍니다. 기본량은 CDN 화면과 기준이 달라 확정 전까지 TBD로 표시했습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 사이트 개설 완료와 배포 상태를 따로 보여줍니다(PLT-01).</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> Basic은 Page Builder 제작(F02)으로 바로 연결하고, FLEXG Page 사용 여부는 묻지 않습니다. F02 화면은 아직 없어 동작하지 않습니다.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* 어드민 홈 프로토타입 - 전용 스타일
+   공통 레이아웃은 ../style.css, 기본 컴포넌트는 ../subscription/subscription.css 를 재사용합니다. */
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 28px 36px;
+}
+
+.home-head h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.home-site {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.home-site span {
+  margin-left: 6px;
+  font-weight: normal;
+  color: #888888;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.banner-info { background-color: #eef1ff; color: #2b3ac2; }
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.home-card,
+.home-start {
+  padding: 18px 20px;
+  border: 1px solid #e3e4e8;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+.home-plan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.home-kv {
+  margin: 0;
+  font-size: 13px;
+}
+
+.home-kv > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+}
+
+.home-kv dt { color: #888888; }
+.home-kv dd { margin: 0; color: #222222; text-align: right; }
+
+.home-link {
+  margin-top: auto;
+  font-size: 12px;
+  color: #3140d6;
+  text-decoration: none;
+}
+
+.home-start-desc {
+  margin: 8px 0 12px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.home-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 18px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.home-start .btn {
+  margin-left: 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.tag-tbd {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 6px;
+  border-radius: 3px;
+  background-color: #fde8e8;
+  color: #d12f2f;
+  font-size: 11px;
+  font-weight: bold;
+}

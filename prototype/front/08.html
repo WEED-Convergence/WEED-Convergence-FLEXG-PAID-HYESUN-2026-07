@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>08 결제 전 확인 · 정기결제 동의 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="front.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">2 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">3 미등록 · 해지 예약 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">4 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">5 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">6 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">7 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">8 카드 등록 완료 · 해지 예약 취소 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 (미납 재시도 연결) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">10 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">11 카드 삭제 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">12 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">13 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">14 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">15 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">16 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">17 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">18 결제 완료 · 갱신 지연 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">19 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">20 변경 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">21 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/14.html">22 해지 예약 (카드 삭제) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">23 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">24 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">25 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">26 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">27 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">28 결제 확인 중 (팝업)</a></li>
+                <li><a href="../first-payment/04.html">29 결제 확인됨 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/05.html">30 결제 완료</a></li>
+                <li><a href="../payment-status/01.html">31 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">32 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">33 진행 중인 거래</a></li>
+                <li><a href="../payment-status/04.html">34 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">35 개설 실패 복구</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">36 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">37 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">38 청구 내역</a></li>
+        <li class="index-group-label">
+          CDN 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">39 정상</a></li>
+            <li><a href="../cdn/02.html">40 주의 (80% 도달)</a></li>
+            <li><a href="../cdn/03.html">41 초과</a></li>
+            <li><a href="../cdn/04.html">42 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">43 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">44 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">45 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">46 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">47 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="01.html">48 회원가입</a></li>
+            <li><a href="04.html">49 가입 완료 · 신규</a></li>
+            <li><a href="06.html">50 플랜 선택</a></li>
+            <li><a href="07.html">51 플랜 선택 (홈페이지에서 플랜 선택)</a></li>
+            <li class="is-current"><a href="08.html">52 결제 전 확인 · 정기결제 동의</a></li>
+            <li class="index-group-label">
+              가입 후 분기 (예외)
+              <ul class="index-subsublist">
+                <li><a href="02.html">53 기존 고객 (EXT)</a></li>
+                <li><a href="03.html">54 초대 (INV)</a></li>
+                <li><a href="05.html">55 신규 · 진행 중인 신청 있음</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 홈</summary>
+      <ul class="index-list">
+        <li><a href="../admin/01.html">56 어드민 홈 (Pro)</a></li>
+        <li><a href="../admin/02.html">57 어드민 홈 (Basic)</a></li>
+        <li><a href="../admin/03.html">58 어드민 홈 (Pro · 체험 중)</a></li>
+        <li><a href="../admin/04.html">59 어드민 홈 (집계 지연)</a></li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center is-front">
+    <div class="screen-canvas">
+    <div class="front-page">
+
+      <header class="front-header">
+        <a class="front-logo" href="#"><span class="front-logo-mark">F</span>FLEX-G</a>
+        <nav class="front-nav">
+          <a href="#">서비스</a>
+          <a href="#">요금</a>
+          <a href="#">고객사례</a>
+          <a href="#">고객지원</a>
+          <a href="#">제휴·제안</a>
+        </nav>
+        <div class="front-header-right">
+          <a href="#">로그인</a>
+          <a class="front-cta" href="#">쇼핑몰 만들기</a>
+        </div>
+      </header>
+
+      <main class="front-main">
+        <div class="checkout">
+          <h1 class="signup-title">결제 전 확인</h1>
+          <p class="rec-lead">선택하신 플랜의 요금과 조건을 확인한 뒤 정기결제에 동의해 주십시오.</p>
+
+          <div class="co-box">
+            <p class="co-title">선택한 플랜 <span class="num-mark">1</span></p>
+            <dl class="result-info">
+              <div><dt>플랜</dt><dd>Pro · CDN 100GB 포함</dd></div>
+              <div><dt>FLEXG Page</dt><dd>사용하지 않음</dd></div>
+              <div><dt>추가 CDN</dt><dd>선택하지 않음</dd></div>
+            </dl>
+            <a class="co-change" href="06.html">플랜 다시 선택</a>
+          </div>
+
+          <div class="co-box">
+            <p class="co-title">결제 금액 <span class="num-mark">2</span></p>
+            <table class="co-table">
+              <tbody>
+                <tr><td>Pro 월 구독료 (정상가)</td><td class="num">23,900원</td></tr>
+                <tr class="is-discount"><td>출시가 할인 (12회 결제까지)</td><td class="num">-6,000원</td></tr>
+                <tr><td>공급가액</td><td class="num">17,900원</td></tr>
+                <tr><td>부가세 (10%)</td><td class="num">1,790원</td></tr>
+                <tr class="is-total"><td>결제 금액 (부가세 포함)</td><td class="num">19,690원</td></tr>
+              </tbody>
+            </table>
+            <p class="co-note">표시 가격은 VAT 별도입니다. 2/18~4/30 가입 고객은 12회 결제까지 출시가가 적용되고, 13회차부터 정상가로 결제됩니다.</p>
+          </div>
+
+          <div class="co-box">
+            <p class="co-title">결제 조건 <span class="num-mark">3</span></p>
+            <ul class="co-list">
+              <li>매월 같은 날 등록한 카드로 자동 결제됩니다.</li>
+              <li>사용량에 따라 추가 요금이 생길 수 있습니다.</li>
+              <li>결제 후 사이트 개설이 시작되며, 개설에 실패해도 다시 결제하지 않습니다.</li>
+              <li>해지는 예약 방식이며, 이용 종료일까지 계속 이용하실 수 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="co-box">
+            <p class="co-title">결제수단 <span class="num-mark">4</span></p>
+            <div class="co-card">
+              <span>정기결제 카드가 등록되어 있지 않습니다.</span>
+              <button type="button" class="signup-btn is-line">카드 등록</button>
+            </div>
+            <p class="co-note">카드 등록은 토스페이먼츠 화면에서 진행됩니다. 카드는 계정당 1개만 등록할 수 있습니다.</p>
+          </div>
+
+          <label class="co-agree">
+            <input type="checkbox" onchange="document.getElementById('pay').classList.toggle('is-disabled', !this.checked)">
+            <span><b>[필수]</b> 위 요금과 결제 조건을 확인했으며, 매월 정기결제에 동의합니다.</span>
+            <span class="num-mark">5</span>
+          </label>
+
+          <div class="signup-submit">
+            <a id="pay" href="../admin/01.html" class="signup-btn is-disabled">19,690원 결제하기</a> <span class="num-mark">6</span>
+          </div>
+        </div>
+      </main>
+
+      <footer class="front-footer">
+        <div class="front-footer-top">
+          <div class="front-footer-links">
+            <a href="#">서비스</a>
+            <a href="#">요금</a>
+            <a href="#">고객사례</a>
+            <a href="#">고객지원</a>
+            <a href="#">제휴·제안</a>
+          </div>
+          <div class="front-footer-links">
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+        </div>
+        <div class="front-footer-bottom">
+          <div>
+            <p class="front-footer-brand">FLEX-G</p>
+            <p class="front-footer-info">서울특별시 금천구 벚꽃로 298 대륭포스트타워6차 313호<br>
+            대표이사 김형준·김동재 &nbsp;|&nbsp; 사업자번호 158-86-01603<br>
+            고객센터 070-7771-5866 &nbsp;|&nbsp; 운영시간 평일 10:00~18:00</p>
+          </div>
+          <div class="front-footer-actions">
+            <a class="front-icon-btn" href="#" aria-label="채팅 상담">💬</a>
+            <a class="front-icon-btn" href="#" aria-label="위치">⌖</a>
+            <a class="front-family" href="#">Family Site <span aria-hidden="true">⌄</span></a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-tbd">TBD : 이 화면의 상세 요구사항이 정해지지 않아, 이미 정해진 정책(가격·정기결제·토스페이먼츠)으로만 구성했습니다.</p>
+    <p class="desc-trigger">플랜 선택 화면에서 [선택한 플랜으로 계속]을 눌렀을 때 표시됩니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 플랜 선택에서 고른 플랜과 옵션을 보여줍니다. [플랜 다시 선택]은 플랜 선택 화면으로 돌아갑니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 플랜 기본료는 정상가로, 출시가는 할인 항목으로 표시하고 부가세는 따로 적습니다(POL-01, BIL-09).</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 정기결제·사용량 추가 요금·개설·해지 조건을 결제 전에 안내합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 등록된 카드가 없으면 토스페이먼츠 카드 등록을 안내합니다. 카드 등록 화면은 아직 없어 동작하지 않습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> 정기결제 동의는 필수이며, 동의하지 않으면 결제할 수 없습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">6</span> 동의 전에는 [결제하기]가 비활성입니다. 결제와 사이트 개설이 끝나면 어드민 홈으로 이동합니다. 결제 진행·실패 화면은 TBD입니다.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
