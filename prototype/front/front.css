@@ -1248,3 +1248,282 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+/* ---------- 플랜 선택 (정리된 구성) ---------- */
+.ps {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #222222;
+}
+
+.ps-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #1a8a3f;
+}
+
+.ps-title {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.ps-lead {
+  margin: 0 0 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* 추천 */
+.ps-rec {
+  margin: 0 0 28px;
+  padding: 20px 22px;
+  border-radius: 12px;
+  background-color: #f6f7f9;
+}
+
+.ps-rec-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ps-rec-head span.opt { font-weight: normal; color: #999999; font-size: 12px; }
+
+.ps-q {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.ps-q-label { color: #555555; }
+
+.ps-seg {
+  display: flex;
+  gap: 6px;
+}
+
+.ps-seg span {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid #dcdde2;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #555555;
+}
+
+.ps-seg span.is-on {
+  border-color: #e04848;
+  color: #e04848;
+  font-weight: bold;
+}
+
+.ps-rec-result {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.ps-rec-result b { color: #e04848; }
+
+.ps-rule {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.ps-rule summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #3140d6;
+}
+
+.ps-rule table {
+  width: 100%;
+  margin: 8px 0 4px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.ps-rule th,
+.ps-rule td {
+  padding: 7px 10px;
+  border: 1px solid #ececf0;
+  text-align: left;
+}
+
+.ps-rule th { background-color: #fafafb; color: #777777; font-weight: normal; }
+
+/* 플랜 카드 */
+.ps-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ps-card {
+  padding: 24px 22px 20px;
+  border: 1px solid #dcdde2;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+
+.ps-card.is-selected {
+  border: 2px solid #e04848;
+  padding: 23px 21px 19px;
+  box-shadow: 0 6px 18px rgba(224, 72, 72, 0.12);
+}
+
+.ps-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 4px;
+}
+
+.ps-card-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.ps-radio {
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c4c5cb;
+  border-radius: 50%;
+}
+
+.ps-card.is-selected .ps-radio { border: 5px solid #e04848; }
+
+.ps-badge {
+  padding: 3px 9px;
+  border-radius: 10px;
+  background-color: #e04848;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.ps-for {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.ps-price {
+  margin: 0;
+  font-size: 13px;
+  color: #999999;
+}
+
+.ps-price b {
+  margin-right: 6px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.ps-price s { margin-right: 4px; }
+
+.ps-trial {
+  display: inline-block;
+  margin: 8px 0 16px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: #fdeeee;
+  color: #c62f2f;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.ps-feat {
+  margin: 0;
+  padding: 14px 0 0;
+  border-top: 1px solid #f0f0f2;
+  list-style: none;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.ps-feat li { display: flex; gap: 8px; }
+.ps-feat i { flex: 0 0 14px; font-style: normal; font-weight: bold; }
+.ps-feat .is-yes i { color: #1a8a3f; }
+.ps-feat .is-no { color: #aaaaae; }
+.ps-feat em { font-style: normal; color: #999999; font-size: 12px; }
+.ps-feat li span { line-height: 1.6; padding: 4px 0; }
+
+.ps-notes {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+.ps-notes b { color: #222222; }
+
+/* 추가 용량 */
+.ps-addon {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0 0;
+  padding: 14px 16px;
+  border: 1px dashed #c4c5cb;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.ps-addon small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.ps-addon-tag {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background-color: #eceef2;
+  color: #666666;
+  font-size: 11px;
+}
+
+.ps-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 28px 0 0;
+}
+
+.front-page .ps-submit .signup-btn {
+  min-width: 280px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 16px;
+}

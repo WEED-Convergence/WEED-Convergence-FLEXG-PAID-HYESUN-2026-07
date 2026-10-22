@@ -191,95 +191,76 @@
       </header>
 
       <main class="front-main">
-        <div class="recommend">
-          <div class="welcome">
-            <p class="welcome-hello">환영합니다.</p>
-            <p class="welcome-done">플렉스지 <b>회원가입이 완료</b>되었습니다. <span class="num-mark">8</span></p>
-          </div>
-          <h1 class="signup-title">플랜 선택</h1>
-          <p class="rec-lead">질문에 답하고 추천을 받거나, 아래에서 바로 플랜을 고를 수 있습니다.</p>
+        <div class="ps">
+          <p class="ps-welcome">✓ 환영합니다. 플렉스지 <b>회원가입이 완료</b>되었습니다. <span class="num-mark">8</span></p>
+          <h1 class="ps-title">플랜 선택</h1>
+          <p class="ps-lead">질문에 답하고 추천을 받거나, 아래에서 바로 플랜을 고를 수 있습니다.</p>
 
-          <details class="rec-details" open>
-            <summary>플랜 추천 받기 <span class="opt">(선택)</span></summary>
+          <section class="ps-rec">
+            <p class="ps-rec-head">플랜 추천 받기 <span class="opt">(선택)</span> <span class="num-mark">1</span></p>
+            <div class="ps-q"><span class="ps-q-label">운영 목적 *</span><div class="ps-seg"><span>회사·브랜드 소개 홈페이지</span><span class="is-on">브랜드몰 · 상품 판매(커머스)</span></div></div>
+            <div class="ps-q"><span class="ps-q-label">상품·주문·회원 데이터 *</span><div class="ps-seg"><span class="is-on">사용합니다</span><span>사용하지 않습니다</span></div></div>
+            <p class="ps-rec-result">추천 플랜은 <b>Pro</b>입니다. 브랜드몰 · 상품 판매 목적이고 커머스 데이터를 사용하므로 Pro를 추천합니다. 다른 플랜을 선택하셔도 됩니다. <span class="num-mark">3</span></p>
+            <details class="ps-rule">
+              <summary>추천 기준 보기 <span class="num-mark">2</span></summary>
+              <table>
+                <thead><tr><th>운영 목적</th><th>상품·주문·회원 데이터</th><th>추천 플랜</th></tr></thead>
+                <tbody>
+                  <tr><td>회사·브랜드 소개 홈페이지</td><td>사용하지 않음</td><td>Basic</td></tr>
+                  <tr><td>회사·브랜드 소개 홈페이지</td><td>사용함</td><td>Pro</td></tr>
+                  <tr><td>브랜드몰 · 상품 판매</td><td>사용함 / 사용하지 않음</td><td>Pro</td></tr>
+                </tbody>
+              </table>
+              페이지 수나 사이트 이름으로는 추천하지 않습니다.
+            </details>
+          </section>
 
-          <div class="q-row">
-            <div class="q-block">
-              <p class="q-title">운영 목적 <span class="req">*</span></p>
-              <label class="q-option"><input type="radio" name="q1"> 회사·브랜드 소개 홈페이지</label>
-              <label class="q-option"><input type="radio" name="q1" checked> 브랜드몰 · 상품 판매(커머스)</label>
-            </div>
-            <div class="q-block">
-              <p class="q-title">상품·주문·회원 데이터 <span class="req">*</span></p>
-              <label class="q-option"><input type="radio" name="q2" checked> 사용합니다</label>
-              <label class="q-option"><input type="radio" name="q2"> 사용하지 않습니다</label>
-            </div>
-          </div>
-          <p class="result-mark"><span class="num-mark">1</span></p>
-
-          <div class="judge">
-            <p class="judge-title">추천 기준</p>
-            <table class="judge-table">
-              <thead><tr><th>운영 목적</th><th>상품·주문·회원 데이터</th><th>추천 플랜</th></tr></thead>
-              <tbody>
-                <tr><td>회사·브랜드 소개 홈페이지</td><td>사용하지 않음</td><td>Basic</td></tr>
-                <tr><td>회사·브랜드 소개 홈페이지</td><td>사용함</td><td>Pro</td></tr>
-                <tr><td>브랜드몰 · 상품 판매</td><td>사용함 / 사용하지 않음</td><td>Pro</td></tr>
-              </tbody>
-            </table>
-            <p class="judge-note">페이지 수나 사이트 이름으로는 추천하지 않습니다.</p>
-          </div>
-          <p class="result-mark"><span class="num-mark">2</span></p>
-
-          <h2 class="rec-heading">추천 플랜은 <b>Pro</b>입니다 <span class="num-mark">3</span></h2>
-          <p class="rec-reason">브랜드몰 · 상품 판매 목적이고 커머스 데이터를 사용하므로 Pro를 추천합니다. 다른 플랜을 선택하셔도 됩니다.</p>
-          </details>
-
-          <div class="plan-cards">
-            <label class="plan-card">
-              <div class="plan-card-head"><input type="radio" name="plan"><span class="plan-card-name">Basic</span></div>
-              <span class="trial-tag">14일 무료 체험 포함</span>
-              <p class="plan-card-for">회사·브랜드 소개 홈페이지</p>
-              <p class="plan-card-price"><b>월 9,900원</b> <s>12,900원</s> <span>VAT 별도</span></p>
-              <ul class="plan-card-feat">
-                <li>트래픽 50GB 포함</li>
-                <li>FLEXG Page 포함 <em>(필수)</em></li>
+          <div class="ps-cards">
+            <div class="ps-card">
+              <div class="ps-card-top"><span class="ps-card-name"><span class="ps-radio"></span>Basic</span></div>
+              <p class="ps-for">회사·브랜드 소개 홈페이지</p>
+              <p class="ps-price"><b>월 9,900원</b><s>12,900원</s> VAT 별도</p>
+              <span class="ps-trial">14일 무료 체험 포함</span>
+              <ul class="ps-feat">
+                <li class="is-yes"><i>✓</i>기본 트래픽 50GB</li>
+                <li class="is-yes"><i>✓</i><span>홈페이지 템플릿 + FLEXG Page <em>(필수 포함)</em></span></li>
+                <li class="is-yes"><i>✓</i>추가 트래픽 구매 가능</li>
+                <li class="is-no"><i>✕</i>상품 · 주문 · 회원 데이터</li>
+                <li class="is-no"><i>✕</i>판매 (PG 결제 · 배송)</li>
+                <li class="is-no"><i>✕</i>포틀릿 · 커머스 바인딩</li>
               </ul>
-            </label>
-            <label class="plan-card is-selected">
-              <div class="plan-card-head"><input type="radio" name="plan" checked><span class="plan-card-name">Pro</span><span class="plan-badge">추천</span></div>
-              <span class="trial-tag">14일 무료 체험 포함</span>
-              <p class="plan-card-for">브랜드몰 · 상품 판매(커머스)</p>
-              <p class="plan-card-price"><b>월 17,900원</b> <s>23,900원</s> <span>VAT 별도</span></p>
-              <ul class="plan-card-feat">
-                <li>트래픽 100GB 포함</li>
-                <li>FLEXG Page 사용 선택 가능 <em>(결제 후 어드민에서 선택)</em></li>
+            </div>
+            <div class="ps-card is-selected">
+              <div class="ps-card-top"><span class="ps-card-name"><span class="ps-radio"></span>Pro</span><span class="ps-badge">추천</span></div>
+              <p class="ps-for">브랜드몰 · 상품 판매(커머스)</p>
+              <p class="ps-price"><b>월 17,900원</b><s>23,900원</s> VAT 별도</p>
+              <span class="ps-trial">14일 무료 체험 포함</span>
+              <ul class="ps-feat">
+                <li class="is-yes"><i>✓</i>기본 트래픽 100GB</li>
+                <li class="is-yes"><i>✓</i><span>쇼핑몰 템플릿 + FLEXG Page <em>(사용 선택 · 결제 후 어드민에서 선택)</em></span></li>
+                <li class="is-yes"><i>✓</i>추가 트래픽 구매 가능</li>
+                <li class="is-yes"><i>✓</i>상품 · 주문 · 회원 데이터</li>
+                <li class="is-yes"><i>✓</i>판매 (PG 결제 · 배송)</li>
+                <li class="is-yes"><i>✓</i>포틀릿 · 커머스 바인딩</li>
               </ul>
-            </label>
+            </div>
           </div>
-          <table class="compare-plan">
-            <thead><tr><th>제공 범위</th><th>Basic</th><th>Pro</th></tr></thead>
-            <tbody>
-              <tr><td>기본 트래픽</td><td>50GB</td><td>100GB</td></tr>
-              <tr><td>사이트 제작</td><td>홈페이지 템플릿 + FLEXG Page</td><td>쇼핑몰 템플릿 + FLEXG Page 사용 선택</td></tr>
-              <tr><td>상품 · 주문 · 회원 데이터</td><td>✕</td><td>○</td></tr>
-              <tr><td>판매 (PG 결제 · 배송)</td><td>✕</td><td>○</td></tr>
-              <tr><td>포틀릿 · 커머스 바인딩</td><td>✕</td><td>○</td></tr>
-              <tr><td>추가 트래픽 구매</td><td>가능</td><td>가능</td></tr>
-            </tbody>
-          </table>
           <p class="result-mark"><span class="num-mark">6</span></p>
-          <p class="trial-note">Basic과 Pro 모두 <b>14일 무료 체험</b>으로 시작합니다. 체험이 끝나면 고른 플랜으로 자동 결제되며, 체험은 계정당 1회입니다. <span class="num-mark">7</span></p>
-          <p class="price-note">2/18~4/30 가입 고객은 12회 결제까지 출시가가 적용됩니다.</p>
 
-          <div class="addon-box">
-            <label class="addon-row"><input type="checkbox"> <span><b>트래픽 추가 용량 50GB</b> · 월 정기형 · 월 #{추가 50GB 월 요금}원</span></label>
-            <p class="addon-note">추가 트래픽을 구매하지 않아도 첫 배포를 할 수 있습니다.</p>
-          </div>
+          <ul class="ps-notes">
+            <li>· Basic과 Pro 모두 <b>14일 무료 체험</b>으로 시작합니다. 체험이 끝나면 고른 플랜으로 자동 결제되며, 체험은 계정당 1회입니다. <span class="num-mark">7</span></li>
+            <li>· 2/18~4/30 가입 고객은 12회 결제까지 출시가가 적용됩니다.</li>
+          </ul>
 
-          <div class="signup-submit">
-            <a href="10.html" class="signup-btn">선택한 플랜으로 계속</a>
+          <label class="ps-addon"><input type="checkbox">
+            <span><span class="ps-addon-tag">선택</span> <b>트래픽 추가 용량 50GB</b> · 월 정기형 · 월 #{추가 50GB 월 요금}원
+              <small>추가 트래픽을 구매하지 않아도 첫 배포를 할 수 있습니다.</small></span>
+            <span class="num-mark">4</span>
+          </label>
+
+          <div class="ps-submit">
+            <a href="10.html" class="signup-btn">선택한 플랜으로 계속</a> <span class="num-mark">5</span>
           </div>
-          <p class="result-mark"><span class="num-mark">4</span> <span class="num-mark">5</span></p>
         </div>
       </main>
 
@@ -322,11 +303,11 @@
     <p class="desc-trigger">회원가입 후 보유 사이트·계약이 없어 신규로 확인됐을 때 바로 표시됩니다. 홈페이지 요금 페이지에서 플랜을 고르고 가입한 경우도 같습니다. 가입 후 플랜을 신청하지 않고 나간 신규 계정(사이트 없음)이 다시 로그인했을 때도 이 화면으로 이동합니다. 들어올 때 이미 진행 중인 결제·개설 요청이 있으면 이 화면 대신 진행 중인 신청 안내로 이동합니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> [플랜 추천 받기]에서 운영 목적과 커머스 데이터 사용 여부로 플랜을 추천합니다. 페이지 수나 사이트 이름·아이디로는 추천하지 않습니다. 홈페이지에서 고른 플랜이 전달되면 이 영역을 접은 상태로 보여주고 문항을 생략합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 홈페이지 요금 페이지와 같은 판단표를 씁니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 홈페이지 요금 페이지와 같은 판단표를 씁니다. 판단표는 [추천 기준 보기]를 눌러 펼쳐 봅니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 추천 플랜에 [추천] 배지를 붙이고 미리 선택해 두지만, 다른 플랜도 고를 수 있습니다. 홈페이지에서 전달된 플랜이 있으면 그 플랜을 미리 선택하고 [선택한 플랜] 배지를 붙입니다. 출시가와 정상가를 함께 표기합니다. Basic은 FLEXG Page 포함(필수), Pro는 FLEXG Page 사용을 선택할 수 있음을 표시합니다. 추가 요금은 없으며, 사용 여부는 결제 후 어드민 홈에서 한 번만 고릅니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">4</span> 추가 트래픽은 기본으로 선택되어 있지 않으며, 구매하지 않아도 첫 배포가 가능함을 안내합니다. Free·연 할인 경로는 보여주지 않습니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">5</span> [선택한 플랜으로 계속]을 누르면 Pro는 템플릿 선택 (Pro), Basic은 템플릿 선택 (Basic)으로 이동합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">6</span> 두 플랜의 제공 범위를 표로 비교합니다. Basic에서 쓸 수 없는 커머스 데이터·판매·포틀릿 바인딩을 함께 보여줍니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">6</span> 두 플랜의 제공 범위를 카드 안에 같은 순서의 ✓ / ✕ 목록으로 비교합니다. Basic에서 쓸 수 없는 커머스 데이터·판매·포틀릿 바인딩은 회색 ✕로 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">7</span> Basic과 Pro 모두 14일 무료 체험이 포함되어, 어느 플랜을 골라도 체험으로 시작합니다. 체험은 계정당 1회이며, 이미 체험을 쓴 계정에는 체험 표시를 빼고, 결제 전 확인에서 바로 결제합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">8</span> 가입 완료 인사를 이 화면 맨 위에 함께 보여줍니다. 별도의 가입 완료 화면을 거치지 않고 바로 플랜 선택으로 이어집니다. 다시 로그인해 들어온 경우에는 가입 완료 인사를 보여주지 않습니다.</div>
     </div>
