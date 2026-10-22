@@ -557,3 +557,16 @@ button.btn {
   line-height: 1.5;
   white-space: nowrap;
 }
+
+/* 기획 표시: 확정 전 문구 (TBD) */
+.mark-tbd {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 6px;
+  border-radius: 3px;
+  background-color: #fde8e8;
+  color: #d12f2f;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+}
