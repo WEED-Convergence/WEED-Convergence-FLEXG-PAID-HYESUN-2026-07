@@ -1,0 +1,290 @@
+/* CDN 사용량 안내 - 메일 · 알림톡 */
+
+.notify-canvas {
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px 48px;
+  background-color: #eef0f3;
+}
+
+/* ---------- 메일 ---------- */
+
+.mail {
+  width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #dcdde2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mail-meta {
+  padding: 14px 20px;
+  border-bottom: 1px solid #e3e4e8;
+  background-color: #f8f9fa;
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.8;
+}
+
+.mail-meta b {
+  display: inline-block;
+  width: 56px;
+  color: #888888;
+  font-weight: normal;
+}
+
+.mail-subject {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.mail-body {
+  padding: 32px 36px 28px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.mail-logo {
+  margin: 0 0 28px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.mail-body h1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.mail-body p {
+  margin: 0 0 16px;
+}
+
+.mail-table {
+  width: 100%;
+  margin: 8px 0 20px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.mail-table th,
+.mail-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececf0;
+  text-align: left;
+}
+
+.mail-table th {
+  width: 96px;
+  color: #888888;
+  font-weight: normal;
+}
+
+.mail-table td b {
+  color: #d12f2f;
+}
+
+.mail-note {
+  font-size: 13px;
+  color: #666666;
+}
+
+.mail-btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 24px 0 8px;
+}
+
+.mail-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  background-color: #e04848;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mail-foot {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 18px 36px 24px;
+  border-top: 1px solid #ececf0;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #999999;
+}
+
+.mail-foot p { margin: 0; }
+
+/* ---------- 알림톡 ---------- */
+
+.kakao-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.kakao-phone {
+  width: 340px;
+  min-height: 640px;
+  border-radius: 28px;
+  border: 8px solid #222222;
+  background-color: #bacee0;
+  overflow: hidden;
+}
+
+.kakao-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background-color: #bacee0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.kakao-top span { color: #555555; font-weight: normal; }
+
+.kakao-chat {
+  display: flex;
+  gap: 8px;
+  padding: 4px 12px 24px;
+}
+
+.kakao-profile {
+  flex: 0 0 36px;
+  height: 36px;
+  border-radius: 14px;
+  background-color: #e04848;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kakao-col { flex: 1; min-width: 0; }
+
+.kakao-name {
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: #333333;
+}
+
+.kakao-bubble {
+  position: relative;
+  width: 252px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.kakao-head {
+  padding: 10px 14px;
+  background-color: #fee500;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.kakao-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.kakao-text {
+  margin: 0;
+  padding: 14px 14px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #222222;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+
+.kakao-btns {
+  padding: 0 14px 14px;
+}
+
+.kakao-btn {
+  display: block;
+  padding: 9px 0;
+  border-radius: 4px;
+  background-color: #f2f3f5;
+  font-size: 12px;
+  color: #222222;
+  text-align: center;
+  text-decoration: none;
+}
+
+.kakao-time {
+  margin: 4px 0 0;
+  font-size: 10px;
+  color: #556677;
+}
+
+.kakao-mark {
+  position: absolute;
+  right: 6px;
+}
+
+.kakao-spec {
+  width: 320px;
+  background-color: #ffffff;
+  border: 1px solid #dcdde2;
+  border-radius: 8px;
+  padding: 18px 20px;
+  font-size: 12px;
+  color: #333333;
+}
+
+.kakao-spec h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.kakao-spec table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kakao-spec th,
+.kakao-spec td {
+  padding: 7px 0;
+  border-bottom: 1px solid #ececf0;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.kakao-spec th {
+  width: 92px;
+  color: #888888;
+  font-weight: normal;
+}
+
+.kakao-spec code {
+  font-size: 11px;
+  color: #3140d6;
+}
