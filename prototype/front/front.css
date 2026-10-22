@@ -1527,3 +1527,197 @@
   border-radius: 8px;
   font-size: 16px;
 }
+
+/* ---------- 결제 전 확인 (정리된 구성) ---------- */
+.cx {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #222222;
+}
+
+.cx-title {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.cx-lead {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.cx-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 28px;
+  border: 1px solid #e3e4e8;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.cx-sum {
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.cx-sum + .cx-sum { border-left: 1px solid #e3e4e8; background-color: #fafafb; }
+.cx-sum p { margin: 0; font-size: 12px; color: #777777; }
+.cx-sum b { display: block; margin: 4px 0 2px; font-size: 26px; font-weight: 800; }
+.cx-sum.is-today b { color: #e04848; }
+
+.cx-sec {
+  margin: 0 0 22px;
+}
+
+.cx-sec-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cx-sec-title a {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: normal;
+  color: #3140d6;
+}
+
+.cx-rows {
+  margin: 0;
+  padding: 4px 16px;
+  border-radius: 10px;
+  background-color: #f6f7f9;
+  font-size: 13px;
+}
+
+.cx-rows > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid #ebecef;
+}
+
+.cx-rows > div:last-child { border-bottom: none; }
+.cx-rows dt { color: #777777; }
+.cx-rows dd { margin: 0; text-align: right; }
+.cx-rows dd a { margin-left: 6px; font-size: 12px; color: #3140d6; }
+.cx-rows .is-discount dd { color: #1a8a3f; }
+.cx-rows .is-total { padding-top: 12px; }
+.cx-rows .is-total dt { color: #222222; font-weight: bold; }
+.cx-rows .is-total dd { font-size: 16px; font-weight: 800; }
+
+.cx-note {
+  margin: 8px 2px 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #888888;
+}
+
+.cx-list {
+  margin: 0;
+  padding: 12px 16px 12px 30px;
+  border-radius: 10px;
+  background-color: #f6f7f9;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #555555;
+}
+
+.cx-steps {
+  margin: 30px 0 0;
+  padding: 20px;
+  border: 2px solid #222222;
+  border-radius: 14px;
+}
+
+.cx-steps-title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cx-step {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+}
+
+.cx-step + .cx-step {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #ececf0;
+}
+
+.cx-step-no {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+}
+
+.cx-step-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cx-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.cx-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 13px;
+  color: #444444;
+}
+
+.cx-check.is-all {
+  margin-bottom: 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f6f7f9;
+  font-weight: bold;
+  color: #222222;
+}
+
+.cx-check span { flex: 1; }
+.cx-check em { font-style: normal; color: #e04848; margin-right: 2px; }
+.cx-check a { font-size: 12px; color: #888888; text-decoration: underline; }
+
+.cx-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 24px 0 0;
+}
+
+.front-page .cx-submit .signup-btn {
+  flex: 1;
+  height: 54px;
+  border-radius: 10px;
+  font-size: 16px;
+}
