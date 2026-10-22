@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>15 어드민 홈 (Basic) - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../subscription/subscription.css">
+<link rel="stylesheet" href="admin.css">
+<link rel="stylesheet" href="home-basic.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">0 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">1 카드 있음 · Pro <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/13.html">2 카드 있음 · Basic <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/12.html">3 카드 있음 · 체험 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">4 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">5 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">6 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">7 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">8 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">9 완료 · 미납 결제 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/16.html">10 완료 · 미납 결제 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">11 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">12 카드 삭제 불가 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">13 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">14 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">15 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">16 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">17 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">18 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">19 결제 완료 · 갱신 지연</a></li>
+            <li><a href="../subscription/05.html">20 유예</a></li>
+            <li><a href="../subscription/18.html">21 이용 중단 (유예 종료)</a></li>
+            <li><a href="../subscription/06.html">22 변경</a></li>
+            <li><a href="../subscription/07.html">23 해지 예약</a></li>
+            <li><a href="../subscription/20.html">24 해지 예약 (체험 중)</a></li>
+            <li><a href="../subscription/08.html">25 만료</a></li>
+            <li><a href="../subscription/09.html">26 이용 중 (결제 권한 없음)</a></li>
+            <li><a href="../subscription/11.html">27 해지 예약 확인</a></li>
+            <li><a href="../subscription/19.html">28 해지 예약 확인 (체험 중)</a></li>
+            <li><a href="../subscription/21.html">29 재결제 (팝업)</a></li>
+            <li><a href="../subscription/22.html">30 재결제 완료</a></li>
+            <li><a href="../subscription/23.html">31 재결제 실패</a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">32 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">33 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">34 결제 확인 · 사이트 개설 중</a></li>
+                <li><a href="../payment-status/01.html">35 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">36 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">37 진행 중인 결제 있음</a></li>
+                <li><a href="../payment-status/04.html">38 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">39 개설 복구 대기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">40 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">41 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">42 청구 내역</a></li>
+        <li class="index-group-label">
+          청구 상세
+          <ul class="index-sublist">
+            <li><a href="../subscription/24.html">43 청구 상세 (예정)</a></li>
+            <li><a href="../subscription/25.html">44 청구 상세 (확정)</a></li>
+            <li><a href="../subscription/26.html">45 청구 상세 (결제 완료)</a></li>
+            <li><a href="../subscription/27.html">46 청구 상세 (미납)</a></li>
+            <li><a href="../subscription/28.html">47 청구 상세 (환불)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          트래픽 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">48 정상</a></li>
+            <li><a href="../cdn/02.html">49 주의 (80% 도달)</a></li>
+            <li class="index-group-label">
+              안내 발송 (80% 도달)
+              <ul class="index-subsublist">
+                <li><a href="../cdn/10.html">50 메일</a></li>
+                <li><a href="../cdn/11.html">51 알림톡</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/03.html">52 초과</a></li>
+            <li><a href="../cdn/04.html">53 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">54 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">55 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">56 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">57 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">58 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="../policy/signup.html">59 회원가입 정책서</a></li>
+            <li><a href="../front/flow.html">60 회원가입 사용자 동선</a></li>
+            <li><a href="../front/01.html">61 회원가입</a></li>
+            <li><a href="../front/02.html">62 회원가입 · 이미 가입된 회원 (팝업)</a></li>
+            <li><a href="../front/06.html">63 플랜 선택</a></li>
+            <li><a href="../front/10.html">64 템플릿 선택 (Pro)</a></li>
+            <li><a href="../front/18.html">65 템플릿 선택 (Basic)</a></li>
+            <li><a href="../front/19.html">66 템플릿 미리보기 (팝업)</a></li>
+            <li><a href="../front/08.html">67 결제 전 확인 · 정기결제 동의</a></li>
+            <li><a href="../front/09.html">68 약관 보기 (팝업)</a></li>
+            <li><a href="../front/12.html">69 사이트 개설 중</a></li>
+            <li class="index-group-label">
+              분기 · 예외 상황
+              <ul class="index-subsublist">
+                <li><a href="../front/14.html">70 가입 완료 · 기존 고객 (EXT)</a></li>
+                <li><a href="../front/17.html">71 개설 복구 대기</a></li>
+                <li><a href="../front/05.html">72 진행 중인 신청 있음</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 온보딩</summary>
+      <ul class="index-list">
+        <li><a href="02.html">73 어드민 홈 (Basic)</a></li>
+        <li><a href="08.html">74 어드민 홈 (Basic · 체험 중)</a></li>
+        <li><a href="04.html">75 어드민 홈 (집계 지연)</a></li>
+        <li><a href="05.html">76 회원 기능 설정</a></li>
+        <li><a href="06.html">77 Basic 배포 체크리스트</a></li>
+        <li><a href="07.html">78 Pro 배포 · 판매 개시</a></li>
+        <li class="index-group-label">
+          홈페이지 배포 체크리스트
+          <ul class="index-sublist">
+            <li><a href="09.html">79 진행 중</a></li>
+            <li><a href="10.html">80 자료 부족</a></li>
+            <li><a href="11.html">81 검수 결과 (이용 불가 기능 포함)</a></li>
+            <li><a href="12.html">82 도메인 연결 대기</a></li>
+            <li><a href="13.html">83 배포 실패</a></li>
+            <li><a href="14.html">84 배포 완료 · 접속 확인</a></li>
+          </ul>
+        </li>
+        <li class="is-current"><a href="15.html">85 어드민 홈 (Basic)</a></li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="hb-main">
+
+        <div class="hb-banners">
+          <div class="hb-banner is-a">홈페이지 오픈 준비 가이드</div>
+          <div class="hb-banner is-b">문의 폼으로 고객 응대하기</div>
+          <div class="hb-banner is-c">검색에 잘 보이는 홈페이지 만들기 <span class="num-mark" style="margin-left:6px;">1</span></div>
+        </div>
+
+        <div class="hb-checklist">
+          <h2 class="hb-section-title">플렉스지 체크리스트 <span class="num-mark">2</span></h2>
+          <div class="hb-cl-card">
+            <p class="hb-cl-head"><b>홈페이지 배포</b><span>4 / 9 단계</span></p>
+            <div class="hb-cl-track" aria-hidden="true"><span class="hb-cl-fill" style="width:44%"></span></div>
+            <p class="hb-cl-desc">홈페이지를 점검하고 공개하면 방문자가 접속할 수 있습니다.</p>
+            <a href="09.html" class="hb-cl-btn">이어서 하기</a>
+          </div>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">방문 현황 <span class="num-mark">3</span></h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>방문수(UV)</th><th>페이지뷰(PV)</th><th>실시간 유입기기</th><th>실시간 인기 페이지</th><th>DAU</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="hb-value">128</span><span class="hb-sub">최근 30분 기준</span></td>
+                <td><span class="hb-value">412</span><span class="hb-sub">최근 30분 기준</span></td>
+                <td>
+                  <ul class="hb-list"><li>Mobile Web <b>64%</b></li><li>Mobile APP <b>6%</b></li><li>Desktop <b>30%</b></li></ul>
+                  <span class="hb-sub">최근 30분 기준</span>
+                </td>
+                <td>
+                  <ol class="hb-ol"><li>메인</li><li>회사 소개</li><li>서비스 안내</li><li>포트폴리오</li><li>문의하기</li><li>공지사항</li></ol>
+                  <span class="hb-sub">최근 30분 기준</span>
+                </td>
+                <td><span class="hb-value">342</span><span class="hb-sub">최근 30분 기준</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="hb-update">마지막 업데이트 2027-06-10 19:30</p>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">회원 현황 <span class="num-mark">4</span></h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>신규가입</th><th>회원탈퇴</th><th>총 회원 수</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><ul class="hb-list"><li>어제 <b>3명</b></li><li>지난주 <b>18명</b></li><li>이번달 <b>41명</b></li></ul></td>
+                <td><ul class="hb-list"><li>어제 <b>0명</b></li><li>지난주 <b>2명</b></li><li>이번달 <b>3명</b></li></ul></td>
+                <td><span class="hb-value">1,284명</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">유료서비스 현황 <small>이번 달에 청구 예정인 유료서비스 이용현황입니다.</small> <span class="num-mark">5</span></h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>SMS</th><th>LMS</th><th>알림톡</th><th>트래픽</th><th>총 이용금액</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="hb-value">120건</span><span class="hb-sub">2,400원</span></td>
+                <td><span class="hb-value">35건</span><span class="hb-sub">1,750원</span></td>
+                <td><span class="hb-value">210건</span><span class="hb-sub">1,680원</span></td>
+                <td><span class="hb-link-btn">트래픽 사용량 보기</span></td>
+                <td><span class="hb-value">5,830원</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hb-two">
+          <div class="hb-box">
+            <div class="hb-board-head"><h2 class="hb-section-title">공지사항 <span class="num-mark">6</span></h2><span class="hb-more">더보기</span></div>
+            <ul class="hb-board">
+              <li><span>[안내] 현충일 고객센터 운영 안내</span><span>2027-06-08</span></li>
+              <li><span>[점검] 6월 정기 서버 점검 안내 (06-15 02:00~04:00)</span><span>2027-06-05</span></li>
+              <li><span>[안내] 개인정보처리방침 개정 안내</span><span>2027-06-01</span></li>
+              <li><span>[안내] 알림톡 템플릿 심사 기준 변경 안내</span><span>2027-05-27</span></li>
+              <li><span>[이벤트] 홈페이지 오픈 지원 프로그램 안내</span><span>2027-05-20</span></li>
+            </ul>
+          </div>
+          <div class="hb-box">
+            <div class="hb-board-head"><h2 class="hb-section-title">업데이트</h2><span class="hb-more">더보기</span></div>
+            <ul class="hb-board">
+              <li><span>플렉스지 페이지 이미지 편집 기능 개선</span><span>2027-06-09</span></li>
+              <li><span>문의 폼 첨부파일 업로드 지원</span><span>2027-06-02</span></li>
+              <li><span>검색/공유 설정에 대표 이미지 미리보기 추가</span><span>2027-05-26</span></li>
+              <li><span>트래픽 사용량 화면 집계 기준 표시 개선</span><span>2027-05-19</span></li>
+              <li><span>모바일 메뉴 템플릿 3종 추가</span><span>2027-05-12</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">Basic 고객이 어드민에 들어왔을 때 표시되는 홈 화면입니다. 예시는 홈페이지 배포 체크리스트를 진행 중(4 / 9 단계)인 상태입니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 상단에 가이드 배너 3개를 나란히 보여줍니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 플렉스지 체크리스트에 홈페이지 배포 진행 단계와 진행 막대를 보여줍니다. [이어서 하기]는 홈페이지 배포 체크리스트 (진행 중) 화면으로 이동합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 방문수, 페이지뷰, 실시간 유입기기 비율, 실시간 인기 페이지(상위 6개), DAU를 최근 30분 기준으로 보여주고, 마지막 업데이트 시각을 표시합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 신규가입과 회원탈퇴를 어제 · 지난주 · 이번달로 나눠 보여주고, 총 회원 수를 표시합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> 이번 달에 청구 예정인 SMS · LMS · 알림톡 건수와 금액, 총 이용금액을 보여줍니다. 트래픽은 금액 대신 [트래픽 사용량 보기] 버튼으로 표시합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">6</span> 공지사항과 업데이트를 최신 5건씩 제목과 날짜로 보여주고, [더보기]로 전체 목록을 봅니다.</div>
+    </div>
+  </div>
+
+</div>
+<script src="../index-scroll.js"></script>
+</body>
+</html>
