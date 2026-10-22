@@ -533,3 +533,27 @@ button.btn {
 .sidebar-left .index-subsublist a {
   font-weight: normal;
 }
+
+/* 기획 표시: 삭제 예정 영역 (붉은 박스 + "삭제" 꼬리표) */
+.mark-del {
+  position: relative;
+  display: inline-block;
+  padding: 2px 6px;
+  outline: 2px solid #e5242b;
+  outline-offset: 1px;
+}
+
+.mark-del-tag {
+  position: absolute;
+  top: -20px;
+  right: -3px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background-color: #e5242b;
+  color: #ffffff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5;
+  white-space: nowrap;
+}
