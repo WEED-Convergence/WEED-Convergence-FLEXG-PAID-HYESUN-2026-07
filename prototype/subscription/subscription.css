@@ -345,3 +345,14 @@ table.data-table tr:last-child td {
   font-weight: normal;
   color: #999999;
 }
+
+/* 표 안의 작은 버튼 · 머리글은 줄바꿈하지 않음 */
+.data-table th,
+.data-table .btn-sm {
+  white-space: nowrap;
+}
+
+.data-table a.btn-sm {
+  text-decoration: none;
+  color: inherit;
+}
