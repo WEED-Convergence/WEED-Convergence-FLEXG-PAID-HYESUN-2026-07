@@ -1728,3 +1728,14 @@
 .tplv-bar { display: block; height: 5px; margin-top: 7px; border-radius: 3px; background-color: #e3e7ee; }
 .tplv-bar.is-short { width: 60%; }
 .tplv-cta { margin: 0 18px 18px; padding: 10px; border-radius: 4px; background-color: #222222; color: #ffffff; font-size: 11px; text-align: center; }
+
+/* 플랜에 따라 보이는 문구 표시 */
+.cx-only {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background-color: #e6eaff;
+  color: #3140d6;
+  font-size: 11px;
+}
