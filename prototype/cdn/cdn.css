@@ -230,3 +230,16 @@ table.data-table .num {
 .invoice-discount td {
   color: #1a8a3f;
 }
+
+/* 집계 기준 · 제공량 · 사용량 3열 */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.three-col .kv-row dt {
+  flex: 0 0 72px;
+  width: 72px;
+}
