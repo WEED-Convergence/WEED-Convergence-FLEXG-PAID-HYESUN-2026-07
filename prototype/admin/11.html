@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../subscription/subscription.css">
 <link rel="stylesheet" href="admin.css">
 <link rel="stylesheet" href="deploy.css">
+<link rel="stylesheet" href="home-basic.css">
 </head>
 <body>
 <div class="layout">
@@ -50,7 +51,7 @@
       <ul class="index-list">
         <li><a href="15.html">16 어드민 홈 (Basic)</a></li>
         <li class="index-group-label">
-          홈페이지 배포 체크리스트
+          홈페이지 배포 체크리스트 (팝업)
           <ul class="index-sublist">
             <li><a href="09.html">17 진행 중</a></li>
             <li><a href="10.html">18 자료 부족</a></li>
@@ -174,26 +175,135 @@
 
 
   <div class="main-center">
-    <div class="screen-canvas">
-    <div class="admin-shell">
-    <div class="admin-gnb">
-      <span class="gnb-home" aria-hidden="true"></span>
-      <span class="gnb-item">상품<span class="gnb-badge">N</span></span>
-      <span class="gnb-item">주문<span class="gnb-badge">N</span></span>
-      <span class="gnb-item">발주<span class="gnb-badge">N</span></span>
-      <span class="gnb-item">CS</span>
-      <span class="gnb-item">정산</span>
-      <span class="gnb-item">매출</span>
-      <span class="gnb-item">통계</span>
-      <span class="gnb-item">회원</span>
-      <span class="gnb-item">CRM<span class="gnb-badge">N</span></span>
-      <span class="gnb-item gnb-item-live">LIVE<span class="gnb-badge">N</span></span>
-      <span class="gnb-item">메시지</span>
-      <span class="gnb-item">게시판</span>
-      <span class="gnb-item">APP</span>
-      <span class="gnb-item">셀러</span>
-      <span class="gnb-item">제휴<span class="gnb-badge">N</span></span>
-    </div>
+    <div class="screen-canvas is-popup">
+      <div class="hb-shell">
+        <div class="hb-gnb">
+          <div class="hb-gnb-shop">플렉스 스토어 🔗</div>
+          <nav class="hb-gnb-menu"><span class="hb-gnb-item is-home">⌂</span><span class="hb-gnb-item">상품 <span class="hb-n">N</span></span><span class="hb-gnb-item">주문</span><span class="hb-gnb-item">발주 <span class="hb-n">N</span></span><span class="hb-gnb-item">CS</span><span class="hb-gnb-item">정산</span><span class="hb-gnb-item">매출</span><span class="hb-gnb-item">통계</span><span class="hb-gnb-item">회원</span><span class="hb-gnb-item">CRM <span class="hb-n">N</span></span><span class="hb-gnb-item is-live">LIVE <span class="hb-n">N</span></span><span class="hb-gnb-item">메시지</span><span class="hb-gnb-item">게시판</span><span class="hb-gnb-item">APP</span><span class="hb-gnb-item">셀러</span><span class="hb-gnb-item">제휴 <span class="hb-n">N</span></span></nav>
+        </div>
+        <div class="hb-body">
+          <aside class="hb-lnb">
+            <div class="hb-lnb-shop">플렉스 스토어 🔗</div>
+            <div class="hb-lnb-profile">
+              <p class="hb-lnb-id"><b>flexstore</b>님</p>
+              <p class="hb-lnb-links">디자인관리<span>|</span>환경설정</p>
+              <div class="hb-lnb-icons">
+                <span class="hb-lnb-icon"><i>🏬</i>쇼핑몰</span>
+                <span class="hb-lnb-icon"><i>🚚</i>배송조회</span>
+                <span class="hb-lnb-icon"><i>📱</i>App설치</span>
+              </div>
+              <div class="hb-lnb-pills"><span>서비스 이용료</span><span>로그아웃</span></div>
+            </div>
+            <div class="hb-lnb-search">이름 ⌄ <em>검색어 입력</em> 🔍</div>
+            <div class="hb-lnb-menu">홈 <span class="hb-lnb-guide">가이드 📖</span></div>
+          </aside>
+      <div class="hb-main">
+
+        <div class="hb-banners">
+          <div class="hb-banner is-a">홈페이지 오픈 준비 가이드</div>
+          <div class="hb-banner is-b">문의 폼으로 고객 응대하기</div>
+          <div class="hb-banner is-c">검색에 잘 보이는 홈페이지 만들기</div>
+        </div>
+
+        <div class="hb-checklist">
+          <h2 class="hb-section-title">플렉스지 체크리스트</h2>
+          <div class="hb-cl-card">
+            <p class="hb-cl-head"><b>홈페이지 배포</b><span>4 / 9 단계</span></p>
+            <div class="hb-cl-track" aria-hidden="true"><span class="hb-cl-fill" style="width:44%"></span></div>
+            <p class="hb-cl-desc">홈페이지를 점검하고 공개하면 방문자가 접속할 수 있습니다.</p>
+            <a href="09.html" class="hb-cl-btn">이어서 하기</a>
+          </div>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">방문 현황</h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>방문수(UV)</th><th>페이지뷰(PV)</th><th>실시간 유입기기</th><th>실시간 인기 페이지</th><th>DAU</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="hb-value">128</span><span class="hb-sub">최근 30분 기준</span></td>
+                <td><span class="hb-value">412</span><span class="hb-sub">최근 30분 기준</span></td>
+                <td>
+                  <ul class="hb-list"><li>Mobile Web <b>64%</b></li><li>Mobile APP <b>6%</b></li><li>Desktop <b>30%</b></li></ul>
+                  <span class="hb-sub">최근 30분 기준</span>
+                </td>
+                <td>
+                  <ol class="hb-ol"><li>메인</li><li>회사 소개</li><li>서비스 안내</li><li>포트폴리오</li><li>문의하기</li><li>공지사항</li></ol>
+                  <span class="hb-sub">최근 30분 기준</span>
+                </td>
+                <td><span class="hb-value">342</span><span class="hb-sub">최근 30분 기준</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="hb-update">마지막 업데이트 2027-06-10 19:30</p>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">회원 현황</h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>신규가입</th><th>회원탈퇴</th><th>총 회원 수</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><ul class="hb-list"><li>어제 <b>3명</b></li><li>지난주 <b>18명</b></li><li>이번달 <b>41명</b></li></ul></td>
+                <td><ul class="hb-list"><li>어제 <b>0명</b></li><li>지난주 <b>2명</b></li><li>이번달 <b>3명</b></li></ul></td>
+                <td><span class="hb-value">1,284명</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hb-box">
+          <h2 class="hb-section-title">유료서비스 현황 <small>이번 달에 청구 예정인 유료서비스 이용현황입니다.</small></h2>
+          <table class="hb-table">
+            <thead>
+              <tr><th>SMS</th><th>LMS</th><th>알림톡</th><th>트래픽</th><th>총 이용금액</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="hb-value">120건</span><span class="hb-sub">2,400원</span></td>
+                <td><span class="hb-value">35건</span><span class="hb-sub">1,750원</span></td>
+                <td><span class="hb-value">210건</span><span class="hb-sub">1,680원</span></td>
+                <td><span class="hb-link-btn">트래픽 사용량 보기</span></td>
+                <td><span class="hb-value">5,830원</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hb-two">
+          <div class="hb-box">
+            <div class="hb-board-head"><h2 class="hb-section-title">공지사항</h2><span class="hb-more">더보기</span></div>
+            <ul class="hb-board">
+              <li><span>[안내] 현충일 고객센터 운영 안내</span><span>2027-06-08</span></li>
+              <li><span>[점검] 6월 정기 서버 점검 안내 (06-15 02:00~04:00)</span><span>2027-06-05</span></li>
+              <li><span>[안내] 개인정보처리방침 개정 안내</span><span>2027-06-01</span></li>
+              <li><span>[안내] 알림톡 템플릿 심사 기준 변경 안내</span><span>2027-05-27</span></li>
+              <li><span>[이벤트] 홈페이지 오픈 지원 프로그램 안내</span><span>2027-05-20</span></li>
+            </ul>
+          </div>
+          <div class="hb-box">
+            <div class="hb-board-head"><h2 class="hb-section-title">업데이트</h2><span class="hb-more">더보기</span></div>
+            <ul class="hb-board">
+              <li><span>플렉스지 페이지 이미지 편집 기능 개선</span><span>2027-06-09</span></li>
+              <li><span>문의 폼 첨부파일 업로드 지원</span><span>2027-06-02</span></li>
+              <li><span>검색/공유 설정에 대표 이미지 미리보기 추가</span><span>2027-05-26</span></li>
+              <li><span>트래픽 사용량 화면 집계 기준 표시 개선</span><span>2027-05-19</span></li>
+              <li><span>모바일 메뉴 템플릿 3종 추가</span><span>2027-05-12</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+        </div>
+      </div>
+
+    <div class="popup-overlay dp-overlay">
+      <div class="popup-modal dp-modal">
+        <a href="15.html" class="popup-close" aria-label="닫기">×</a>
       <div class="home-main">
         <div class="dp-head">
           <div>
@@ -249,13 +359,14 @@
         </div>
 
       </div>
+      </div>
     </div>
     </div>
   </div>
 
   <div class="sidebar-right">
     <h2>화면 설명</h2>
-    <p class="desc-trigger">배포 전 검수에서 Basic이 제공하지 않는 기능이 발견됐을 때 표시됩니다.</p>
+    <p class="desc-trigger">어드민 홈 (Basic)의 플렉스지 체크리스트에서 [이어서 하기]를 눌렀을 때 뜨는 팝업입니다. 배포 전 검수에서 Basic이 제공하지 않는 기능이 발견됐을 때 표시됩니다. [×]를 누르면 어드민 홈으로 돌아갑니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 진행 상태를 배지로 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> Basic에서 제공하지 않는 기능 때문에 배포할 수 없음을 알리고, 대체 구성이나 Pro 플랜 이용을 안내합니다.</div>

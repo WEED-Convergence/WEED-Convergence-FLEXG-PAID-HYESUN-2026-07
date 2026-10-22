@@ -152,3 +152,17 @@
 .dp-miss { color: #9a7400; }
 
 .dp-detail .kv-list { flex: 1; }
+
+/* 팝업으로 띄우는 배포 체크리스트 */
+.dp-overlay {
+  align-items: flex-start;
+  padding: 40px 32px;
+}
+
+.popup-modal.dp-modal {
+  max-width: 900px;
+}
+
+.dp-modal .home-main {
+  padding: 24px 28px 28px;
+}
