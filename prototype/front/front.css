@@ -1091,3 +1091,160 @@
   color: #666666 !important;
   text-decoration: underline !important;
 }
+
+/* ---------- 템플릿 미리보기 팝업 ---------- */
+
+.tplv-overlay {
+  z-index: 10;
+  padding: 24px 32px;
+}
+
+.tplv-modal {
+  max-width: none;
+  padding: 18px 24px 22px;
+  text-align: center;
+}
+
+.tplv-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 22px;
+  line-height: 1;
+  color: #666666;
+  text-decoration: none;
+}
+
+.tplv-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.tplv-frame {
+  width: 300px;
+  height: 440px;
+  margin: 0 auto;
+  border: 1px solid #dcdde2;
+  border-radius: 6px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.tplv-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.tplv-logo {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #222222;
+}
+
+.tplv-hero {
+  padding: 52px 0;
+  background-color: #ece0e4;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8a3b4b;
+  text-align: center;
+}
+
+.tplv-tabs {
+  display: flex;
+  gap: 16px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #ececf0;
+  font-size: 10px;
+  color: #8a94a6;
+}
+
+.tplv-tabs b { color: #222222; }
+
+.tplv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 14px;
+  padding: 18px;
+}
+
+.tplv-thumb {
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+}
+
+.tplv-name,
+.tplv-price {
+  display: block;
+  height: 5px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background-color: #e3e7ee;
+  width: 75%;
+}
+
+.tplv-price {
+  margin-top: 6px;
+  width: 40%;
+  background-color: #c9473d;
+}
+
+.tplv-foot {
+  padding: 18px;
+  background-color: #f6f5f3;
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.tplv-foot p {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 10px;
+}
+
+.tplv-foot i {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #dcdde2;
+  border-radius: 50%;
+}
+
+.tplv-mark-2 {
+  margin-top: 6px;
+}
+
+.tplv-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.tplv-actions a.signup-btn {
+  width: 150px;
+  margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tplv-actions a.signup-btn.is-line {
+  color: #222222;
+}
+
+/* [미리보기]를 링크로 연결 */
+.front-page a.tpl-preview {
+  color: #ffffff;
+  text-decoration: none;
+}
