@@ -475,3 +475,16 @@
   color: #333333;
   cursor: pointer;
 }
+
+/* ---------- 디자인 관리 > 기본설정 ---------- */
+.st-form.is-groups { padding: 0 20px; }
+.st-group { padding: 18px 0; border-top: 1px solid #e3e4e8; }
+.st-group:first-child { border-top: none; }
+.st-row.is-wide .st-label { flex-basis: 136px; }
+.st-input.is-meta { width: 300px; }
+.st-input.is-meta-l { width: 420px; }
+.st-file { display: flex; flex-direction: column; gap: 4px; }
+.st-file-top { display: flex; align-items: center; gap: 12px; }
+.st-del { font-size: 11px; color: #666666; }
+.st-del::before { content: "🗑"; margin-right: 2px; }
+.st-link-green { margin-left: 6px; color: #1f9d3e; font-weight: bold; text-decoration: underline; }

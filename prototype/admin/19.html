@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>19 기본설정 (Basic) - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../subscription/subscription.css">
+<link rel="stylesheet" href="settings.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="../policy/signup.html">1 회원가입 정책서</a></li>
+            <li><a href="../front/01.html">2 회원가입 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/02.html">3 회원가입 · 이미 가입된 회원 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/06.html">4 플랜 선택</a></li>
+            <li><a href="../front/10.html">5 템플릿 선택 (Pro) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/18.html">6 템플릿 선택 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/19.html">7 템플릿 미리보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/08.html">8 결제 전 확인 · 정기결제 동의 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/09.html">9 약관 보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/12.html">10 사이트 개설 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/17.html">11 개설 복구 대기 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/20.html">12 사이트 개설 완료 <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 온보딩</summary>
+      <ul class="index-list">
+        <li><a href="15.html">13 어드민 홈 (Basic)</a></li>
+        <li class="index-group-label">
+          홈페이지 배포 체크리스트 (팝업)
+          <ul class="index-sublist">
+            <li><a href="09.html">14 진행 중</a></li>
+            <li><a href="10.html">15 자료 부족</a></li>
+            <li><a href="11.html">16 검수 결과 (이용 불가 기능 포함)</a></li>
+            <li><a href="12.html">17 도메인 연결 대기</a></li>
+            <li><a href="13.html">18 배포 실패</a></li>
+            <li><a href="14.html">19 배포 완료 · 접속 확인</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 환경설정</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본정보
+          <ul class="index-sublist">
+            <li><a href="17.html">20 기본정보 (Basic)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          도메인 설정
+          <ul class="index-sublist">
+            <li><a href="18.html">21 도메인 설정 (Basic)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 디자인 관리</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본설정
+          <ul class="index-sublist">
+            <li class="is-current"><a href="19.html">22 기본설정 (Basic)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>문의 접수</summary>
+      <ul class="index-list">
+        <li><a href="../inquiry/01.html">23 1:1 문의 · 홈페이지 (Basic)</a></li>
+        <li><a href="../inquiry/02.html">24 문의 접수 · 어드민 (Basic)</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>정책</summary>
+      <ul class="index-list">
+        <li><a href="../policy/00.html">25 빌링정책서</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">26 카드 있음 (Pro) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/13.html">27 카드 있음 (Basic) <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/12.html">28 카드 있음 · 체험 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">29 미등록 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">30 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">31 미납 · 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">32 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">33 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">34 완료 · 미납 결제 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/16.html">35 완료 · 미납 결제 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">36 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">37 카드 삭제 불가 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>구독/청구</summary>
+      <ul class="index-list">
+        <li><a href="../policy/subscription.html">38 구독관리 정책서</a></li>
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">39 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">40 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">41 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">42 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">43 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">44 결제 완료 · 갱신 지연</a></li>
+            <li><a href="../subscription/05.html">45 유예</a></li>
+            <li><a href="../subscription/18.html">46 이용 중단 (유예 종료)</a></li>
+            <li><a href="../subscription/06.html">47 변경</a></li>
+            <li><a href="../subscription/07.html">48 해지 예약</a></li>
+            <li><a href="../subscription/20.html">49 해지 예약 (체험 중)</a></li>
+            <li><a href="../subscription/08.html">50 만료</a></li>
+            <li><a href="../subscription/09.html">51 이용 중 (결제 권한 없음)</a></li>
+            <li><a href="../subscription/11.html">52 해지 예약 확인</a></li>
+            <li><a href="../subscription/19.html">53 해지 예약 확인 (체험 중)</a></li>
+            <li><a href="../subscription/21.html">54 재결제 (팝업)</a></li>
+            <li><a href="../subscription/22.html">55 재결제 완료</a></li>
+            <li><a href="../subscription/23.html">56 재결제 실패</a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">57 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">58 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">59 결제 확인 · 사이트 개설 중</a></li>
+                <li><a href="../first-payment/06.html">60 결제 · 사이트 개설 완료</a></li>
+                <li><a href="../payment-status/01.html">61 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">62 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">63 진행 중인 결제 있음</a></li>
+                <li><a href="../payment-status/04.html">64 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">65 개설 복구 대기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">66 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">67 플랜 변경</a></li>
+        <li><a href="../subscription/12.html">68 청구 내역</a></li>
+        <li class="index-group-label">
+          청구 상세
+          <ul class="index-sublist">
+            <li><a href="../subscription/24.html">69 청구 상세 (예정)</a></li>
+            <li><a href="../subscription/25.html">70 청구 상세 (확정)</a></li>
+            <li><a href="../subscription/26.html">71 청구 상세 (결제 완료)</a></li>
+            <li><a href="../subscription/27.html">72 청구 상세 (미납)</a></li>
+            <li><a href="../subscription/28.html">73 청구 상세 (환불)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          트래픽 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">74 정상</a></li>
+            <li><a href="../cdn/02.html">75 주의 (80% 도달)</a></li>
+            <li class="index-group-label">
+              안내 발송 (80% 도달)
+              <ul class="index-subsublist">
+                <li><a href="../cdn/10.html">76 메일</a></li>
+                <li><a href="../cdn/11.html">77 알림톡</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/03.html">78 초과</a></li>
+            <li><a href="../cdn/04.html">79 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">80 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">81 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">82 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">83 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">84 추가 용량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="main-center">
+    <div class="screen-canvas">
+      <div class="st-shell">
+        <div class="st-gnb">
+          <div class="st-gnb-shop">테스트홈페이지 🔗 <span class="num-mark" style="margin-left:4px;">5</span></div>
+          <nav class="st-gnb-menu"><span class="st-gnb-item is-home">⌂</span><span class="st-gnb-item">상품 <span class="st-n">N</span></span><span class="st-gnb-item">주문</span><span class="st-gnb-item">발주 <span class="st-n">N</span></span><span class="st-gnb-item">CS</span><span class="st-gnb-item">정산</span><span class="st-gnb-item">매출</span><span class="st-gnb-item">통계</span><span class="st-gnb-item">회원</span><span class="st-gnb-item">CRM <span class="st-n">N</span></span><span class="st-gnb-item is-live">LIVE <span class="st-n">N</span></span><span class="st-gnb-item">메시지</span><span class="st-gnb-item">게시판</span><span class="st-gnb-item">APP</span><span class="st-gnb-item">셀러</span><span class="st-gnb-item">제휴 <span class="st-n">N</span></span></nav>
+        </div>
+        <div class="st-body">
+          <aside class="st-lnb">
+            <p class="st-lnb-id">hyesun1214 <span>로그아웃</span></p>
+            <div class="st-lnb-icons"><i>▤</i><i class="is-on">Ⓐ</i><i>▢</i><i>⚙</i><i class="is-end">❐</i></div>
+            <div class="st-theme">
+              <div class="st-theme-head"><span class="st-theme-thumb"></span><p class="st-theme-name">기본 제공 테마<em>기본 디자인</em></p></div>
+              <div class="st-theme-logo">FLEX G</div>
+            </div>
+            <div class="st-page"><span>Page</span><b>미연동</b><span>›</span></div>
+            <p class="st-lnb-links">홈페이지 바로가기<span>|</span>디자인 설정 <span class="num-mark">4</span></p>
+            <div class="st-lnb-search">이름 ⌄ <em></em> 🔍</div>
+            <div class="st-lnb-title">디자인 관리 <span class="st-lnb-guide">가이드 📖</span></div>
+            <ul class="st-lnb-menu"><li class="is-current">기본설정</li></ul>
+          </aside>
+
+          <div class="st-main">
+
+            <h2 class="st-title">홈페이지 정보 <small>표시 필수항목</small> <span class="num-mark">1</span></h2>
+            <div class="st-form is-groups">
+              <div class="st-group">
+                <div class="st-row"><span class="st-label st-req">홈페이지 명 <span class="num-mark">2</span></span><div class="st-field"><input class="st-input is-meta" value="테스트홈페이지"></div></div>
+                <div class="st-row"><span class="st-label st-req">홈페이지 로고</span><div class="st-field"><div class="st-file"><div class="st-file-top"><button type="button" class="st-btn-sm">파일 선택</button><span class="st-del">삭제</span></div><span class="st-hint is-info">300x90 크기의 JPG, PNG,GIF 파일만 가능하며 로고가 사용되는 모든 페이지에 적용됩니다. <a class="st-link-green">이미지 제작 가이드 PSD</a></span></div></div></div>
+                <div class="st-row"><span class="st-label">로고 위치</span><div class="st-field"><label class="st-radio"><input type="radio" name="logo">좌측</label><label class="st-radio"><input type="radio" name="logo" checked>가운데</label></div></div>
+              </div>
+              <div class="st-group">
+                <div class="st-row"><span class="st-label">메타태그 제목</span><div class="st-field"><input class="st-input is-meta" placeholder="제목 입력"><span class="st-hint is-info">홈페이지의 명칭으로 검색서비스에 노출되며 웹 브라우저 상단 표시와 즐겨찾기 등록시에 사용됩니다.(한글기준 32자 이하 권장) <span class="num-mark">3</span></span></div></div>
+                <div class="st-row"><span class="st-label">메타태그 설명</span><div class="st-field"><input class="st-input is-meta-l" placeholder="설명 입력"><span class="st-hint is-info">홈페이지의 간단한 요약정보이며 검색서비스에 노출됩니다.(한글 기준 80자 이하 권장)</span></div></div>
+                <div class="st-row"><span class="st-label">메타태그 키워드</span><div class="st-field"><input class="st-input is-meta-l" placeholder="키워드 입력"><span class="st-hint is-info">홈페이지를 대표하는 키워드를 콤마(,)로 구분해서 등록하실 수 있습니다.</span></div></div>
+              </div>
+              <div class="st-group">
+                <div class="st-row"><span class="st-label">오픈 그래프 제목</span><div class="st-field"><input class="st-input is-meta" placeholder="오픈 그래프 제목 입력"><span class="st-hint is-info">홈페이지 링크를 공유하실 때 사용되는 이미지와 내용입니다.</span></div></div>
+                <div class="st-row"><span class="st-label">오픈 그래프 설명</span><div class="st-field"><input class="st-input is-meta-l" placeholder="오픈 그래프 설명 입력"></div></div>
+                <div class="st-row"><span class="st-label">오픈 그래프 이미지</span><div class="st-field"><div class="st-file"><div class="st-file-top"><button type="button" class="st-btn-sm">파일 선택</button><span class="st-del">삭제</span></div><span class="st-hint is-info">500x250 크기의 JPG,PNG 파일만 등록하실 수 있습니다. <a class="st-link-green">이미지 제작 가이드 PSD</a></span></div></div></div>
+              </div>
+              <div class="st-group">
+                <div class="st-row"><span class="st-label">즐겨찾기 아이콘</span><div class="st-field"><div class="st-file"><div class="st-file-top"><button type="button" class="st-btn-sm">파일 선택</button><span class="st-del">삭제</span></div><span class="st-hint is-info">192x192 크기의 PNG 파일만 등록하실 수 있습니다. <a class="st-link-green">아이콘 제작 가이드 PSD</a></span></div></div></div>
+              </div>
+            </div>
+            <div class="st-actions"><button type="button" class="st-btn">변경사항 적용</button></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">Basic(홈페이지) 고객이 디자인 관리 &gt; 기본설정 메뉴를 열었을 때 표시됩니다.</p>
+    <p>쇼핑몰(Pro) 기본설정 화면과 달라진 점만 적습니다. 나머지는 같습니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> <span><b>변경</b> · 섹션명 "쇼핑몰 정보" → "홈페이지 정보"</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> <span><b>변경</b> · "쇼핑몰 명 · 쇼핑몰 로고" → "홈페이지 명 · 홈페이지 로고"</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> <span><b>변경</b> · 메타태그 · 오픈 그래프 안내 문구의 "쇼핑몰" → "홈페이지"</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> <span><b>변경</b> · "쇼핑몰 바로가기" → "홈페이지 바로가기"</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> <span><b>변경</b> · 상점명 예시 "테스트쇼핑몰" → "테스트홈페이지"</span></div>
+    </div>
+  </div>
+
+</div>
+<script src="../index-scroll.js"></script>
+</body>
+</html>
