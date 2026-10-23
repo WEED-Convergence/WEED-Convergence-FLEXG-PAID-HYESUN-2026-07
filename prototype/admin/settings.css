@@ -488,3 +488,32 @@
 .st-del { font-size: 11px; color: #666666; }
 .st-del::before { content: "🗑"; margin-right: 2px; }
 .st-link-green { margin-left: 6px; color: #1f9d3e; font-weight: bold; text-decoration: underline; }
+
+/* ---------- 부계정 설정 ---------- */
+.sa-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid #e3e4e8;
+  border-radius: 2px;
+}
+
+.sa-search-label { padding: 6px 12px; border-radius: 3px; background-color: #f2f2f4; font-size: 11px; color: #444444; }
+.sa-btns { display: flex; justify-content: center; gap: 4px; margin: 0 0 24px; }
+.sa-btn-gray { height: 26px; padding: 0 16px; border: none; border-radius: 2px; background-color: #8a8d95; color: #ffffff; font-family: inherit; font-size: 11px; font-weight: bold; }
+.sa-btn-dark { height: 26px; padding: 0 16px; border: none; border-radius: 2px; background-color: #3a3d44; color: #ffffff; font-family: inherit; font-size: 11px; font-weight: bold; }
+.sa-btn-red { height: 24px; padding: 0 9px; border: none; border-radius: 2px; background-color: #d9302c; color: #ffffff; font-family: inherit; font-size: 11px; font-weight: bold; }
+.sa-btn-green { height: 24px; padding: 0 8px; border: none; border-radius: 2px; background-color: #1f8f42; color: #ffffff; font-size: 11px; }
+
+.sa-count { font-size: 11px; font-weight: normal; color: #555555; }
+.sa-toolbar { display: flex; align-items: center; justify-content: space-between; margin: 8px 0; }
+.sa-toolbar-left { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #777777; }
+
+.sa-table { width: 100%; border-collapse: collapse; border-top: 1px solid #cfd0d6; font-size: 10px; }
+.sa-table th, .sa-table td { padding: 8px 6px; border: 1px solid #ececf0; border-left: none; border-right: none; text-align: center; color: #555555; }
+.sa-table th { background-color: #f7f7f8; font-weight: normal; }
+.sa-table td + td, .sa-table th + th { border-left: 1px solid #ececf0; }
+.sa-menu { line-height: 1.75; }
+.sa-manage { display: flex; justify-content: center; gap: 3px; }
