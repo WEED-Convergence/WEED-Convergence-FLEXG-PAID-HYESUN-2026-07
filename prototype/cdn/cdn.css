@@ -243,3 +243,7 @@ table.data-table .num {
   flex: 0 0 72px;
   width: 72px;
 }
+
+/* 현재 상태를 알리는 배너 강조 */
+.banner-danger  { border-left: 5px solid #d12f2f; font-weight: bold; }
+.banner-warning { border-left: 5px solid #d99a00; font-weight: bold; }

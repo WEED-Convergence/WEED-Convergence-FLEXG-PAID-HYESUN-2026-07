@@ -356,3 +356,40 @@ table.data-table tr:last-child td {
   text-decoration: none;
   color: inherit;
 }
+
+/* ---------- 현재 상태 강조 배너 ---------- */
+.status-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 1px solid transparent;
+  border-left-width: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.status-banner i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-style: normal;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.status-banner.is-danger  { background-color: #fdeded; border-color: #f5c6c6; border-left-color: #d12f2f; color: #b91c1c; }
+.status-banner.is-danger i  { background-color: #d12f2f; }
+.status-banner.is-warning { background-color: #fff6d8; border-color: #f0d58a; border-left-color: #d99a00; color: #8a6100; }
+.status-banner.is-warning i { background-color: #d99a00; }
+.status-banner.is-info    { background-color: #eef1ff; border-color: #c9cdf5; border-left-color: #3140d6; color: #2b3ac2; }
+.status-banner.is-info i    { background-color: #3140d6; }
+.status-banner.is-success { background-color: #e4f5e9; border-color: #b9e2c5; border-left-color: #1a8a3f; color: #1a6f34; }
+.status-banner.is-success i { background-color: #1a8a3f; }
+.status-banner.is-neutral { background-color: #eceef2; border-color: #d5d7dc; border-left-color: #4a4d55; color: #33363e; }
+.status-banner.is-neutral i { background-color: #4a4d55; }
