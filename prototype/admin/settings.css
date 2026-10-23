@@ -517,3 +517,24 @@
 .sa-table td + td, .sa-table th + th { border-left: 1px solid #ececf0; }
 .sa-menu { line-height: 1.75; }
 .sa-manage { display: flex; justify-content: center; gap: 3px; }
+
+/* ---------- Basic에서 빠지는 항목 (회색 줄) ---------- */
+.is-removed { background-color: #ededef !important; }
+.is-removed,
+.is-removed .st-label,
+.is-removed .st-radio,
+.is-removed .iq-check,
+.is-removed .st-hint { color: #a5a7ad !important; text-decoration: line-through; }
+.is-removed .num-mark { text-decoration: none; }
+.rm-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  background-color: #d9302c;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+.st-form .st-row.is-removed { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }

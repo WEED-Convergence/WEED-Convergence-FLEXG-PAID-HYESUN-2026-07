@@ -252,9 +252,13 @@
               </div></div>
               <div class="dm-th"><span class="">메뉴 권한 <span class="num-mark">1</span></span></div>
               <div class="dm-td"><div class="st-field"><label class="iq-check"><input type="checkbox">디자인 관리</label><label class="iq-check"><input type="checkbox">환경설정</label><label class="iq-check"><input type="checkbox">통계</label><label class="iq-check"><input type="checkbox">회원</label><label class="iq-check"><input type="checkbox">게시판</label><label class="iq-check"><input type="checkbox">셀러</label><label class="iq-check"><input type="checkbox">제휴</label></div></div>
-              <div class="dm-th"><span class="st-req">개인정보 조회 제한 <span class="num-mark">2</span></span></div>
+              <div class="dm-th is-removed"><span>결제수단별 주문 열람 권한</span> <span class="num-mark">2</span></div>
+              <div class="dm-td is-removed"><div class="st-field"><label class="iq-check"><input type="checkbox" disabled>신용카드</label><label class="iq-check"><input type="checkbox" disabled>휴대폰결제</label><label class="iq-check"><input type="checkbox" disabled>가상계좌</label><label class="iq-check"><input type="checkbox" disabled>무통장입금</label><label class="iq-check"><input type="checkbox" disabled>카카오페이</label><label class="iq-check"><input type="checkbox" disabled>페이코</label><label class="iq-check"><input type="checkbox" disabled>네이버페이</label><label class="iq-check"><input type="checkbox" disabled>해외카드</label><label class="iq-check"><input type="checkbox" disabled>애플페이</label><label class="iq-check"><input type="checkbox" disabled>토스페이</label><label class="iq-check"><input type="checkbox" disabled>내통장 결제</label><span class="rm-tag">삭제</span></div></div>
+              <div class="dm-th"><span class="st-req">개인정보 조회 제한</span></div>
               <div class="dm-td"><div class="st-field"><label class="st-radio"><input type="radio" name="pi">제한</label><label class="st-radio"><input type="radio" name="pi" checked>제한안함</label><span class="st-hint is-info">서비스 내 제공되는 모든 개인정보는 마스킹 처리되어 표시됩니다.</span></div></div>
-              <div class="dm-th"><span class="st-req">회원 정보 조회 제한 <span class="num-mark">3</span></span></div>
+              <div class="dm-th is-removed"><span class="st-label st-req" style="padding:0;">주문 정보 조회 제한</span> <span class="num-mark">3</span></div>
+              <div class="dm-td is-removed"><div class="st-field"><label class="st-radio"><input type="radio" disabled>제한</label><label class="st-radio"><input type="radio" disabled checked>제한안함</label><span class="st-hint is-info">일부 메뉴에서 주문정보 조회 시 검색조건이 정확히 일치하는 경우에만 검색됩니다.</span><span class="rm-tag">삭제</span></div></div>
+              <div class="dm-th"><span class="st-req">회원 정보 조회 제한</span></div>
               <div class="dm-td"><div class="st-field"><label class="st-radio"><input type="radio" name="mi">제한</label><label class="st-radio"><input type="radio" name="mi" checked>제한안함</label><span class="st-hint is-info">일부 메뉴에서 회원 정보 조회 시 이름, 아이디 등 정확히 일치하는 경우에만 검색됩니다.</span></div></div>
               <div class="dm-th"><span class="st-req">보안엑셀 다운로드 설정</span></div>
               <div class="dm-td"><div class="st-field"><label class="st-radio"><input type="radio" name="xl">사용</label><label class="st-radio"><input type="radio" name="xl" checked>사용안함</label><span class="st-hint is-info">사용 시 개인정보가 포함된 데이터 파일은 주계정 승인 완료 후, 입력된 이메일로 발송됩니다.</span></div></div>
@@ -273,7 +277,7 @@
   <div class="sidebar-right">
     <h2>화면 설명</h2>
     <p class="desc-trigger">Basic(홈페이지) 고객이 부계정 설정에서 [부계정 생성 +] 또는 [수정]을 눌렀을 때 표시됩니다.</p>
-    <p>쇼핑몰(Pro) 부계정 등록 · 수정 화면과 달라진 점만 적습니다. 나머지는 같습니다. [취소] · [적용]은 <a href="20.html">부계정 설정</a>으로 돌아갑니다.</p>
+    <p>쇼핑몰(Pro) 부계정 등록 · 수정 화면과 달라진 점만 적습니다. 나머지는 같습니다. 회색 줄은 Basic에서 빠지는 항목입니다. [취소] · [적용]은 <a href="20.html">부계정 설정</a>으로 돌아갑니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> <span><b>변경</b> · 메뉴 권한은 디자인 관리 · 환경설정 · 통계 · 회원 · 게시판 · 셀러 · 제휴만 남김</span></div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> <span><b>삭제</b> · "결제수단별 주문 열람 권한" 항목</span></div>
