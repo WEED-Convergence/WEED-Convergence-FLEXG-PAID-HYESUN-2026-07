@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>27 청구 상세 (미납) - 프로토타입</title>
+<title>27 청구 상세 (미납) (팝업) - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="subscription.css">
 <link rel="stylesheet" href="../cdn/cdn.css">
@@ -155,10 +155,10 @@
         <li class="index-group-label">
           청구 상세
           <ul class="index-sublist">
-            <li><a href="24.html">60 청구 상세 (예정)</a></li>
-            <li><a href="25.html">61 청구 상세 (확정)</a></li>
-            <li><a href="26.html">62 청구 상세 (결제 완료)</a></li>
-            <li class="is-current"><a href="27.html">63 청구 상세 (미납)</a></li>
+            <li><a href="24.html">60 청구 상세 (예정) (팝업)</a></li>
+            <li><a href="25.html">61 청구 상세 (확정) (팝업)</a></li>
+            <li><a href="26.html">62 청구 상세 (결제 완료) (팝업)</a></li>
+            <li class="is-current"><a href="27.html">63 청구 상세 (미납) (팝업)</a></li>
           </ul>
         </li>
         <li class="index-group-label">
@@ -209,7 +209,7 @@
   </div>
 
   <div class="main-center">
-    <div class="screen-canvas">
+    <div class="screen-canvas is-popup">
     <div class="admin-shell">
     <div class="admin-gnb">
       <span class="gnb-home" aria-hidden="true"></span>
@@ -256,15 +256,111 @@
     </nav>
       <div class="screen-main">
 
-      <div class="screen-header cdn-header">
-        <div>
-          <h1>청구 상세</h1>
-          <p class="desc">청구 금액이 어떻게 계산되었는지 항목별로 확인합니다.</p>
-        </div>
-        <div class="cdn-header-badge"><span class="badge badge-danger">미납</span> <span class="num-mark">1</span></div>
+      <div class="screen-header">
+        <h1>청구 내역</h1>
+        <p class="desc">서비스 이용료 청구 내역과 매출전표를 확인합니다.</p>
       </div>
 
       <div class="screen-body">
+
+        <div class="section-box">
+          <h2 class="section-title">조회 조건</h2>
+          <div class="filter-row">
+            <select class="select-box" aria-label="조회 기간">
+              <option>최근 1개월</option>
+              <option>최근 3개월</option>
+              <option>최근 6개월</option>
+              <option selected>최근 12개월</option>
+              <option>전체 기간</option>
+            </select>
+            <span class="btn">조회</span>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title">청구 내역</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>결제일</th>
+                  <th>이용 기간</th>
+                  <th>플랜</th>
+                  <th>청구 금액</th>
+                  <th>결제수단</th>
+                  <th>상태</th>
+                  <th>매출전표</th>
+                  <th>상세</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2027-06-19 (결제 예정일)</td>
+                  <td>4회차 (2027-06-19 ~ 2027-07-18)</td>
+                  <td>Pro</td>
+                  <td>26,510원 <span class="badge badge-info">예상</span></td>
+                  <td>샘플카드 ••••1234</td>
+                  <td><span class="badge badge-info">예정</span></td>
+                  <td>–</td>
+                  <td><a href="24.html" class="btn-sm">상세</a></td>
+                </tr>
+                <tr>
+                  <td>2027-05-19</td>
+                  <td>3회차 (2027-05-19 ~ 2027-06-18)</td>
+                  <td>Pro</td>
+                  <td>19,690원</td>
+                  <td>샘플카드 ••••1234</td>
+                  <td><span class="badge badge-success">결제 완료</span></td>
+                  <td><span class="btn-sm">보기</span></td>
+                  <td><span class="btn-sm">상세</span></td>
+                </tr>
+                <tr>
+                  <td>2027-04-19</td>
+                  <td>2회차</td>
+                  <td>Pro</td>
+                  <td>20,790원</td>
+                  <td>샘플카드 ••••1234</td>
+                  <td><span class="badge badge-success">결제 완료</span></td>
+                  <td><span class="btn-sm">보기</span></td>
+                  <td><a href="26.html" class="btn-sm">상세</a></td>
+                </tr>
+                <tr>
+                  <td>2027-03-19</td>
+                  <td>1회차</td>
+                  <td>Pro</td>
+                  <td>19,690원</td>
+                  <td>샘플카드 ••••1234</td>
+                  <td><span class="badge badge-success">결제 완료</span></td>
+                  <td><span class="btn-sm">보기</span></td>
+                  <td><span class="btn-sm">상세</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="pagination">
+            <span class="page-arrow">‹</span>
+            <span class="page-num is-active">1</span>
+            <span class="page-arrow">›</span>
+           
+          </div>
+
+          <p class="fine-print" style="margin-top:10px;">결제 금액은 부가세(10%)를 포함한 금액입니다.</p>
+          <p class="fine-print">예정 금액은 이용 기간이 끝나기 전의 예상 금액이며, 이용 기간 종료 후 확정됩니다. 메시징 충전금과 발송비는 구독 청구와 별도로 관리되며 이 화면에 포함되지 않습니다.</p>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="popup-overlay cdn-popup-overlay">
+      <div class="popup-modal popup-modal-wide">
+        <div class="cdn-modal-head">
+          <h2>청구 상세 <span class="badge badge-danger">미납</span> <span class="num-mark">1</span></h2>
+          <a href="12.html" class="btn btn-sm">닫기</a>
+        </div>
+        <div class="popup-modal-body">
         <div class="banner banner-danger">
           결제에 실패하여 미납 상태입니다. 결제수단을 확인한 뒤 다시 결제해 주십시오.
           <span class="num-mark">2</span>
@@ -315,21 +411,18 @@
         </div>
 
         <div class="btn-row-right">
-          <a href="12.html" class="btn">청구 내역</a>
+          <a href="12.html" class="btn">닫기</a>
           <span class="num-mark">7</span>
         </div>
-
-      </div>
-
+        </div>
       </div>
     </div>
-  </div>
-  </div>
+    </div>
   </div>
 
   <div class="sidebar-right">
     <h2>화면 설명</h2>
-    <p class="desc-trigger">청구 내역에서 미납 상태인 청구의 [상세]를 눌렀을 때 표시됩니다.</p>
+    <p class="desc-trigger">청구 내역에서 미납 상태인 청구의 [상세]를 눌렀을 때 뜨는 팝업입니다. [닫기]를 누르면 청구 내역으로 돌아갑니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 청구 상태를 배지로 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 결제에 실패해 미납 상태임을 알리고 다시 결제하도록 안내합니다.</div>
@@ -337,7 +430,7 @@
       <div class="desc-numbered-row"><span class="num-mark">4</span> 결제 실패일과 실패 사유를 보여줍니다. [재결제]는 재결제 팝업, [결제수단 관리]는 결제수단 관리 화면으로 이동합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">5</span> 항목마다 내용(계산 방법 · 이용 기간)과 금액을 보여줍니다. 플랜 요금은 해당 플랜 1개만 정상가로 적고, 오픈 특가는 "오픈 특가 할인" 행(음수)으로 따로 적습니다. 기본 제공 트래픽은 금액 행 없이 "기본 100GB 포함"으로만 표시하고, 부가세는 별도 행으로 적습니다. 금액은 확정 금액입니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">6</span> 플랜 요금은 부가세 별도이며, 메시징 충전금과 발송비는 구독 청구와 별도임을 안내합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">7</span> [청구 내역]은 청구 내역 목록으로 이동합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">7</span> [닫기]를 누르면 청구 내역으로 돌아갑니다.</div>
     </div>
   </div>
 
