@@ -368,3 +368,110 @@
 }
 
 .st-value { padding-top: 5px; font-size: 11px; color: #555555; }
+
+/* ---------- GNB 우측 ---------- */
+.st-gnb-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px 0 12px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.st-gnb-help {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #d5d7dc;
+  color: #2b2d31;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.st-gnb-apply {
+  padding: 6px 10px;
+  border-radius: 3px;
+  background-color: #2fbf5b;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ---------- 도메인 설정 ---------- */
+.dm-desc { margin: 10px 0 14px; font-size: 11px; color: #555555; }
+
+.dm-guide {
+  margin: 0 0 28px;
+  padding: 18px 16px;
+  background-color: #f7f7f8;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #555555;
+}
+
+.dm-guide h3 { margin: 0 0 4px; font-size: 13px; font-weight: normal; color: #333333; }
+.dm-guide ul { margin: 0 0 12px; padding: 0; list-style: none; }
+.dm-guide ul:last-child { margin-bottom: 0; }
+
+.dm-notes { margin: 8px 0 0; padding: 0; list-style: none; font-size: 11px; line-height: 1.7; color: #555555; }
+.dm-red { color: #e5242b; }
+.dm-strong { font-weight: bold; color: #333333; }
+.dm-link { color: #1f9d3e; text-decoration: underline; }
+
+.dm-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #cfd0d6;
+  font-size: 11px;
+}
+
+.dm-table th,
+.dm-table td {
+  padding: 9px 8px;
+  border-bottom: 1px solid #e3e4e8;
+  text-align: center;
+  font-weight: normal;
+  color: #444444;
+}
+
+.dm-table th { background-color: #f7f7f8; }
+
+.dm-form {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  border-top: 1px solid #cfd0d6;
+  border-bottom: 1px solid #cfd0d6;
+}
+
+.dm-form > .dm-th {
+  padding: 14px 12px;
+  background-color: #f7f7f8;
+  font-size: 11px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+}
+
+.dm-form > .dm-td { padding: 8px 8px 12px; }
+.dm-form > .dm-th + .dm-td + .dm-th,
+.dm-form > .dm-th + .dm-td + .dm-th + .dm-td { border-top: 1px solid #e3e4e8; }
+
+.dm-state { display: inline-block; padding: 1px 6px; border-radius: 2px; font-size: 10px; }
+.dm-state.is-done { color: #444444; }
+.dm-state.is-wait { background-color: #fff3d6; color: #a86a00; font-weight: bold; }
+
+.dm-btn {
+  height: 22px;
+  margin: 0 1px;
+  padding: 0 8px;
+  border: 1px solid #cfd0d6;
+  border-radius: 2px;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 10px;
+  color: #333333;
+  cursor: pointer;
+}
