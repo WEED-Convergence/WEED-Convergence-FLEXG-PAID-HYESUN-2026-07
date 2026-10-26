@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="../admin/settings.css">
 <style>
   /* 캡처를 기기 픽셀 1:1로 표시해 번짐 방지 (가로가 넘치면 스크롤) */
-  .pt-canvas { overflow-x: auto; }
+  /* 캡처를 화면 폭에 맞춤 (가로 스크롤 없음) */
   .capture-wrap { position: relative; line-height: 0; container-type: inline-size; }
-  .capture-wrap img { display: block; max-width: none; }
+  .capture-wrap img { display: block; width: 100%; height: auto; }
   /* LNB 하단 배너 영역 미노출 */
   .pt-lnb-cover { position: absolute; background-color: #25282a; }
   /* 지원 플랜 셀렉트 (신규 · 빨간 박스 강조) */
@@ -23,17 +23,17 @@
     border: calc(3 / 2364 * 100cqw) solid #e5242b;
     border-radius: calc(4 / 2364 * 100cqw);
     background-color: #ffffff;
-    font-size: calc(17 / 2364 * 100cqw);
+    font-size: max(12px, calc(17 / 2364 * 100cqw));
     line-height: normal;
     color: #333333;
   }
   .pt-filter-box select {
-    height: calc(36 / 2364 * 100cqw);
-    min-width: calc(150 / 2364 * 100cqw);
+    height: max(24px, calc(36 / 2364 * 100cqw));
+    min-width: max(100px, calc(150 / 2364 * 100cqw));
     padding: 0 calc(8 / 2364 * 100cqw);
     border: 1px solid #c9cbd1;
     border-radius: 3px;
-    font-size: calc(17 / 2364 * 100cqw);
+    font-size: max(12px, calc(17 / 2364 * 100cqw));
   }
   /* 캡처 위 카드 영역: 플래그 + 필터에 맞지 않는 카드는 흐리게(미노출 표현) */
   .pt-card { position: absolute; line-height: normal; transition: background-color 0.15s; }
@@ -46,7 +46,7 @@
     border-radius: calc(4 / 2364 * 100cqw);
     background-color: #3140d6;
     color: #ffffff;
-    font-size: calc(17 / 2364 * 100cqw);
+    font-size: max(12px, calc(17 / 2364 * 100cqw));
     font-weight: bold;
     white-space: nowrap;
     outline: calc(3 / 2364 * 100cqw) solid #e5242b;
@@ -278,7 +278,7 @@
 
 
   <div class="main-center">
-    <div class="screen-canvas pt-canvas">
+    <div class="screen-canvas">
       <div class="capture-wrap">
         <img src="01.png" alt="제휴 서비스 목록 화면 (기존 어드민 캡처)" id="pt-img">
         <span class="num-mark" style="position:absolute;top:0.971%;left:0.5%;line-height:normal;">1</span>
@@ -317,16 +317,6 @@
 
 </div>
 <script>
-  (function () {
-    var img = document.getElementById('pt-img');
-    function fit() {
-      var w = (img.naturalWidth / (window.devicePixelRatio || 1)) + 'px';
-      img.style.width = w;
-      img.parentNode.style.width = w;
-    }
-    if (img.complete) fit(); else img.addEventListener('load', fit);
-    window.addEventListener('resize', fit);
-  })();
   document.getElementById('pt-plan').addEventListener('change', function (e) {
     var v = e.target.value;
     document.querySelectorAll('.pt-card').forEach(function (c) {
