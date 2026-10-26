@@ -7,38 +7,52 @@
 <link rel="stylesheet" href="../subscription/subscription.css">
 <link rel="stylesheet" href="../admin/settings.css">
 <style>
+  /* 캡처를 기기 픽셀 1:1로 표시해 번짐 방지 (가로가 넘치면 스크롤) */
+  .pt-canvas { overflow-x: auto; }
   .capture-wrap { position: relative; line-height: 0; container-type: inline-size; }
-  .pt-filter {
+  .capture-wrap img { display: block; max-width: none; }
+  /* LNB 하단 배너 영역 미노출 */
+  .pt-lnb-cover { position: absolute; background-color: #25282a; }
+  /* 지원 플랜 셀렉트 (신규 · 빨간 박스 강조) */
+  .pt-filter-box {
+    position: absolute;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
-    padding: 12px 20px;
-    border-bottom: 1px solid #e3e4e8;
-    font-size: 13px;
+    gap: calc(8 / 2364 * 100cqw);
+    padding: calc(6 / 2364 * 100cqw) calc(12 / 2364 * 100cqw);
+    border: calc(3 / 2364 * 100cqw) solid #e5242b;
+    border-radius: calc(4 / 2364 * 100cqw);
+    background-color: #ffffff;
+    font-size: calc(17 / 2364 * 100cqw);
+    line-height: normal;
     color: #333333;
   }
-  .pt-filter select { height: 30px; min-width: 120px; padding: 0 8px; border: 1px solid #c9cbd1; border-radius: 3px; font-size: 13px; }
+  .pt-filter-box select {
+    height: calc(36 / 2364 * 100cqw);
+    min-width: calc(150 / 2364 * 100cqw);
+    padding: 0 calc(8 / 2364 * 100cqw);
+    border: 1px solid #c9cbd1;
+    border-radius: 3px;
+    font-size: calc(17 / 2364 * 100cqw);
+  }
   /* 캡처 위 카드 영역: 플래그 + 필터에 맞지 않는 카드는 흐리게(미노출 표현) */
   .pt-card { position: absolute; line-height: normal; transition: background-color 0.15s; }
   .pt-card.is-hidden { background-color: rgba(240, 241, 244, 0.88); }
   .pt-flag {
     position: absolute;
-    top: calc(14 / 1970 * 100cqw);
-    left: calc(14 / 1970 * 100cqw);
-    padding: calc(4 / 1970 * 100cqw) calc(10 / 1970 * 100cqw);
-    border-radius: calc(4 / 1970 * 100cqw);
+    top: calc(16 / 2364 * 100cqw);
+    left: calc(16 / 2364 * 100cqw);
+    padding: calc(5 / 2364 * 100cqw) calc(12 / 2364 * 100cqw);
+    border-radius: calc(4 / 2364 * 100cqw);
     background-color: #3140d6;
     color: #ffffff;
-    font-size: calc(15 / 1970 * 100cqw);
+    font-size: calc(17 / 2364 * 100cqw);
     font-weight: bold;
     white-space: nowrap;
+    outline: calc(3 / 2364 * 100cqw) solid #e5242b;
+    outline-offset: calc(3 / 2364 * 100cqw);
   }
   .pt-flag .num-mark { margin-left: 4px; }
-  /* 신규 요소 강조 (빨간 박스) */
-  .pt-filter-box { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border: 2px solid #e5242b; border-radius: 4px; }
-  .pt-flag { outline: calc(3 / 1970 * 100cqw) solid #e5242b; outline-offset: calc(3 / 1970 * 100cqw); }
-  .capture-wrap img { display: block; width: 100%; height: auto; }
 </style>
 </head>
 <body>
@@ -264,35 +278,29 @@
 
 
   <div class="main-center">
-    <div class="screen-canvas">
-      <div class="st-gnb">
-        <div class="st-gnb-shop">테스트쇼핑몰 🔗</div>
-        <nav class="st-gnb-menu"><span class="num-mark" style="align-self:center;margin-right:4px;">1</span><span class="st-gnb-item is-home">⌂</span><span class="st-gnb-item">상품 <span class="st-n">N</span></span><span class="st-gnb-item">주문</span><span class="st-gnb-item">발주 <span class="st-n">N</span></span><span class="st-gnb-item">CS</span><span class="st-gnb-item">정산</span><span class="st-gnb-item">매출</span><span class="st-gnb-item">통계</span><span class="st-gnb-item">회원</span><span class="st-gnb-item">CRM <span class="st-n">N</span></span><span class="st-gnb-item is-live">LIVE <span class="st-n">N</span></span><span class="st-gnb-item">메시지</span><span class="st-gnb-item">게시판</span><span class="st-gnb-item">APP</span><span class="st-gnb-item">셀러</span><span class="st-gnb-item">제휴 <span class="st-n">N</span></span></nav>
-        <div class="st-gnb-right">서비스 알림 🔔</div>
-      </div>
-      <div class="pt-filter">
-        <div class="pt-filter-box">
+    <div class="screen-canvas pt-canvas">
+      <div class="capture-wrap">
+        <img src="01.png" alt="제휴 서비스 목록 화면 (기존 어드민 캡처)" id="pt-img">
+        <span class="num-mark" style="position:absolute;top:0.971%;left:0.5%;line-height:normal;">1</span>
+        <div class="pt-lnb-cover" style="left:0;top:45.955%;width:11.506%;bottom:0;"></div>
+        <div class="pt-filter-box" style="top:5.547%;right:0.700%;">
           <label for="pt-plan">지원 플랜</label>
           <select id="pt-plan">
             <option value="all" selected>전체</option>
-            <option value="basic">Basic</option>
-            <option value="pro">Pro</option>
+            <option value="basic">Basic 지원</option>
           </select>
           <span class="num-mark">2</span>
         </div>
-      </div>
-      <div class="capture-wrap">
-        <img src="01.png" alt="제휴 서비스 목록 화면 (기존 어드민 캡처)">
-        <div class="pt-card" data-plan="pro" title="스튜디오 온일칠공" style="left:5.584%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용 <span class="num-mark">3</span></span></div>
-        <div class="pt-card" data-plan="pro" title="제로원애드" style="left:25.990%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="pro" title="크리마" style="left:46.345%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="both" title="케이앤웍스" style="left:66.751%;top:0.000%;width:19.543%;height:39.583%;"></div>
-        <div class="pt-card" data-plan="both" title="소셜비즈" style="left:87.157%;top:0.000%;width:8.629%;height:39.583%;"></div>
-        <div class="pt-card" data-plan="pro" title="UXOO" style="left:5.279%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="pro" title="TUK.LINK" style="left:25.635%;top:58.160%;width:19.594%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="pro" title="슈퍼루친" style="left:46.041%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="pro" title="채널톡" style="left:66.447%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
-        <div class="pt-card" data-plan="pro" title="데이터라이즈" style="left:86.802%;top:58.160%;width:8.731%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="스튜디오 온일칠공" style="left:25.600%;top:14.345%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="제로원애드" style="left:41.050%;top:14.345%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="크리마" style="left:56.500%;top:14.345%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="both" title="케이앤웍스" style="left:71.950%;top:14.345%;width:14.800%;height:34.618%;"><span class="pt-flag">Basic 지원 <span class="num-mark">3</span></span></div>
+        <div class="pt-card" data-plan="both" title="소셜비즈" style="left:87.400%;top:14.345%;width:6.550%;height:34.618%;"><span class="pt-flag">Basic 지원</span></div>
+        <div class="pt-card" data-plan="pro" title="UXOO" style="left:25.350%;top:64.742%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="TUK.LINK" style="left:40.800%;top:64.742%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="슈퍼루친" style="left:56.250%;top:64.742%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="채널톡" style="left:71.700%;top:64.742%;width:14.800%;height:34.618%;"></div>
+        <div class="pt-card" data-plan="pro" title="데이터라이즈" style="left:87.150%;top:64.742%;width:6.600%;height:34.618%;"></div>
       </div>
     </div>
   </div>
@@ -301,14 +309,24 @@
     <h2>화면 설명</h2>
     <p class="desc-trigger">GNB의 [제휴]를 눌렀을 때 표시됩니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> Pro GNB를 그대로 사용합니다. 그 외 화면은 기존 제휴 서비스 목록과 같습니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 지원 플랜(전체 · Basic · Pro)을 골라 카드를 걸러 봅니다. 기본값은 전체입니다. Basic은 Basic 지원 제휴사만, Pro는 Pro 지원 제휴사 전체를 보여줍니다. (프로토타입에서는 걸러지는 카드를 흐리게 표시)</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> Basic을 지원하지 않는 제휴사 카드에 [Pro 전용] 플래그를 붙입니다. 기준은 제휴사 관리 목록의 Basic · Pro 지원 여부이며, 목록에 없는 제휴사는 Pro 전용으로 봅니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> Pro GNB와 제휴 서비스 LNB(제휴 서비스 목록 · 제휴 서비스 연동 · 톡링크설정페이지)를 그대로 사용합니다. LNB 하단 배너는 노출하지 않습니다. 그 외 화면은 기존 제휴 서비스 목록과 같습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 지원 플랜(전체 · Basic 지원)을 골라 카드를 걸러 봅니다. 기본값은 전체입니다. 모든 제휴사가 Pro를 지원하므로 Pro 선택지는 두지 않습니다. Basic 지원을 고르면 Basic 지원 제휴사만 보여줍니다. (프로토타입에서는 걸러지는 카드를 흐리게 표시)</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> Basic도 지원하는 제휴사 카드에 [Basic 지원] 플래그를 붙입니다. 기준은 제휴사 관리 목록의 Basic 지원 여부이며, 목록에 없는 제휴사는 Pro 전용(플래그 없음)으로 봅니다.</div>
     </div>
   </div>
 
 </div>
 <script>
+  (function () {
+    var img = document.getElementById('pt-img');
+    function fit() {
+      var w = (img.naturalWidth / (window.devicePixelRatio || 1)) + 'px';
+      img.style.width = w;
+      img.parentNode.style.width = w;
+    }
+    if (img.complete) fit(); else img.addEventListener('load', fit);
+    window.addEventListener('resize', fit);
+  })();
   document.getElementById('pt-plan').addEventListener('change', function (e) {
     var v = e.target.value;
     document.querySelectorAll('.pt-card').forEach(function (c) {
