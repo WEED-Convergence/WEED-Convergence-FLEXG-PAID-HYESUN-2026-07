@@ -538,3 +538,13 @@
   text-decoration: none !important;
 }
 .st-form .st-row.is-removed { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+
+/* ---------- Pro → Basic 변경 표시 (바뀌기 전 문구 취소선 + 바뀐 문구 강조) ---------- */
+del.chg-old { margin-right: 3px; color: #a5a7ad; text-decoration: line-through; }
+ins.chg-new { color: #3140d6; font-weight: bold; text-decoration: none; }
+.st-gnb-apply del.chg-old { color: #d7f3df; }
+.st-gnb-apply ins.chg-new { color: #ffffff; }
+.st-gnb-item.is-removed { background-color: transparent !important; color: #6b6e75 !important; text-decoration: line-through; }
+.st-gnb ins.chg-new, .st-lnb ins.chg-new { color: #9aa8ff; }
+.st-gnb-item.is-removed { padding: 0 4px; font-size: 11px; }
+.st-gnb-shop del.chg-old, .st-gnb-shop ins.chg-new { white-space: nowrap; font-size: 11px; }

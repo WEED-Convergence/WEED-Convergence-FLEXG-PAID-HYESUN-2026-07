@@ -5,6 +5,7 @@
 <title>01 게시판 카테고리 - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../subscription/subscription.css">
+<link rel="stylesheet" href="../admin/settings.css">
 <style>
   .capture-wrap { position: relative; line-height: 0; }
   .capture-wrap img { display: block; width: 100%; height: auto; }
@@ -22,17 +23,26 @@
     line-height: normal;
   }
   .keep-notice-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     padding: 18px 40px;
     border: 3px solid #d12f2f;
     border-radius: 10px;
     background-color: #ffffff;
     color: #d12f2f;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  }
+  .keep-notice-title { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .keep-notice-list {
+    margin: 12px 0 0;
+    padding: 12px 0 0;
+    border-top: 1px solid #f3caca;
+    list-style: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #333333;
+    text-align: center;
   }
 </style>
 </head>
@@ -122,7 +132,7 @@
     </details>
 
     <details class="index-group" open>
-      <summary>어드민 · 게시판</summary>
+      <summary>게시판</summary>
       <ul class="index-list">
         <li class="is-current"><a href="../board/01.html">26 게시판 카테고리</a></li>
       </ul>
@@ -253,10 +263,26 @@
 
   <div class="main-center">
     <div class="screen-canvas">
+      <div class="st-gnb">
+        <div class="st-gnb-shop">테스트홈페이지 🔗</div>
+        <nav class="st-gnb-menu"><span class="num-mark" style="align-self:center;margin-right:4px;">2</span><span class="st-gnb-item is-home">⌂</span><span class="st-gnb-item">통계</span><span class="st-gnb-item">회원</span><span class="st-gnb-item">게시판</span><span class="st-gnb-item">셀러</span><span class="st-gnb-item">제휴 <span class="st-n">N</span></span></nav>
+        <div class="st-gnb-right">서비스 알림 🔔<span class="st-n">7</span><span class="st-gnb-help">?</span><span class="st-gnb-apply">홈페이지 바로 적용</span></div>
+      </div>
       <div class="capture-wrap">
         <img src="01.png" alt="게시판 카테고리 화면 (기존 어드민 캡처)">
         <div class="keep-notice">
-          <div class="keep-notice-box">기존 기능 그대로 유지 <span class="num-mark">1</span></div>
+          <div class="keep-notice-box">
+            <div class="keep-notice-title">기존 기능 그대로 유지 <span class="num-mark">1</span></div>
+            <ul class="keep-notice-list">
+              <li>게시판 카테고리</li>
+              <li>게시판 목록</li>
+              <li>게시글 관리</li>
+              <li>댓글 관리</li>
+              <li>(구) 게시판 목록</li>
+              <li>블랙리스트 관리</li>
+              <li>1:1문의</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -266,7 +292,8 @@
     <h2>화면 설명</h2>
     <p class="desc-trigger">게시판 메뉴의 [게시판 카테고리]를 눌렀을 때 표시됩니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> 기존 게시판 카테고리 기능을 그대로 유지합니다. 변경 사항은 없습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 게시판 메뉴(게시판 카테고리 · 게시판 목록 · 게시글 관리 · 댓글 관리 · (구) 게시판 목록 · 블랙리스트 관리 · 1:1문의)는 기존 기능을 그대로 유지합니다. 변경 사항은 없습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> Basic GNB(통계 · 회원 · 게시판 · 셀러 · 제휴)를 사용합니다.</div>
     </div>
   </div>
 
