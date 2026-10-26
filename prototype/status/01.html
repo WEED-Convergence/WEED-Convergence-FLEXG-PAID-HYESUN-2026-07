@@ -227,72 +227,56 @@
         <div class="policy-section">
           <h2>상태 정의</h2>
           <table class="policy-table">
-            <colgroup><col class="col-state"><col class="col-def"><col class="col-site"><col><col class="col-next"><col class="col-screen"></colgroup>
-            <thead><tr><th>상태</th><th>정의</th><th>사이트</th><th>관리자 화면</th><th>다음 상태</th><th>관련 화면</th></tr></thead>
+            <colgroup><col class="col-state"><col class="col-def"><col class="col-site"><col></colgroup>
+            <thead><tr><th>상태</th><th>정의</th><th>사이트</th><th>관리자 화면</th></tr></thead>
             <tbody>
               <tr>
                 <td class="cell-item"><span class="badge badge-neutral">미신청</span></td>
                 <td>기존 고객 · 신규 플랜 미선택</td>
                 <td>운영</td>
                 <td>현행 그대로 · Pro만 신청 가능</td>
-                <td>Pro 신청 → 무료 제공 중</td>
-                <td><a href="../subscription/01.html">미신청</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-info">무료 제공 중</span></td>
                 <td>카드 미등록 14일 / 카드 등록 한 달</td>
                 <td>운영</td>
                 <td>제작 · 배포 가능</td>
-                <td>결제 성공 → 이용 중<br>실패 · 카드 미등록 → 무료 제공 종료</td>
-                <td><a href="../subscription/02.html">무료 제공 중</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-danger">무료 제공 종료</span></td>
                 <td>무료 제공 후 미결제 (유예 없음)</td>
                 <td>중지</td>
                 <td>결제만 가능</td>
-                <td>결제 → 이용 중</td>
-                <td><a href="../subscription/10.html">무료 제공 종료 · 결제 실패</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-success">이용 중</span></td>
                 <td>정상 결제된 이용 기간</td>
                 <td>운영</td>
                 <td>전체 이용</td>
-                <td>결제 실패 → 유예<br>해지 예약 → 해지 예약</td>
-                <td><a href="../subscription/04.html">이용 중</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-warning">유예</span></td>
                 <td>정기결제 실패 후 7일 (매일 재시도)</td>
                 <td>운영</td>
                 <td>전체 이용</td>
-                <td>결제 → 이용 중<br>7일차 실패 → 미납</td>
-                <td><a href="../subscription/05.html">유예</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-danger">미납</span></td>
                 <td>유예 7일차까지 결제 실패</td>
                 <td>운영</td>
                 <td>읽기 전용 (결제 · 카드 변경만)</td>
-                <td>결제 → 이용 중<br>첫 실패 후 30일 → 만료</td>
-                <td><a href="../subscription/18.html">미납 · 읽기 전용 (유예 종료)</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-warning">해지 예약</span></td>
                 <td>해지 예약 · 이용 기간 마지막 날 종료</td>
                 <td>운영</td>
                 <td>전체 이용 · 예약 취소 가능</td>
-                <td>취소 → 이용 중<br>종료일 경과 → 만료</td>
-                <td><a href="../subscription/07.html">해지 예약</a></td>
               </tr>
               <tr>
                 <td class="cell-item"><span class="badge badge-neutral">만료</span></td>
                 <td>해지 종료 또는 첫 결제 실패 후 30일</td>
                 <td>중지</td>
                 <td>재결제만 가능</td>
-                <td>90일 내 재결제 → 이용 중<br>90일 경과 → 삭제</td>
-                <td><a href="../subscription/08.html">만료</a></td>
               </tr>
             </tbody>
           </table>
@@ -304,7 +288,7 @@
 
   <div class="sidebar-right">
     <h2>화면 설명</h2>
-    <p class="desc-body">구독 상태 8가지의 정의, 상태별 사이트 · 관리자 화면 이용 여부, 다음 상태를 정리했습니다. 관련 화면 링크로 각 구독 관리 화면에 이동합니다.</p>
+    <p class="desc-body">구독 상태 8가지의 정의와 상태별 사이트 · 관리자 화면 이용 여부를 정리했습니다.</p>
   </div>
 
 </div>
