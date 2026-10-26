@@ -240,29 +240,43 @@
         <div class="lf-lanes">
           <div class="lf-lane">
             <h3><span class="lf-tag is-owner">대표계정</span> 구독 상태별 이동 <span class="num-mark">2</span></h3>
+            <p class="lf-group">사이트 개설 전</p>
             <ul class="lf-rows">
               <li><span class="lf-state">가입만 하고 플랜 미신청</span><span class="lf-to">→</span><a class="lf-dest" href="06.html">플랜 선택<small style="font-weight:bold;color:#d12f2f;">가입 완료 인사는 보여주지 않음</small></a></li>
               <li><span class="lf-state">사이트 개설 중</span><span class="lf-to">→</span><a class="lf-dest" href="12.html">사이트 개설 중</a></li>
               <li><span class="lf-state">개설 복구 대기</span><span class="lf-to">→</span><a class="lf-dest" href="17.html">개설 복구 대기</a></li>
-              <li><span class="lf-state">무료 제공 중 · 이용 중 · 유예</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
-              <li><span class="lf-state">해지 예약 (무료 제공 중 포함)</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro) · 이용 기간이 남아 있어 이용 중과 동일하게 처리</small></a></li>
+            </ul>
+            <p class="lf-group">구독 상태 (구독 상태별 정의와 같은 순서)</p>
+            <ul class="lf-rows">
+              <li><span class="lf-state">미신청</span><span class="lf-to">→</span><span class="lf-dest is-text">기존 사이트 관리 화면<small>지금처럼 이용 · Pro 신청은 원할 때만</small></span></li>
+              <li><span class="lf-state">무료 제공 중</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
+              <li style="align-items:start;"><span class="lf-state">무료 제공 종료</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>무료 제공 기간이 종료되어 사이트가 중지되었습니다.<br>결제를 진행하시면 바로 다시 이용하실 수 있습니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/10.html">구독 관리 (무료 제공 종료)</a>로 이동합니다.</small></div></li>
               <li><span class="lf-state">결제 확인 중</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
-              <li><span class="lf-state">결제 완료 · 갱신 지연</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
-              <li style="align-items:start;"><span class="lf-state">무료 제공 종료 · 결제 실패</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>무료 제공 기간이 종료되어 사이트가 중지되었습니다.<br>결제를 진행하시면 바로 다시 이용하실 수 있습니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/10.html">구독 관리 (무료 제공 종료 · 결제 실패)</a>으로 이동합니다.</small></div></li>
-              <li style="align-items:start;"><span class="lf-state">미납 · 읽기 전용 (유예 종료)</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>결제가 확인되지 않아 관리자 화면이 읽기 전용으로 바뀌었습니다.<br>미납 결제를 완료하시면 바로 정상 이용하실 수 있습니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/18.html">구독 관리 (미납)</a>로 이동합니다.</small></div></li>
-              <li style="align-items:start;"><span class="lf-state">만료</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>서비스 이용 기간이 만료되어 사이트가 중지되었습니다.<br>보관 기간(90일) 안에 다시 결제하시면 사이트가 그대로 복구됩니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/08.html">구독 관리 (만료)</a>으로 이동합니다.</small></div></li>
-              <li><span class="lf-state">기존 고객 (신규 플랜 선택 전)</span><span class="lf-to">→</span><span class="lf-dest is-text">기존 사이트 관리 화면<small>지금처럼 이용 · 신규 플랜(Pro) 선택은 원할 때만</small></span></li>
+              <li><span class="lf-state">이용 중</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
+              <li><span class="lf-state">갱신 지연</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
+              <li><span class="lf-state">유예</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>Basic은 어드민 홈 (Basic), Pro는 어드민 홈 (Pro)</small></a></li>
+              <li style="align-items:start;"><span class="lf-state">미납</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>결제가 확인되지 않아 관리자 화면이 읽기 전용으로 바뀌었습니다.<br>미납 결제를 완료하시면 바로 정상 이용하실 수 있습니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/18.html">구독 관리 (미납)</a>로 이동합니다.</small></div></li>
+              <li><span class="lf-state">해지 예약</span><span class="lf-to">→</span><a class="lf-dest" href="../admin/15.html">어드민 홈<small>이용 종료일까지 이용 중과 같이 처리</small></a></li>
+              <li style="align-items:start;"><span class="lf-state">만료</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>서비스 이용 기간이 만료되어 사이트가 중지되었습니다.<br>보관 기간(90일) 안에 다시 결제하시면 사이트가 그대로 복구됩니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 <a href="../subscription/08.html">구독 관리 (만료)</a>로 이동합니다.</small></div></li>
             </ul>
           </div>
 
           <div class="lf-lane">
             <h3><span class="lf-tag is-sub">부계정</span> 결제 권한 없음 <span class="num-mark">3</span></h3>
+            <p class="lf-group">구독 상태 (구독 상태별 정의와 같은 순서)</p>
             <ul class="lf-rows">
-              <li><span class="lf-state">무료 제공 중 · 이용 중 · 유예</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
-              <li><span class="lf-state">미납 (읽기 전용)</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈 (읽기 전용)<small>권한이 있는 메뉴만 조회</small></span></li>
-              <li style="align-items:start;"><span class="lf-state">사이트가 중지된 상태<br>(무료 제공 종료 · 만료)</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>현재 사이트의 서비스 이용이 일시 중지되어 로그인하실 수 없습니다.<br>서비스를 다시 이용하시려면 사이트 소유자에게 결제를 요청해 주시기 바랍니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 로그인 화면에 그대로 머뭅니다.</small></div></li>
+              <li><span class="lf-state">미신청</span><span class="lf-to">→</span><span class="lf-dest is-text">기존 사이트 관리 화면<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li><span class="lf-state">무료 제공 중</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li style="align-items:start;"><span class="lf-state">무료 제공 종료</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>현재 사이트의 서비스 이용이 일시 중지되어 로그인하실 수 없습니다.<br>서비스를 다시 이용하시려면 사이트 소유자에게 결제를 요청해 주시기 바랍니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 로그인 화면에 그대로 머뭅니다.</small></div></li>
+              <li><span class="lf-state">결제 확인 중</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li><span class="lf-state">이용 중</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li><span class="lf-state">갱신 지연</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li><span class="lf-state">유예</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li><span class="lf-state">미납</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈 (읽기 전용)<small>권한이 있는 메뉴만 조회</small></span></li>
+              <li><span class="lf-state">해지 예약</span><span class="lf-to">→</span><span class="lf-dest is-text">어드민 홈<small>권한이 있는 메뉴만 보임</small></span></li>
+              <li style="align-items:start;"><span class="lf-state">만료</span><span class="lf-to" style="padding-top:8px;">→</span><div class="lf-alert"><p>현재 사이트의 서비스 이용이 일시 중지되어 로그인하실 수 없습니다.<br>서비스를 다시 이용하시려면 사이트 소유자에게 결제를 요청해 주시기 바랍니다.</p><span class="lf-alert-btn">확인</span><small>[확인]을 누르면 로그인 화면에 그대로 머뭅니다.</small></div></li>
             </ul>
-            <p class="lf-note">해지 예약(무료 제공 중 포함) · 결제 확인 중 · 결제 완료 · 갱신 지연도 결제가 필요한 상태가 아니므로, 무료 제공 중 · 이용 중 · 유예와 같이 어드민 홈으로 이동하며 권한이 있는 메뉴만 표시합니다.<br>부계정은 플랜 구매 · 변경 · 해지, 추가 트래픽 구매, 결제수단 변경을 할 수 없습니다(사이트 소유자만 가능).<br>초대받은 제작자는 FLEXG Page 로그인으로 들어오므로 이 흐름을 거치지 않습니다.</p>
+            <p class="lf-note">부계정은 플랜 구매 · 변경 · 해지, 추가 트래픽 구매, 결제수단 변경을 할 수 없습니다(사이트 소유자만 가능).<br>초대받은 제작자는 FLEXG Page 로그인으로 들어오므로 이 흐름을 거치지 않습니다.</p>
           </div>
         </div>
       </div>
@@ -274,8 +288,8 @@
     <p class="desc-trigger">FLEXG 홈페이지에서 [로그인]을 눌렀을 때의 로그인 화면과, 로그인 후 이동 흐름을 한 화면에 정리했습니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> <span>로그인 화면은 지금 화면을 그대로 씁니다. [회원가입하기]는 회원가입 화면으로 이동합니다.</span></div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> <span>대표계정은 구독 상태에 따라 이동할 화면이 다릅니다. 오른쪽 파란 칸을 누르면 해당 화면으로 갑니다. 무료 제공 종료 · 결제 실패, 미납(읽기 전용), 만료는 알럿으로 이유를 먼저 알린 뒤 [확인]을 누르면 구독 관리로 이동합니다. 기존 고객은 기존 사이트 관리 화면으로 이동합니다.</span></div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> <span>부계정은 결제 권한이 없습니다. 미납(읽기 전용)이면 어드민을 조회만 할 수 있고, 사이트가 중지된 상태(무료 제공 종료 · 만료)면 어드민에 들어갈 수 없어 로그인 화면에서 알럿만 보여줍니다.</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> <span>대표계정은 구독 상태에 따라 이동할 화면이 다릅니다. 구독 상태는 구독 상태별 정의의 10가지와 같은 이름 · 순서로 보여주고, 사이트 개설 전 단계는 따로 묶습니다. 오른쪽 파란 칸을 누르면 해당 화면으로 갑니다. 무료 제공 종료 · 미납 · 만료는 알럿으로 이유를 먼저 알린 뒤 [확인]을 누르면 구독 관리로 이동합니다.</span></div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> <span>부계정은 결제 권한이 없습니다. 같은 10가지 상태 순서로 보여주며, 미납이면 어드민을 조회만 할 수 있고, 사이트가 중지된 상태(무료 제공 종료 · 만료)면 어드민에 들어갈 수 없어 로그인 화면에서 알럿만 보여줍니다.</span></div>
     </div>
   </div>
 

@@ -1782,3 +1782,4 @@
 .lf-alert p { margin: 0 0 10px; }
 .lf-alert-btn { display: block; margin-left: auto; width: fit-content; padding: 4px 16px; border-radius: 4px; background-color: #3140d6; color: #ffffff; font-size: 12px; font-weight: bold; }
 .lf-alert small { display: block; margin-top: 6px; font-size: 11px; color: #888888; }
+.lf-group { margin: 12px 0 6px; font-size: 11px; font-weight: bold; color: #888888; }
