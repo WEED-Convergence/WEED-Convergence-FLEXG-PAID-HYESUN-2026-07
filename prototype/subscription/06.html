@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>06 변경 - 프로토타입</title>
+<title>06 플랜 변경 완료 - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="subscription.css">
 </head>
@@ -129,20 +129,20 @@
           구독 관리
           <ul class="index-sublist">
             <li><a href="01.html">32 미신청 <span class="index-done-flag"></span></a></li>
-            <li><a href="02.html">33 체험 중 <span class="index-done-flag"></span></a></li>
-            <li><a href="10.html">34 체험 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="02.html">33 무료 제공 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="10.html">34 무료 제공 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
             <li><a href="03.html">35 결제 확인 중 <span class="index-done-flag"></span></a></li>
             <li><a href="04.html">36 이용 중 <span class="index-done-flag"></span></a></li>
             <li><a href="13.html">37 결제 완료 · 갱신 지연</a></li>
             <li><a href="05.html">38 유예</a></li>
-            <li><a href="18.html">39 이용 중단 (유예 종료)</a></li>
-            <li class="is-current"><a href="06.html">40 변경</a></li>
+            <li><a href="18.html">39 미납 · 읽기 전용 (유예 종료)</a></li>
+            <li class="is-current"><a href="06.html">40 플랜 변경 완료</a></li>
             <li><a href="07.html">41 해지 예약</a></li>
-            <li><a href="20.html">42 해지 예약 (체험 중)</a></li>
+            <li><a href="20.html">42 해지 예약 (무료 제공 중)</a></li>
             <li><a href="08.html">43 만료</a></li>
             <li><a href="09.html">44 이용 중 (결제 권한 없음)</a></li>
             <li><a href="11.html">45 해지 예약 확인</a></li>
-            <li><a href="19.html">46 해지 예약 확인 (체험 중)</a></li>
+            <li><a href="19.html">46 해지 예약 확인 (무료 제공 중)</a></li>
             <li><a href="21.html">47 재결제 (팝업)</a></li>
             <li><a href="22.html">48 재결제 완료</a></li>
             <li><a href="23.html">49 재결제 실패</a></li>
@@ -151,19 +151,19 @@
               <ul class="index-subsublist">
                 <li><a href="../first-payment/01.html">50 결제 가능</a></li>
                 <li><a href="../first-payment/02.html">51 결제 권한 없음</a></li>
-                <li><a href="../first-payment/03.html">52 결제 확인 · 사이트 개설 중</a></li>
-                <li><a href="../first-payment/06.html">53 결제 · 사이트 개설 완료</a></li>
+                <li><a href="../first-payment/03.html">52 결제 확인 · 사이트 복구 중</a></li>
+                <li><a href="../first-payment/06.html">53 결제 · 사이트 복구 완료</a></li>
                 <li><a href="../payment-status/01.html">54 결제 실패 · 취소</a></li>
                 <li><a href="../payment-status/02.html">55 처리 중 (지연)</a></li>
                 <li><a href="../payment-status/03.html">56 진행 중인 결제 있음</a></li>
                 <li><a href="../payment-status/04.html">57 이미 완료된 결제</a></li>
-                <li><a href="../first-payment/05.html">58 개설 복구 대기</a></li>
+                <li><a href="../first-payment/05.html">58 복구 대기</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li><a href="17.html">59 서비스 이용료 정기결제</a></li>
-        <li><a href="15.html">60 플랜 변경</a></li>
+        <li><a href="15.html">60 플랜 변경 (Basic)</a></li>
         <li class="index-group-label">
           청구 내역
           <ul class="index-sublist">
@@ -203,7 +203,7 @@
             </li>
             <li><a href="../cdn/07.html">75 이용 내역 상세 (예상)</a></li>
             <li><a href="../cdn/08.html">76 이용 내역 상세 (확정 · 정정 이력)</a></li>
-            <li><a href="../cdn/09.html">77 추가 용량 구매</a></li>
+            <li><a href="../cdn/09.html">77 추가 트래픽 구매</a></li>
           </ul>
         </li>
         <li class="index-group-label">
@@ -211,7 +211,7 @@
           <ul class="index-sublist">
             <li><a href="../billing-card/01.html">78 카드 있음 (Pro) <span class="index-done-flag"></span></a></li>
             <li><a href="../billing-card/13.html">79 카드 있음 (Basic) <span class="index-done-flag"></span></a></li>
-            <li><a href="../billing-card/12.html">80 카드 있음 · 체험 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/12.html">80 카드 있음 · 무료 제공 중 <span class="index-done-flag"></span></a></li>
             <li><a href="../billing-card/02.html">81 미등록 <span class="index-done-flag"></span></a></li>
             <li><a href="../billing-card/03.html">82 결제 권한 없음 <span class="index-done-flag"></span></a></li>
             <li><a href="../billing-card/04.html">83 미납 · 유예 <span class="index-done-flag"></span></a></li>
@@ -281,16 +281,17 @@
 
       <div class="screen-body">
 
-        <div class="status-banner is-info"><i>i</i>Pro로 플랜 변경이 예약되어 있습니다.</div>
+        <div class="status-banner is-success"><i>✓</i>Pro로 플랜이 변경되었습니다.</div>
 
         <div class="two-col" style="align-items:stretch;">
           <div class="section-box">
             <h2 class="section-title">현재 플랜 <span class="num-mark">1</span></h2>
             <dl class="kv-list">
               <div class="kv-row"><dt>사이트</dt><dd>플렉스 스토어</dd></div>
-              <div class="kv-row"><dt>플랜</dt><dd>Basic → Pro</dd></div>
-              <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-info">변경</span></dd></div>
+              <div class="kv-row"><dt>플랜</dt><dd>Pro (2027-06-10 Basic에서 변경)</dd></div>
+              <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-success">이용 중</span></dd></div>
               <div class="kv-row"><dt>이용 기간</dt><dd>2027-05-19 ~ 2027-06-18 (3회차)</dd></div>
+              <div class="kv-row"><dt>직전 결제</dt><dd>2027-06-10 변경 차액 결제 완료 · 2,554원 (부가세 포함)</dd></div>
             </dl>
           </div>
   
@@ -299,15 +300,22 @@
             <dl class="kv-list">
               <div class="kv-row is-sub"><dt>정상가</dt><dd>23,900원 (부가세 별도)</dd></div>
               <div class="kv-row is-sub"><dt>정상가 전환 예정</dt><dd>13개월째 (2028-03-19 결제부터)</dd></div>
-              <div class="kv-row is-strong"><dt>다음 결제일</dt><dd>2027-06-19 (변경 적용)</dd></div>
+              <div class="kv-row is-strong"><dt>다음 결제일</dt><dd>2027-06-19</dd></div>
               <div class="kv-row is-strong"><dt>다음 결제 금액</dt><dd>17,900원 (부가세 별도) · 오픈 특가 적용 4/12개월 <span class="kv-note">(예상 · 사용량 별도)</span></dd></div>
             </dl>
           </div>
         </div>
 
-        <div class="btn-row-right">
-          <button type="button" class="btn btn-primary" onclick="alert('변경 예약이 취소되었습니다. Basic 플랜을 계속 이용합니다.')">변경 취소</button>
+        <div class="info-box">
+          기본 제공 트래픽이 100GB로 바뀌어 이번 이용 기간부터 바로 적용되었습니다. 이용 중인 추가 트래픽은 그대로 유지되며, 다음 결제일부터 Pro 플랜 요금이 결제됩니다.
           <span class="num-mark">3</span>
+        </div>
+
+        <div class="btn-row-right">
+          <a href="11.html" class="btn">해지 예약</a>
+          <a href="../billing-card/07.html" class="btn">결제수단 변경</a>
+          <a href="12.html" class="btn">청구 내역</a>
+          <span class="num-mark">4</span>
         </div>
 
       </div>
@@ -320,11 +328,12 @@
 
   <div class="sidebar-right">
     <h2>화면 설명</h2>
-    <p class="desc-trigger">Basic에서 Pro로 플랜 변경이 예약되어 있을 때 표시됩니다.</p>
+    <p class="desc-trigger">플랜 변경 화면에서 차액 결제에 성공해 Basic에서 Pro로 바뀌었을 때 표시됩니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> 변경 예약된 플랜(Basic → Pro)을 보여줍니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 변경 후의 다음 결제일과 금액을 보여줍니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> [변경 취소]를 누르면 예약 취소 알럿이 뜨고 Basic 플랜을 계속 이용합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 변경은 즉시 적용되어 구독 상태는 그대로 이용 중이고, 플랜만 Pro로 바뀝니다. 이용 기간(회차)은 그대로이며, 직전 결제에 변경 차액 결제를 보여줍니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 다음 결제일부터 Pro 플랜 요금 전액을 결제합니다. 오픈 특가 적용 중이었으면 남은 기간 동안 Pro 오픈 특가를 적용합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 기본 제공 트래픽이 100GB로 바뀌어 이번 이용 기간부터 적용되고, 이용 중인 추가 트래픽은 유지됨을 안내합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 이용 중과 같은 버튼을 둡니다. Pro에서 Basic으로는 바꿀 수 없어 [플랜 변경]은 없습니다.</div>
     </div>
   </div>
 
