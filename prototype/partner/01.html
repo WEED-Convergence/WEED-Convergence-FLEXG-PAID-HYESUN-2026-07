@@ -11,6 +11,41 @@
   /* 캡처를 화면 폭에 맞춤 (가로 스크롤 없음) */
   .capture-wrap { position: relative; line-height: 0; container-type: inline-size; }
   .capture-wrap img { display: block; width: 100%; height: auto; }
+  /* 안내 박스 (26 게시판 카테고리와 같은 빨간 박스) */
+  .keep-notice {
+    position: absolute;
+    left: calc(272 / 2364 * 100%);
+    right: 0;
+    top: 36%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    line-height: normal;
+  }
+  .keep-notice-box {
+    padding: 14px 28px;
+    border: 3px solid #d12f2f;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #d12f2f;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    pointer-events: auto;
+  }
+  .keep-notice-title { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .keep-notice-list {
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid #f3caca;
+    list-style: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #333333;
+  }
+  .keep-notice-list a { color: #3140d6; word-break: break-all; }
   /* LNB 하단 배너 영역 미노출 */
   .pt-lnb-cover { position: absolute; background-color: #25282a; }
   /* 지원 플랜 셀렉트 (신규 · 빨간 박스 강조) */
@@ -281,7 +316,18 @@
     <div class="screen-canvas">
       <div class="capture-wrap">
         <img src="01.png" alt="제휴 서비스 목록 화면 (기존 어드민 캡처)" id="pt-img">
-        <span class="num-mark" style="position:absolute;top:0.971%;left:0.5%;line-height:normal;">1</span>
+        <div class="keep-notice">
+          <div class="keep-notice-box">
+            <div class="keep-notice-title">제휴 서비스 기능은 Basic/Pro 그대로 유지됩니다. <span class="num-mark">3</span></div>
+            <ul class="keep-notice-list">
+              <li><b>추가되는 기능</b></li>
+              <li>1. 상단에 지원 플랜 선택 기능</li>
+              <li>2. Basic 지원 시 플래그 노출</li>
+              <li style="margin-top:6px;">제휴사의 Basic/Pro 제공 여부는 아래의 구글 시트를 확인해 주세요.</li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1zrrrWFpkbH-TFpcvutgXwq2XBWVAGgEmeceQnCqJHbU/edit?gid=426863953#gid=426863953" target="_blank" rel="noopener">제휴사 관리 목록 (구글 시트) ↗</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="pt-lnb-cover" style="left:0;top:45.955%;width:11.506%;bottom:0;"></div>
         <div class="pt-filter-box" style="top:5.547%;right:0.700%;">
           <label for="pt-plan">지원 플랜</label>
@@ -289,12 +335,12 @@
             <option value="all" selected>전체</option>
             <option value="basic">Basic 지원</option>
           </select>
-          <span class="num-mark">2</span>
+          <span class="num-mark">1</span>
         </div>
         <div class="pt-card" data-plan="pro" title="스튜디오 온일칠공" style="left:25.600%;top:14.345%;width:14.800%;height:34.618%;"></div>
         <div class="pt-card" data-plan="pro" title="제로원애드" style="left:41.050%;top:14.345%;width:14.800%;height:34.618%;"></div>
         <div class="pt-card" data-plan="pro" title="크리마" style="left:56.500%;top:14.345%;width:14.800%;height:34.618%;"></div>
-        <div class="pt-card" data-plan="both" title="케이앤웍스" style="left:71.950%;top:14.345%;width:14.800%;height:34.618%;"><span class="pt-flag">Basic 지원 <span class="num-mark">3</span></span></div>
+        <div class="pt-card" data-plan="both" title="케이앤웍스" style="left:71.950%;top:14.345%;width:14.800%;height:34.618%;"><span class="pt-flag">Basic 지원 <span class="num-mark">2</span></span></div>
         <div class="pt-card" data-plan="both" title="소셜비즈" style="left:87.400%;top:14.345%;width:6.550%;height:34.618%;"><span class="pt-flag">Basic 지원</span></div>
         <div class="pt-card" data-plan="pro" title="UXOO" style="left:25.350%;top:64.742%;width:14.800%;height:34.618%;"></div>
         <div class="pt-card" data-plan="pro" title="TUK.LINK" style="left:40.800%;top:64.742%;width:14.800%;height:34.618%;"></div>
@@ -309,9 +355,9 @@
     <h2>화면 설명</h2>
     <p class="desc-trigger">GNB의 [제휴]를 눌렀을 때 표시됩니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> Pro GNB와 제휴 서비스 LNB(제휴 서비스 목록 · 제휴 서비스 연동 · 톡링크설정페이지)를 그대로 사용합니다. LNB 하단 배너는 노출하지 않습니다. 그 외 화면은 기존 제휴 서비스 목록과 같습니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 지원 플랜(전체 · Basic 지원)을 골라 카드를 걸러 봅니다. 기본값은 전체입니다. 모든 제휴사가 Pro를 지원하므로 Pro 선택지는 두지 않습니다. Basic 지원을 고르면 Basic 지원 제휴사만 보여줍니다. (프로토타입에서는 걸러지는 카드를 흐리게 표시)</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> Basic도 지원하는 제휴사 카드에 [Basic 지원] 플래그를 붙입니다. 기준은 제휴사 관리 목록의 Basic 지원 여부이며, 목록에 없는 제휴사는 Pro 전용(플래그 없음)으로 봅니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 지원 플랜(전체 · Basic 지원)을 골라 카드를 걸러 봅니다. 기본값은 전체입니다. 모든 제휴사가 Pro를 지원하므로 Pro 선택지는 두지 않습니다. Basic 지원을 고르면 Basic 지원 제휴사만 보여줍니다. (프로토타입에서는 걸러지는 카드를 흐리게 표시)</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> Basic도 지원하는 제휴사 카드에 [Basic 지원] 플래그를 붙입니다. 기준은 제휴사 관리 목록의 Basic 지원 여부이며, 목록에 없는 제휴사는 Pro 전용(플래그 없음)으로 봅니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> <span>제휴 서비스 기능은 Basic/Pro 그대로 유지하며, 추가되는 기능은 지원 플랜 선택과 [Basic 지원] 플래그 2가지입니다. 제휴사별 Basic/Pro 제공 여부는 <a href="https://docs.google.com/spreadsheets/d/1zrrrWFpkbH-TFpcvutgXwq2XBWVAGgEmeceQnCqJHbU/edit?gid=426863953#gid=426863953" target="_blank" rel="noopener">제휴사 관리 목록(구글 시트)</a>을 따릅니다.</span></div>
     </div>
   </div>
 
