@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>01 구독 상태별 정의 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="status.css">
+</head>
+<body>
+<div class="layout">
+
+  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+
+    <details class="index-group" open>
+      <summary>프론트</summary>
+      <ul class="index-list">
+        <li class="is-current"><a href="../status/01.html">1 구독 상태별 정의</a></li>
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="../front/21.html">2 로그인</a></li>
+            <li><a href="../front/01.html">3 회원가입 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/02.html">4 회원가입 · 이미 가입된 회원 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/06.html">5 플랜 선택</a></li>
+            <li><a href="../front/10.html">6 템플릿 선택 (Pro) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/18.html">7 템플릿 선택 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/19.html">8 템플릿 미리보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/08.html">9 결제 전 확인 · 정기결제 동의 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/09.html">10 약관 보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/12.html">11 사이트 개설 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/17.html">12 개설 복구 대기 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/20.html">13 사이트 개설 완료 <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 온보딩</summary>
+      <ul class="index-list">
+        <li><a href="../admin/15.html">14 어드민 홈 (Basic)</a></li>
+        <li class="index-group-label">
+          홈페이지 배포 체크리스트 (팝업)
+          <ul class="index-sublist">
+            <li><a href="../admin/09.html">15 진행 중</a></li>
+            <li><a href="../admin/10.html">16 자료 부족</a></li>
+            <li><a href="../admin/11.html">17 검수 결과 (이용 불가 기능 포함)</a></li>
+            <li><a href="../admin/12.html">18 도메인 연결 대기</a></li>
+            <li><a href="../admin/13.html">19 배포 실패</a></li>
+            <li><a href="../admin/14.html">20 배포 완료 · 접속 확인</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 환경설정</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본정보
+          <ul class="index-sublist">
+            <li><a href="../admin/17.html">21 기본정보 (Basic)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          도메인 설정
+          <ul class="index-sublist">
+            <li><a href="../admin/18.html">22 도메인 설정 (Basic)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          부계정 설정
+          <ul class="index-sublist">
+            <li><a href="../admin/20.html">23 부계정 설정 (Basic)</a></li>
+            <li><a href="../admin/21.html">24 부계정 등록 · 수정 (Basic)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 디자인 관리</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본설정
+          <ul class="index-sublist">
+            <li><a href="../admin/19.html">25 기본설정 (Basic)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>게시판</summary>
+      <ul class="index-list">
+        <li><a href="../board/01.html">26 게시판 카테고리</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>제휴</summary>
+      <ul class="index-list">
+        <li><a href="../partner/01.html">27 제휴 서비스 목록</a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>문의 접수</summary>
+      <ul class="index-list">
+        <li><a href="../inquiry/01.html">28 1:1 문의 · 홈페이지 (Basic)</a></li>
+        <li><a href="../inquiry/02.html">29 문의 접수 · 어드민 (Basic)</a></li>
+      </ul>
+    </details>
+
+
+    <details class="index-group" open>
+      <summary>구독 · 결제</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">30 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">31 무료 제공 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">32 무료 제공 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">33 결제 확인 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">34 이용 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/13.html">35 결제 완료 · 갱신 지연</a></li>
+            <li><a href="../subscription/05.html">36 유예</a></li>
+            <li><a href="../subscription/18.html">37 미납 · 읽기 전용 (유예 종료)</a></li>
+            <li><a href="../subscription/06.html">38 플랜 변경 완료</a></li>
+            <li><a href="../subscription/07.html">39 해지 예약</a></li>
+            <li><a href="../subscription/20.html">40 해지 예약 (무료 제공 중)</a></li>
+            <li><a href="../subscription/08.html">41 만료</a></li>
+            <li><a href="../subscription/09.html">42 이용 중 (결제 권한 없음)</a></li>
+            <li><a href="../subscription/11.html">43 해지 예약 확인</a></li>
+            <li><a href="../subscription/19.html">44 해지 예약 확인 (무료 제공 중)</a></li>
+            <li><a href="../subscription/21.html">45 재결제 (팝업)</a></li>
+            <li><a href="../subscription/22.html">46 재결제 완료</a></li>
+            <li><a href="../subscription/23.html">47 재결제 실패</a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">48 결제 가능</a></li>
+                <li><a href="../first-payment/02.html">49 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">50 결제 확인 · 사이트 복구 중</a></li>
+                <li><a href="../first-payment/06.html">51 결제 · 사이트 복구 완료</a></li>
+                <li><a href="../payment-status/01.html">52 결제 실패 · 취소</a></li>
+                <li><a href="../payment-status/02.html">53 처리 중 (지연)</a></li>
+                <li><a href="../payment-status/03.html">54 진행 중인 결제 있음</a></li>
+                <li><a href="../payment-status/04.html">55 이미 완료된 결제</a></li>
+                <li><a href="../first-payment/05.html">56 복구 대기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">57 서비스 이용료 정기결제</a></li>
+        <li><a href="../subscription/15.html">58 플랜 변경 (Basic)</a></li>
+        <li class="index-group-label">
+          청구 내역
+          <ul class="index-sublist">
+            <li><a href="../subscription/12.html">59 구독 청구</a></li>
+            <li><a href="../subscription/28.html">60 캐시 결제</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          청구 상세
+          <ul class="index-sublist">
+            <li><a href="../subscription/24.html">61 청구 상세 (예정) (팝업)</a></li>
+            <li><a href="../subscription/25.html">62 청구 상세 (확정) (팝업)</a></li>
+            <li><a href="../subscription/26.html">63 청구 상세 (결제 완료) (팝업)</a></li>
+            <li><a href="../subscription/27.html">64 청구 상세 (미납) (팝업)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          트래픽 사용량
+          <ul class="index-sublist">
+            <li><a href="../cdn/01.html">65 정상 <span class="index-done-flag"></span></a></li>
+            <li><a href="../cdn/02.html">66 주의 (80% 도달)</a></li>
+            <li class="index-group-label">
+              안내 발송 (80% 도달)
+              <ul class="index-subsublist">
+                <li><a href="../cdn/10.html">67 메일</a></li>
+                <li><a href="../cdn/11.html">68 알림톡</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/03.html">69 초과</a></li>
+            <li><a href="../cdn/04.html">70 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="../cdn/05.html">71 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="../cdn/06.html">72 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="../cdn/07.html">73 이용 내역 상세 (예상)</a></li>
+            <li><a href="../cdn/08.html">74 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="../cdn/09.html">75 추가 트래픽 구매</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          결제수단 관리
+          <ul class="index-sublist">
+            <li><a href="../billing-card/01.html">76 카드 있음 (Pro) <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/13.html">77 카드 있음 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/12.html">78 카드 있음 · 무료 제공 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/02.html">79 미등록 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/03.html">80 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/04.html">81 미납 · 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/07.html">82 처리 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/08.html">83 완료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/09.html">84 완료 · 미납 결제 완료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/16.html">85 완료 · 미납 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/10.html">86 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../billing-card/11.html">87 카드 삭제 불가 <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </div>
+
+
+    <div class="main-center">
+    <div class="screen-canvas">
+      <div class="policy-doc status-doc">
+
+        <h1>구독 상태별 정의</h1>
+        <p class="policy-lead">사이트 1개(계정 1개)의 구독이 가질 수 있는 상태와, 상태마다 사이트 · 관리자 화면 · 결제가 어떻게 되는지 확정된 정책 기준으로 정리했습니다. 상태는 구독 관리의 "구독 상태" 배지 한 곳에만 표시합니다.</p>
+
+        <div class="policy-section">
+          <h2>1. 상태 정의</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-state"><col class="col-def"><col><col><col class="col-pay"><col class="col-next"><col class="col-screen"></colgroup>
+            <thead><tr><th>상태</th><th>정의 · 들어가는 조건</th><th>사이트 (엔드유저 화면)</th><th>관리자 화면</th><th>결제</th><th>다음 상태</th><th>관련 화면</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="cell-item"><span class="badge badge-neutral">미신청</span></td>
+                <td>기존 고객이 신규 플랜(Pro)을 아직 고르지 않은 상태. 현행(기본 무료 + 후불 이용료)을 기한 · 사용량 제한 없이 유지한다.</td>
+                <td>지금처럼 운영</td>
+                <td>지금처럼 이용. 신규 플랜은 Pro만 신청 가능(Basic 불가)</td>
+                <td>플랜 결제 없음. 기존 이용료는 익월 5일 후불(트래픽 70원/GB, 영상만 과금)</td>
+                <td>Pro 신청(카드 등록) → 무료 제공 중(한 달)</td>
+                <td><a href="../subscription/01.html">미신청</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-info">무료 제공 중</span></td>
+                <td>신규 가입 후 무료 제공 기간. 카드 미등록 14일, 카드 등록 시 한 달, 계정당 1회.</td>
+                <td>정상 운영. 무료 제공 관련 표시 없음</td>
+                <td>제작 · 배포 가능. Pro는 판매용 PG 승인 후 판매 가능(승인 전 무통장입금 포함 판매 불가). Basic → Pro 변경 가능(남은 기간 Pro)</td>
+                <td>플랜 요금 · 트래픽 과금 없음. 문자 · 알림톡 등 이용료는 과금</td>
+                <td>카드 등록: 종료 다음 날 14:00 결제 → 이용 중 / 실패 시 무료 제공 종료<br>카드 미등록: 14일째 23:59 → 무료 제공 종료</td>
+                <td><a href="../subscription/02.html">무료 제공 중</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-danger">무료 제공 종료</span></td>
+                <td>무료 제공이 끝났는데 결제되지 않은 상태(첫 결제 실패 또는 카드 미등록). 유예 없음.</td>
+                <td>즉시 중지</td>
+                <td>결제와 진행 중인 주문 처리만 가능</td>
+                <td>결제하면 바로 재개(카드 미등록 고객은 결제한 날이 결제일)</td>
+                <td>결제 성공 → 이용 중<br>90일 경과 → 완전 삭제</td>
+                <td><a href="../subscription/10.html">무료 제공 종료 · 결제 실패</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-warning">결제 확인 중</span></td>
+                <td>결제를 요청했지만 결과를 아직 확인하지 못한 상태.</td>
+                <td>직전 상태 그대로</td>
+                <td>직전 상태 그대로. 다시 결제 불가</td>
+                <td>중복 결제 방지를 위해 재결제 금지. 끝내 확인하지 못하면 실패로 처리</td>
+                <td>성공 → 이용 중<br>실패 → 무료 제공 종료 또는 유예</td>
+                <td><a href="../subscription/03.html">결제 확인 중</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-success">이용 중</span></td>
+                <td>정상 결제되어 이용 기간(결제일 ~ 다음 결제일 전날) 안에 있는 상태.</td>
+                <td>정상 운영</td>
+                <td>모든 기능 사용. Basic → Pro 즉시 상향, 추가 트래픽 구매, 해지 예약 가능(사이트 소유자만)</td>
+                <td>매월 결제일 14:00 한 번 결제: 이번 이용 기간 플랜 요금 · 추가 트래픽(선불) + 직전 이용 기간 사용료(후불)</td>
+                <td>결제 실패 → 유예<br>해지 예약 → 해지 예약</td>
+                <td><a href="../subscription/04.html">이용 중</a><br><a href="../subscription/06.html">플랜 변경 완료</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-danger">갱신 지연</span></td>
+                <td>결제는 성공했는데 이용 기간 반영이 늦어지는 상태.</td>
+                <td>정상 운영</td>
+                <td>정상 이용</td>
+                <td>다시 청구하지 않음. 시스템이 자동으로 다시 처리</td>
+                <td>반영 완료 → 이용 중</td>
+                <td><a href="../subscription/13.html">결제 완료 · 갱신 지연</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-warning">유예</span></td>
+                <td>정기결제에 실패한 뒤 7일. 정상 이용 기간이다.</td>
+                <td>정상 운영</td>
+                <td>정상 이용. 카드 변경 시 미납 결제 자동 재진행, 같은 카드로 [다시 결제] 가능</td>
+                <td>매일 14:00 자동 재시도, 실패할 때마다 사이트 소유자에게 메일 · 알림톡으로 결제 요청. 플랜 요금과 사용료를 한 번에 결제</td>
+                <td>결제 성공 → 이용 중<br>7일차 재시도 실패 → 미납</td>
+                <td><a href="../subscription/05.html">유예</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-danger">미납</span></td>
+                <td>유예 7일차 재시도까지 결제에 실패한 상태.</td>
+                <td>만료 전까지 정상 운영</td>
+                <td>읽기 전용. 결제수단 변경 · 재결제만 가능, 재배포 불가</td>
+                <td>재결제하면 바로 정상 이용</td>
+                <td>결제 성공 → 이용 중<br>첫 결제 실패 후 30일 → 만료</td>
+                <td><a href="../subscription/18.html">미납 · 읽기 전용 (유예 종료)</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-warning">해지 예약</span></td>
+                <td>사이트 소유자가 해지를 예약한 상태. 현재 이용 기간 마지막 날 종료(무료 제공 중이면 무료 제공 종료일). 미납이 있어도 예약 가능.</td>
+                <td>이용 종료일까지 정상 운영</td>
+                <td>정상 이용. 이용 종료일 전 [해지 예약 취소] 가능</td>
+                <td>플랜 요금 결제 없음, 남은 기간 환불 없음. 남은 사용료만 효력일 다음 날(원래 결제일) 한 번 결제</td>
+                <td>취소 → 이용 중(또는 무료 제공 중)<br>이용 종료일 경과 → 만료</td>
+                <td><a href="../subscription/07.html">해지 예약</a><br><a href="../subscription/20.html">해지 예약 (무료 제공 중)</a></td>
+              </tr>
+              <tr>
+                <td class="cell-item"><span class="badge badge-neutral">만료</span></td>
+                <td>해지 예약의 이용 종료일이 지났거나, 미납으로 첫 결제 실패 후 30일이 지난 상태. 구독 해지는 회원 탈퇴가 아니며 계정은 유지된다.</td>
+                <td>중지</td>
+                <td>재결제만 가능</td>
+                <td>90일 이내 재결제 또는 같은 플랜 재가입 시 그대로 복구(미납 만료는 미납분 + 새 한 달 요금). 해지 후 재가입은 오픈 특가 재적용 없음</td>
+                <td>재결제 → 이용 중<br>90일 경과 → 완전 삭제</td>
+                <td><a href="../subscription/08.html">만료</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>2. 모든 상태에 공통으로 적용</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col></colgroup>
+            <thead><tr><th>항목</th><th>정책</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">플랜</td><td>Basic(홈페이지) 12,900원 / Pro(쇼핑몰 판매) 23,900원, 오픈 특가 9,900원 / 17,900원 (월, 부가세 별도). 2/18~4/30 가입 고객에게 첫 결제부터 연속 12개월 적용(무료 제공 기간 제외, 미납 달도 포함). 기본 제공 트래픽 Basic 50GB / Pro 100GB. Free 플랜 · 연 결제 없음.</td></tr>
+              <tr><td class="cell-item">플랜 변경</td><td>별도 상태가 아니다. Basic → Pro는 즉시 적용하고 남은 일수 차액을 바로 결제한다(원 미만 절사). 기본 트래픽은 100GB로 바뀐다. Pro → Basic은 불가(해지 예약 안내).</td></tr>
+              <tr><td class="cell-item">권한</td><td>결제 · 플랜 상향 · 추가 트래픽 구매 · 해지 · 카드 변경은 사이트 소유자(사이트당 1명)만 할 수 있다. 다른 역할은 조회만 하고 사이트 소유자에게 직접 요청한다.</td></tr>
+              <tr><td class="cell-item">카드</td><td>사이트당 1장. 무료 제공 중 · 이용 중 · 유예 · 미납 · 해지 예약에는 삭제할 수 없고 교체만 할 수 있다.</td></tr>
+              <tr><td class="cell-item">트래픽 초과</td><td>초과해도 사이트를 차단하지 않는다. 초과분은 100원/GB로 다음 결제일에 청구하며, 고객 화면에는 단가 없이 사용량과 금액만 표시한다. 80% · 100% 도달 시 사이트 소유자에게 메일 · 알림톡으로 안내한다.</td></tr>
+              <tr><td class="cell-item">데이터 보관</td><td>무료 제공 종료 · 해지 · 만료 후 90일 보관하고, 완전 삭제 30일 전 · 7일 전에 사전 안내한다. 법정 보존 대상은 삭제하지 않는다.</td></tr>
+              <tr><td class="cell-item">화면 표기</td><td>상태는 "구독 상태" 배지에만 쓰고 날짜 칸에는 날짜만 쓴다(필요하면 괄호로 짧게, 예: 2027-06-19 (미납)). 앞으로 결제될 금액에는 "(예상 · 사용량 별도)"를 붙인다.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="policy-section">
+          <h2>3. 예시 타임라인 (화면 예시 데이터)</h2>
+          <table class="policy-table">
+            <colgroup><col class="col-item"><col><col class="col-next"></colgroup>
+            <thead><tr><th>날짜</th><th>일어난 일</th><th>상태</th></tr></thead>
+            <tbody>
+              <tr><td class="cell-item">2027-02-19</td><td>Pro 가입, 샘플카드 ••••1234 등록 → 한 달 무료 제공 (카드 미등록이면 2027-03-04 23:59 종료)</td><td>무료 제공 중</td></tr>
+              <tr><td class="cell-item">2027-03-19 14:00</td><td>1회차 결제 19,690원 · 이용 기간 03-19 ~ 04-18</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">2027-05-19</td><td>3회차 결제 · 이용 기간 05-19 ~ 06-18</td><td>이용 중</td></tr>
+              <tr><td class="cell-item">2027-06-19</td><td>4회차 결제 실패 27,467원(플랜 요금 + 3회차 사용료) · 06-26까지 매일 14:00 재시도</td><td>유예</td></tr>
+              <tr><td class="cell-item">2027-06-26</td><td>7일차 재시도 실패 → 관리자 화면 읽기 전용</td><td>미납</td></tr>
+              <tr><td class="cell-item">2027-07-19</td><td>첫 결제 실패 후 30일 → 사이트 중지, 데이터 2027-10-17까지 보관</td><td>만료</td></tr>
+              <tr><td class="cell-item">해지 사례</td><td>3회차 중 해지 예약 → 2027-06-18까지 이용, 06-19 남은 사용료만 결제, 데이터 2027-09-16까지 보관</td><td>해지 예약 → 만료</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">좌측 화면 목록의 [구독 상태별 정의]를 눌렀을 때 표시됩니다.</p>
+    <p class="desc-body">구독 상태 10가지의 뜻, 들어가는 조건, 상태별 사이트 · 관리자 화면 · 결제 처리, 다음 상태를 한곳에 모은 문서입니다. 관련 화면 링크로 각 구독 관리 화면에 바로 이동할 수 있습니다.</p>
+  </div>
+
+</div>
+<script src="../index-scroll.js"></script>
+</body>
+</html>
