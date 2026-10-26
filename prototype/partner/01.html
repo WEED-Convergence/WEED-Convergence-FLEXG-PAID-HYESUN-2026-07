@@ -7,7 +7,37 @@
 <link rel="stylesheet" href="../subscription/subscription.css">
 <link rel="stylesheet" href="../admin/settings.css">
 <style>
-  .capture-wrap { position: relative; line-height: 0; }
+  .capture-wrap { position: relative; line-height: 0; container-type: inline-size; }
+  .pt-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e3e4e8;
+    font-size: 13px;
+    color: #333333;
+  }
+  .pt-filter select { height: 30px; min-width: 120px; padding: 0 8px; border: 1px solid #c9cbd1; border-radius: 3px; font-size: 13px; }
+  /* 캡처 위 카드 영역: 플래그 + 필터에 맞지 않는 카드는 흐리게(미노출 표현) */
+  .pt-card { position: absolute; line-height: normal; transition: background-color 0.15s; }
+  .pt-card.is-hidden { background-color: rgba(240, 241, 244, 0.88); }
+  .pt-flag {
+    position: absolute;
+    top: calc(14 / 1970 * 100cqw);
+    left: calc(14 / 1970 * 100cqw);
+    padding: calc(4 / 1970 * 100cqw) calc(10 / 1970 * 100cqw);
+    border-radius: calc(4 / 1970 * 100cqw);
+    background-color: #3140d6;
+    color: #ffffff;
+    font-size: calc(15 / 1970 * 100cqw);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .pt-flag .num-mark { margin-left: 4px; }
+  /* 신규 요소 강조 (빨간 박스) */
+  .pt-filter-box { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border: 2px solid #e5242b; border-radius: 4px; }
+  .pt-flag { outline: calc(3 / 1970 * 100cqw) solid #e5242b; outline-offset: calc(3 / 1970 * 100cqw); }
   .capture-wrap img { display: block; width: 100%; height: auto; }
 </style>
 </head>
@@ -236,12 +266,33 @@
   <div class="main-center">
     <div class="screen-canvas">
       <div class="st-gnb">
-        <div class="st-gnb-shop">테스트홈페이지 🔗</div>
-        <nav class="st-gnb-menu"><span class="num-mark" style="align-self:center;margin-right:4px;">1</span><span class="st-gnb-item is-home">⌂</span><span class="st-gnb-item">통계</span><span class="st-gnb-item">회원</span><span class="st-gnb-item">게시판</span><span class="st-gnb-item">셀러</span><span class="st-gnb-item">제휴 <span class="st-n">N</span></span></nav>
-        <div class="st-gnb-right">서비스 알림 🔔<span class="st-n">7</span><span class="st-gnb-help">?</span><span class="st-gnb-apply">홈페이지 바로 적용</span></div>
+        <div class="st-gnb-shop">테스트쇼핑몰 🔗</div>
+        <nav class="st-gnb-menu"><span class="num-mark" style="align-self:center;margin-right:4px;">1</span><span class="st-gnb-item is-home">⌂</span><span class="st-gnb-item">상품 <span class="st-n">N</span></span><span class="st-gnb-item">주문</span><span class="st-gnb-item">발주 <span class="st-n">N</span></span><span class="st-gnb-item">CS</span><span class="st-gnb-item">정산</span><span class="st-gnb-item">매출</span><span class="st-gnb-item">통계</span><span class="st-gnb-item">회원</span><span class="st-gnb-item">CRM <span class="st-n">N</span></span><span class="st-gnb-item is-live">LIVE <span class="st-n">N</span></span><span class="st-gnb-item">메시지</span><span class="st-gnb-item">게시판</span><span class="st-gnb-item">APP</span><span class="st-gnb-item">셀러</span><span class="st-gnb-item">제휴 <span class="st-n">N</span></span></nav>
+        <div class="st-gnb-right">서비스 알림 🔔</div>
+      </div>
+      <div class="pt-filter">
+        <div class="pt-filter-box">
+          <label for="pt-plan">지원 플랜</label>
+          <select id="pt-plan">
+            <option value="all" selected>전체</option>
+            <option value="basic">Basic</option>
+            <option value="pro">Pro</option>
+          </select>
+          <span class="num-mark">2</span>
+        </div>
       </div>
       <div class="capture-wrap">
         <img src="01.png" alt="제휴 서비스 목록 화면 (기존 어드민 캡처)">
+        <div class="pt-card" data-plan="pro" title="스튜디오 온일칠공" style="left:5.584%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용 <span class="num-mark">3</span></span></div>
+        <div class="pt-card" data-plan="pro" title="제로원애드" style="left:25.990%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="크리마" style="left:46.345%;top:0.000%;width:19.543%;height:39.583%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="both" title="케이앤웍스" style="left:66.751%;top:0.000%;width:19.543%;height:39.583%;"></div>
+        <div class="pt-card" data-plan="both" title="소셜비즈" style="left:87.157%;top:0.000%;width:8.629%;height:39.583%;"></div>
+        <div class="pt-card" data-plan="pro" title="UXOO" style="left:5.279%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="TUK.LINK" style="left:25.635%;top:58.160%;width:19.594%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="슈퍼루친" style="left:46.041%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="채널톡" style="left:66.447%;top:58.160%;width:19.543%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
+        <div class="pt-card" data-plan="pro" title="데이터라이즈" style="left:86.802%;top:58.160%;width:8.731%;height:40.799%;"><span class="pt-flag">Pro 전용</span></div>
       </div>
     </div>
   </div>
@@ -250,11 +301,21 @@
     <h2>화면 설명</h2>
     <p class="desc-trigger">GNB의 [제휴]를 눌렀을 때 표시됩니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> Basic GNB(통계 · 회원 · 게시판 · 셀러 · 제휴)를 사용합니다. 그 외 화면은 기존 제휴 서비스 목록과 같습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> Pro GNB를 그대로 사용합니다. 그 외 화면은 기존 제휴 서비스 목록과 같습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 지원 플랜(전체 · Basic · Pro)을 골라 카드를 걸러 봅니다. 기본값은 전체입니다. Basic은 Basic 지원 제휴사만, Pro는 Pro 지원 제휴사 전체를 보여줍니다. (프로토타입에서는 걸러지는 카드를 흐리게 표시)</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> Basic을 지원하지 않는 제휴사 카드에 [Pro 전용] 플래그를 붙입니다. 기준은 제휴사 관리 목록의 Basic · Pro 지원 여부이며, 목록에 없는 제휴사는 Pro 전용으로 봅니다.</div>
     </div>
   </div>
 
 </div>
+<script>
+  document.getElementById('pt-plan').addEventListener('change', function (e) {
+    var v = e.target.value;
+    document.querySelectorAll('.pt-card').forEach(function (c) {
+      c.classList.toggle('is-hidden', v === 'basic' && c.dataset.plan === 'pro');
+    });
+  });
+</script>
 <script src="../index-scroll.js"></script>
 </body>
 </html>
