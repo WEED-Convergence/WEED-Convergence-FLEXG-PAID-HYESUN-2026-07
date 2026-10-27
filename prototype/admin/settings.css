@@ -573,3 +573,52 @@ ins.chg-new { color: #3140d6; font-weight: bold; text-decoration: none; }
 .gnb-page i { font-style: normal; font-size: 12px; color: #fde68a; }
 .gnb-page span { font-size: 11px; opacity: 0.85; }
 .gnb-page:hover { background: linear-gradient(100deg, #4752e0 0%, #7c3aed 100%); }
+
+/* ---------- 기본설정: 쇼핑몰 정책 및 기능 · 플로팅 버튼 · 하단 안내 · 회사소개 · SNS ---------- */
+.sp-row { display: grid; grid-template-columns: 76px 230px 1fr; align-items: center; gap: 8px; padding: 9px 0; }
+.sp-tgcol { display: flex; align-items: center; }
+.sp-label { font-size: 12px; color: #444444; }
+.sp-label .st-hint { margin-left: 4px; }
+.sp-tg { display: inline-flex; align-items: center; gap: 5px; font-size: 8px; font-weight: bold; color: #888888; }
+.sp-tg em { font-style: normal; }
+.sp-tg i { position: relative; width: 26px; height: 6px; border-radius: 3px; background-color: #cfd0d6; }
+.sp-tg i::after { content: ""; position: absolute; top: -4px; left: -2px; width: 13px; height: 13px; border-radius: 50%; background-color: #ffffff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+.sp-tg.is-on i { background: linear-gradient(90deg, #2fbf5b 60%, #cfd0d6 60%); }
+.sp-tg.is-on i::after { left: auto; right: -2px; }
+.st-title .sp-tg { margin-left: 10px; font-size: 10px; }
+.st-title .st-hint { font-size: 11px; }
+.sp-text { font-size: 12px; color: #555555; }
+.sp-break { flex-basis: 100%; height: 0; }
+.sp-warn { font-size: 12px; font-weight: bold; color: #e5242b; }
+.sp-select { display: inline-flex; align-items: center; justify-content: space-between; gap: 10px; min-width: 64px; height: 28px; padding: 0 8px; border: 1px solid #cfd0d6; border-radius: 2px; background-color: #ffffff; font-size: 11px; color: #222222; }
+.sp-select i { font-style: normal; color: #666666; }
+.st-input.sp-w140 { width: 140px; }
+.sp-file { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.sp-path { font-size: 12px; color: #333333; }
+.sp-note { margin: 12px 0; }
+.sp-fab { display: flex; gap: 12px; }
+.sp-fab-label { flex: 0 0 160px; padding-top: 4px; font-size: 12px; line-height: 1.5; color: #444444; }
+.sp-fab-body { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
+.sp-fab-icon { width: 54px; height: 54px; border-radius: 50%; background-color: #1f1f22; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.sp-fab-icon.is-talk { background-color: #fee500; }
+.sp-fab-icon.is-talk::after { content: "TALK"; padding: 2px 4px; border-radius: 8px; background-color: #3c1e1e; color: #fee500; font-size: 8px; font-weight: 800; }
+.sp-fab-icon.is-reward::after { content: "R"; font-weight: 800; }
+.sp-fab-icon.is-delivery::after { content: "🚚"; font-size: 20px; }
+.sp-fab-icon.is-top::after { content: "↑"; font-weight: 800; }
+.sp-editor { border: 1px solid #cfd0d6; background-color: #ffffff; }
+.sp-editor-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding: 6px 8px; border-bottom: 1px solid #e3e4e8; background-color: #fafafb; font-size: 11px; color: #444444; }
+.sp-editor-bar > * { padding: 2px 4px; border: 1px solid #e3e4e8; background-color: #ffffff; font-style: normal; text-decoration: none; }
+.sp-editor-bar .is-on { background-color: #dfe3ea; }
+.sp-ed-sel { min-width: 56px; }
+.sp-ed-photo { margin-left: auto; border: 0 !important; background: transparent !important; }
+.sp-editor-area { position: relative; height: 200px; }
+.sp-editor-tip { position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); padding: 4px 10px; border: 1px solid #c9b98a; background-color: #fffbe9; font-size: 11px; color: #555555; white-space: nowrap; }
+.sp-editor-foot { display: flex; align-items: center; justify-content: center; position: relative; height: 18px; border-top: 1px solid #e3e4e8; background-color: #f4f4f6; font-size: 10px; color: #888888; }
+.sp-ed-tabs { position: absolute; right: 0; display: flex; }
+.sp-ed-tabs > * { padding: 0 14px; border-left: 1px solid #d5d8e0; font-weight: normal; }
+.sp-sns { display: grid; grid-template-columns: 76px 110px 22px 52px 50px auto; align-items: center; gap: 8px; padding: 6px 0; }
+.sp-sns-name { font-size: 12px; color: #444444; }
+.sp-updown { display: flex; flex-direction: column; gap: 3px; }
+.sp-updown i { display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 3px; background-color: #c8cad0; color: #ffffff; font-style: normal; font-size: 11px; }
+.sp-sns-icon { width: 48px; height: 48px; fill: none; stroke: #111111; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.sp-sns-btn { height: 24px; padding: 0 10px; border: 1px solid #cfd0d6; border-radius: 3px; background-color: #ffffff; font-family: inherit; font-size: 11px; }
