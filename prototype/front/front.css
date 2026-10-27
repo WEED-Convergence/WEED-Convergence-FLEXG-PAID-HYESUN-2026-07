@@ -833,34 +833,6 @@
   text-align: center;
 }
 
-/* ---------- 이미 가입된 회원 팝업 ---------- */
-
-.member-modal {
-  max-width: 440px;
-}
-
-.member-body {
-  padding: 28px 28px 24px;
-  text-align: center;
-}
-
-.member-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin: 0 0 8px;
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.member-desc {
-  margin: 0 0 18px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #555555;
-}
-
 /* ---------- 템플릿 선택 (Pro) ---------- */
 
 .tpl {
