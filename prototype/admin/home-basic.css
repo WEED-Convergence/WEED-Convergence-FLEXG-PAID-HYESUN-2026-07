@@ -636,3 +636,122 @@
 }
 
 .hb-ext { font-size: 11px; color: #a9b0ff; }
+
+/* 방문 통계 */
+.hb-kpis {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hb-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background-color: #f7f8fa;
+}
+
+.hb-kpi-label { font-size: 12px; color: #666666; }
+.hb-kpi-value { display: flex; align-items: center; gap: 6px; font-size: 20px; font-weight: 800; color: #222222; }
+.hb-kpi-sub { font-size: 11px; color: #888888; }
+.hb-kpi-sub em { font-style: normal; font-weight: bold; }
+.hb-kpi-sub em.is-up { color: #1a8a3f; }
+.hb-kpi-sub em.is-down { color: #c62f2f; }
+.hb-live-dot { width: 8px; height: 8px; border-radius: 50%; background-color: #2fbf5b; box-shadow: 0 0 0 3px rgba(47, 191, 91, 0.2); }
+
+.hb-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.hb-stat {
+  padding: 16px 18px;
+  border: 1px solid #eceef2;
+  border-radius: 8px;
+}
+
+.hb-stat-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.hb-stat-title small { margin-left: 4px; font-size: 11px; font-weight: normal; color: #999999; }
+
+.hb-cols {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 150px;
+}
+
+.hb-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+  cursor: default;
+}
+
+.hb-col-val { margin-bottom: 4px; font-size: 10px; color: #888888; }
+.hb-col-bar { width: 100%; max-width: 26px; border-radius: 4px 4px 0 0; background-color: #c5cbf6; }
+.hb-col.is-today .hb-col-bar { background-color: #3140d6; }
+.hb-col.is-today .hb-col-val { font-weight: bold; color: #222222; }
+.hb-col:hover .hb-col-bar { background-color: #5865f2; }
+.hb-col-day { margin-top: 6px; font-size: 11px; color: #888888; }
+
+.hb-hbar { margin: 0; padding: 0; list-style: none; }
+
+.hb-hbar li {
+  display: grid;
+  grid-template-columns: 76px 1fr 36px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #444444;
+}
+
+.hb-hbar-track { height: 8px; border-radius: 4px; background-color: #eceef2; overflow: hidden; }
+.hb-hbar-track span { display: block; height: 100%; border-radius: 4px; background-color: #3140d6; }
+.hb-hbar b { text-align: right; color: #222222; }
+
+.hb-pages { margin: 0; padding: 0; list-style: none; }
+
+.hb-pages li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f1f2f5;
+  font-size: 12px;
+}
+
+.hb-pages li:last-child { border-bottom: 0; }
+.hb-rank { width: 16px; font-weight: bold; color: #3140d6; text-align: center; }
+.hb-page-path { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.hb-page-path b { color: #222222; }
+.hb-page-path small { overflow: hidden; color: #999999; text-overflow: ellipsis; white-space: nowrap; }
+.hb-page-pv { font-weight: bold; color: #222222; }
+
+.hb-open {
+  padding: 3px 8px;
+  border: 1px solid #d5d8e0;
+  border-radius: 4px;
+  color: #3140d6;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hb-open:hover { border-color: #3140d6; }
+
+.hb-peak { margin: 0; font-size: 12px; color: #666666; }
+.hb-peak b { margin-right: 6px; font-size: 14px; color: #222222; }
