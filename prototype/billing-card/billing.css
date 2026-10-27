@@ -639,3 +639,78 @@
 .plan-feat .is-no { color: #a5a7ad; }
 .plan-feat .is-no i { color: #c62f2f; }
 .plan-keep { margin: 0; padding: 6px 10px; border-radius: 6px; background-color: #eef1ff; font-size: 12px; color: #2b3ac2; }
+
+/* ---------- 가독성 개선 (결제수단 관리 공통) ---------- */
+.screen-header { padding: 28px 28px 0; }
+.screen-header h1 { font-size: 22px; }
+.screen-header .desc { margin-top: 2px; font-size: 14px; color: #555555; }
+.screen-body { gap: 16px; padding: 20px 28px 36px; }
+
+/* 섹션을 흰 카드로 구분 */
+.screen-body > div:has(> .section-title) {
+  padding: 20px 22px;
+  border: 1px solid #e6e7eb;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+}
+
+.section-title {
+  margin: 0 0 14px;
+  padding-left: 10px;
+  border-left: 3px solid #3140d6;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1f2430;
+}
+
+/* 등록된 카드: 실제 카드처럼 */
+.card-row { gap: 18px; padding: 16px 18px; border-color: #e6e7eb; border-radius: 10px; background-color: #fafbfc; }
+.card-icon {
+  position: relative;
+  width: 64px;
+  height: 42px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #3b4252 0%, #1f2430 100%);
+  box-shadow: 0 3px 8px rgba(17, 24, 39, 0.25);
+}
+.card-icon::before { content: ""; position: absolute; top: 12px; left: 9px; width: 13px; height: 10px; border-radius: 2px; background: linear-gradient(135deg, #f5d27a, #c99a2e); }
+.card-icon::after { content: ""; position: absolute; right: 8px; bottom: 7px; width: 22px; height: 3px; border-radius: 2px; background-color: rgba(255, 255, 255, 0.55); }
+.card-main { flex: 1 1 auto; }
+.card-main .card-num { font-size: 16px; letter-spacing: 0.3px; color: #1f2430; }
+.card-main .card-sub { margin-top: 6px; font-size: 13px; color: #8a8f99; }
+.card-actions .btn { min-width: 64px; height: 34px; }
+
+/* 이용 중인 플랜: 요약 칸으로 */
+.plan-current { padding: 18px 20px; border-color: #e6e7eb; border-radius: 10px; background-color: #fafbfc; }
+.plan-current-head { gap: 10px; margin-bottom: 14px; }
+.plan-name { font-size: 20px; font-weight: 800; }
+.plan-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.plan-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid #eceef2;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.plan-meta dt { flex: none; font-size: 12px; color: #8a8f99; }
+.plan-meta dd { font-size: 15px; font-weight: bold; color: #1f2430; }
+.plan-current-note { font-size: 14px; }
+
+/* 다른 플랜 (Basic → Pro) */
+.plan-other-title { margin: 22px 0 10px; font-size: 14px; color: #1f2430; }
+.plan-option { padding: 18px 20px; border-color: #d9ddf7; border-radius: 10px; background-color: #f7f8ff; }
+.plan-option .plan-name { font-size: 18px; }
+.plan-option-price { font-size: 13px; color: #555555; }
+.plan-feat { font-size: 13px; gap: 6px 28px; }
+
+/* 안내 박스 · 배너 글자 크기 */
+.banner { font-size: 14px; }
+.info-box { font-size: 13px; color: #666666; }
+.empty-state { border-radius: 12px; background-color: #fafbfc; }
