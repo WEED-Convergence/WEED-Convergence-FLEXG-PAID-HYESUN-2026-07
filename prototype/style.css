@@ -570,3 +570,20 @@ button.btn {
   font-weight: bold;
   font-style: normal;
 }
+
+
+/* TBD 표시 (확정 전 항목) */
+.tbd-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background-color: #ff7a00;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
