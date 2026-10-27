@@ -726,3 +726,18 @@
 .pm-ic.is-retry { background-color: #fff3e3; color: #d97706; }
 .pm-ic.is-alert { background-color: #fdeaea; color: #dc2626; }
 .pm-ic.is-box { background-color: #eef0f3; color: #5b6472; }
+
+/* 이용 중인 플랜: 가독성 개선 (목록형) */
+.plan-current { padding: 0; border: 1px solid #e5e7eb; border-radius: 12px; background-color: #ffffff; overflow: hidden; }
+.plan-current-head { margin: 0; padding: 16px 20px; border-bottom: 1px solid #eef0f3; }
+.plan-current .plan-name { font-size: 17px; font-weight: 700; color: #111827; }
+.plan-current .plan-meta { display: block; margin: 0; }
+.plan-current .plan-meta > div { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 20px; border: 0; border-radius: 0; background: none; }
+.plan-current .plan-meta > div + div { border-top: 1px solid #f1f2f5; }
+.plan-current .plan-meta dt { flex: none; font-size: 13px; font-weight: normal; color: #6b7280; }
+.plan-current .plan-meta dd { margin: 0; font-size: 14px; font-weight: 500; color: #1f2937; text-align: right; line-height: 1.5; }
+.plan-current .plan-meta dd .cell-danger { font-weight: 600; }
+.plan-current .pm-ic { width: 24px; height: 24px; border-radius: 6px; }
+.plan-current .pm-ic svg { width: 14px; height: 14px; }
+.plan-current .plan-current-note { margin: 0; padding: 12px 20px; border-top: 1px solid #eef0f3; background-color: #f9fafb; font-size: 12.5px; line-height: 1.6; color: #6b7280; }
+.plan-current-head + .plan-current-note { border-top: 0; background: none; padding-top: 14px; padding-bottom: 16px; font-size: 13px; }
