@@ -1275,10 +1275,10 @@
 .ps-for {
   margin: 4px 0 16px;
   padding: 10px 14px;
-  border-left: 4px solid #e04848;
+  border-left: 4px solid #3140d6;
   border-radius: 6px;
-  background-color: #fff1f1;
-  color: #222222;
+  background-color: #eef0fd;
+  color: #1f2a8c;
   font-size: 16px;
   font-weight: 800;
 }
