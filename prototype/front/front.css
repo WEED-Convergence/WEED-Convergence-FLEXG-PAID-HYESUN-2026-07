@@ -1273,9 +1273,14 @@
 .ps-card.is-selected .ps-radio { border: 5px solid #e04848; }
 
 .ps-for {
-  margin: 0 0 16px;
-  font-size: 13px;
-  color: #666666;
+  margin: 4px 0 16px;
+  padding: 10px 14px;
+  border-left: 4px solid #e04848;
+  border-radius: 6px;
+  background-color: #fff1f1;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .ps-price {
