@@ -728,3 +728,20 @@
 .gnb-page i { font-style: normal; font-size: 12px; color: #fde68a; }
 .gnb-page span { font-size: 11px; opacity: 0.85; }
 .gnb-page:hover { background: linear-gradient(100deg, #4752e0 0%, #7c3aed 100%); }
+
+/* 회원 현황 아이콘 */
+.hb-mi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+.hb-mi svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.hb-mi.is-join { background-color: #e4f5e9; color: #1a8a3f; }
+.hb-mi.is-leave { background-color: #fdeeee; color: #c62f2f; }
+.hb-mi.is-total { background-color: #e6eaff; color: #3140d6; }
