@@ -622,3 +622,14 @@ ins.chg-new { color: #3140d6; font-weight: bold; text-decoration: none; }
 .sp-updown i { display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 3px; background-color: #c8cad0; color: #ffffff; font-style: normal; font-size: 11px; }
 .sp-sns-icon { width: 48px; height: 48px; fill: none; stroke: #111111; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .sp-sns-btn { height: 24px; padding: 0 10px; border: 1px solid #cfd0d6; border-radius: 3px; background-color: #ffffff; font-family: inherit; font-size: 11px; }
+
+/* 기본설정 (Basic): 쇼핑몰 전용 기능 삭제 표시 */
+.st-form .sp-row.is-removed { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+.is-removed .sp-label,
+.is-removed .sp-text,
+.is-removed .sp-fab-label,
+.is-removed .sp-path,
+.is-removed .sp-warn,
+.is-removed-opt { color: #a5a7ad !important; text-decoration: line-through; }
+.st-form.is-groups .st-group.is-removed { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+.is-removed .sp-tg, .is-removed .sp-fab-icon, .is-removed .st-btn-sm, .is-removed .st-input { opacity: 0.45; }
