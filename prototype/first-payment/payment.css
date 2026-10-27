@@ -363,3 +363,13 @@ tr.price-total-row td {
   font-size: 13px;
   color: #999999;
 }
+
+
+/* 팝업 안 진행 화면: 가운데 한 줄 정렬 */
+.popup-modal .process-center { padding: 28px 24px 20px; }
+.popup-modal .process-center .desc-sub { margin: 0; }
+.fp-col { max-width: 420px; margin: 0 auto; }
+.fp-col .section-box { margin: 0 0 16px; }
+.fp-col .step-list { max-width: none; }
+.fp-mark { margin: 12px 0 0; text-align: center; }
+.fp-note { margin: 12px 0 0; font-size: 12px; color: #aaaaae; text-align: center; }
