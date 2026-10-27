@@ -548,3 +548,28 @@ ins.chg-new { color: #3140d6; font-weight: bold; text-decoration: none; }
 .st-gnb ins.chg-new, .st-lnb ins.chg-new { color: #9aa8ff; }
 .st-gnb-item.is-removed { padding: 0 4px; font-size: 11px; }
 .st-gnb-shop del.chg-old, .st-gnb-shop ins.chg-new { white-space: nowrap; font-size: 11px; }
+
+
+/* GNB FLEXG.Page 바로가기 (Basic 공통) */
+.gnb-page {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  margin-left: 10px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(100deg, #5865f2 0%, #8b5cf6 100%);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.35), 0 4px 14px rgba(88, 101, 242, 0.55);
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.gnb-page i { font-style: normal; font-size: 12px; color: #fde68a; }
+.gnb-page span { font-size: 11px; opacity: 0.85; }
+.gnb-page:hover { background: linear-gradient(100deg, #4752e0 0%, #7c3aed 100%); }
