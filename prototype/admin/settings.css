@@ -633,3 +633,6 @@ ins.chg-new { color: #3140d6; font-weight: bold; text-decoration: none; }
 .is-removed-opt { color: #a5a7ad !important; text-decoration: line-through; }
 .st-form.is-groups .st-group.is-removed { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
 .is-removed .sp-tg, .is-removed .sp-fab-icon, .is-removed .st-btn-sm, .is-removed .st-input { opacity: 0.45; }
+.st-title.is-removed-title > span:first-child { color: #a5a7ad; text-decoration: line-through; }
+.st-form.is-removed .sp-sns-name, .st-form.is-removed .sp-note .st-hint { color: #a5a7ad !important; text-decoration: line-through; }
+.st-form.is-removed .sp-sns-icon, .st-form.is-removed .sp-updown, .st-form.is-removed .sp-sns-btn { opacity: 0.45; }
