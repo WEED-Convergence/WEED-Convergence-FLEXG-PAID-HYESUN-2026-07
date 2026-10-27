@@ -265,18 +265,37 @@
 
         <div class="hb-box">
           <h2 class="hb-section-title">회원 현황 <span class="num-mark">2</span></h2>
-          <table class="hb-table">
-            <thead>
-              <tr><th><span class="hb-mi is-join"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M19 8v6M16 11h6"/></svg></span>신규가입</th><th><span class="hb-mi is-leave"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 11h6"/></svg></span>회원탈퇴</th><th><span class="hb-mi is-total"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16.5 13.2c2.9.2 5 2.2 5 5.3"/></svg></span>총 회원 수</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><ul class="hb-list"><li>어제 <b>0명</b></li><li>지난주 <b>0명</b></li><li>이번달 <b>0명</b></li></ul></td>
-                <td><ul class="hb-list"><li>어제 <b>0명</b></li><li>지난주 <b>0명</b></li><li>이번달 <b>0명</b></li></ul></td>
-                <td><span class="hb-value">0명</span></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="hb-mkpis">
+            <div class="hb-mkpi"><span class="hb-mi is-total"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16.5 13.2c2.9.2 5 2.2 5 5.3"/></svg></span><div><span class="hb-kpi-label">총 회원 수</span><span class="hb-kpi-value">2,486명</span><span class="hb-kpi-sub"><em class="is-up">▲ 22명</em> 어제보다</span></div></div>
+            <div class="hb-mkpi"><span class="hb-mi is-login"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M10 16l4-4-4-4"/><path d="M14 12H4"/></svg></span><div><span class="hb-kpi-label">오늘 로그인한 회원</span><span class="hb-kpi-value">342명</span><span class="hb-kpi-sub"><em class="is-up">▲ 5%</em> 어제 326명</span></div></div>
+            <div class="hb-mkpi"><span class="hb-mi is-join"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M19 8v6M16 11h6"/></svg></span><div><span class="hb-kpi-label">오늘 신규가입</span><span class="hb-kpi-value">24명</span><span class="hb-kpi-sub"><em class="is-up">▲ 6명</em> 어제 18명</span></div></div>
+            <div class="hb-mkpi"><span class="hb-mi is-sleep"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><div><span class="hb-kpi-label">오래 로그인하지 않은 회원</span><span class="hb-kpi-value">418명</span><span class="hb-kpi-sub">90일 이상 · 전체의 17%</span></div></div>
+          </div>
+          <div class="hb-stat-grid">
+            <div class="hb-stat">
+              <p class="hb-stat-title">신규가입 · 회원탈퇴</p>
+              <table class="hb-mtable">
+                <thead><tr><th></th><th>신규가입</th><th>회원탈퇴</th><th>순증가</th></tr></thead>
+                <tbody>
+                  <tr><th>어제</th><td>18명</td><td>2명</td><td class="is-up">+16명</td></tr>
+                  <tr><th>지난주</th><td>112명</td><td>9명</td><td class="is-up">+103명</td></tr>
+                  <tr><th>이번달</th><td>236명</td><td>21명</td><td class="is-up">+215명</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="hb-stat">
+              <p class="hb-stat-title">최근 7일 신규가입</p>
+              <div class="hb-cols is-small">
+                <div class="hb-col" title="2027-06-04 신규가입 12명"><span class="hb-col-val">12</span><span class="hb-col-bar" style="height:43%"></span><span class="hb-col-day">04</span></div>
+                <div class="hb-col" title="2027-06-05 신규가입 15명"><span class="hb-col-val">15</span><span class="hb-col-bar" style="height:54%"></span><span class="hb-col-day">05</span></div>
+                <div class="hb-col" title="2027-06-06 신규가입 9명"><span class="hb-col-val">9</span><span class="hb-col-bar" style="height:32%"></span><span class="hb-col-day">06</span></div>
+                <div class="hb-col" title="2027-06-07 신규가입 21명"><span class="hb-col-val">21</span><span class="hb-col-bar" style="height:75%"></span><span class="hb-col-day">07</span></div>
+                <div class="hb-col" title="2027-06-08 신규가입 17명"><span class="hb-col-val">17</span><span class="hb-col-bar" style="height:61%"></span><span class="hb-col-day">08</span></div>
+                <div class="hb-col" title="2027-06-09 신규가입 18명"><span class="hb-col-val">18</span><span class="hb-col-bar" style="height:64%"></span><span class="hb-col-day">09</span></div>
+                <div class="hb-col is-today" title="2027-06-10 신규가입 24명"><span class="hb-col-val">24</span><span class="hb-col-bar" style="height:86%"></span><span class="hb-col-day">오늘</span></div>
+              </div>
+            </div>
+          </div>
           <p class="hb-update">마지막 업데이트 2027-06-10 19:30</p>
         </div>
 
@@ -397,7 +416,7 @@
     <p class="desc-trigger">Basic 고객이 어드민에 들어왔을 때 표시됩니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 선택한 템플릿을 보여주고 FLEXG.Page로 이동시킵니다. [FLEXG.Page에서 편집하기]는 새 창으로 열립니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 신규가입 · 회원탈퇴(어제 · 지난주 · 이번달)와 총 회원 수입니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 총 회원 수 · 오늘 로그인한 회원 · 오늘 신규가입 · 오래 로그인하지 않은 회원(90일 이상)과 신규가입 · 회원탈퇴(어제 · 지난주 · 이번달), 최근 7일 신규가입을 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 방문자 · 페이지뷰 · 유입 경로 · 많이 본 페이지 · 접속 기기를 보여줍니다. 많이 본 페이지는 주소 기준이며 [열기 ↗]로 새 창에서 엽니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">4</span> 카드를 누르면 도메인 설정 · 구독 관리 · 트래픽 사용량 · 문의 접수로 이동합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">5</span> 이번 이용 기간의 문자 · 알림톡 이용 건수와 금액입니다.</div>
