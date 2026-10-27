@@ -614,11 +614,25 @@
 }
 
 .hb-gnb-item.is-page {
-  margin-left: 6px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background-color: #3140d6;
-  color: #ffffff;
-  font-weight: bold;
+  align-self: center;
+  gap: 6px;
+  height: 30px;
+  margin: 0 16px 0 auto;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 6px;
+  color: #e6e8ff;
+  font-weight: 500;
   text-decoration: none;
 }
+
+.hb-gnb-item.is-page:hover { border-color: #8f99ff; background-color: rgba(143, 153, 255, 0.12); }
+
+.hb-page-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #8f99ff, #5865f2);
+}
+
+.hb-ext { font-size: 11px; color: #a9b0ff; }
