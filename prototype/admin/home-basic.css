@@ -380,13 +380,15 @@
 .hb-page {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 32px;
   padding: 28px 32px;
   border-radius: 16px;
   background:
     radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px) 0 0 / 18px 18px,
-    linear-gradient(115deg, #2a2fa6 0%, #4f46e5 38%, #8b5cf6 70%, #ec4899 100%);
+    linear-gradient(115deg, #2a2fa6 0%, #4f46e5 25%, #8b5cf6 50%, #ec4899 75%, #4f46e5 100%) 0 0 / 300% 100%;
+  animation: hb-page-flow 14s ease-in-out infinite alternate;
   box-shadow: 0 12px 32px rgba(79, 70, 229, 0.35);
   color: #ffffff;
   overflow: hidden;
@@ -493,7 +495,7 @@
   box-shadow: 0 4px 10px rgba(17, 12, 60, 0.25);
 }
 
-.hb-page-body { position: relative; z-index: 1; flex: 1; min-width: 0; }
+.hb-page-body { position: relative; z-index: 1; flex: 1 1 360px; min-width: 0; }
 
 .hb-page-eyebrow {
   display: inline-flex;
@@ -734,14 +736,35 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  margin-right: 8px;
-  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  border-radius: 14px;
+  color: #ffffff;
   vertical-align: middle;
 }
 
-.hb-mi svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.hb-mi.is-join { background-color: #e4f5e9; color: #1a8a3f; }
-.hb-mi.is-leave { background-color: #fdeeee; color: #c62f2f; }
-.hb-mi.is-total { background-color: #e6eaff; color: #3140d6; }
+.hb-mi svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.hb-mi.is-join { background: linear-gradient(135deg, #34d399 0%, #059669 100%); box-shadow: 0 6px 14px rgba(5, 150, 105, 0.35); }
+.hb-mi.is-leave { background: linear-gradient(135deg, #fb7185 0%, #e11d48 100%); box-shadow: 0 6px 14px rgba(225, 29, 72, 0.3); }
+.hb-mi.is-total { background: linear-gradient(135deg, #818cf8 0%, #4f46e5 100%); box-shadow: 0 6px 14px rgba(79, 70, 229, 0.35); }
+.hb-table th:has(.hb-mi) { padding-top: 14px; padding-bottom: 14px; font-size: 14px; color: #222222; }
+/* 배너 배경 움직임 (심플) */
+@keyframes hb-page-flow {
+  from { background-position: 0 0, 0% 50%; }
+  to { background-position: 0 0, 100% 50%; }
+}
+
+@keyframes hb-page-float {
+  from { transform: translate(0, 0); }
+  to { transform: translate(40px, 24px); }
+}
+
+.hb-page-glow.is-a { animation: hb-page-float 9s ease-in-out infinite alternate; }
+.hb-page-glow.is-b { animation: hb-page-float 11s ease-in-out infinite alternate-reverse; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hb-page,
+  .hb-page-glow.is-a,
+  .hb-page-glow.is-b { animation: none; }
+}
