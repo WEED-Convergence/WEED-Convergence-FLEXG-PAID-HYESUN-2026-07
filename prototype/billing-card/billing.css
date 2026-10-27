@@ -714,3 +714,15 @@
 .banner { font-size: 14px; }
 .info-box { font-size: 13px; color: #666666; }
 .empty-state { border-radius: 12px; background-color: #fafbfc; }
+
+
+/* 이용 중인 플랜: 항목 아이콘 */
+.plan-meta dt { display: flex; align-items: center; gap: 8px; }
+.pm-ic { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 7px; }
+.pm-ic svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pm-ic.is-money { background-color: #e8f0fe; color: #2563eb; }
+.pm-ic.is-cal { background-color: #f1ecfe; color: #7c3aed; }
+.pm-ic.is-gift { background-color: #e6f7f0; color: #0f9d6b; }
+.pm-ic.is-retry { background-color: #fff3e3; color: #d97706; }
+.pm-ic.is-alert { background-color: #fdeaea; color: #dc2626; }
+.pm-ic.is-box { background-color: #eef0f3; color: #5b6472; }
