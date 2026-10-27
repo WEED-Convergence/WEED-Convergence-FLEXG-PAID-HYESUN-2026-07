@@ -854,6 +854,21 @@
 .tpl-line { height: 4px; width: 75%; margin-top: auto; background-color: #e5e1da; }
 .tpl-line + .tpl-line { width: 50%; margin-top: 0; }
 
+/* 템플릿 디자인 변형 */
+.tpl-phone.v-full .tpl-hero { height: 112px; }
+.tpl-phone.v-full .tpl-low { display: none; }
+.tpl-phone.v-wide .tpl-hero { height: 30px; }
+.tpl-phone.v-wide .tpl-mid { height: 84px; }
+.tpl-phone.v-round .tpl-hero,
+.tpl-phone.v-round .tpl-mid,
+.tpl-phone.v-round .tpl-low { border-radius: 10px; }
+.tpl-phone.v-center .tpl-line { align-self: center; }
+.tpl-phone.v-dark { border-color: #2a2a30; background-color: #1f1f24; }
+.tpl-phone.v-dark .tpl-hero,
+.tpl-phone.v-dark .tpl-mid,
+.tpl-phone.v-dark .tpl-low { filter: brightness(0.55); }
+.tpl-phone.v-dark .tpl-line { background-color: #4a4a52; }
+
 .tpl-phone.is-hover::after {
   content: "";
   position: absolute;
