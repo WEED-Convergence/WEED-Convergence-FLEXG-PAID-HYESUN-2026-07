@@ -737,31 +737,6 @@
   color: #1a56db;
 }
 
-/* ---------- 플랜 추천 받기 (접고 펼치기) ---------- */
-
-.rec-details {
-  margin-bottom: 8px;
-  padding: 14px 16px;
-  border: 1px solid #e3e4e8;
-  border-radius: 10px;
-}
-
-.rec-details > summary {
-  margin-bottom: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.rec-details > summary .opt {
-  color: #8a8a8a;
-  font-weight: normal;
-}
-
-.rec-details[open] > summary {
-  margin-bottom: 14px;
-}
-
 /* ---------- 약관 동의 ---------- */
 
 .co-check {
@@ -1252,99 +1227,6 @@
   color: #666666;
 }
 
-/* 추천 */
-.ps-rec {
-  margin: 0 0 28px;
-  padding: 20px 22px;
-  border-radius: 12px;
-  background-color: #f6f7f9;
-}
-
-.ps-rec-head {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0 0 14px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.ps-rec-head span.opt { font-weight: normal; color: #999999; font-size: 12px; }
-
-.ps-q {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  gap: 10px;
-  margin: 0 0 10px;
-  font-size: 13px;
-}
-
-.ps-q-label { color: #555555; }
-
-.ps-seg {
-  display: flex;
-  gap: 6px;
-}
-
-.ps-seg span {
-  flex: 1;
-  padding: 9px 10px;
-  border: 1px solid #dcdde2;
-  border-radius: 8px;
-  background-color: #ffffff;
-  text-align: center;
-  color: #555555;
-}
-
-.ps-seg span.is-on {
-  border-color: #e04848;
-  color: #e04848;
-  font-weight: bold;
-}
-
-.ps-rec-result {
-  margin: 14px 0 0;
-  padding: 12px 14px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #444444;
-}
-
-.ps-rec-result b { color: #e04848; }
-
-.ps-rule {
-  margin: 10px 0 0;
-  font-size: 12px;
-  color: #666666;
-}
-
-.ps-rule summary {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  color: #3140d6;
-}
-
-.ps-rule table {
-  width: 100%;
-  margin: 8px 0 4px;
-  border-collapse: collapse;
-  background-color: #ffffff;
-}
-
-.ps-rule th,
-.ps-rule td {
-  padding: 7px 10px;
-  border: 1px solid #ececf0;
-  text-align: left;
-}
-
-.ps-rule th { background-color: #fafafb; color: #777777; font-weight: normal; }
-
 /* 플랜 카드 */
 .ps-cards {
   display: grid;
@@ -1389,15 +1271,6 @@
 }
 
 .ps-card.is-selected .ps-radio { border: 5px solid #e04848; }
-
-.ps-badge {
-  padding: 3px 9px;
-  border-radius: 10px;
-  background-color: #e04848;
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: bold;
-}
 
 .ps-for {
   margin: 0 0 16px;
