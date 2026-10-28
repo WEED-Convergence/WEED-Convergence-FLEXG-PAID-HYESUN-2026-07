@@ -407,7 +407,7 @@ table.data-table tr:last-child td {
 
 /* 결제 상태: 배지 / 실패일 / 사유를 줄로 나눠 표시 */
 .kv-row dd.status-dd { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
-.status-meta { margin: 0; display: flex; flex-direction: column; gap: 4px; }
-.status-meta div { display: flex; gap: 10px; font-size: 12.5px; }
-.status-meta dt { flex: 0 0 40px; margin: 0; color: #999999; }
-.status-meta dd { margin: 0; color: #333333; }
+.status-meta { margin: 0; padding: 12px 14px; max-width: 360px; box-sizing: border-box; width: 100%; border: 1px solid #d9dde4; border-radius: 8px; background-color: #eceef2; display: flex; flex-direction: column; gap: 6px; }
+.status-meta div { display: flex; gap: 10px; font-size: 12.5px; color: #555555; }
+.status-meta dt { flex: 0 0 40px; margin: 0; color: #555555; }
+.status-meta dd { margin: 0; color: #222222; }
