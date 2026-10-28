@@ -411,3 +411,17 @@ table.data-table tr:last-child td {
 .status-meta div { display: flex; gap: 10px; font-size: 12.5px; color: #555555; }
 .status-meta dt { flex: 0 0 40px; margin: 0; color: #555555; }
 .status-meta dd { margin: 0; color: #222222; }
+
+/* Pro 소개 팝업 */
+.pro-intro { margin-top: 14px; padding: 16px 18px; border: 2px solid #e04848; border-radius: 10px; background-color: #ffffff; }
+.pro-intro-top { display: flex; align-items: baseline; gap: 10px; }
+.pro-intro-name { font-size: 18px; font-weight: bold; color: #222222; }
+.pro-intro-for { font-size: 12.5px; color: #777777; }
+.pro-intro-price { margin: 8px 0 12px; font-size: 12px; color: #999999; }
+.pro-intro-price b { margin-right: 6px; font-size: 20px; color: #e04848; }
+.pro-intro-price s { margin-right: 4px; }
+.pro-intro-feat { list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid #eeeeee; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #555555; }
+.pro-intro-feat li { display: flex; gap: 8px; }
+.pro-intro-feat i { flex: 0 0 14px; font-style: normal; font-weight: bold; color: #1a8a3f; }
+.pro-intro-feat .is-new { color: #222222; font-weight: bold; }
+.pro-intro-feat em { font-style: normal; font-weight: normal; color: #999999; font-size: 12px; }
