@@ -404,3 +404,10 @@ table.data-table tr:last-child td {
 .amount-breakdown li { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12.5px; font-weight: normal; color: #555555; }
 .amount-breakdown .ab-label { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .amount-breakdown .ab-value { white-space: nowrap; color: #222222; font-variant-numeric: tabular-nums; }
+
+/* 결제 상태: 배지 / 실패일 / 사유를 줄로 나눠 표시 */
+.kv-row dd.status-dd { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.status-meta { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.status-meta div { display: flex; gap: 10px; font-size: 12.5px; }
+.status-meta dt { flex: 0 0 40px; margin: 0; color: #999999; }
+.status-meta dd { margin: 0; color: #333333; }
