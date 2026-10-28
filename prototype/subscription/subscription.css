@@ -393,3 +393,14 @@ table.data-table tr:last-child td {
 .status-banner.is-success i { background-color: #1a8a3f; }
 .status-banner.is-neutral { background-color: #eceef2; border-color: #d5d7dc; border-left-color: #4a4d55; color: #33363e; }
 .status-banner.is-neutral i { background-color: #4a4d55; }
+
+/* 다음 결제 금액 · 미납 금액: 금액 / 특가 태그 / 내역을 줄로 나눠 표시 */
+.kv-row dd.amount-dd { display: flex; flex-direction: column; gap: 8px; }
+.amount-main { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: 16px; font-weight: bold; color: #111111; }
+.amount-vat { font-size: 12px; font-weight: normal; color: #888888; }
+.amount-tag { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; background-color: #eef1ff; color: #2b3ac2; font-size: 11.5px; font-weight: bold; line-height: 1.6; }
+.amount-note { font-size: 12px; font-weight: normal; color: #999999; }
+.amount-breakdown { list-style: none; margin: 0; padding: 10px 12px; max-width: 360px; border-radius: 8px; background-color: #f7f8fa; display: flex; flex-direction: column; gap: 6px; }
+.amount-breakdown li { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12.5px; font-weight: normal; color: #555555; }
+.amount-breakdown .ab-label { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.amount-breakdown .ab-value { white-space: nowrap; color: #222222; font-variant-numeric: tabular-nums; }
