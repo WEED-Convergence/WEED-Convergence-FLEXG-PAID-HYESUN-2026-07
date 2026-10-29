@@ -1882,7 +1882,8 @@
 .tplv-hero.has-photo.is-pc {
   padding: 0;
   aspect-ratio: 941 / 512;
-  background: url("img/company.jpg") center / cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .tplv-thumb {
