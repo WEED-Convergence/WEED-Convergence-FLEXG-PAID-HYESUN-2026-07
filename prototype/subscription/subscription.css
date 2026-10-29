@@ -430,3 +430,11 @@ table.data-table tr:last-child td {
 /* Pro에서만 보이는 문구 */
 .pro-only { text-decoration: underline dotted; text-underline-offset: 3px; }
 .pro-only::after { content: "Pro만 표시"; display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 4px; background-color: #e6eaff; color: #3140d6; font-size: 11px; font-weight: normal; line-height: 18px; vertical-align: 1px; text-decoration: none; }
+
+/* Pro 소개 박스 · 보라색 */
+.pro-upsell.is-purple { border-color: #7c3aed; background-color: #faf7ff; }
+.pro-upsell.is-purple .pro-upsell-label,
+.pro-upsell.is-purple .pro-intro-price b { color: #7c3aed; }
+.pro-upsell.is-purple .btn-primary { background-color: #7c3aed; border-color: #7c3aed; }
+.pro-upsell.is-purple .pro-intro-feat i { color: #7c3aed; }
+.pro-upsell.is-purple .pro-upsell-feat { border-left-color: #e9e0fb; }
