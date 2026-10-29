@@ -156,7 +156,7 @@
               <ul class="index-subsublist">
                 <li><a href="01.html">59 결제 가능 <span class="index-done-flag"></span></a></li>
                 <li><a href="07.html">60 결제 가능 (카드 없음) <span class="index-done-flag"></span></a></li>
-                <li class="is-current"><a href="02.html">61 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+                <li class="is-current"><a href="02.html">61 결제 권한 없음</a></li>
                 <li><a href="03.html">62 결제 확인 · 사이트 복구 중 <span class="index-done-flag"></span></a></li>
                 <li><a href="06.html">63 결제 · 사이트 복구 완료 <span class="index-done-flag"></span></a></li>
                 <li><a href="../payment-status/01.html">64 결제 실패 · 취소 <span class="index-done-flag"></span></a></li>
@@ -290,7 +290,7 @@
               <div class="kv-row"><dt>플랜</dt><dd>Pro</dd></div>
               <div class="kv-row"><dt>구독 상태</dt><dd><span class="badge badge-neutral">만료</span></dd></div>
               <div class="kv-row"><dt>이용 기간</dt><dd>2027-06-18에 종료</dd></div>
-              <div class="kv-row"><dt>데이터 보관</dt><dd>2027-09-16까지 (종료 후 90일)</dd></div>
+              <div class="kv-row"><dt>데이터 보관</dt><dd>2027-09-16까지</dd></div>
             </dl>
           </div>
   
@@ -369,6 +369,14 @@
                 <td>결제 금액 (부가세 포함)</td>
                 <td>19,690원</td>
               </tr>
+              <tr class="unpaid-only">
+                <td>미납 금액 (부가세 포함) <span class="unpaid-tag">미납 있을 때만 표시</span></td>
+                <td>26,103원</td>
+              </tr>
+              <tr class="unpaid-only price-total-row">
+                <td>총 결제 금액 (미납분 + 새 한 달) <span class="unpaid-tag">미납 있을 때만 표시</span></td>
+                <td>45,793원</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -402,7 +410,7 @@
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 재결제는 사이트 주계정만 할 수 있음을 먼저 알리고 사이트 주계정에게 직접 요청하도록 안내합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 결제할 플랜입니다(조회만 가능).</div>
-      <div class="desc-numbered-row"><span class="num-mark">3</span> 결제 금액입니다(조회만 가능).</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 결제 금액입니다(조회만 가능). 미납이 있으면 결제 가능 화면과 같이 미납 금액 · 총 결제 금액 줄을 함께 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">4</span> 결제수단입니다(조회만 가능).</div>
       <div class="desc-numbered-row"><span class="num-mark">5</span> [결제하기]는 비활성입니다.</div>
     </div>
