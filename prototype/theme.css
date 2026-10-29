@@ -1,0 +1,112 @@
+/* ==========================================================
+   공통 디자인 기준 (시안) — 내용은 바꾸지 않고 모양만 다듬음
+   모든 화면의 마지막 스타일로 불러옴
+   ========================================================== */
+:root {
+  --t-text: #111827;
+  --t-text-2: #4b5563;
+  --t-text-3: #6b7280;
+  --t-line: #e5e7eb;
+  --t-line-2: #f0f1f4;
+  --t-bg: #f5f6f8;
+  --t-card: #ffffff;
+  --t-primary: #3140d6;
+  --t-radius: 14px;
+  --t-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+/* ---------- 어드민 공통 ---------- */
+.screen-main { background-color: var(--t-bg); }
+.screen-main .screen-header { padding: 32px 32px 4px; }
+.screen-main .screen-header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.4px; color: var(--t-text); }
+.screen-main .screen-header .desc { margin-top: 6px; font-size: 14px; color: var(--t-text-3); }
+.screen-main .screen-body { gap: 20px; padding: 20px 32px 40px; }
+
+/* 카드 */
+.screen-main .section-box,
+.screen-main .screen-body > div:has(> .section-title) {
+  padding: 22px 24px;
+  border: 1px solid var(--t-line);
+  border-radius: var(--t-radius);
+  background-color: var(--t-card);
+  box-shadow: var(--t-shadow);
+}
+.screen-main .section-box .section-title,
+.screen-main .screen-body > div > .section-title {
+  margin: 0 0 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--t-line-2);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--t-text);
+}
+.screen-main .two-col,
+.screen-main .three-col { gap: 20px; }
+
+/* 항목 · 값 */
+.screen-main .kv-list { gap: 12px; }
+.screen-main .kv-row { font-size: 14px; line-height: 1.55; }
+.screen-main .kv-row dt { color: var(--t-text-3); }
+.screen-main .kv-row dd { color: var(--t-text); }
+.screen-main .kv-row.is-sub dt,
+.screen-main .kv-row.is-sub dd { color: #9ca3af; }
+.screen-main .kv-row.is-strong dd { font-weight: 700; }
+
+/* 다음 결제 금액: 내역을 카드 폭 전체로 (줄바꿈 줄이기) */
+.screen-main .kv-row:has(> dd.amount-dd) { flex-wrap: wrap; row-gap: 10px; }
+.screen-main .kv-row > dd.amount-dd { flex: 1 1 100%; }
+.screen-main .amount-breakdown {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid var(--t-line-2);
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+.screen-main .amount-breakdown li { padding: 5px 0; font-size: 13.5px; }
+.screen-main .amount-breakdown li + li { border-top: 1px dashed #e8eaee; }
+
+/* 버튼 */
+.screen-main .btn {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 9px;
+  border-color: #d1d5db;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.screen-main .btn:hover { background-color: #f9fafb; border-color: #9ca3af; }
+.screen-main .btn-primary { border-color: var(--t-primary); background-color: var(--t-primary); color: #ffffff; box-shadow: 0 1px 2px rgba(49, 64, 214, 0.25); }
+.screen-main .btn-primary:hover { background-color: #2836bd; border-color: #2836bd; }
+.screen-main .btn-sm { height: 32px; padding: 0 12px; font-size: 13px; }
+.screen-main .btn-row-right { gap: 8px; }
+
+/* 상태 배지 */
+.screen-main .badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+
+/* 안내 박스 · 상태 배너 */
+.screen-main .info-box,
+.screen-main .info-box-danger { border-radius: 12px; font-size: 13.5px; line-height: 1.75; }
+.screen-main .info-box { border: 1px solid var(--t-line); background-color: #ffffff; color: var(--t-text-2); }
+.screen-main .status-banner { border-radius: 12px; box-shadow: var(--t-shadow); }
+
+/* 표 */
+.screen-main .data-table { font-size: 13.5px; }
+.screen-main .data-table thead th { background-color: #f9fafb; color: var(--t-text-3); font-weight: 600; }
+.screen-main .data-table td,
+.screen-main .data-table th { padding-top: 12px; padding-bottom: 12px; border-color: var(--t-line-2); }
+.screen-main .table-wrap { border-radius: 10px; }
+
+/* 결제수단: 카드 줄 */
+.screen-main .card-row { border-radius: 12px; }
+
+/* ---------- 프론트 (FLEXG 홈페이지) ---------- */
+.front-page .ps-card { transition: box-shadow 0.15s, border-color 0.15s; }
+.front-page .ps-card:hover { box-shadow: 0 6px 20px rgba(16, 24, 40, 0.08); }
+.front-page .ps-card.is-selected { box-shadow: 0 0 0 1px #1d1d1f, 0 10px 28px rgba(16, 24, 40, 0.10); }
+.front-page .ps-feat li { padding: 6px 0; }
+.front-page .ps-free { border-radius: 18px; }
+.front-page .ps-info { border-radius: 18px; background-color: #ffffff; box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05); }
+.front-page .ps-info dl div { padding: 11px 0; }
+.front-page .ps-submit .signup-btn { box-shadow: 0 6px 16px rgba(224, 72, 72, 0.25); }
