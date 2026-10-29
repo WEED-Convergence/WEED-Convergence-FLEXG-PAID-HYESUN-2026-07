@@ -131,8 +131,8 @@
             <li><a href="06.html">44 플랜 변경 완료 <span class="index-done-flag"></span></a></li>
             <li><a href="07.html">45 해지 예약</a></li>
             <li><a href="30.html">46 해지 예약 취소 확인 (팝업) <span class="index-done-flag"></span></a></li>
-            <li><a href="20.html">47 해지 예약 (무료 제공 중) <span class="index-done-flag"></span></a></li>
-            <li><a href="31.html">48 해지 예약 취소 확인 (무료 제공 중) (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="20.html">47 해지 예약 (무료 제공 중)</a></li>
+            <li><a href="31.html">48 해지 예약 취소 확인 (무료 제공 중) (팝업)</a></li>
             <li><a href="08.html">49 만료 <span class="index-done-flag"></span></a></li>
             <li><a href="09.html">50 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
             <li><a href="11.html">51 해지 예약 확인 <span class="index-done-flag"></span></a></li>
@@ -329,7 +329,7 @@
                   <td>2027-04-19</td>
                   <td>2회차</td>
                   <td>Pro</td>
-                  <td>19,910원</td>
+                  <td>22,286원</td>
                   <td>샘플카드 ••••1234</td>
                   <td><span class="badge badge-success">결제 완료</span></td>
                   <td><span class="btn-sm">보기</span></td>
@@ -357,7 +357,7 @@
           </div>
 
           <p class="fine-print" style="margin-top:10px;">결제 금액은 부가세(10%)를 포함한 금액입니다.</p>
-          <p class="fine-print">예정 금액은 사용량이 확정되기 전의 예상 금액이며, 결제일 결제 전에 확정됩니다. 청구 금액에는 직전 이용 기간의 트래픽 초과 · 메시지 이용료가 함께 포함되며, CRM 캐시 충전은 [캐시 결제]에서 따로 확인하실 수 있습니다.</p>
+          <p class="fine-print">예정 금액은 사용량이 확정되기 전의 예상 금액이며, 결제일 결제 전에 확정됩니다. 청구 금액에는 직전 이용 기간의 트래픽 초과 · 메시지 · 배송 추적 이용료가 함께 포함되며, CRM 캐시 충전은 [캐시 결제]에서 따로 확인하실 수 있습니다.</p>
         </div>
 
       </div>
@@ -410,6 +410,7 @@
                 <tr class="invoice-discount"><td>오픈 특가 할인</td><td>정상가 대비 할인 (오픈 특가 17,900원)</td><td class="num">-6,000원</td></tr>
                 <tr><td>트래픽 초과</td><td>초과 없음 (2027-05-19 ~ 2027-06-18 이용분)</td><td class="num">0원</td></tr>
                 <tr><td>메시지 이용료</td><td>SMS 120건 × 20원 · LMS 35건 × 50원 · 알림톡 210건 × 8원 (2027-05-19 ~ 2027-06-18 이용분)</td><td class="num">5,830원</td></tr>
+                <tr><td>배송 추적</td><td>송장 860건 · 무료 1,000건 이내 (2027-05-19 ~ 2027-06-18 이용분) <a href="../admin/19.html" class="btn-sm" style="float:right;">배송 추적 설정</a></td><td class="num">0원</td></tr>
                 <tr class="invoice-sum"><td colspan="2">공급가액 합계</td><td class="num">23,730원</td></tr>
                 <tr class="invoice-sum"><td colspan="2">부가세 (10%)</td><td class="num">2,373원</td></tr>
                 <tr class="invoice-total"><td colspan="2">청구 금액 합계 (부가세 포함)</td><td class="num">26,103원</td></tr>
@@ -419,7 +420,7 @@
         </div>
 
         <div class="info-box">
-          플랜 요금은 부가세 별도이며, 부가세는 별도 항목으로 표시됩니다. 트래픽 초과와 메시지 이용료는 직전 이용 기간분을 함께 청구하며, CRM 캐시 충전은 구독 청구에 포함되지 않습니다.
+          플랜 요금은 부가세 별도이며, 부가세는 별도 항목으로 표시됩니다. 트래픽 초과와 메시지 · 배송 추적 이용료는 직전 이용 기간분을 함께 청구하며, CRM 캐시 충전은 구독 청구에 포함되지 않습니다. 배송 추적은 송장번호 1개를 1건으로 집계하며(같은 송장번호는 여러 번 조회해도 1건), 이용 기간마다 1,000건까지 무료이고 초과분은 건당 9원입니다. 1,000건을 넘어도 사용은 막지 않습니다.
           <span class="num-mark">6</span>
         </div>
 
@@ -441,7 +442,7 @@
       <div class="desc-numbered-row"><span class="num-mark">2</span> 결제에 실패해 미납 상태임을 알리고 다시 결제하도록 안내합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 청구 회차, 이용 기간, 결제 예정일, 결제수단, 적용 요금 버전을 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">4</span> 결제 실패일과 실패 사유를 보여줍니다. [재결제]는 재결제 팝업, [결제수단 관리]는 결제수단 관리 화면으로 이동합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">5</span> 항목마다 내용(계산 방법 · 이용 기간)과 금액을 보여줍니다. 플랜 요금은 해당 플랜 1개만 정상가로 적고, 오픈 특가는 "오픈 특가 할인" 행(음수)으로 따로 적습니다. 기본 제공 트래픽은 금액 행 없이 "기본 100GB 포함"으로만 표시하고, 부가세는 별도 행으로 적습니다. 트래픽 초과는 1GB당 단가 없이 사용량과 금액만, 메시지 이용료는 건당 단가와 함께 적고 사용료 대상 기간을 표기합니다. 금액은 확정 금액입니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">5</span> 항목마다 내용(계산 방법 · 이용 기간)과 금액을 보여줍니다. 플랜 요금은 해당 플랜 1개만 정상가로 적고, 오픈 특가는 "오픈 특가 할인" 행(음수)으로 따로 적습니다. 기본 제공 트래픽은 금액 행 없이 "기본 100GB 포함"으로만 표시하고, 부가세는 별도 행으로 적습니다. 트래픽 초과는 1GB당 단가 없이 사용량과 금액만, 메시지 이용료는 건당 단가와 함께, 배송 추적은 송장 건수 · 무료 1,000건 · 초과 건수 × 9원으로 적고 사용료 대상 기간을 표기합니다. 금액은 확정 금액입니다. 배송 추적 초과 사용 내역은 이 청구 항목에서 확인합니다. [배송 추적 설정]은 기본설정의 배송 추적 ON/OFF로 이동합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">6</span> 플랜 요금은 부가세 별도이며, 직전 이용 기간 사용료는 함께 청구되고 CRM 캐시 충전은 포함되지 않음을 안내합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">7</span> [닫기]를 누르면 청구 내역으로 돌아갑니다.</div>
     </div>
