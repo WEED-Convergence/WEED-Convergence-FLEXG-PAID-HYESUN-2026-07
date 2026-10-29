@@ -8,7 +8,7 @@
   :root {
     --text: #111827; --text-2: #4b5563; --text-3: #6b7280;
     --line: #e5e7eb; --bg: #f5f6f8; --card: #ffffff;
-    --primary: #3140d6; --good: #15803d; --good-bg: #e8f5ee;
+    --primary: #7c8cf0; --primary-text: #5563c9; --primary-soft: #e8ebfd; --good: #6cc49a; --good-text: #3d8f68; --good-bg: #e6f6ee;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
@@ -17,7 +17,7 @@
   .eyebrow { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: var(--text-3); }
   .head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 6px 0 28px; }
   .head h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
-  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--good-bg); color: var(--good); font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--good-bg); color: var(--good-text); font-size: 13px; font-weight: 700; white-space: nowrap; }
   .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--good); }
 
   .card { padding: 22px 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); box-shadow: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06); }
@@ -28,7 +28,7 @@
   .kpi-value { margin: 8px 0 4px; font-size: 34px; font-weight: 800; letter-spacing: -1px; }
   .kpi-value small { margin-left: 4px; font-size: 16px; font-weight: 700; color: var(--text-3); letter-spacing: 0; }
   .kpi-sub { margin: 0; font-size: 13px; color: var(--text-2); }
-  .kpi-value.is-good { color: var(--good); }
+  .kpi-value.is-good { color: var(--good-text); }
   .bar { height: 8px; margin-top: 12px; border-radius: 999px; background: #eef0f3; overflow: hidden; }
   .bar span { display: block; height: 100%; border-radius: 999px; background: var(--primary); }
 
@@ -64,32 +64,33 @@
   .groups .g-num { text-align: right; color: var(--text-3); font-variant-numeric: tabular-nums; }
   .legend { margin: 12px 0 0; font-size: 12px; color: var(--text-3); }
 
-  .callout { margin-top: 16px; padding: 18px 22px; border: 1px solid #dfe3fb; border-left: 4px solid var(--primary); border-radius: 12px; background: #f6f7ff; font-size: 14.5px; line-height: 1.7; }
-  .callout b { color: var(--primary); }
+  .callout { margin-top: 16px; padding: 18px 22px; border: 1px solid #e3e7fc; border-left: 4px solid #b4bef7; border-radius: 12px; background: #f7f8ff; font-size: 14.5px; line-height: 1.7; }
+  .callout b { color: var(--primary-text); }
 
   .ic { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  .ic.is-good { stroke: var(--good); }
+  .ic.is-good { stroke: var(--good-text); }
   .kpi-label, .card h2, .g-name { display: flex; align-items: center; gap: 8px; }
   .g-name { white-space: nowrap; }
-  .card h2 .ic { width: 28px; height: 28px; padding: 6px; border-radius: 8px; background: #eef0fd; }
+  .card h2 .ic { width: 28px; height: 28px; padding: 6px; border-radius: 8px; background: var(--primary-soft); stroke: var(--primary-text); }
   .g-name .ic { stroke: var(--text-3); }
   .callout { display: flex; gap: 12px; align-items: flex-start; }
   .ic.is-callout { width: 22px; height: 22px; margin-top: 2px; }
   .one { margin-top: 16px; }
   .focus-wrap { margin-top: 16px; }
-  .card.is-focus { border: 2px solid var(--primary); box-shadow: 0 8px 24px rgba(49, 64, 214, 0.12); }
+  .card.is-focus { border: 2px solid #c9d0fa; box-shadow: 0 8px 24px rgba(124, 140, 240, 0.12); }
   .card.is-focus h2 { font-size: 17px; }
   .card.is-focus .groups li { grid-template-columns: 240px 1fr 52px 70px 72px; gap: 16px; padding: 11px 0; border-top: 1px solid #f0f1f4; font-size: 14.5px; }
   .card.is-focus .groups li:first-child { border-top: 0; }
   .card.is-focus .g-bar { height: 10px; }
   .g-pct { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
-  .g-badge { justify-self: end; padding: 3px 10px; border-radius: 999px; background: var(--good-bg); color: var(--good); font-size: 12px; font-weight: 700; }
-  .groups li.is-doing { margin: 0 -12px; padding: 12px; border-radius: 10px; background: #f6f7ff; }
+  .g-badge { justify-self: end; padding: 3px 10px; border-radius: 999px; background: var(--good-bg); color: var(--good-text); font-size: 12px; font-weight: 700; }
+  .groups li.is-doing { margin: 0 -12px; padding: 12px; border-radius: 10px; background: #f4f5fe; }
   .groups li.is-doing + li { border-top: 0; }
-  .groups li.is-doing .g-name { font-weight: 800; color: var(--primary); }
-  .groups li.is-doing .g-name .ic { stroke: var(--primary); }
-  .groups li.is-doing .g-pct { color: var(--primary); }
-  .groups li.is-doing .g-badge { background: var(--primary); color: #ffffff; }
+  .groups li.is-doing .g-name { font-weight: 800; color: var(--primary-text); }
+  .groups li.is-doing .g-name .ic { stroke: var(--primary-text); }
+  .groups li.is-doing .g-pct { color: var(--primary-text); }
+  .groups li.is-doing .g-badge { background: var(--primary-soft); color: var(--primary-text); }
+  .groups li:not(.is-doing) .g-bar span { background: var(--good); }
   .foot { margin: 20px 0 0; font-size: 12px; color: var(--text-3); text-align: right; }
 </style>
 </head>
@@ -119,7 +120,7 @@
       <p class="kpi-label"><svg class="ic is-good" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>현재 진척 상태</p>
       <p class="kpi-value is-good">양호</p>
       <p class="kpi-sub">계획 일정에 맞춰 진행 중</p>
-      <div class="bar"><span style="width:28%; background:#15803d"></span></div>
+      <div class="bar"><span style="width:28%; background:var(--good)"></span></div>
     </div>
   </div>
 
