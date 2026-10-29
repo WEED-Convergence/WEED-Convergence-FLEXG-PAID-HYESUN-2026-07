@@ -242,30 +242,27 @@
                 <text x="60" y="88" font-size="30" font-weight="bold" fill="#e04848">FLEX-G</text>
                 <text x="60" y="170" font-size="46" font-weight="bold" fill="#222222">결제 재시도</text>
                 <text x="60" y="232" font-size="46" font-weight="bold" fill="#222222">실패 안내</text>
-                <line x1="200" y1="300" x2="600" y2="300" stroke="#f3d6d2" stroke-width="4"/>
-                <circle cx="200" cy="300" r="11" fill="#f3d6d2"/>
-                <text x="200" y="352" font-size="22" fill="#888888" text-anchor="middle">당일</text>
-                <circle cx="400" cy="300" r="16" fill="#e04848"/>
-                <text x="400" y="352" font-size="22" fill="#e04848" font-weight="bold" text-anchor="middle">4일차</text>
-                <circle cx="600" cy="300" r="11" fill="#f3d6d2"/>
-                <text x="600" y="352" font-size="22" fill="#888888" text-anchor="middle">7일차</text>
+                <circle cx="590" cy="200" r="130" fill="#ffe3df"/>
+                <rect x="490" y="140" width="200" height="130" rx="18" fill="#ffffff" stroke="#e04848" stroke-width="8"/>
+                <rect x="490" y="176" width="200" height="26" fill="#e04848"/>
+                <rect x="516" y="226" width="64" height="14" rx="7" fill="#f3b9b1"/>
+                <circle cx="680" cy="270" r="40" fill="#e04848" stroke="#fff4f2" stroke-width="8"/>
+                <path d="M697 262a18 18 0 1 0 1 12" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+                <path d="M700 248v15h-15" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
                 <span class="num-mark kakao-mark" style="top:48px">1</span>
                 <p class="kakao-text">[플렉스지] 결제 재시도 실패 안내
 
-플렉스 스토어 고객님, 안녕하세요.
-2027-06-23 결제 재시도에도 실패하여 다시 안내드립니다.
+플렉스 스토어 고객님, 2027-06-23 결제 재시도에도 실패했습니다.
 
-■ 사이트: 플렉스 스토어
 ■ 미납 금액: 26,103원 (부가세 포함)
 ■ 실패 사유: 카드 한도 초과
 ■ 결제수단: 샘플카드 ••••1234
-■ 유예 종료 예정일: 2027-06-26
 
-2027-06-26까지 매일 오후 2시에 결제를 자동으로 다시 시도합니다. 카드를 변경하시면 바로 다시 결제됩니다.
-2027-06-26까지 결제되지 않으면 관리자 화면이 읽기 전용으로 바뀝니다.
+2027-06-26까지 자동으로 다시 결제를 시도합니다.
+결제되지 않으면 관리자 화면이 읽기 전용으로 바뀝니다.
 
-※ 이 메시지는 정기결제에 실패한 사이트 주계정에게 발송되는 안내 메시지입니다.</p>
+※ 정기결제에 실패한 사이트 담당자에게 발송되는 안내입니다.</p>
                 <span class="num-mark kakao-mark" style="top:200px">2</span>
                 <div class="kakao-btns"><a href="../billing-card/04.html" class="kakao-btn">결제수단 변경</a></div>
               </div>
@@ -281,11 +278,11 @@
             <tr><th>발신 프로필</th><td>플렉스지 카카오톡 채널</td></tr>
             <tr><th>받는 사람</th><td>사이트 주계정 휴대폰 번호 (가입 때 본인인증한 번호)</td></tr>
             <tr><th>발송 시점</th><td>유예 4일차 오후 2시 재시도 실패 직후 (1회)</td></tr>
-            <tr><th>이미지</th><td>800×400px (2:1) · JPG/PNG · 500KB 이하</td></tr>
-            <tr><th>본문</th><td>338자 / 최대 1,000자 (변수 값 포함)</td></tr>
+            <tr><th>본문</th><td>227자 / 최대 1,000자 (변수 값 포함)</td></tr>
             <tr><th>버튼</th><td>웹링크 1개 · 결제수단 변경 (결제수단 관리)</td></tr>
             <tr><th>변수</th><td><code>#{사이트명}</code> <code>#{재시도일}</code> <code>#{미납 금액}</code> <code>#{실패 사유}</code> <code>#{결제수단}</code> <code>#{유예 종료 예정일}</code></td></tr>
           </table>
+          <div class="dev-note-red">결제수단 변경 기능이 모바일에서 제공가능할지 개발 체크. 안되면 버튼 제거</div>
         </div>
       </div>
 
@@ -296,8 +293,8 @@
     <h2>화면 설명</h2>
     <p class="desc-trigger">유예 4일차 오후 2시 결제 재시도에 실패했을 때, 사이트 주계정 휴대폰으로 보내는 알림톡입니다. 2 · 3 · 5 · 6일차 재시도 실패 때는 보내지 않습니다.</p>
     <div class="desc-numbered">
-      <div class="desc-numbered-row"><span class="num-mark">1</span> 이미지형 알림톡입니다. 이미지에는 알림 일정 중 현재 단계(4일차)를 표시합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 재시도일 · 미납 금액 · 실패 사유 · 결제수단 · 유예 종료 예정일을 적고, 남은 기간 자동 재시도와 카드 변경 시 바로 재결제, 미결제 시 읽기 전용 전환을 안내합니다. 분실·정지, 유효기간 만료 카드는 재시도하지 않으며, 알림은 같은 일정으로 보내되 "자동으로 다시 시도" 문장을 뺍니다. [결제수단 변경]은 결제수단 관리(유예)로 연결합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 이미지형 알림톡입니다. 이미지에는 결제 재시도 실패 안내 문구와 카드 재시도 실패 아이콘만 담고, 광고 문구는 넣지 않습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 재시도일 · 미납 금액 · 실패 사유 · 결제수단을 적고, 유예 종료 예정일까지 자동 재시도, 미결제 시 읽기 전용 전환을 안내합니다. 카드 변경은 [결제수단 변경] 버튼으로 안내합니다. 분실·정지, 유효기간 만료 카드는 재시도하지 않으며, 알림은 같은 일정으로 보내되 "자동으로 다시 시도" 문장을 뺍니다. [결제수단 변경]은 결제수단 관리(유예)로 연결합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 카카오 알림톡 템플릿 등록 기준입니다. 값이 바뀌는 부분은 변수로 등록하며, 변수 값을 넣은 본문이 1,000자를 넘지 않아야 합니다.</div>
     </div>
   </div>
