@@ -243,8 +243,16 @@
 
       <main class="front-main">
         <div class="tpl">
-          <p class="tpl-lead">이제 <b>디자인 템플릿</b>을 선택해주세요. <span class="num-mark">1</span></p>
-          <p class="tpl-back"><a href="06.html">← 플랜 다시 선택</a> <span class="num-mark">3</span></p>
+          <div class="tpl-head">
+            <div>
+              <p class="tpl-lead">이제 <b>디자인 템플릿</b>을 선택해주세요. <span class="num-mark">1</span></p>
+              <p class="tpl-back"><a href="06.html">← 플랜 다시 선택</a> <span class="num-mark">3</span></p>
+            </div>
+            <div class="tpl-nav">
+              <button type="button" aria-label="이전" onclick="document.querySelector('.tpl-grid').scrollBy({left:-320,behavior:'smooth'})">‹</button>
+              <button type="button" aria-label="다음" onclick="document.querySelector('.tpl-grid').scrollBy({left:320,behavior:'smooth'})">›</button>
+            </div>
+          </div>
           <div class="tpl-grid">
             <div class="tpl-item">
               <div class="tpl-pair v-full">
