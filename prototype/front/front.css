@@ -1369,33 +1369,31 @@
 
 /* ---------- 플랜 선택 (정리된 구성) ---------- */
 .ps {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
-  color: #222222;
+  color: #1d1d1f;
 }
 
 .ps-welcome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin: 0 0 14px;
+  margin: 0 0 10px;
+  text-align: center;
   font-size: 13px;
-  color: #1a8a3f;
+  color: #6e6e73;
 }
 
 .ps-title {
-  margin: 0 0 28px;
+  margin: 0;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .ps-lead {
-  margin: 0 0 32px;
+  margin: 8px 0 36px;
   text-align: center;
   font-size: 14px;
-  color: #666666;
+  color: #6e6e73;
 }
 
 /* 플랜 카드 */
@@ -1406,29 +1404,24 @@
 }
 
 .ps-card {
-  padding: 24px 22px 20px;
-  border: 1px solid #dcdde2;
-  border-radius: 14px;
+  padding: 28px 26px 24px;
+  border: 1px solid #e5e5ea;
+  border-radius: 16px;
   background-color: #ffffff;
 }
 
 .ps-card.is-selected {
-  border: 2px solid #e04848;
-  padding: 23px 21px 19px;
-  box-shadow: 0 6px 18px rgba(224, 72, 72, 0.12);
+  border-color: #1d1d1f;
+  box-shadow: 0 0 0 1px #1d1d1f;
 }
 
 .ps-card-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 0 4px;
+  gap: 10px;
 }
 
 .ps-card-name {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-size: 20px;
   font-weight: 800;
 }
@@ -1437,137 +1430,94 @@
   box-sizing: border-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #c4c5cb;
+  border: 1.5px solid #c7c7cc;
   border-radius: 50%;
 }
 
-.ps-card.is-selected .ps-radio { border: 5px solid #e04848; }
+.ps-card.is-selected .ps-radio { border: 5px solid #1d1d1f; }
 
 .ps-for {
-  margin: 4px 0 16px;
-  padding: 10px 14px;
-  border-left: 4px solid #3140d6;
-  border-radius: 6px;
-  background-color: #eef0fd;
-  color: #1f2a8c;
-  font-size: 16px;
-  font-weight: 800;
+  margin: 6px 0 20px;
+  font-size: 13px;
+  color: #6e6e73;
 }
 
 .ps-price {
-  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 0 0 22px;
   font-size: 13px;
-  color: #999999;
+  color: #6e6e73;
 }
 
 .ps-price b {
-  margin-right: 6px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 800;
-  color: #222222;
+  letter-spacing: -0.5px;
+  color: #1d1d1f;
 }
 
-.ps-price s { margin-right: 4px; }
-
-.ps-trial {
-  display: inline-block;
-  margin: 8px 0 16px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background-color: #fdeeee;
-  color: #c62f2f;
-  font-size: 11px;
-  font-weight: bold;
+.ps-price s {
+  margin-left: 6px;
+  color: #aeaeb2;
 }
 
 .ps-feat {
   margin: 0;
-  padding: 14px 0 0;
-  border-top: 1px solid #f0f0f2;
+  padding: 18px 0 0;
+  border-top: 1px solid #f2f2f7;
   list-style: none;
   font-size: 13px;
-  line-height: 2;
 }
 
-.ps-feat li { display: flex; gap: 8px; }
-.ps-feat i { flex: 0 0 14px; font-style: normal; font-weight: bold; }
-.ps-feat .is-yes i { color: #1a8a3f; }
-.ps-feat .is-no { color: #aaaaae; }
-.ps-feat em { font-style: normal; color: #999999; font-size: 12px; }
-.ps-feat li span { line-height: 1.6; padding: 4px 0; }
+.ps-feat li { display: flex; gap: 10px; padding: 5px 0; line-height: 1.5; }
+.ps-feat i { flex: 0 0 12px; font-style: normal; font-weight: bold; color: #1d1d1f; }
+.ps-feat .is-no { color: #c7c7cc; }
+.ps-feat .is-no i { color: #c7c7cc; }
+.ps-feat em { display: block; font-style: normal; font-size: 12px; color: #8e8e93; }
 
-.ps-notes {
-  margin: 18px 0 0;
-  padding: 0;
-  list-style: none;
+.ps-vat {
+  margin: 14px 0 0;
+  text-align: center;
   font-size: 12px;
-  line-height: 1.8;
-  color: #666666;
+  color: #8e8e93;
 }
 
-.ps-notes b { color: #222222; }
-
-/* 무료 제공 강조 */
+/* 무료 제공 */
 .ps-free {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin: 24px 0 0;
+  margin: 32px 0 0;
   padding: 22px 24px;
-  border: 2px solid #e04848;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #fff1f1 0%, #ffe3e3 100%);
-  box-shadow: 0 6px 18px rgba(224, 72, 72, 0.18);
+  border-radius: 16px;
+  background-color: #f5f5f7;
+  text-align: center;
 }
-
-.ps-free-tag {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #e04848;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.ps-free-body { flex: 1; }
 
 .ps-free-title {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
-  line-height: 1.4;
-  color: #222222;
-}
-
-.ps-free-title em {
-  font-style: normal;
   color: #e04848;
 }
 
-.ps-free-sub {
-  display: inline-block;
-  margin: 8px 0 0;
-  padding: 4px 12px;
-  border-radius: 14px;
-  background-color: #e04848;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: bold;
+.ps-free-title span {
+  font-weight: 600;
+  color: #1d1d1f;
 }
 
-.ps-free-sub b { font-weight: 800; }
-
 .ps-free-desc {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   font-size: 13px;
   line-height: 1.6;
-  color: #444444;
+  color: #6e6e73;
+}
+
+.ps-usage {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #8e8e93;
 }
 
 .ps-submit {
@@ -1575,13 +1525,13 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 28px 0 0;
+  margin: 32px 0 0;
 }
 
 .front-page .ps-submit .signup-btn {
   min-width: 280px;
   height: 52px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 16px;
 }
 
