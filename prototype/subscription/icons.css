@@ -1,0 +1,37 @@
+/* 구독 · 결제 화면 아이콘 (icons.js가 항목 이름 앞에 붙임 · 문구는 바꾸지 않음) */
+.ux-ic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: -3px;
+  color: #6b7280;
+}
+.ux-ic svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* 섹션 제목: 색 배지 */
+.section-title .ux-ic { width: 26px; height: 26px; margin-right: 8px; padding: 5px; border-radius: 7px; background-color: #eef0fd; color: #3140d6; vertical-align: -7px; box-sizing: border-box; }
+.section-title .ux-ic.is-money { background-color: #e8f5ee; color: #15803d; }
+.section-title .ux-ic.is-alert { background-color: #fdeaea; color: #dc2626; }
+.section-title .ux-ic.is-chart { background-color: #fff4e5; color: #c2410c; }
+
+/* 항목 이름 */
+.kv-row dt .ux-ic { color: #8b8f99; }
+
+/* 버튼 */
+.btn .ux-ic { width: 15px; height: 15px; margin-right: 5px; vertical-align: -2px; color: currentColor; }
+
+/* 안내 박스 */
+.info-box, .info-box-danger { position: relative; padding-left: 44px !important; }
+.info-box > .ux-ic.is-box, .info-box-danger > .ux-ic.is-box { position: absolute; left: 16px; top: 14px; width: 18px; height: 18px; margin: 0; color: #3140d6; }
+.info-box-danger > .ux-ic.is-box { color: #dc2626; }
+
+/* 아이콘이 붙은 항목 이름은 한 줄로 */
+.kv-row dt:has(.ux-ic) { flex-basis: 124px; white-space: nowrap; }
+.kv-row.is-sub dt:has(.ux-ic) { white-space: normal; }
+/* 3열처럼 좁은 칸에서는 항목 이름 아이콘을 숨김 (줄바꿈 방지) */
+.three-col .kv-row dt .ux-ic { display: none; }
+.three-col .kv-row dt:has(.ux-ic) { flex-basis: auto; white-space: normal; }

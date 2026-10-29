@@ -336,7 +336,6 @@ table.data-table tr:last-child td {
 
 .kv-row.is-sub dt,
 .kv-row.is-sub dd {
-  font-size: 12px;
   color: #999999;
 }
 

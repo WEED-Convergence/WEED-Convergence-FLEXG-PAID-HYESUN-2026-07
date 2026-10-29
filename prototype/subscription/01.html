@@ -5,6 +5,7 @@
 <title>01 미신청 - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="subscription.css?v=20261028f">
+<link rel="stylesheet" href="icons.css">
 </head>
 <body>
 <div class="layout">
@@ -302,9 +303,21 @@
           <span class="num-mark">3</span>
         </div>
 
-        <div class="btn-row-right">
-          <a href="../billing-card/07.html" class="btn btn-primary">Pro 신청</a>
-          <span class="num-mark">4</span>
+        <div class="pro-upsell">
+          <div class="pro-upsell-head">
+            <p class="pro-upsell-label">Pro 플랜 소개 <span class="num-mark">4</span></p>
+            <p class="pro-upsell-title">Pro를 신청하면 새 요금제로 쇼핑몰을 운영합니다</p>
+            <p class="pro-intro-price"><b>월 17,900원</b><s>23,900원</s> 부가세 별도</p>
+            <p class="pro-upsell-note">카드를 등록하면 한 달 무료 제공 후 매월 자동 결제됩니다. 4/30까지 신청하면 첫 결제부터 12개월 오픈 특가가 적용됩니다.<br>Pro를 신청하면 지금 방식(기본 무료 + 후불 이용료)으로 돌아갈 수 없습니다.</p>
+            <a href="../billing-card/07.html" class="btn btn-primary">Pro 신청</a>
+          </div>
+          <ul class="pro-intro-feat pro-upsell-feat">
+            <li class="is-new"><i>✓</i>카드 등록 시 한 달 무료 제공</li>
+            <li class="is-new"><i>✓</i>기본 트래픽 100GB <em>(이용 기간마다)</em></li>
+            <li><i>✓</i>지금 쓰는 쇼핑몰 기능 그대로 (상품 · 주문 · 판매)</li>
+            <li><i>✓</i>쿠폰 · 적립금 · 프로모션 포함</li>
+            <li><i>✓</i>추가 트래픽 구매 가능</li>
+          </ul>
         </div>
 
       </div>
@@ -322,11 +335,12 @@
       <div class="desc-numbered-row"><span class="num-mark">1</span> 기존 고객은 Basic/Pro 플랜이 적용되지 않아 "기존 고객 (플랜 미적용)", 미신청으로 표시합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 플랜 결제가 없어 다음 결제 항목은 모두 "—"로 표시합니다. 기존 이용료는 익월 5일에 따로 후불 결제됩니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 현행 이용 방식이 기한 없이 유지됨과 Pro 신청 방법을 안내합니다. [서비스 이용 현황]은 서비스 이용 현황 (기존 고객)으로 이동합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">4</span> [Pro 신청]을 누르면 카드 입력 후 처리 중 화면으로 이동합니다. 기존 고객은 Pro만 고를 수 있고(Basic 선택 불가), 4/30까지 신청하면 오픈 특가 12개월이 적용됩니다. Pro를 신청하면 현행 방식으로 돌아갈 수 없습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 하단에 Pro 플랜을 소개합니다. 요금(오픈 특가 · 정상가, 부가세 별도), 카드 등록 시 한 달 무료 제공, 제공 범위를 보여줍니다. 기존 고객은 쇼핑몰 기능을 이미 쓰고 있어, 새로 받는 항목(한 달 무료 제공 · 기본 트래픽 100GB)을 강조합니다. 소개 안의 [Pro 신청]을 누르면 카드 입력 후 처리 중 화면으로 이동합니다. 기존 고객은 Pro만 고를 수 있고(Basic 선택 불가), 4/30까지 신청하면 오픈 특가 12개월이 적용됩니다. Pro를 신청하면 현행 방식으로 돌아갈 수 없습니다.</div>
     </div>
   </div>
 
 </div>
+<script src="icons.js"></script>
 <script src="../index-scroll.js"></script>
 </body>
 </html>

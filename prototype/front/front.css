@@ -1893,3 +1893,16 @@
 .tpl-tags span { padding: 0; background: none; color: #8e8e93; font-size: 12px; }
 .tpl-tags span + span::before { content: "· "; }
 .tpl-lead b { color: inherit; }
+
+/* 템플릿 선택 · 여백 넉넉하게 */
+.tpl-lead { margin-bottom: 14px; }
+.tpl-back { margin: 0 0 48px; }
+.tpl-grid { gap: 52px 32px; }
+.tpl-tags { margin-top: 14px; }
+.tpl-name { margin-top: 6px; }
+.tpl-more { margin-top: 56px; }
+
+/* 템플릿 썸네일: PC 화면만 크게 */
+.tpl-pair { height: auto; padding: 14px; }
+.tpl-pair.has-shot .tpl-pc { width: 100%; height: auto; aspect-ratio: 336 / 280; box-sizing: border-box; }
+.tpl-name { margin-top: 14px; }
