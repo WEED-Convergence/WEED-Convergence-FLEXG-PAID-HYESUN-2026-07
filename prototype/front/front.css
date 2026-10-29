@@ -1833,3 +1833,92 @@
 .lf-alert-btn { display: block; margin-left: auto; width: fit-content; padding: 4px 16px; border-radius: 4px; background-color: #3140d6; color: #ffffff; font-size: 12px; font-weight: bold; }
 .lf-alert small { display: block; margin-top: 6px; font-size: 11px; color: #888888; }
 .lf-group { margin: 12px 0 6px; font-size: 11px; font-weight: bold; color: #888888; }
+
+/* ---------- 템플릿 선택 (미니멀) ---------- */
+.tpl { max-width: 780px; color: #1d1d1f; }
+
+.tpl-lead {
+  margin: 0 0 8px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #1d1d1f;
+}
+
+.tpl-lead b { color: #1d1d1f; }
+
+.tpl-back { margin: 0 0 36px; font-size: 13px; }
+
+.front-page .tpl-back a {
+  color: #6e6e73 !important;
+  text-decoration: none !important;
+}
+
+.tpl-grid { gap: 36px 24px; }
+
+.tpl-item { display: flex; flex-direction: column; }
+
+.tpl-pair {
+  border-radius: 14px;
+  background-color: #f5f5f7;
+  transition: box-shadow 0.15s;
+}
+
+.tpl-item:hover .tpl-pair { box-shadow: 0 0 0 1.5px #1d1d1f; }
+
+.tpl-pc,
+.tpl-phone {
+  border-color: #e5e5ea;
+  filter: grayscale(0.75);
+}
+
+.tpl-phone { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+
+.tpl-pair .tpl-pc-bar { background-color: #f2f2f7; }
+.tpl-pc-bar i { background-color: #d1d1d6; }
+.tpl-bar,
+.tpl-line { background-color: #ececf0; }
+
+.tpl-pair.is-hover::after {
+  border-radius: 14px;
+  background-color: rgba(29, 29, 31, 0.55);
+}
+
+.front-page a.tpl-preview {
+  padding: 7px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+
+.front-page a.tpl-apply {
+  padding: 7px 18px;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  font-size: 13px;
+}
+
+.tpl-name {
+  order: 1;
+  margin: 12px 0 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.tpl-tags {
+  order: 2;
+  justify-content: flex-start;
+  gap: 0;
+  margin: 2px 0 0;
+}
+
+.tpl-tags span {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: #8e8e93;
+  font-size: 12px;
+}
+
+.tpl-tags span + span::before { content: " · "; }
