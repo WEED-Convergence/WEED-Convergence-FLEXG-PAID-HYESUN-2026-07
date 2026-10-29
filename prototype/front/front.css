@@ -1392,7 +1392,7 @@
 .ps-lead {
   margin: 8px 0 36px;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   color: #6e6e73;
 }
 
@@ -1438,7 +1438,7 @@
 
 .ps-for {
   margin: 6px 0 20px;
-  font-size: 13px;
+  font-size: 14px;
   color: #6e6e73;
 }
 
@@ -1468,34 +1468,29 @@
   padding: 18px 0 0;
   border-top: 1px solid #f2f2f7;
   list-style: none;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .ps-feat li { display: flex; gap: 10px; padding: 5px 0; line-height: 1.5; }
 .ps-feat i { flex: 0 0 12px; font-style: normal; font-weight: bold; color: #1d1d1f; }
-.ps-feat .is-no { color: #c7c7cc; }
-.ps-feat .is-no i { color: #c7c7cc; }
+.ps-feat .is-no { color: #a1a1a6; }
+.ps-feat .is-no i { color: #a1a1a6; }
 .ps-feat em { display: block; font-style: normal; font-size: 12px; color: #8e8e93; }
 
-.ps-vat {
-  margin: 14px 0 0;
-  text-align: center;
-  font-size: 12px;
-  color: #8e8e93;
-}
+.ps-cards-mark { margin: 6px 0 0; text-align: right; }
 
 /* 무료 제공 */
 .ps-free {
-  margin: 32px 0 0;
-  padding: 22px 24px;
+  margin: 28px 0 0;
+  padding: 24px;
   border-radius: 16px;
-  background-color: #f5f5f7;
+  background-color: #fff5f5;
   text-align: center;
 }
 
 .ps-free-title {
   margin: 0;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 800;
   color: #e04848;
 }
@@ -1506,18 +1501,47 @@
 }
 
 .ps-free-desc {
-  margin: 8px 0 0;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #6e6e73;
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3a3a3c;
 }
 
-.ps-usage {
-  margin: 16px 0 0;
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.7;
-  color: #8e8e93;
+/* 요금 안내 */
+.ps-info {
+  margin: 20px 0 0;
+  padding: 22px 24px;
+  border: 1px solid #e5e5ea;
+  border-radius: 16px;
+}
+
+.ps-info-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ps-info dl { margin: 0; }
+
+.ps-info dl div {
+  display: flex;
+  gap: 16px;
+  padding: 9px 0;
+  border-top: 1px solid #f2f2f7;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ps-info dt {
+  flex: 0 0 110px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.ps-info dd {
+  flex: 1;
+  margin: 0;
+  color: #3a3a3c;
 }
 
 .ps-submit {
