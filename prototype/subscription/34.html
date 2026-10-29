@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>88 결제 재시도 실패 (4일차) - 프로토타입</title>
+<title>87 결제 재시도 실패 (4일차) - 프로토타입</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="subscription.css?v=20261028f">
 <link rel="stylesheet" href="../cdn/notify.css">
@@ -130,9 +130,8 @@
               결제 실패 안내 (알림톡)
               <ul class="index-subsublist">
                 <li><a href="32.html">86 결제 실패 · 재시도 안내 (당일)</a></li>
-                <li><a href="33.html">87 결제 실패 · 카드 변경 요청 (재시도 불가)</a></li>
-                <li class="is-current"><a href="34.html">88 결제 재시도 실패 (4일차)</a></li>
-                <li><a href="35.html">89 관리자 화면 읽기 전용 전환 (7일차)</a></li>
+                <li class="is-current"><a href="34.html">87 결제 재시도 실패 (4일차)</a></li>
+                <li><a href="35.html">88 관리자 화면 읽기 전용 전환 (7일차)</a></li>
               </ul>
             </li>
             <li><a href="15.html">42 플랜 변경 (Basic)</a></li>
@@ -295,7 +294,7 @@
     <p class="desc-trigger">유예 4일차 오후 2시 결제 재시도에 실패했을 때, 사이트 주계정 휴대폰으로 보내는 알림톡입니다. 2 · 3 · 5 · 6일차 재시도 실패 때는 보내지 않습니다.</p>
     <div class="desc-numbered">
       <div class="desc-numbered-row"><span class="num-mark">1</span> 이미지형 알림톡입니다. 이미지에는 알림 일정 중 현재 단계(4일차)를 표시합니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">2</span> 재시도일 · 미납 금액 · 실패 사유 · 결제수단 · 유예 종료 예정일을 적고, 남은 기간 자동 재시도와 카드 변경 시 바로 재결제, 미결제 시 읽기 전용 전환을 안내합니다. 재시도 불가 건은 "자동으로 다시 시도" 문장을 빼고 카드 변경을 요청합니다. [결제수단 변경]은 결제수단 관리(유예)로 연결합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 재시도일 · 미납 금액 · 실패 사유 · 결제수단 · 유예 종료 예정일을 적고, 남은 기간 자동 재시도와 카드 변경 시 바로 재결제, 미결제 시 읽기 전용 전환을 안내합니다. 분실·정지, 유효기간 만료 카드는 재시도하지 않으며, 알림은 같은 일정으로 보내되 "자동으로 다시 시도" 문장을 뺍니다. [결제수단 변경]은 결제수단 관리(유예)로 연결합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 카카오 알림톡 템플릿 등록 기준입니다. 값이 바뀌는 부분은 변수로 등록하며, 변수 값을 넣은 본문이 1,000자를 넘지 않아야 합니다.</div>
     </div>
   </div>
