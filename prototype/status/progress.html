@@ -58,7 +58,7 @@
   .tasks svg { width: 18px; height: 18px; margin-top: 3px; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
   .groups { margin: 0; padding: 0; list-style: none; }
-  .groups li { display: grid; grid-template-columns: 1fr 110px 54px; align-items: center; gap: 12px; padding: 7px 0; font-size: 13.5px; }
+  .groups li { display: grid; grid-template-columns: 1fr 90px 54px; align-items: center; gap: 12px; padding: 7px 0; font-size: 13.5px; }
   .groups .g-bar { height: 6px; border-radius: 999px; background: #eef0f3; overflow: hidden; }
   .groups .g-bar span { display: block; height: 100%; background: var(--primary); }
   .groups .g-num { text-align: right; color: var(--text-3); font-variant-numeric: tabular-nums; }
@@ -67,6 +67,14 @@
   .callout { margin-top: 16px; padding: 18px 22px; border: 1px solid #dfe3fb; border-left: 4px solid var(--primary); border-radius: 12px; background: #f6f7ff; font-size: 14.5px; line-height: 1.7; }
   .callout b { color: var(--primary); }
 
+  .ic { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ic.is-good { stroke: var(--good); }
+  .kpi-label, .card h2, .g-name { display: flex; align-items: center; gap: 8px; }
+  .g-name { white-space: nowrap; }
+  .card h2 .ic { width: 28px; height: 28px; padding: 6px; border-radius: 8px; background: #eef0fd; }
+  .g-name .ic { stroke: var(--text-3); }
+  .callout { display: flex; gap: 12px; align-items: flex-start; }
+  .ic.is-callout { width: 22px; height: 22px; margin-top: 2px; }
   .foot { margin: 20px 0 0; font-size: 12px; color: var(--text-3); text-align: right; }
 </style>
 </head>
@@ -76,25 +84,24 @@
   <p class="eyebrow">FLEXG 유료화 · ADMIN PLANNING</p>
   <div class="head">
     <h1>Admin 기획 진척 현황</h1>
-    <span class="pill">일정 내 진행 중</span>
   </div>
 
   <!-- 핵심 수치 -->
   <div class="kpis">
     <div class="card">
-      <p class="kpi-label">프로토타입 화면</p>
+      <p class="kpi-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>프로토타입 화면</p>
       <p class="kpi-value">88<small>개</small></p>
       <p class="kpi-sub">화면 작성 완료</p>
       <div class="bar"><span style="width:100%"></span></div>
     </div>
     <div class="card">
-      <p class="kpi-label">정책서 기준 검토 완료</p>
+      <p class="kpi-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 13l2 2 4-4"/></svg>정책서 기준 검토 완료</p>
       <p class="kpi-value">42<small>/ 88</small></p>
       <p class="kpi-sub">48% · 46개 검토 진행 중</p>
       <div class="bar"><span style="width:48%"></span></div>
     </div>
     <div class="card">
-      <p class="kpi-label">현재 진척 상태</p>
+      <p class="kpi-label"><svg class="ic is-good" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>현재 진척 상태</p>
       <p class="kpi-value is-good">양호</p>
       <p class="kpi-sub">계획 일정에 맞춰 진행 중</p>
       <div class="bar"><span style="width:28%; background:#15803d"></span></div>
@@ -103,7 +110,7 @@
 
   <!-- 주요 일정 -->
   <div class="card">
-    <h2>주요 일정</h2>
+    <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>주요 일정</h2>
     <div class="timeline">
       <div class="track"><span style="width:27.8%"></span></div>
       <div class="ms is-done is-start" style="left:0%"><i></i><b>10.19</b><em>기획 시작</em></div>
@@ -117,41 +124,36 @@
   <div class="two">
     <!-- 현재 주요 작업 -->
     <div class="card">
-      <h2>현재 주요 작업 및 이슈 사항</h2>
+      <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg>현재 주요 작업 및 이슈 사항</h2>
       <ul class="tasks">
-        <li>
-          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
-          <div><b>화면 프로토타입</b><span>88개 화면 작성 완료</span></div>
-        </li>
         <li>
           <svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 13l2 2 4-4"/></svg>
           <div><b>정책서 기준 검토 · 보완</b><span>정책서와 화면을 대조해 화면별 조건, 상태 처리, 처리 흐름 확인 및 보완</span></div>
         </li>
         <li>
           <svg viewBox="0 0 24 24"><path d="M12 3.5 2.5 20h19L12 3.5Z"/><path d="M12 10v4.5M12 17.5v.01"/></svg>
-          <div><b>이슈 · 예외 케이스 정리</b><span>검토 과정에서 발견되는 누락 사항, 추가 필요 기능, 예외 케이스를 지속적으로 정리</span></div>
+          <div><b>이슈 · 예외 케이스 정리</b><span>누락 사항 · 추가 필요 기능 · 예외 케이스</span></div>
         </li>
       </ul>
     </div>
 
     <!-- 영역별 현황 -->
     <div class="card">
-      <h2>영역별 화면 · 검토 현황</h2>
+      <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>영역별 화면 · 검토 현황</h2>
       <ul class="groups">
-        <li><span>구독 · 결제</span><span class="g-bar"><span style="width:14.8%"></span></span><span class="g-num">8 / 54</span></li>
-        <li><span>결제수단 관리</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">13 / 13</span></li>
-        <li><span>프론트 (가입 · 개설)</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">11 / 11</span></li>
-        <li><span>어드민 · 환경설정</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
-        <li><span>문의 접수</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">2 / 2</span></li>
-        <li><span>온보딩 · 디자인 · 게시판 · 제휴</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>구독 · 결제</span><span class="g-bar"><span style="width:14.8%"></span></span><span class="g-num">8 / 54</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/></svg>결제수단 관리</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">13 / 13</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>프론트 (가입 · 개설)</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">11 / 11</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>어드민 · 환경설정</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>문의 접수</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">2 / 2</span></li>
+        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>온보딩 · 디자인 · 게시판 · 제휴</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
       </ul>
       <p class="legend">검토 완료 / 전체 화면 · 정책서 추가 결정 9건 반영 (10.27 ~ 10.29)</p>
     </div>
   </div>
 
-  <div class="callout">
-    화면 작성은 완료했으며, 현재는 <b>정책서 기준의 상세 검토와 보완 작업</b>을 진행 중입니다.<br>
-    검토 과정에서 발견되는 누락 사항, 추가 필요 기능, 예외 케이스를 지속적으로 정리하고 있어 <b>작업 범위가 넓은 상태</b>입니다.
+  <div class="callout"><svg class="ic is-callout" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 2.5 20h19L12 3.5Z"/><path d="M12 10v4.5M12 17.5v.01"/></svg><div>
+    검토 과정에서 발견되는 누락 사항, 추가 필요 기능, 예외 케이스를 지속적으로 정리하고 있어 <b>작업 범위가 넓은 상태</b>입니다.</div>
   </div>
 
   <p class="foot">기준일 2026.10.29 · 프로토타입 좌측 목록의 완료 표시 기준</p>
