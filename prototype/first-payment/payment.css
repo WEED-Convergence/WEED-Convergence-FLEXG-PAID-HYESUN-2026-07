@@ -378,3 +378,9 @@ tr.price-total-row td {
 .price-table tr.unpaid-only:first-of-type td,
 .price-table tr.price-total-row + tr.unpaid-only td { border-top: 1px dashed #f0c987; }
 .unpaid-tag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 4px; background-color: #fff1d6; color: #9a6400; font-size: 11px; font-weight: normal; line-height: 18px; vertical-align: 1px; }
+
+/* 결제수단: 카드 없음 */
+.pay-method.is-empty { align-items: center; border: 1px dashed #cfd4dc; background-color: #fafbfc; }
+.pay-method.is-empty .pm-icon { opacity: 0.35; }
+.pay-method.is-empty .pm-main { color: #6b7280; }
+.pay-method .pm-add { margin-left: auto; }
