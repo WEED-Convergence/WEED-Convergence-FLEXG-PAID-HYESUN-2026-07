@@ -1875,4 +1875,4 @@
 }
 
 .tpl-more-btn:hover { border-color: #1d1d1f; }
-.tpl-more-btn span { font-size: 16px; line-height: 1; }
+.tpl-more-btn svg { width: 12px; height: 12px; }
