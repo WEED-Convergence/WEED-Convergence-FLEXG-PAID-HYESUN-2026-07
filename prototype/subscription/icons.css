@@ -37,3 +37,6 @@
 /* 3열처럼 좁은 칸에서는 항목 이름 아이콘을 숨김 (줄바꿈 방지) */
 .three-col .kv-row dt .ux-ic { display: none; }
 .three-col .kv-row dt:has(.ux-ic) { flex-basis: auto; white-space: normal; }
+
+/* Pro 소개 배너 제목 아이콘: 보라 */
+.pro-upsell.is-purple .section-title .ux-ic { background-color: #f1ebfe; color: #7c3aed; }

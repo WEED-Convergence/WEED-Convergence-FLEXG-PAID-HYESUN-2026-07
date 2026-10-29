@@ -438,3 +438,10 @@ table.data-table tr:last-child td {
 .pro-upsell.is-purple .btn-primary { background-color: #7c3aed; border-color: #7c3aed; }
 .pro-upsell.is-purple .pro-intro-feat i { color: #7c3aed; }
 .pro-upsell.is-purple .pro-upsell-feat { border-left-color: #e9e0fb; }
+
+/* Pro 소개 배너 · 제목줄 */
+.pro-upsell { flex-wrap: wrap; }
+.pro-upsell > .pro-upsell-bar { flex: 1 1 100%; display: flex; align-items: center; margin: 0; padding-bottom: 14px; border-bottom: 1px solid #ece4fb; font-size: 16px; font-weight: 800; color: #111827; }
+.pro-upsell.is-purple { padding: 22px 24px; border-radius: 14px; }
+.screen-main .screen-body > .pro-upsell.is-purple { row-gap: 18px; border: 2px solid #7c3aed; background-color: #faf7ff; box-shadow: 0 6px 20px rgba(124, 58, 237, 0.08); }
+.screen-main .screen-body > .pro-upsell.is-purple > .pro-upsell-bar { margin: 0; padding-bottom: 14px; border-bottom: 1px solid #e9dffb; }
