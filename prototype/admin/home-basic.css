@@ -795,11 +795,3 @@
 .hb-cols.is-small { height: 132px; }
 .hb-cols.is-small .hb-col-bar { background-color: #a7f3d0; }
 .hb-cols.is-small .hb-col.is-today .hb-col-bar { background-color: #059669; }
-/* 쇼핑몰 기능 접근 불가 (Basic) */
-.blocked-wrap { display: flex; align-items: center; justify-content: center; min-height: 520px; padding: 40px 24px; }
-.blocked-card { max-width: 480px; padding: 36px 32px; border: 1px solid #e5e7eb; border-radius: 16px; background: #ffffff; text-align: center; box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06); }
-.blocked-icon { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin-bottom: 16px; border-radius: 50%; background: #eef0fd; color: #3140d6; }
-.blocked-icon svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.blocked-card h1 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #111827; }
-.blocked-card p { margin: 0 0 22px; font-size: 14px; line-height: 1.7; color: #4b5563; }
-.blocked-btns { display: flex; justify-content: center; align-items: center; gap: 8px; }
