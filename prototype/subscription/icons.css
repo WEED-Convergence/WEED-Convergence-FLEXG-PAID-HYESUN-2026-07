@@ -30,7 +30,9 @@
 .info-box-danger > .ux-ic.is-box { color: #dc2626; }
 
 /* 아이콘이 붙은 항목 이름은 한 줄로 */
-.kv-row dt:has(.ux-ic) { flex-basis: 124px; white-space: nowrap; }
+/* 항목 이름 칸 너비를 아이콘 유무와 관계없이 같게 (값 정렬) */
+.kv-row > dt { flex: 0 0 124px; }
+.kv-row dt:has(.ux-ic) { white-space: nowrap; }
 .kv-row.is-sub dt:has(.ux-ic) { white-space: normal; }
 /* 3열처럼 좁은 칸에서는 항목 이름 아이콘을 숨김 (줄바꿈 방지) */
 .three-col .kv-row dt .ux-ic { display: none; }

@@ -21,10 +21,12 @@
     undo: '<path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/>',
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     msg: '<path d="M4 5h16v11H8l-4 4V5Z"/>',
+    hash: '<path d="M9 4 7 20M17 4l-2 16M4 9h16M3 15h16"/>',
     truck: '<path d="M2 6h11v10H2zM13 10h4l4 4v2h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>'
   };
   // 순서가 중요: 앞에서 먼저 맞는 규칙을 씀
   var RULES = [
+    [/거래번호|문서 번호/, 'hash', ''],
     [/실패|미납|사유|유예|만료/, 'alert', 'is-alert'],
     [/추가 트래픽|추가$|적용 후/, 'plus', ''],
     [/트래픽|사용량|제공량|용량|기본$/, 'chart', 'is-chart'],
