@@ -750,3 +750,56 @@
 .banner-warning a.banner-btn { background-color: #b07d00; box-shadow: 0 4px 10px rgba(176, 125, 0, 0.28); }
 .banner a.banner-btn span { font-size: 16px; line-height: 1; }
 .banner a.banner-btn:hover { filter: brightness(1.08); }
+
+
+/* ---------- 가독성 · 아이콘 보강 (결제수단 관리 공통, 내용 변경 없음) ---------- */
+.screen-header h1 { font-size: 24px; letter-spacing: -0.3px; color: #111827; }
+.screen-header .desc { margin-top: 6px; font-size: 14.5px; line-height: 1.6; color: #4b5563; }
+
+/* 섹션 제목: 카드 아이콘 */
+.section-title { display: flex; align-items: center; gap: 8px; padding-left: 0; border-left: 0; font-size: 17px; color: #111827; }
+.section-title::before { content: ""; display: inline-block; flex-shrink: 0; width: 18px; height: 18px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'2.5'%20y%3D'5'%20width%3D'19'%20height%3D'14'%20rx%3D'2.5'%2F%3E%3Cpath%20d%3D'M2.5%2010h19M6%2015h4'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'2.5'%20y%3D'5'%20width%3D'19'%20height%3D'14'%20rx%3D'2.5'%2F%3E%3Cpath%20d%3D'M2.5%2010h19M6%2015h4'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; color: #3140d6; }
+
+/* 등록된 카드 */
+.card-row { padding: 18px 20px; background-color: #ffffff; border-color: #e5e7eb; }
+.card-main .card-num { font-size: 17px; font-weight: 700; color: #111827; }
+.card-main .card-sub { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 13.5px; color: #6b7280; }
+.card-main .card-sub::before { content: ""; display: inline-block; flex-shrink: 0; width: 14px; height: 14px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'3.5'%20y%3D'5'%20width%3D'17'%20height%3D'15'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M3.5%2010h17M8%203v4M16%203v4'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'3.5'%20y%3D'5'%20width%3D'17'%20height%3D'15'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M3.5%2010h17M8%203v4M16%203v4'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.card-actions { gap: 8px; }
+.card-actions .btn { gap: 6px; height: 38px; padding: 0 14px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+.card-actions .btn:first-child::before { content: ""; display: inline-block; flex-shrink: 0; width: 15px; height: 15px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M4%2020h4L19%209a2.8%202.8%200%200%200-4-4L4%2016v4Z'%2F%3E%3Cpath%20d%3D'm13.5%206.5%204%204'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M4%2020h4L19%209a2.8%202.8%200%200%200-4-4L4%2016v4Z'%2F%3E%3Cpath%20d%3D'm13.5%206.5%204%204'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.card-actions .btn-text-danger::before,
+.card-actions .btn-disabled + .btn-disabled::before { content: ""; display: inline-block; flex-shrink: 0; width: 15px; height: 15px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M4%207h16M10%2011v6M14%2011v6M6%207l1%2013h10l1-13M9%207V4h6v3'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M4%207h16M10%2011v6M14%2011v6M6%207l1%2013h10l1-13M9%207V4h6v3'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.card-actions .btn-text-danger { border: 1px solid #f3c7c7; background-color: #fff7f7; }
+.card-actions .btn-disabled:first-child::before { content: ""; display: inline-block; flex-shrink: 0; width: 15px; height: 15px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'5'%20y%3D'11'%20width%3D'14'%20height%3D'9'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M8%2011V8a4%204%200%200%201%208%200v3'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'5'%20y%3D'11'%20width%3D'14'%20height%3D'9'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M8%2011V8a4%204%200%200%201%208%200v3'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+
+/* 배너: 상태 아이콘 + 글자 */
+.banner { align-items: flex-start; gap: 12px; padding: 16px 18px; border-radius: 10px; font-size: 14.5px; line-height: 1.7; }
+.banner::before { content: ""; display: inline-block; flex-shrink: 0; width: 20px; height: 20px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Ccircle%20cx%3D'12'%20cy%3D'12'%20r%3D'9.5'%2F%3E%3Cpath%20d%3D'M12%2011v6M12%207.5v.01'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Ccircle%20cx%3D'12'%20cy%3D'12'%20r%3D'9.5'%2F%3E%3Cpath%20d%3D'M12%2011v6M12%207.5v.01'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; margin-top: 2px; }
+.banner-danger::before,
+.banner-warning::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M12%203.5%202.5%2020h19L12%203.5Z'%2F%3E%3Cpath%20d%3D'M12%2010v4.5M12%2017.5v.01'%2F%3E%3C%2Fsvg%3E"); mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M12%203.5%202.5%2020h19L12%203.5Z'%2F%3E%3Cpath%20d%3D'M12%2010v4.5M12%2017.5v.01'%2F%3E%3C%2Fsvg%3E"); }
+.banner-danger, .banner-warning { font-weight: 600; }
+.banner a.banner-btn { font-size: 14px; }
+
+/* 카드 없음 */
+.empty-state { padding: 48px 24px; border-color: #d1d5db; background-color: #fafbfc; }
+.empty-state .empty-icon { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin-bottom: 18px; border-radius: 50%; background-color: #eef0fd; color: #3140d6; }
+.empty-state .empty-icon::before { content: ""; display: inline-block; flex-shrink: 0; width: 30px; height: 30px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'2.5'%20y%3D'5'%20width%3D'15'%20height%3D'11'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M2.5%209h15M19%2014v6M16%2017h6'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'2.5'%20y%3D'5'%20width%3D'15'%20height%3D'11'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M2.5%209h15M19%2014v6M16%2017h6'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.empty-state h3 { font-size: 18px; color: #111827; }
+.empty-state p { font-size: 14.5px; line-height: 1.6; color: #4b5563; }
+.empty-state .btn-primary { gap: 6px; height: 42px; padding: 0 20px; border-radius: 8px; font-size: 14.5px; font-weight: 700; }
+.empty-state .btn-primary::before { content: ""; display: inline-block; flex-shrink: 0; width: 16px; height: 16px; background-color: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M12%205v14M5%2012h14'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'black'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M12%205v14M5%2012h14'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+
+/* 처리 결과 팝업 */
+.result-icon { width: 60px; height: 60px; margin-bottom: 18px; font-size: 28px; box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
+.result-icon.is-success { box-shadow: 0 0 0 8px #e4f5e9; }
+.result-icon.is-warning { box-shadow: 0 0 0 8px #fff3d0; }
+.result-icon.is-danger { box-shadow: 0 0 0 8px #fde6e6; }
+.result-center h1 { font-size: 19px; line-height: 1.45; color: #111827; }
+.result-center .desc { font-size: 14.5px; line-height: 1.6; color: #4b5563; }
+.summary-card { padding: 16px 18px; border-color: #e5e7eb; border-radius: 12px; }
+.result-center .btn-row .btn, .popup-modal-body .btn-row .btn { height: 42px; padding: 0 20px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+.process-center h1 { font-size: 19px; color: #111827; }
+.process-center .desc { font-size: 14.5px; color: #4b5563; }
+.popup-modal-body h3 { font-size: 18px; color: #111827; }
+.popup-modal-body p { font-size: 14.5px; line-height: 1.65; color: #4b5563; }
