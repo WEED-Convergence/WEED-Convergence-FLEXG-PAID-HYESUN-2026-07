@@ -75,6 +75,21 @@
   .g-name .ic { stroke: var(--text-3); }
   .callout { display: flex; gap: 12px; align-items: flex-start; }
   .ic.is-callout { width: 22px; height: 22px; margin-top: 2px; }
+  .one { margin-top: 16px; }
+  .focus-wrap { margin-top: 16px; }
+  .card.is-focus { border: 2px solid var(--primary); box-shadow: 0 8px 24px rgba(49, 64, 214, 0.12); }
+  .card.is-focus h2 { font-size: 17px; }
+  .card.is-focus .groups li { grid-template-columns: 240px 1fr 52px 70px 72px; gap: 16px; padding: 11px 0; border-top: 1px solid #f0f1f4; font-size: 14.5px; }
+  .card.is-focus .groups li:first-child { border-top: 0; }
+  .card.is-focus .g-bar { height: 10px; }
+  .g-pct { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .g-badge { justify-self: end; padding: 3px 10px; border-radius: 999px; background: var(--good-bg); color: var(--good); font-size: 12px; font-weight: 700; }
+  .groups li.is-doing { margin: 0 -12px; padding: 12px; border-radius: 10px; background: #f6f7ff; }
+  .groups li.is-doing + li { border-top: 0; }
+  .groups li.is-doing .g-name { font-weight: 800; color: var(--primary); }
+  .groups li.is-doing .g-name .ic { stroke: var(--primary); }
+  .groups li.is-doing .g-pct { color: var(--primary); }
+  .groups li.is-doing .g-badge { background: var(--primary); color: #ffffff; }
   .foot { margin: 20px 0 0; font-size: 12px; color: var(--text-3); text-align: right; }
 </style>
 </head>
@@ -121,7 +136,23 @@
     <p class="tl-note">전체 기간 36일 중 10일 경과 · 1차 리뷰까지 8일</p>
   </div>
 
-  <div class="two">
+  <div class="focus-wrap">
+  <!-- 영역별 현황 -->
+  <div class="card is-focus">
+    <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>영역별 화면 · 검토 현황</h2>
+    <ul class="groups">
+      <li class="is-doing"><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>구독 · 결제</span><span class="g-bar"><span style="width:14.8%"></span></span><span class="g-pct">15%</span><span class="g-num">8 / 54</span><span class="g-badge">검토 중</span></li>
+      <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/></svg>결제수단 관리</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-pct">100%</span><span class="g-num">13 / 13</span><span class="g-badge">완료</span></li>
+      <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>프론트 (가입 · 개설)</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-pct">100%</span><span class="g-num">11 / 11</span><span class="g-badge">완료</span></li>
+      <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>어드민 · 환경설정</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-pct">100%</span><span class="g-num">4 / 4</span><span class="g-badge">완료</span></li>
+      <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>문의 접수</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-pct">100%</span><span class="g-num">2 / 2</span><span class="g-badge">완료</span></li>
+      <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>온보딩 · 디자인 · 게시판 · 제휴</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-pct">100%</span><span class="g-num">4 / 4</span><span class="g-badge">완료</span></li>
+    </ul>
+    <p class="legend">검토 완료 / 전체 화면 · 정책서 추가 결정 9건 반영 (10.27 ~ 10.29)</p>
+  </div>
+  </div>
+
+  <div class="one">
     <!-- 현재 주요 작업 -->
     <div class="card">
       <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg>현재 주요 작업 및 이슈 사항</h2>
@@ -137,19 +168,6 @@
       </ul>
     </div>
 
-    <!-- 영역별 현황 -->
-    <div class="card">
-      <h2><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>영역별 화면 · 검토 현황</h2>
-      <ul class="groups">
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>구독 · 결제</span><span class="g-bar"><span style="width:14.8%"></span></span><span class="g-num">8 / 54</span></li>
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/></svg>결제수단 관리</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">13 / 13</span></li>
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>프론트 (가입 · 개설)</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">11 / 11</span></li>
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>어드민 · 환경설정</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>문의 접수</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">2 / 2</span></li>
-        <li><span class="g-name"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>온보딩 · 디자인 · 게시판 · 제휴</span><span class="g-bar"><span style="width:100%"></span></span><span class="g-num">4 / 4</span></li>
-      </ul>
-      <p class="legend">검토 완료 / 전체 화면 · 정책서 추가 결정 9건 반영 (10.27 ~ 10.29)</p>
-    </div>
   </div>
 
   <div class="callout"><svg class="ic is-callout" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 2.5 20h19L12 3.5Z"/><path d="M12 10v4.5M12 17.5v.01"/></svg><div>
