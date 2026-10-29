@@ -1877,11 +1877,12 @@
 .tpl-more-btn:hover { border-color: #1d1d1f; }
 .tpl-more-btn svg { width: 12px; height: 12px; }
 
-/* 템플릿 미리보기 · 실사 사진 (CC0, 출처 img/SOURCES.md) */
-.tplv-hero.has-photo {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("img/photo/living-room.jpg") center / cover;
-  color: #ffffff;
-  font-weight: 800;
+/* 템플릿 미리보기 · 회사 이미지 */
+.tplv-hero.has-photo,
+.tplv-hero.has-photo.is-pc {
+  padding: 0;
+  aspect-ratio: 941 / 512;
+  background: url("img/company.jpg") center / cover;
 }
 
 .tplv-thumb {
