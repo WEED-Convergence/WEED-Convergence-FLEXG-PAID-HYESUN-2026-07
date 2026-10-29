@@ -611,3 +611,17 @@ button.btn {
   word-break: keep-all;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
+
+/* 개발 확인 메모 (붉은 박스 · 화면 안에 놓는 형태) */
+.dev-note-red {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border: 3px solid #d12f2f;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #d12f2f;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
