@@ -1507,6 +1507,18 @@
   vertical-align: 2px;
 }
 
+.ps-free-title span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ps-free-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .ps-free-desc {
   margin: 10px 0 0;
   font-size: 14px;
