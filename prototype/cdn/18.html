@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>트래픽 100% 초과 알림톡 - 프로토타입</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../subscription/subscription.css?v=20261028f">
+<link rel="stylesheet" href="cdn.css">
+<link rel="stylesheet" href="notify.css">
+<link rel="stylesheet" href="../subscription/icons.css">
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<div class="layout">
+
+                  <div class="sidebar-left">
+    <div class="panel-title">화면 목록</div>
+    <ul class="index-list"><li><a href="../status/progress.html">진척 현황</a></li></ul>
+
+    <div class="index-group">
+      <ul class="index-list">
+        <li><a href="../status/01.html">1 구독 상태별 정의 <span class="index-done-flag"></span></a></li>
+        <li class="index-group-label">
+          회원가입
+          <ul class="index-sublist">
+            <li><a href="../front/21.html">2 로그인 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/01.html">3 회원가입 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/06.html">4 플랜 선택 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/10.html">5 템플릿 선택 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/19.html">6 템플릿 미리보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/08.html">7 결제 전 확인 · 정기결제 동의 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/09.html">8 약관 보기 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/12.html">9 사이트 개설 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/17.html">10 개설 복구 대기 <span class="index-done-flag"></span></a></li>
+            <li><a href="../front/20.html">11 사이트 개설 완료 <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <details class="index-group" open>
+      <summary>어드민 · 온보딩</summary>
+      <ul class="index-list">
+        <li><a href="../admin/15.html">12 어드민 홈 (Basic) <span class="index-done-flag"></span></a></li>
+        <li><a href="../admin/22.html">13 어드민 홈 · 미납 (Basic) <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>결제수단 관리</summary>
+      <ul class="index-list">
+        <li><a href="../billing-card/01.html">14 카드 있음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/02.html">15 카드 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/06.html">16 카드 없음 · 무료 제공 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/04.html">17 유예 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/05.html">18 미납 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/14.html">19 무료 제공 종료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/03.html">20 결제 권한 없음 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/07.html">21 처리 중 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/08.html">22 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/09.html">23 완료 · 미납 결제 완료 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/16.html">24 완료 · 미납 결제 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/10.html">25 실패 <span class="index-done-flag"></span></a></li>
+        <li><a href="../billing-card/11.html">26 카드 삭제 불가 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 환경설정</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본정보
+          <ul class="index-sublist">
+            <li><a href="../admin/17.html">27 기본정보 (Basic) <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          도메인 설정
+          <ul class="index-sublist">
+            <li><a href="../admin/18.html">28 도메인 설정 (Basic) <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          부계정 설정
+          <ul class="index-sublist">
+            <li><a href="../admin/20.html">29 부계정 설정 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../admin/21.html">30 부계정 등록 · 수정 (Basic) <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>어드민 · 디자인 관리</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          기본설정
+          <ul class="index-sublist">
+            <li><a href="../admin/19.html">31 기본설정 (Basic) <span class="index-done-flag"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>게시판</summary>
+      <ul class="index-list">
+        <li><a href="../board/01.html">32 게시판 카테고리 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+    <details class="index-group" open>
+      <summary>제휴</summary>
+      <ul class="index-list">
+        <li><a href="../partner/01.html">33 제휴 서비스 목록 <span class="index-done-flag"></span></a></li>
+      </ul>
+    </details>
+
+
+    <details class="index-group" open>
+      <summary>구독 · 결제</summary>
+      <ul class="index-list">
+        <li class="index-group-label">
+          구독 관리
+          <ul class="index-sublist">
+            <li><a href="../subscription/01.html">34 미신청 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/38.html">35 Pro 신청 확인 · 정기결제 동의 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/02.html">36 무료 제공 중 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/10.html">37 무료 제공 종료 · 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/04.html">38 이용 중 (Pro) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/03.html">39 이용 중 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/05.html">40 유예 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/18.html">41 미납 · 읽기 전용 (유예 종료) <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              결제 · 데이터 안내 (알림톡)
+              <ul class="index-subsublist">
+                <li><a href="../subscription/32.html">42 결제 실패 · 재시도 안내 (당일) <span class="index-done-flag"></span></a></li>
+                <li><a href="../subscription/34.html">43 결제 재시도 실패 (4일차) <span class="index-done-flag"></span></a></li>
+                <li><a href="../subscription/35.html">44 관리자 화면 읽기 전용 전환 (7일차) <span class="index-done-flag"></span></a></li>
+                <li><a href="../subscription/36.html">45 데이터 삭제 사전 안내 (알림톡) <span class="index-done-flag"></span></a></li>
+              </ul>
+            </li>
+            <li><a href="../subscription/15.html">46 플랜 변경 (Basic) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/29.html">47 플랜 변경 결제 실패 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/06.html">48 플랜 변경 완료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/07.html">49 해지 예약 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/30.html">50 해지 예약 취소 확인 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/20.html">51 해지 예약 (무료 제공 중) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/31.html">52 해지 예약 취소 확인 (무료 제공 중) (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/08.html">53 만료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/37.html">54 만료 (미납) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/09.html">55 이용 중 (결제 권한 없음) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/11.html">56 해지 예약 확인 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/19.html">57 해지 예약 확인 (무료 제공 중) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/21.html">58 재결제 (팝업) <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/22.html">59 재결제 완료 <span class="index-done-flag"></span></a></li>
+            <li><a href="../subscription/23.html">60 재결제 실패 <span class="index-done-flag"></span></a></li>
+            <li class="index-group-label">
+              플랜 결제 (팝업)
+              <ul class="index-subsublist">
+                <li><a href="../first-payment/01.html">61 결제 가능</a></li>
+                <li><a href="../first-payment/07.html">62 결제 가능 (카드 없음)</a></li>
+                <li><a href="../first-payment/02.html">63 결제 권한 없음</a></li>
+                <li><a href="../first-payment/03.html">64 결제 확인 · 사이트 복구 중 <span class="index-done-flag"></span></a></li>
+                <li><a href="../first-payment/06.html">65 결제 · 사이트 복구 완료 <span class="index-done-flag"></span></a></li>
+                <li><a href="../payment-status/01.html">66 결제 실패 · 취소 <span class="index-done-flag"></span></a></li>
+                <li><a href="../payment-status/02.html">67 처리 중 (지연) <span class="index-done-flag"></span></a></li>
+                <li><a href="../first-payment/05.html">68 복구 대기 <span class="index-done-flag"></span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../subscription/17.html">69 서비스 이용 현황 (기존 고객) <span class="index-done-flag"></span></a></li>
+        <li class="index-group-label">
+          청구 내역
+          <ul class="index-sublist">
+            <li><a href="../subscription/12.html">70 구독 청구</a></li>
+            <li><a href="../subscription/28.html">71 캐시 결제</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          청구 상세
+          <ul class="index-sublist">
+            <li><a href="../subscription/24.html">72 청구 상세 (예정) (팝업)</a></li>
+            <li><a href="../subscription/25.html">73 청구 상세 (확정) (팝업)</a></li>
+            <li><a href="../subscription/26.html">74 청구 상세 (결제 완료) (팝업)</a></li>
+            <li><a href="../subscription/27.html">75 청구 상세 (미납) (팝업)</a></li>
+          </ul>
+        </li>
+        <li class="index-group-label">
+          서비스 이용 현황 (신규 플랜)
+          <ul class="index-sublist">
+            <li><a href="01.html">76 정상</a></li>
+            <li><a href="12.html">77 정상 · 기존 이용료 미결제 (Pro 전환 직후)</a></li>
+            <li><a href="02.html">78 주의 (80% 도달)</a></li>
+            <li class="index-group-label">
+              안내 발송 (80% 도달)
+              <ul class="index-subsublist">
+                <li><a href="10.html">79 메일</a></li>
+                <li><a href="11.html">80 알림톡</a></li>
+              </ul>
+            </li>
+            <li><a href="03.html">81 초과</a></li>
+            <li class="index-group-label">
+              안내 발송 (100% 초과)
+              <ul class="index-subsublist">
+                <li><a href="17.html">82 메일</a></li>
+                <li class="is-current"><a href="18.html">83 알림톡</a></li>
+              </ul>
+            </li>
+            <li><a href="04.html">84 집계 지연</a></li>
+            <li class="index-group-label">
+              팝업
+              <ul class="index-subsublist">
+                <li><a href="05.html">85 트래픽 상세 내역 (팝업)</a></li>
+                <li><a href="06.html">86 트래픽 상세 내역 (집계 지연)</a></li>
+              </ul>
+            </li>
+            <li><a href="07.html">87 이용 내역 상세 (예상)</a></li>
+            <li><a href="08.html">88 이용 내역 상세 (확정 · 정정 이력)</a></li>
+            <li><a href="09.html">89 추가 트래픽 구매</a></li>
+            <li><a href="13.html">90 추가 트래픽 이용 중</a></li>
+            <li><a href="14.html">91 추가 트래픽 이용 종료 신청 (팝업)</a></li>
+            <li><a href="15.html">92 추가 트래픽 이용 종료 예정</a></li>
+            <li><a href="16.html">93 추가 트래픽 이용 종료 신청 취소 (팝업)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="main-center">
+    <div class="screen-canvas notify-canvas">
+
+      <div class="kakao-wrap">
+        <div class="kakao-phone">
+          <div class="kakao-top">플렉스지 <span>카카오톡 채널</span></div>
+          <div class="kakao-chat">
+            <div class="kakao-profile">F</div>
+            <div class="kakao-col">
+              <p class="kakao-name">플렉스지</p>
+              <div class="kakao-bubble">
+                <div class="kakao-head">알림톡 도착</div>
+              <svg class="kakao-img" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="트래픽 사용량 초과 안내 이미지">
+                <rect width="800" height="400" fill="#fff4f2"/>
+                <text x="60" y="88" font-size="30" font-weight="bold" fill="#e04848">FLEX-G</text>
+                <text x="60" y="170" font-size="46" font-weight="bold" fill="#222222">트래픽 사용량</text>
+                <text x="60" y="232" font-size="46" font-weight="bold" fill="#222222">제공량 초과 안내</text>
+                <rect x="60" y="290" width="680" height="28" rx="14" fill="#f3d6d2"/>
+                <rect x="60" y="290" width="680" height="28" rx="14" fill="#e04848"/>
+                <line x1="740" y1="276" x2="740" y2="332" stroke="#222222" stroke-width="3" stroke-dasharray="6 5"/>
+                
+                <text x="740" y="362" font-size="22" fill="#555555" text-anchor="end">100%</text>
+              </svg>
+                <span class="num-mark kakao-mark" style="top:48px">1</span>
+                <p class="kakao-text">[플렉스지] 트래픽 사용량 안내
+
+플렉스 스토어 고객님, 안녕하세요.
+이번 이용 기간의 트래픽 사용량이 제공량을 초과하여 안내드립니다.
+
+■ 사이트: 플렉스 스토어
+■ 이용 기간: 2027-05-19 ~ 2027-06-18
+■ 사용량: 103.5GB / 총 100GB (103.5%)
+■ 초과 사용량: 3.5GB
+■ 집계 기준: 2027-06-08까지
+
+제공량을 넘어도 사이트는 중단되지 않습니다. 초과분은 이용 기간이 끝난 뒤 확정되어 다음 결제일에 플랜 요금과 함께 청구됩니다. 추가 트래픽은 어드민의 트래픽 사용량 화면에서 구매하실 수 있습니다.
+
+※ 이 메시지는 트래픽 사용량이 제공량을 초과한 고객님께 발송되는 안내 메시지입니다.</p>
+                <span class="num-mark kakao-mark" style="top:200px">2</span>
+              </div>
+              <p class="kakao-time">오전 9:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kakao-spec">
+          <h3>알림톡 템플릿 기준 <span class="num-mark">3</span></h3>
+          <table>
+            <tr><th>메시지 유형</th><td>정보성 · 이미지형</td></tr>
+            <tr><th>발신 프로필</th><td>플렉스지 카카오톡 채널</td></tr>
+            <tr><th>받는 사람</th><td>사이트 주계정 휴대폰 번호 (가입 때 본인인증한 번호)</td></tr>
+            <tr><th>이미지</th><td>800×400px (2:1) · JPG/PNG · 500KB 이하</td></tr>
+            <tr><th>본문</th><td>357자 / 최대 1,000자 (변수 값 포함)</td></tr>
+            <tr><th>버튼</th><td>없음</td></tr>
+            <tr><th>변수</th><td><code>#{사이트명}</code> <code>#{이용 시작일}</code> <code>#{이용 종료일}</code> <code>#{사용량}</code> <code>#{총 제공량}</code> <code>#{사용률}</code> <code>#{초과 사용량}</code> <code>#{집계 기준일}</code></td></tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>화면 설명</h2>
+    <p class="desc-trigger">트래픽 사용량이 제공량(100%)을 처음 넘은 날, 사이트 주계정 휴대폰으로 보내는 알림톡입니다.</p>
+    <div class="desc-numbered">
+      <div class="desc-numbered-row"><span class="num-mark">1</span> 이미지형 알림톡입니다. 이미지에는 제공량 초과와 사용률 막대만 담고, 광고 문구나 할인 표현은 넣지 않습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">2</span> 정보성 메시지로만 구성합니다. 사이트, 이용 기간, 사용량, 초과 사용량, 집계 기준을 적고, 이용이 중단되지 않는다는 점, 초과분은 다음 결제일에 청구된다는 점, 추가 트래픽 구매 경로를 안내합니다. 1GB당 단가와 금액은 적지 않습니다. 마지막 줄에 이 메시지를 받는 이유를 적습니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">3</span> 카카오 알림톡 템플릿 등록 기준입니다. 값이 바뀌는 부분은 변수로 등록하며, 변수 값을 넣은 본문이 1,000자를 넘지 않아야 합니다.</div>
+    </div>
+  </div>
+
+</div>
+<script src="../subscription/icons.js"></script>
+<script src="../index-scroll.js"></script>
+</body>
+</html>
