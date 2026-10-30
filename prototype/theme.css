@@ -141,3 +141,7 @@ body { letter-spacing: -0.01em; word-break: keep-all; overflow-wrap: break-word;
 .screen-main .kv-row dt { font-weight: 400; }
 .screen-main .kv-row dd { font-weight: 500; }
 .screen-main .kv-row.is-strong dd { font-weight: 700; }
+
+/* 청구 상세 · 이용 내역서(청구 항목 표가 있는 화면): 긴 내용 칸과 Pro 안내 문장은 줄바꿈 허용 */
+.invoice-table td:has(> .btn-sm) { white-space: normal; }
+.screen-canvas:has(.invoice-table) .pro-only { white-space: normal; }

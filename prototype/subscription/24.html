@@ -40,7 +40,7 @@
     <details class="index-group" open>
       <summary>어드민 · 온보딩</summary>
       <ul class="index-list">
-        <li><a href="../admin/15.html">12 어드민 홈 (Basic)</a></li>
+        <li><a href="../admin/15.html">12 어드민 홈 (Basic) <span class="index-done-flag"></span></a></li>
         <li><a href="../admin/22.html">13 어드민 홈 · 미납 (Basic) <span class="index-done-flag"></span></a></li>
       </ul>
     </details>
@@ -404,10 +404,11 @@
               </thead>
               <tbody>
                 <tr><td>플랜 요금 (Pro)</td><td>월 1회 · 정상가 · 기본 100GB 포함</td><td class="num">23,900원</td></tr>
-                <tr class="invoice-discount"><td>오픈 특가 할인</td><td>정상가 대비 할인 (오픈 특가 17,900원)</td><td class="num">-6,000원</td></tr>
+                <tr class="invoice-discount"><td>오픈 특가 할인</td><td>오픈 특가 적용 4/12개월 · 정상가 23,900원 → 17,900원</td><td class="num">-6,000원</td></tr>
+                <tr><td>추가 트래픽 (월 정기형)</td><td>구매 없음 (2027-06-19 ~ 2027-07-18 이용분)</td><td class="num">0원</td></tr>
                 <tr><td>트래픽 초과 <span class="badge badge-info">예상</span></td><td>초과 없음 (2027-05-19 ~ 2027-06-18 이용분) <a href="../cdn/07.html" class="btn-sm" style="float:right;">이용 내역 상세</a></td><td class="num">0원</td></tr>
-                <tr><td>메시지 이용료</td><td>SMS 120건 × 20원 · LMS 35건 × 50원 · 알림톡 210건 × 8원 (2027-05-19 ~ 2027-06-18 이용분)</td><td class="num">5,830원</td></tr>
-                <tr><td><span class="pro-only">배송 추적</span></td><td>송장 860건 · 무료 1,000건 이내 (2027-05-19 ~ 2027-06-18 이용분) <a href="../admin/19.html" class="btn-sm" style="float:right;">배송 추적 설정</a></td><td class="num">0원</td></tr>
+                <tr><td>메시지 이용료 <span class="badge badge-info">예상</span></td><td>SMS 120건 × 20원 · LMS 35건 × 50원 · 알림톡 210건 × 8원 (2027-05-19 ~ 2027-06-18 이용분)</td><td class="num">5,830원</td></tr>
+                <tr><td><span class="pro-only">배송 추적</span> <span class="badge badge-info">예상</span></td><td>송장 860건 · 무료 1,000건 이내 (2027-05-19 ~ 2027-06-18 이용분) <a href="../admin/19.html" class="btn-sm" style="float:right;">배송 추적 설정</a></td><td class="num">0원</td></tr>
                 <tr class="invoice-sum"><td colspan="2">공급가액 합계 <span class="badge badge-info">예상</span></td><td class="num">23,730원</td></tr>
                 <tr class="invoice-sum"><td colspan="2">부가세 (10%)</td><td class="num">2,373원</td></tr>
                 <tr class="invoice-total"><td colspan="2">청구 금액 합계 (부가세 포함) <span class="badge badge-info">예상</span></td><td class="num">26,103원</td></tr>
@@ -438,7 +439,7 @@
       <div class="desc-numbered-row"><span class="num-mark">1</span> 청구 상태를 배지로 보여줍니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">2</span> 확정 전 예상 금액임을 먼저 알립니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">3</span> 청구 회차, 이용 기간, 결제 예정일, 결제수단, 적용 요금 버전을 보여줍니다.</div>
-      <div class="desc-numbered-row"><span class="num-mark">4</span> 항목마다 내용(계산 방법 · 이용 기간)과 금액을 보여줍니다. 플랜 요금은 해당 플랜 1개만 정상가로 적고, 오픈 특가는 "오픈 특가 할인" 행(음수)으로 따로 적습니다. 기본 제공 트래픽은 금액 행 없이 "기본 100GB 포함"으로만 표시하고, 부가세는 별도 행으로 적습니다. 트래픽 초과는 1GB당 단가 없이 사용량과 금액만, 메시지 이용료는 건당 단가와 함께, 배송 추적은 송장 건수 · 무료 1,000건 · 초과 건수 × 9원으로 적고 사용료 대상 기간을 표기합니다. 트래픽 초과와 합계에는 [예상]을 붙입니다. [이용 내역 상세]는 이용 내역 상세 (예상) 화면으로 이동합니다. 배송 추적 초과 사용 내역은 이 청구 항목에서 확인합니다. [배송 추적 설정]은 기본설정의 배송 추적 ON/OFF로 이동합니다.</div>
+      <div class="desc-numbered-row"><span class="num-mark">4</span> 항목마다 내용(계산 방법 · 이용 기간)과 금액을 보여줍니다. 플랜 요금은 해당 플랜 1개만 정상가로 적고, 오픈 특가는 "오픈 특가 할인" 행(음수)으로 따로 적습니다. 추가 트래픽 (월 정기형)은 이번 이용 기간분을 선불로 적습니다. 기본 제공 트래픽은 금액 행 없이 "기본 100GB 포함"으로만 표시하고, 부가세는 별도 행으로 적습니다. 트래픽 초과는 1GB당 단가 없이 사용량과 금액만, 메시지 이용료는 건당 단가와 함께, 배송 추적은 송장 건수 · 무료 1,000건 · 초과 건수 × 9원으로 적고 사용료 대상 기간을 표기합니다. 이용 기간이 끝나지 않아 트래픽 초과 · 메시지 · 배송 추적과 합계에는 [예상]을 붙입니다. [이용 내역 상세]는 이용 내역 상세 (예상) 화면으로 이동합니다. 배송 추적 초과 사용 내역은 이 청구 항목에서 확인합니다. [배송 추적 설정]은 기본설정의 배송 추적 ON/OFF로 이동합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">5</span> 플랜 요금은 부가세 별도이며, 직전 이용 기간 사용료는 함께 청구되고 CRM 캐시 충전은 포함되지 않음을 안내합니다.</div>
       <div class="desc-numbered-row"><span class="num-mark">6</span> [닫기]를 누르면 청구 내역으로 돌아갑니다.</div>
     </div>
