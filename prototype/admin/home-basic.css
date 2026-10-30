@@ -795,3 +795,15 @@
 .hb-cols.is-small { height: 132px; }
 .hb-cols.is-small .hb-col-bar { background-color: #a7f3d0; }
 .hb-cols.is-small .hb-col.is-today .hb-col-bar { background-color: #059669; }
+
+/* 어드민 홈 · 미납 (읽기 전용) */
+.hb-readonly { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; padding: 16px 20px; border: 1px solid #f3c2c2; border-radius: 14px; background-color: #fff5f5; }
+.hb-readonly-ic { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background-color: #d12f2f; color: #ffffff; font-size: 16px; font-weight: 700; line-height: 28px; text-align: center; }
+.hb-readonly-text { flex: 1 1 auto; min-width: 0; }
+.hb-readonly-text b { display: block; font-size: 16px; color: #d12f2f; }
+.hb-readonly-text p { margin: 4px 0 0; font-size: 13px; color: #4b5563; }
+.hb-readonly-btns { display: flex; gap: 8px; flex-shrink: 0; }
+.hb-ro-btn { display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border: 1px solid #d5d7dc; border-radius: 8px; background-color: #ffffff; color: #111827; font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.hb-ro-btn.is-primary { border-color: #d12f2f; background-color: #d12f2f; color: #ffffff; }
+.hb-page-btn.is-disabled,
+.gnb-page.is-disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; filter: grayscale(1); }
