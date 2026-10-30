@@ -483,3 +483,13 @@ table.data-table tr:last-child td {
 .inv-compact tr.invoice-total td.num { font-size: 18px; color: #3140d6; }
 .cash-table td:first-child { white-space: nowrap; }
 .agree-row > .num-mark { flex: 0 0 auto; }
+
+/* 청구 상세: 이번 이용 기간분 / 직전 이용 기간 사용료 묶음 구분 강화 */
+.inv-compact tr.inv-group td { padding: 12px 16px; font-size: 14px; font-weight: 700; border-left: 4px solid transparent; }
+.inv-compact tbody tr.inv-group:first-child td { background-color: #eef1ff; color: #2b3ac2; border-left-color: #3140d6; }
+.inv-compact tbody tr.inv-group:not(:first-child) td { background-color: #fff6e6; color: #8a5a00; border-left-color: #e0a100; border-top: 14px solid #ffffff; }
+.inv-compact tr.inv-group small { font-size: 12px; font-weight: 500; color: inherit; opacity: 0.85; }
+.inv-compact tbody tr:not(.inv-group):not(.invoice-sum):not(.invoice-total) td:first-child { padding-left: 28px; }
+.inv-compact tr.invoice-sum:first-of-type td,
+.inv-compact tr.inv-group ~ tr.invoice-sum td { border-top-width: 1px; }
+.inv-compact tbody tr.invoice-sum td { background-color: #fafafb; }
