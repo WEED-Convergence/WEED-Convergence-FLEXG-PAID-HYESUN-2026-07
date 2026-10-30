@@ -349,62 +349,33 @@
 
         <div class="section-box">
           <h2 class="section-title">결제 금액 <span class="num-mark">3</span></h2>
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <td>Pro 플랜 요금 (정상가)</td>
-                <td>23,900원</td>
-              </tr>
-              <tr>
-                <td>오픈 특가 할인 (오픈 특가 적용 4/12개월)</td>
-                <td>-6,000원</td>
-              </tr>
-              <tr>
-                <td>할인 적용 금액 (부가세 별도)</td>
-                <td>17,900원</td>
-              </tr>
-              <tr>
-                <td>부가세 (10%)</td>
-                <td>1,790원</td>
-              </tr>
-              <tr class="price-total-row">
-                <td>결제 금액 (부가세 포함)</td>
-                <td>19,690원</td>
-              </tr>
-              <tr class="unpaid-only">
-                <td>미납 금액 (부가세 포함) <span class="unpaid-tag">미납 있을 때만 표시</span></td>
-                <td>26,103원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td>플랜 요금 <span class="amount-tag">오픈 특가 적용 4/12개월</span></td>
-                <td>17,900원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td>추가 트래픽 (월 정기형)</td>
-                <td>0원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td>트래픽 초과</td>
-                <td>0원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td>메시지 이용료</td>
-                <td>5,830원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td><span class="pro-only">배송 추적</span></td>
-                <td>0원</td>
-              </tr>
-              <tr class="unpaid-only unpaid-sub">
-                <td>부가세 (10%)</td>
-                <td>2,373원</td>
-              </tr>
-              <tr class="unpaid-only price-total-row">
-                <td>총 결제 금액 (미납분 + 새 한 달) <span class="unpaid-tag">미납 있을 때만 표시</span></td>
-                <td>45,793원</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="pay-block">
+            <div class="pay-block-head"><span>새 한 달 요금</span><span class="pay-block-period">2027-07-05 ~ 2027-08-04</span></div>
+            <ul class="pay-lines">
+              <li><span>Pro 플랜 요금 (정상가)</span><span class="pl-amt">23,900원</span></li>
+              <li class="is-discount"><span>오픈 특가 할인 <span class="amount-tag">오픈 특가 적용 4/12개월</span></span><span class="pl-amt">-6,000원</span></li>
+              <li><span>부가세 (10%)</span><span class="pl-amt">1,790원</span></li>
+            </ul>
+            <div class="pay-block-sum"><span>결제 금액 <small>(부가세 포함)</small></span><strong>19,690원</strong></div>
+          </div>
+
+          <div class="pay-block is-unpaid unpaid-only">
+            <div class="pay-block-head"><span>미납 금액</span><span class="unpaid-tag">미납 있을 때만 표시</span></div>
+            <ul class="pay-lines">
+              <li><span>플랜 요금 <span class="amount-tag">오픈 특가 적용 4/12개월</span></span><span class="pl-amt">17,900원</span></li>
+              <li><span>추가 트래픽 (월 정기형)</span><span class="pl-amt">0원</span></li>
+              <li><span>트래픽 초과</span><span class="pl-amt">0원</span></li>
+              <li><span>메시지 이용료</span><span class="pl-amt">5,830원</span></li>
+              <li><span><span class="pro-only">배송 추적</span></span><span class="pl-amt">0원</span></li>
+              <li><span>부가세 (10%)</span><span class="pl-amt">2,373원</span></li>
+            </ul>
+            <div class="pay-block-sum"><span>미납 금액 <small>(부가세 포함)</small></span><strong>26,103원</strong></div>
+          </div>
+
+          <div class="pay-grand unpaid-only">
+            <span>총 결제 금액 <small>미납분 + 새 한 달</small> <span class="unpaid-tag">미납 있을 때만 표시</span></span>
+            <strong>45,793원</strong>
+          </div>
         </div>
 
         <div class="section-box">

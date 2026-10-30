@@ -386,3 +386,23 @@ tr.price-total-row td {
 .pay-method .pm-add { margin-left: auto; }
 .price-table tr.unpaid-sub td { padding: 4px 0 4px 16px; border-top: none; color: #666666; font-size: 12.5px; }
 .price-table tr.unpaid-sub td:last-child { padding-right: 0; }
+
+/* ---------- ② 결제 금액 (블록형) ---------- */
+.pay-block { border: 1px solid #e3e4e8; border-radius: 10px; background-color: #ffffff; overflow: hidden; }
+.pay-block + .pay-block { margin-top: 12px; }
+.pay-block-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 11px 16px; border-bottom: 1px solid #eef0f3; font-size: 14px; font-weight: bold; color: #111111; }
+.pay-block-period { font-size: 12.5px; font-weight: normal; color: #6b7280; }
+.pay-lines { margin: 0; padding: 6px 16px; list-style: none; }
+.pay-lines li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; font-size: 13.5px; color: #4b5563; }
+.pay-lines .pl-amt { font-size: 14px; color: #111111; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pay-lines li.is-discount .pl-amt { color: #1a8a3f; font-weight: bold; }
+.pay-block-sum { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-top: 1px solid #eef0f3; background-color: #f7f8fa; font-size: 14px; font-weight: bold; color: #111111; }
+.pay-block-sum small, .pay-grand small { font-size: 12px; font-weight: normal; color: #6b7280; }
+.pay-block-sum strong { font-size: 18px; font-variant-numeric: tabular-nums; }
+.pay-block.is-unpaid { border-color: #f0c987; }
+.pay-block.is-unpaid .pay-block-head { background-color: #fffaf2; border-bottom-color: #f5e2bd; }
+.pay-block.is-unpaid .pay-block-sum { background-color: #fff6e6; border-top-color: #f5e2bd; }
+.pay-block.is-unpaid .pay-block-sum strong { color: #b45309; }
+.pay-grand { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding: 16px 18px; border-radius: 10px; background-color: #eef1ff; font-size: 15px; font-weight: bold; color: #111111; }
+.pay-grand strong { font-size: 24px; color: #3140d6; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 480px) { .pay-grand { flex-direction: column; align-items: flex-start; } }
