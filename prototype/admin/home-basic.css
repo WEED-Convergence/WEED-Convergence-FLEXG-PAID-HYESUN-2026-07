@@ -838,3 +838,9 @@
 .hb-mi.is-join { background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); box-shadow: none; color: #059669; }
 .hb-mi.is-leave { background: linear-gradient(135deg, #ffe4e6 0%, #fce7f3 100%); box-shadow: none; color: #e11d48; }
 .hb-mi.is-sleep { background: linear-gradient(135deg, #fef3c7 0%, #ffedd5 100%); box-shadow: none; color: #d97706; }
+
+/* 트래픽 카드: 링크 2개 (80% 이상이면 추가 트래픽 구매) */
+.hb-sum-links { display: flex; flex-direction: column; gap: 4px; margin-top: auto; }
+.hb-sum-links .hb-sum-link { margin-top: 0; text-decoration: none; }
+.hb-sum-links .hb-sum-link.is-buy { font-weight: 700; color: #6d28d9; }
+.hb-sum-card .unpaid-tag { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 4px; background-color: #fff1d6; color: #9a6400; font-size: 10px; font-weight: normal; line-height: 16px; white-space: nowrap; }
