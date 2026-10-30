@@ -445,3 +445,16 @@ table.data-table tr:last-child td {
 .pro-upsell.is-purple { padding: 22px 24px; border-radius: 14px; }
 .screen-main .screen-body > .pro-upsell.is-purple { row-gap: 18px; border: 2px solid #7c3aed; background-color: #faf7ff; box-shadow: 0 6px 20px rgba(124, 58, 237, 0.08); }
 .screen-main .screen-body > .pro-upsell.is-purple > .pro-upsell-bar { margin: 0; padding-bottom: 14px; border-bottom: 1px solid #e9dffb; }
+
+/* Pro 신청 확인 · 정기결제 동의 */
+.agree-notes { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; color: #4b5563; }
+.agree-notes li + li { margin-top: 4px; }
+.agree-list { display: flex; flex-direction: column; }
+.agree-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid #f0f1f4; font-size: 14px; color: #111827; cursor: pointer; }
+.agree-row:first-child { border-top: 0; padding-top: 0; }
+.agree-row input { width: 16px; height: 16px; margin: 0; flex-shrink: 0; accent-color: #3140d6; }
+.agree-row > span { flex: 1 1 auto; }
+.agree-row em { font-style: normal; font-weight: 600; color: #3140d6; }
+.agree-row a { flex-shrink: 0; font-size: 13px; color: #6b7280; text-decoration: underline; }
+.agree-row.is-all { font-weight: 700; }
+.btn.btn-primary.btn-disabled { border-color: #eceef2; background-color: #eceef2; color: #aaaaae; box-shadow: none; cursor: default; }
