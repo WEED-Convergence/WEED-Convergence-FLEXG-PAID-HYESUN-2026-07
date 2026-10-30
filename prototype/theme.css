@@ -110,3 +110,34 @@
 .front-page .ps-info { border-radius: 18px; background-color: #ffffff; box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05); }
 .front-page .ps-info dl div { padding: 11px 0; }
 .front-page .ps-submit .signup-btn { box-shadow: 0 6px 16px rgba(224, 72, 72, 0.25); }
+
+/* ==========================================================
+   가독성 정리 — 글꼴 · 줄바꿈 · 강조 · 위계 (내용 · 기능 변경 없음)
+   ========================================================== */
+body { letter-spacing: -0.01em; word-break: keep-all; overflow-wrap: break-word; }
+
+/* 짧은 값은 한 줄로 */
+.badge, .amount-tag, .unpaid-tag, .pro-only, .btn-sm, .num-mark { white-space: nowrap; }
+.table-wrap { overflow-x: auto; }
+.screen-main .data-table th,
+.screen-main .data-table td { padding-left: 10px; padding-right: 10px; }
+.data-table th,
+.data-table .num,
+.data-table td:has(> .badge),
+.data-table td:has(> .btn-sm) { white-space: nowrap; }
+
+/* 강조 줄이기: 섹션 아이콘은 무채색 (경고만 빨강 유지) */
+.section-title .ux-ic,
+.section-title .ux-ic.is-money,
+.section-title .ux-ic.is-chart,
+.pro-upsell.is-purple .section-title .ux-ic { background-color: #f3f4f6; color: #4b5563; }
+.amount-tag { background-color: #f3f4f6; color: #374151; font-weight: 600; }
+.badge { font-weight: 600; }
+
+/* 위계: 제목은 크고 굵게, 항목 이름은 가볍게, 값은 또렷하게 */
+.screen-main .screen-header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; }
+.screen-main .section-box .section-title,
+.screen-main .screen-body > div > .section-title { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.screen-main .kv-row dt { font-weight: 400; }
+.screen-main .kv-row dd { font-weight: 500; }
+.screen-main .kv-row.is-strong dd { font-weight: 700; }
