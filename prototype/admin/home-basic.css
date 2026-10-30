@@ -831,3 +831,10 @@
 .hb-page-btn.is-primary { border-color: #6d28d9; background-color: #6d28d9; box-shadow: 0 6px 16px rgba(109, 40, 217, 0.28); color: #ffffff; }
 .hb-page-btn.is-primary span { color: #e9d5ff; }
 .hb-page-meta { font-size: 13px; color: #5b5675; }
+
+/* 회원 현황 아이콘: 파스텔 배경 + 진한 아이콘 */
+.hb-mi.is-total { background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 100%); box-shadow: none; color: #4f46e5; }
+.hb-mi.is-login { background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%); box-shadow: none; color: #0284c7; }
+.hb-mi.is-join { background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); box-shadow: none; color: #059669; }
+.hb-mi.is-leave { background: linear-gradient(135deg, #ffe4e6 0%, #fce7f3 100%); box-shadow: none; color: #e11d48; }
+.hb-mi.is-sleep { background: linear-gradient(135deg, #fef3c7 0%, #ffedd5 100%); box-shadow: none; color: #d97706; }
