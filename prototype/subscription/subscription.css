@@ -503,3 +503,9 @@ table.data-table tr:last-child td {
 .inv-compact tr.invoice-sum td.num { font-size: 15px; color: #111827; }
 .inv-compact tr.invoice-total td { padding-top: 16px; padding-bottom: 16px; border-top: 2px solid #3140d6; }
 .inv-compact tr.invoice-total small { display: block; margin-top: 3px; font-size: 12px; font-weight: 400; color: #6b7280; }
+
+/* Pro 신청 완료 */
+.apply-done .pro-upsell-bar { gap: 10px; }
+.apply-done-ic { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background-color: #7c3aed; color: #ffffff; font-size: 15px; font-weight: 700; }
+.apply-done-text { flex: 1 1 100%; margin: 0; font-size: 14px; color: #4b5563; }
+.apply-done > .kv-list { flex: 1 1 100%; }
