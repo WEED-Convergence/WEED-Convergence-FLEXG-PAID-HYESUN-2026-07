@@ -108,7 +108,7 @@
 }
 
 .mono {
-  font-family: Consolas, "Courier New", monospace;
+  font-family: inherit;
   font-size: 12px;
   color: #777777;
 }

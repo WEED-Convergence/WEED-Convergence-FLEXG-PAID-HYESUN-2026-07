@@ -628,3 +628,6 @@ button.btn {
 
 /* 팝업 딤드가 좌측 목록 · 화면 설명까지 덮지 않도록, 팝업이 있는 화면 영역을 기준으로 */
 .screen-canvas:has(.popup-overlay) { position: relative; }
+
+/* 폰트 통일: 폼 요소도 본문 폰트 사용 */
+button, input, select, textarea { font-family: inherit; }
