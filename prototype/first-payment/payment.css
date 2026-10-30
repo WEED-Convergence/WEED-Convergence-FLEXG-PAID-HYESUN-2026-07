@@ -406,3 +406,18 @@ tr.price-total-row td {
 .pay-grand { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding: 16px 18px; border-radius: 10px; background-color: #eef1ff; font-size: 16px; font-weight: bold; color: #111111; }
 .pay-grand strong { font-size: 22px; color: #3140d6; font-variant-numeric: tabular-nums; white-space: nowrap; }
 @media (max-width: 480px) { .pay-grand { flex-direction: column; align-items: flex-start; } }
+
+/* ---------- 61~63 플랜 결제 팝업 높이: 간격 압축 + 화면보다 길면 딤 영역 안에서 스크롤 ---------- */
+.popup-overlay:has(.pay-block) { overflow-y: auto; align-items: flex-start; padding: 28px 24px; }
+.popup-overlay:has(.pay-block) .popup-modal { margin: auto 0; }
+.popup-modal:has(.pay-block) .screen-header { padding-top: 22px; padding-bottom: 0; }
+.popup-modal:has(.pay-block) .screen-body { gap: 14px; padding-top: 14px; padding-bottom: 22px; }
+.popup-modal:has(.pay-block) .section-box { padding: 16px 20px; }
+.popup-modal:has(.pay-block) .section-box .section-title { margin-bottom: 10px; padding-bottom: 10px; }
+.popup-modal:has(.pay-block) .kv-list { gap: 8px; }
+.pay-block + .pay-block { margin-top: 10px; }
+.pay-block-head { padding: 9px 16px; }
+.pay-lines { padding: 4px 16px; }
+.pay-lines li { padding: 5px 0; }
+.pay-block-sum { padding: 10px 16px; }
+.pay-grand { margin-top: 10px; padding: 12px 18px; }
