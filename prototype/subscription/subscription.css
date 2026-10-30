@@ -9,7 +9,7 @@
 
 .screen-header h1 {
   margin: 0 0 8px;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .screen-header .desc {
@@ -27,7 +27,7 @@
 
 .section-title {
   margin: 0 0 12px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -58,7 +58,7 @@
   border-radius: 50%;
   background-color: #e02020;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -69,14 +69,14 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   white-space: nowrap;
 }
 
 .badge-success { background-color: #e4f5e9; color: #1a8a3f; }
-.badge-warning { background-color: #fff6d8; color: #9a7400; }
-.badge-danger  { background-color: #fde6e6; color: #c81e1e; }
+.badge-warning { background-color: #fff6d8; color: #8a6a00; }
+.badge-danger  { background-color: #fde6e6; color: #d12f2f; }
 .badge-info    { background-color: #e6eaff; color: #3140d6; }
 .badge-neutral { background-color: #eceef2; color: #666666; }
 
@@ -98,7 +98,7 @@
 .kv-row dt {
   flex: 0 0 110px;
   margin: 0;
-  color: #888888;
+  color: #6b7280;
 }
 
 .kv-row dd {
@@ -110,7 +110,7 @@
 .mono {
   font-family: inherit;
   font-size: 12px;
-  color: #777777;
+  color: #6b7280;
 }
 
 /* ---------- ③ 안내 문구 박스 ---------- */
@@ -130,7 +130,7 @@
   border-radius: 8px;
   padding: 14px 16px;
   font-size: 12px;
-  color: #b91c1c;
+  color: #d12f2f;
   line-height: 1.6;
 }
 
@@ -213,7 +213,7 @@ table.data-table td {
 
 table.data-table th {
   background-color: #f7f7f9;
-  color: #777777;
+  color: #6b7280;
   font-size: 12px;
   font-weight: normal;
 }
@@ -225,7 +225,7 @@ table.data-table tr:last-child td {
 .fine-print {
   margin: 0;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
   line-height: 1.6;
 }
 
@@ -296,7 +296,7 @@ table.data-table tr:last-child td {
 .desc-pending {
   margin: 0;
   font-size: 13px;
-  color: #999999;
+  color: #6b7280;
 }
 
 .policy-pending {
@@ -315,7 +315,7 @@ table.data-table tr:last-child td {
 }
 
 .usage-over {
-  color: #c81e1e;
+  color: #d12f2f;
   font-weight: bold;
 }
 
@@ -336,13 +336,13 @@ table.data-table tr:last-child td {
 
 .kv-row.is-sub dt,
 .kv-row.is-sub dd {
-  color: #999999;
+  color: #6b7280;
 }
 
 .kv-note {
   font-size: 12px;
   font-weight: normal;
-  color: #999999;
+  color: #6b7280;
 }
 
 /* 표 안의 작은 버튼 · 머리글은 줄바꿈하지 않음 */
@@ -365,7 +365,7 @@ table.data-table tr:last-child td {
   border: 1px solid transparent;
   border-left-width: 5px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -382,11 +382,11 @@ table.data-table tr:last-child td {
   color: #ffffff;
 }
 
-.status-banner.is-danger  { background-color: #fdeded; border-color: #f5c6c6; border-left-color: #d12f2f; color: #b91c1c; }
+.status-banner.is-danger  { background-color: #fdeded; border-color: #f5c6c6; border-left-color: #d12f2f; color: #d12f2f; }
 .status-banner.is-danger i  { background-color: #d12f2f; }
 .status-banner.is-warning { background-color: #fff6d8; border-color: #f0d58a; border-left-color: #d99a00; color: #8a6100; }
 .status-banner.is-warning i { background-color: #d99a00; }
-.status-banner.is-info    { background-color: #eef1ff; border-color: #c9cdf5; border-left-color: #3140d6; color: #2b3ac2; }
+.status-banner.is-info    { background-color: #eef1ff; border-color: #c9cdf5; border-left-color: #3140d6; color: #3140d6; }
 .status-banner.is-info i    { background-color: #3140d6; }
 .status-banner.is-success { background-color: #e4f5e9; border-color: #b9e2c5; border-left-color: #1a8a3f; color: #1a6f34; }
 .status-banner.is-success i { background-color: #1a8a3f; }
@@ -396,40 +396,40 @@ table.data-table tr:last-child td {
 /* 다음 결제 금액 · 미납 금액: 금액 / 특가 태그 / 내역을 줄로 나눠 표시 */
 .kv-row dd.amount-dd { display: flex; flex-direction: column; gap: 8px; }
 .amount-main { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: 16px; font-weight: bold; color: #111111; }
-.amount-vat { font-size: 12px; font-weight: normal; color: #888888; }
-.amount-tag { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; background-color: #eef1ff; color: #2b3ac2; font-size: 11.5px; font-weight: bold; line-height: 1.6; }
-.amount-note { font-size: 12px; font-weight: normal; color: #999999; }
+.amount-vat { font-size: 12px; font-weight: normal; color: #6b7280; }
+.amount-tag { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; background-color: #eef1ff; color: #3140d6; font-size: 12px; font-weight: bold; line-height: 1.6; }
+.amount-note { font-size: 12px; font-weight: normal; color: #6b7280; }
 .amount-breakdown { list-style: none; margin: 0; padding: 12px 14px; max-width: 360px; border: 1px solid #d9dde4; border-radius: 8px; background-color: #eceef2; display: flex; flex-direction: column; gap: 6px; }
-.amount-breakdown li { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12.5px; font-weight: normal; color: #555555; }
+.amount-breakdown li { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px; font-weight: normal; color: #555555; }
 .amount-breakdown .ab-label { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .amount-breakdown .ab-value { white-space: nowrap; color: #222222; font-variant-numeric: tabular-nums; }
 
 /* 결제 상태: 배지 / 실패일 / 사유를 줄로 나눠 표시 */
 .kv-row dd.status-dd { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .status-meta { margin: 0; padding: 12px 14px; max-width: 360px; box-sizing: border-box; width: 100%; border: 1px solid #d9dde4; border-radius: 8px; background-color: #eceef2; display: flex; flex-direction: column; gap: 6px; }
-.status-meta div { display: flex; gap: 10px; font-size: 12.5px; color: #555555; }
+.status-meta div { display: flex; gap: 10px; font-size: 13px; color: #555555; }
 .status-meta dt { flex: 0 0 40px; margin: 0; color: #555555; }
 .status-meta dd { margin: 0; color: #222222; }
 
 /* Pro 소개 카드 (이용 중 Basic) */
 .pro-upsell { margin-top: 16px; padding: 20px 22px; border: 2px solid #e04848; border-radius: 10px; background-color: #ffffff; display: flex; gap: 32px; align-items: flex-start; }
 .pro-upsell-head { flex: 1 1 0; }
-.pro-upsell-label { margin: 0 0 6px; font-size: 12px; font-weight: bold; color: #e04848; }
+.pro-upsell-label { margin: 0 0 6px; font-size: 12px; font-weight: bold; color: #d12f2f; }
 .pro-upsell-title { margin: 0; font-size: 16px; font-weight: bold; color: #222222; }
-.pro-upsell-note { margin: 0 0 14px; font-size: 12px; color: #777777; }
-.pro-intro-price { margin: 8px 0 8px; font-size: 12px; color: #999999; }
-.pro-intro-price b { margin-right: 6px; font-size: 20px; color: #e04848; }
+.pro-upsell-note { margin: 0 0 14px; font-size: 12px; color: #6b7280; }
+.pro-intro-price { margin: 8px 0 8px; font-size: 12px; color: #6b7280; }
+.pro-intro-price b { margin-right: 6px; font-size: 22px; color: #d12f2f; }
 .pro-intro-price s { margin-right: 4px; }
 .pro-intro-feat { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #555555; }
 .pro-intro-feat li { display: flex; gap: 8px; }
 .pro-intro-feat i { flex: 0 0 14px; font-style: normal; font-weight: bold; color: #1a8a3f; }
 .pro-intro-feat .is-new { color: #222222; font-weight: bold; }
-.pro-intro-feat em { font-style: normal; font-weight: normal; color: #999999; font-size: 12px; }
+.pro-intro-feat em { font-style: normal; font-weight: normal; color: #6b7280; font-size: 12px; }
 .pro-upsell-feat { flex: 1 1 0; padding-left: 24px; border-left: 1px solid #eeeeee; }
 
 /* Pro에서만 보이는 문구 */
 .pro-only { text-decoration: underline dotted; text-underline-offset: 3px; }
-.pro-only::after { content: "Pro만 표시"; display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 4px; background-color: #e6eaff; color: #3140d6; font-size: 11px; font-weight: normal; line-height: 18px; vertical-align: 1px; text-decoration: none; }
+.pro-only::after { content: "Pro만 표시"; display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 4px; background-color: #e6eaff; color: #3140d6; font-size: 12px; font-weight: normal; line-height: 18px; vertical-align: 1px; text-decoration: none; }
 
 /* Pro 소개 박스 · 보라색 */
 .pro-upsell.is-purple { border-color: #7c3aed; background-color: #faf7ff; }

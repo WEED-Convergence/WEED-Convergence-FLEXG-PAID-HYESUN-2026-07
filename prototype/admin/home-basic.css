@@ -13,14 +13,14 @@
   align-items: center;
   gap: 6px;
   margin: 0 0 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: #222222;
 }
 
 .hb-section-title small {
   font-size: 12px;
   font-weight: normal;
-  color: #888888;
+  color: #6b7280;
 }
 
 .hb-box {
@@ -84,8 +84,8 @@
 .hb-sub {
   display: block;
   margin-top: 6px;
-  font-size: 11px;
-  color: #999999;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 .hb-list {
@@ -109,8 +109,8 @@
 
 .hb-update {
   margin: 8px 0 0;
-  font-size: 11px;
-  color: #999999;
+  font-size: 12px;
+  color: #6b7280;
   text-align: right;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .hb-board li:last-child { border-bottom: none; }
-.hb-board li span:last-child { flex: 0 0 auto; color: #999999; font-size: 12px; }
+.hb-board li span:last-child { flex: 0 0 auto; color: #6b7280; font-size: 12px; }
 
 /* ---------- GNB · LNB ---------- */
 .hb-shell {
@@ -232,7 +232,7 @@
   border-radius: 50%;
   background-color: #e5242b;
   color: #ffffff;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: bold;
   text-shadow: none;
 }
@@ -265,7 +265,7 @@
   text-align: center;
 }
 
-.hb-lnb-id { margin: 0 0 6px; font-size: 11px; color: #9a9da5; }
+.hb-lnb-id { margin: 0 0 6px; font-size: 12px; color: #9a9da5; }
 .hb-lnb-id b { color: #3ccf6a; font-weight: normal; }
 
 .hb-lnb-links { margin: 0 0 12px; font-weight: bold; color: #e2e4e9; }
@@ -321,7 +321,7 @@
   padding: 8px 10px;
   border-radius: 4px;
   background-color: #1f2125;
-  font-size: 11px;
+  font-size: 12px;
   color: #9a9da5;
 }
 
@@ -368,7 +368,7 @@
 }
 
 .hb-sum-card:hover { border-color: #6f7cff; }
-.hb-sum-label { font-size: 12px; color: #888888; }
+.hb-sum-label { font-size: 12px; color: #6b7280; }
 .hb-sum-value { font-size: 16px; font-weight: bold; }
 .hb-sum-sub { font-size: 12px; color: #666666; }
 .hb-sum-link { margin-top: auto; font-size: 12px; color: #3140d6; }
@@ -490,7 +490,7 @@
   border-radius: 999px;
   background-color: #fde68a;
   color: #4c1d95;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   box-shadow: 0 4px 10px rgba(17, 12, 60, 0.25);
 }
@@ -517,7 +517,7 @@
   align-items: center;
   gap: 8px;
   margin: 0 0 12px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.3px;
 }
@@ -606,11 +606,11 @@
 }
 
 .hb-kpi-label { font-size: 12px; color: #666666; }
-.hb-kpi-value { display: flex; align-items: center; gap: 6px; font-size: 20px; font-weight: 800; color: #222222; }
-.hb-kpi-sub { font-size: 11px; color: #888888; }
+.hb-kpi-value { display: flex; align-items: center; gap: 6px; font-size: 22px; font-weight: 800; color: #222222; }
+.hb-kpi-sub { font-size: 12px; color: #6b7280; }
 .hb-kpi-sub em { font-style: normal; font-weight: bold; }
 .hb-kpi-sub em.is-up { color: #1a8a3f; }
-.hb-kpi-sub em.is-down { color: #c62f2f; }
+.hb-kpi-sub em.is-down { color: #d12f2f; }
 .hb-live-dot { width: 8px; height: 8px; border-radius: 50%; background-color: #2fbf5b; box-shadow: 0 0 0 3px rgba(47, 191, 91, 0.2); }
 
 .hb-stat-grid {
@@ -632,7 +632,7 @@
   color: #222222;
 }
 
-.hb-stat-title small { margin-left: 4px; font-size: 11px; font-weight: normal; color: #999999; }
+.hb-stat-title small { margin-left: 4px; font-size: 12px; font-weight: normal; color: #6b7280; }
 
 .hb-cols {
   display: flex;
@@ -651,12 +651,12 @@
   cursor: default;
 }
 
-.hb-col-val { margin-bottom: 4px; font-size: 10px; color: #888888; }
+.hb-col-val { margin-bottom: 4px; font-size: 10px; color: #6b7280; }
 .hb-col-bar { width: 100%; max-width: 26px; border-radius: 4px 4px 0 0; background-color: #c5cbf6; }
 .hb-col.is-today .hb-col-bar { background-color: #3140d6; }
 .hb-col.is-today .hb-col-val { font-weight: bold; color: #222222; }
 .hb-col:hover .hb-col-bar { background-color: #5865f2; }
-.hb-col-day { margin-top: 6px; font-size: 11px; color: #888888; }
+.hb-col-day { margin-top: 6px; font-size: 12px; color: #6b7280; }
 
 .hb-hbar { margin: 0; padding: 0; list-style: none; }
 
@@ -689,7 +689,7 @@
 .hb-rank { width: 16px; font-weight: bold; color: #3140d6; text-align: center; }
 .hb-page-path { display: flex; flex-direction: column; flex: 1; min-width: 0; }
 .hb-page-path b { color: #222222; }
-.hb-page-path small { overflow: hidden; color: #999999; text-overflow: ellipsis; white-space: nowrap; }
+.hb-page-path small { overflow: hidden; color: #6b7280; text-overflow: ellipsis; white-space: nowrap; }
 .hb-page-pv { font-weight: bold; color: #222222; }
 
 .hb-open {
@@ -697,7 +697,7 @@
   border: 1px solid #d5d8e0;
   border-radius: 4px;
   color: #3140d6;
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -728,7 +728,7 @@
 }
 
 .gnb-page i { font-style: normal; font-size: 12px; color: #fde68a; }
-.gnb-page span { font-size: 11px; opacity: 0.85; }
+.gnb-page span { font-size: 12px; opacity: 0.85; }
 .gnb-page:hover { background: linear-gradient(100deg, #4752e0 0%, #7c3aed 100%); }
 
 /* 회원 현황 아이콘 */
@@ -785,7 +785,7 @@
 .hb-mtable { width: 100%; border-collapse: collapse; font-size: 13px; }
 .hb-mtable th,
 .hb-mtable td { padding: 10px 8px; border-bottom: 1px solid #f1f2f5; text-align: right; }
-.hb-mtable thead th { font-size: 12px; font-weight: normal; color: #888888; }
+.hb-mtable thead th { font-size: 12px; font-weight: normal; color: #6b7280; }
 .hb-mtable tbody th { text-align: left; font-weight: normal; color: #666666; }
 .hb-mtable td { font-weight: bold; color: #222222; }
 .hb-mtable td.is-up { color: #1a8a3f; }

@@ -61,7 +61,7 @@
   border-radius: 4px;
   background-color: #ffffff;
   color: #1b1b1b;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
 }
 
@@ -104,7 +104,7 @@
 .signup-title {
   margin: 0 0 40px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -122,7 +122,7 @@
 
 .signup-label .req {
   margin-left: 2px;
-  color: #e5242b;
+  color: #d12f2f;
 }
 
 .signup-input {
@@ -209,15 +209,15 @@
 }
 
 .terms-tag.is-required {
-  color: #e5242b;
+  color: #d12f2f;
 }
 
 .terms-tag.is-optional {
-  color: #8a8a8a;
+  color: #6b7280;
 }
 
 .terms-link {
-  font-size: 11px;
+  font-size: 12px;
   color: #666666 !important;
   text-decoration: underline !important;
 }
@@ -323,7 +323,7 @@
   border-radius: 50%;
   background-color: #e02020;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -351,14 +351,14 @@
   margin-bottom: 18px;
   border-radius: 50%;
   background-color: #fdecec;
-  color: #e04848;
-  font-size: 24px;
+  color: #d12f2f;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .result-icon.is-warning {
   background-color: #fff6d8;
-  color: #9a7400;
+  color: #8a6a00;
 }
 
 .result-title {
@@ -392,7 +392,7 @@
 
 .result-info dt {
   flex: 0 0 90px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .result-info dd {
@@ -408,7 +408,7 @@
 .result-note {
   margin: 12px 0 0;
   font-size: 12px;
-  color: #b91c1c;
+  color: #d12f2f;
   text-align: left;
 }
 
@@ -462,8 +462,8 @@
   font-weight: bold;
 }
 
-.q-title .req { color: #e5242b; }
-.q-title .opt { color: #8a8a8a; font-weight: normal; }
+.q-title .req { color: #d12f2f; }
+.q-title .opt { color: #6b7280; font-weight: normal; }
 
 .q-option {
   display: flex;
@@ -502,14 +502,14 @@
 }
 
 .judge-table th {
-  color: #888888;
+  color: #6b7280;
   font-weight: normal;
 }
 
 .judge-note {
   margin: 8px 0 0;
-  font-size: 11px;
-  color: #888888;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 .rec-heading {
@@ -518,7 +518,7 @@
   font-weight: 800;
 }
 
-.rec-heading b { color: #e04848; }
+.rec-heading b { color: #d12f2f; }
 
 .rec-reason {
   margin: 0 0 16px;
@@ -563,7 +563,7 @@
   border-radius: 999px;
   background-color: #e04848;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -578,9 +578,9 @@
   font-size: 13px;
 }
 
-.plan-card-price b { font-size: 20px; }
-.plan-card-price s { color: #999999; margin-left: 4px; }
-.plan-card-price span { color: #888888; font-size: 12px; margin-left: 4px; }
+.plan-card-price b { font-size: 22px; }
+.plan-card-price s { color: #6b7280; margin-left: 4px; }
+.plan-card-price span { color: #6b7280; font-size: 12px; margin-left: 4px; }
 
 .plan-card-feat {
   margin: 0;
@@ -591,13 +591,13 @@
 
 .plan-card-feat em {
   font-style: normal;
-  color: #888888;
+  color: #6b7280;
 }
 
 .price-note {
   margin: 10px 0 0;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .addon-box {
@@ -629,7 +629,7 @@
 }
 
 .rec-retry a {
-  color: #e04848 !important;
+  color: #d12f2f !important;
   text-decoration: underline !important;
 }
 
@@ -672,7 +672,7 @@
   display: inline-block;
   margin-top: 8px;
   font-size: 12px;
-  color: #e04848 !important;
+  color: #d12f2f !important;
   text-decoration: underline !important;
 }
 
@@ -689,12 +689,12 @@
 
 .co-table .num { text-align: right; }
 .co-table .is-discount td { color: #1a8a3f; }
-.co-table .is-total td { border-bottom: none; padding-top: 10px; font-size: 15px; font-weight: 800; }
+.co-table .is-total td { border-bottom: none; padding-top: 10px; font-size: 16px; font-weight: 800; }
 
 .co-note {
   margin: 8px 0 0;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .co-list {
@@ -723,7 +723,7 @@
   cursor: pointer;
 }
 
-.co-agree b { color: #e5242b; }
+.co-agree b { color: #d12f2f; }
 
 .front-page a.signup-btn.is-disabled {
   opacity: 0.4;
@@ -750,7 +750,7 @@
 
 .co-check em {
   font-style: normal;
-  color: #e5242b;
+  color: #d12f2f;
 }
 
 .co-check-all {
@@ -823,7 +823,7 @@
   color: #222222;
 }
 
-.tpl-lead b { color: #e04848; }
+.tpl-lead b { color: #d12f2f; }
 
 .tpl-grid {
   display: grid;
@@ -1015,7 +1015,7 @@
 .co-change-inline {
   margin-left: 6px;
   font-size: 12px;
-  color: #e04848 !important;
+  color: #d12f2f !important;
   text-decoration: underline !important;
 }
 
@@ -1026,13 +1026,13 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   white-space: nowrap;
 }
 
 .badge-success { background-color: #e4f5e9; color: #1a8a3f; }
-.badge-warning { background-color: #fff6d8; color: #9a7400; }
+.badge-warning { background-color: #fff6d8; color: #8a6a00; }
 .badge-neutral { background-color: #eceef2; color: #666666; }
 
 .step-info dt { flex: 1 1 auto; }
@@ -1041,7 +1041,7 @@
 .result-desc.small {
   margin-top: 16px;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
 }
 
 /* ---------- 플랜 제공 범위 비교표 ---------- */
@@ -1068,7 +1068,7 @@
 .signup-input.is-readonly {
   justify-content: space-between;
   background-color: #f6f6f8;
-  color: #888888;
+  color: #6b7280;
   font-size: 13px;
 }
 
@@ -1088,10 +1088,10 @@
   border-radius: 8px;
   background-color: #eef1ff;
   font-size: 13px;
-  color: #2b3ac2;
+  color: #3140d6;
 }
 
-.trial-note b { color: #2b3ac2; }
+.trial-note b { color: #3140d6; }
 
 .signup-submit .signup-btn + .signup-btn { margin-left: 8px; }
 
@@ -1100,8 +1100,8 @@
   padding: 2px 8px;
   border-radius: 999px;
   background-color: #eef1ff;
-  color: #2b3ac2;
-  font-size: 11px;
+  color: #3140d6;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -1120,12 +1120,12 @@
 
 .welcome-done {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #222222;
 }
 
-.welcome-done b { color: #e04848; }
+.welcome-done b { color: #d12f2f; }
 
 .co-check-text { flex: 1 1 auto; }
 
@@ -1316,13 +1316,13 @@
   border-radius: 10px;
   background-color: #ffffff;
   font-size: 10px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .tplv-nav {
   display: flex;
   gap: 18px;
-  font-size: 11px;
+  font-size: 12px;
   color: #8a94a6;
 }
 
@@ -1392,7 +1392,7 @@
 .ps-lead {
   margin: 8px 0 36px;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   color: #6e6e73;
 }
 
@@ -1422,7 +1422,7 @@
 }
 
 .ps-card-name {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -1475,7 +1475,7 @@
 .ps-feat i { flex: 0 0 12px; font-style: normal; font-weight: bold; color: #1d1d1f; }
 .ps-feat .is-no { color: #a1a1a6; }
 .ps-feat .is-no i { color: #a1a1a6; }
-.ps-feat em { display: block; font-style: normal; font-size: 12px; color: #8e8e93; }
+.ps-feat em { display: block; font-style: normal; font-size: 12px; color: #6b7280; }
 
 .ps-cards-mark { margin: 6px 0 0; text-align: right; }
 
@@ -1492,7 +1492,7 @@
   margin: 0;
   font-size: 18px;
   font-weight: 800;
-  color: #e04848;
+  color: #d12f2f;
 }
 
 .ps-free-title span {
@@ -1502,7 +1502,7 @@
   border-radius: 999px;
   background-color: #e04848;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   vertical-align: 2px;
 }
@@ -1536,7 +1536,7 @@
 
 .ps-info-title {
   margin: 0 0 12px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -1588,7 +1588,7 @@
 .cx-title {
   margin: 0 0 6px;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
 }
 
@@ -1616,7 +1616,7 @@
 .cx-sum + .cx-sum { border-left: 1px solid #e3e4e8; background-color: #fafafb; }
 .cx-sum p { margin: 0; font-size: 13px; color: #6e6e73; }
 .cx-sum b { display: block; margin: 6px 0 4px; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
-.cx-sum.is-today b { color: #e04848; }
+.cx-sum.is-today b { color: #d12f2f; }
 
 .cx-sec {
   margin: 0 0 28px;
@@ -1661,13 +1661,13 @@
 .cx-rows .is-discount dd { color: #1a8a3f; }
 .cx-rows .is-total { padding-top: 12px; }
 .cx-rows .is-total dt { color: #222222; font-weight: bold; }
-.cx-rows .is-total dd { font-size: 17px; font-weight: 800; }
+.cx-rows .is-total dd { font-size: 18px; font-weight: 800; }
 
 .cx-note {
   margin: 8px 2px 0;
   font-size: 12px;
   line-height: 1.6;
-  color: #888888;
+  color: #6b7280;
 }
 
 .cx-list {
@@ -1691,7 +1691,7 @@
 
 .cx-steps-title {
   margin: 0 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -1756,7 +1756,7 @@
 }
 
 .cx-check span { flex: 1; }
-.cx-check em { font-style: normal; color: #e04848; margin-right: 2px; }
+.cx-check em { font-style: normal; color: #d12f2f; margin-right: 2px; }
 .cx-check a { font-size: 13px; color: #6e6e73; text-decoration: underline; }
 
 .cx-submit {
@@ -1775,11 +1775,11 @@
 }
 
 /* 템플릿 미리보기 · Basic (기업 소개 예시) */
-.tplv-about { padding: 18px; font-size: 11px; color: #333333; }
+.tplv-about { padding: 18px; font-size: 12px; color: #333333; }
 .tplv-about b { display: block; margin-bottom: 8px; }
 .tplv-bar { display: block; height: 5px; margin-top: 7px; border-radius: 3px; background-color: #e3e7ee; }
 .tplv-bar.is-short { width: 60%; }
-.tplv-cta { margin: 0 18px 18px; padding: 10px; border-radius: 4px; background-color: #222222; color: #ffffff; font-size: 11px; text-align: center; }
+.tplv-cta { margin: 0 18px 18px; padding: 10px; border-radius: 4px; background-color: #222222; color: #ffffff; font-size: 12px; text-align: center; }
 
 /* 플랜에 따라 보이는 문구 표시 */
 .cx-only {
@@ -1789,36 +1789,36 @@
   border-radius: 4px;
   background-color: #e6eaff;
   color: #3140d6;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /* ---------- 로그인 · 로그인 후 이동 흐름 ---------- */
 .lf { padding: 28px 32px 40px; background-color: #f7f7f8; min-height: 100%; box-sizing: border-box; }
-.lf-title { margin: 0 0 4px; font-size: 20px; }
-.lf-sub { margin: 0 0 22px; font-size: 13px; color: #777777; }
+.lf-title { margin: 0 0 4px; font-size: 22px; }
+.lf-sub { margin: 0 0 22px; font-size: 13px; color: #6b7280; }
 
 .lf-top { display: grid; grid-template-columns: 300px 40px 1fr; align-items: center; gap: 0; margin-bottom: 26px; }
-.lf-arrow { text-align: center; font-size: 20px; color: #9a9da5; }
+.lf-arrow { text-align: center; font-size: 22px; color: #9a9da5; }
 
 .lf-login { padding: 20px 22px; border: 1px solid #e3e4e8; border-radius: 12px; background-color: #ffffff; text-align: center; }
 .lf-login h3 { margin: 0 0 14px; font-size: 16px; }
 .lf-tabs { display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 12px; font-size: 13px; }
 .lf-tabs span { padding-bottom: 6px; border-bottom: 2px solid #e3e4e8; color: #9a9da5; }
 .lf-tabs span.is-on { border-color: #e8311a; color: #e8311a; font-weight: bold; }
-.lf-input { margin-bottom: 6px; padding: 8px 14px; border: 1px solid #d9dae0; border-radius: 18px; font-size: 12px; color: #999999; text-align: left; }
+.lf-input { margin-bottom: 6px; padding: 8px 14px; border: 1px solid #d9dae0; border-radius: 18px; font-size: 12px; color: #6b7280; text-align: left; }
 .lf-btn { margin: 8px 0 10px; padding: 9px; border-radius: 18px; background-color: #e8311a; color: #ffffff; font-size: 13px; font-weight: bold; }
-.lf-links { font-size: 11px; color: #555555; }
+.lf-links { font-size: 12px; color: #555555; }
 .lf-links a { color: #222222; font-weight: bold; }
 
 .lf-checks { display: flex; flex-direction: column; gap: 8px; }
 .lf-check { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px dashed #c4c5cb; border-radius: 10px; background-color: #ffffff; font-size: 12px; color: #444444; }
-.lf-check b { flex: 0 0 auto; padding: 2px 8px; border-radius: 10px; background-color: #eceef2; font-size: 11px; color: #333333; }
+.lf-check b { flex: 0 0 auto; padding: 2px 8px; border-radius: 10px; background-color: #eceef2; font-size: 12px; color: #333333; }
 
 .lf-lanes { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; }
 .lf-lane { padding: 16px 18px; border-radius: 12px; background-color: #ffffff; border: 1px solid #e3e4e8; }
-.lf-lane h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font-size: 15px; }
-.lf-lane h3 small { font-size: 11px; font-weight: normal; color: #888888; }
-.lf-tag { padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; color: #ffffff; }
+.lf-lane h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font-size: 16px; }
+.lf-lane h3 small { font-size: 12px; font-weight: normal; color: #6b7280; }
+.lf-tag { padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: bold; color: #ffffff; }
 .lf-tag.is-owner { background-color: #e8311a; }
 .lf-tag.is-sub { background-color: #5a5d65; }
 
@@ -1827,14 +1827,14 @@
 .lf-state { padding: 9px 12px; border-radius: 8px; background-color: #f2f3f5; font-size: 12px; color: #333333; }
 .lf-to { text-align: center; color: #9a9da5; }
 .lf-dest { display: block; padding: 9px 12px; border: 1px solid #c9cdf5; border-radius: 8px; background-color: #f5f6ff; font-size: 12px; font-weight: bold; color: #3140d6; text-decoration: none; }
-.lf-dest small { display: block; margin-top: 2px; font-size: 11px; font-weight: normal; color: #666666; }
+.lf-dest small { display: block; margin-top: 2px; font-size: 12px; font-weight: normal; color: #666666; }
 .lf-dest.is-text { border-color: #e3e4e8; background-color: #fafafb; color: #333333; }
-.lf-note { margin: 12px 0 0; font-size: 11px; line-height: 1.7; color: #777777; }
+.lf-note { margin: 12px 0 0; font-size: 12px; line-height: 1.7; color: #6b7280; }
 .lf-alert { padding: 12px 14px; border: 1px solid #c4c5cb; border-radius: 8px; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); font-size: 12px; line-height: 1.6; color: #222222; }
 .lf-alert p { margin: 0 0 10px; }
 .lf-alert-btn { display: block; margin-left: auto; width: fit-content; padding: 4px 16px; border-radius: 4px; background-color: #3140d6; color: #ffffff; font-size: 12px; font-weight: bold; }
-.lf-alert small { display: block; margin-top: 6px; font-size: 11px; color: #888888; }
-.lf-group { margin: 12px 0 6px; font-size: 11px; font-weight: bold; color: #888888; }
+.lf-alert small { display: block; margin-top: 6px; font-size: 12px; color: #6b7280; }
+.lf-group { margin: 12px 0 6px; font-size: 12px; font-weight: bold; color: #6b7280; }
 
 
 /* 템플릿 썸네일 이미지 (직접 제작한 SVG) */
@@ -1887,10 +1887,10 @@
 .tpl { max-width: 1000px; }
 .tpl-grid { grid-template-columns: repeat(3, 300px); gap: 32px 24px; }
 .tpl-pair { zoom: 1.3; }
-.tpl-name { font-size: 15px; }
+.tpl-name { font-size: 16px; }
 
 /* 템플릿 선택 · 단순하게 */
-.tpl-tags span { padding: 0; background: none; color: #8e8e93; font-size: 12px; }
+.tpl-tags span { padding: 0; background: none; color: #6b7280; font-size: 12px; }
 .tpl-tags span + span::before { content: "· "; }
 .tpl-lead b { color: inherit; }
 

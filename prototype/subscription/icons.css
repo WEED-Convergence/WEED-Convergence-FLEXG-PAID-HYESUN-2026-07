@@ -15,7 +15,7 @@
 /* 섹션 제목: 색 배지 */
 .section-title .ux-ic { width: 26px; height: 26px; margin-right: 8px; padding: 5px; border-radius: 7px; background-color: #eef0fd; color: #3140d6; vertical-align: -7px; box-sizing: border-box; }
 .section-title .ux-ic.is-money { background-color: #e8f5ee; color: #15803d; }
-.section-title .ux-ic.is-alert { background-color: #fdeaea; color: #dc2626; }
+.section-title .ux-ic.is-alert { background-color: #fdeaea; color: #d12f2f; }
 .section-title .ux-ic.is-chart { background-color: #fff4e5; color: #c2410c; }
 
 /* 항목 이름 */
@@ -27,7 +27,7 @@
 /* 안내 박스 */
 .info-box, .info-box-danger { position: relative; padding-left: 44px !important; }
 .info-box > .ux-ic.is-box, .info-box-danger > .ux-ic.is-box { position: absolute; left: 16px; top: 14px; width: 18px; height: 18px; margin: 0; color: #3140d6; }
-.info-box-danger > .ux-ic.is-box { color: #dc2626; }
+.info-box-danger > .ux-ic.is-box { color: #d12f2f; }
 
 /* 아이콘이 붙은 항목 이름은 한 줄로 */
 /* 항목 이름 칸 너비를 아이콘 유무와 관계없이 같게 (값 정렬) */

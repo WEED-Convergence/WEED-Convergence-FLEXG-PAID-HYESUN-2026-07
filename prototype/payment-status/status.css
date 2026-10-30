@@ -13,7 +13,7 @@
   border-radius: 50%;
   background-color: #e02020;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -24,14 +24,14 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   white-space: nowrap;
 }
 
 .badge-success { background-color: #e4f5e9; color: #1a8a3f; }
-.badge-warning { background-color: #fff6d8; color: #9a7400; }
-.badge-danger  { background-color: #fde6e6; color: #c81e1e; }
+.badge-warning { background-color: #fff6d8; color: #8a6a00; }
+.badge-danger  { background-color: #fde6e6; color: #d12f2f; }
 .badge-neutral { background-color: #eceef2; color: #666666; }
 
 /* ---------- 중앙 컨텐츠 뼈대 ---------- */
@@ -136,7 +136,7 @@ table.status-table tr:last-child td {
 
 table.status-table th {
   width: 100px;
-  color: #888888;
+  color: #6b7280;
   font-weight: normal;
 }
 
@@ -148,7 +148,7 @@ table.status-table td {
   display: block;
   margin-top: 4px;
   font-size: 12px;
-  color: #999999;
+  color: #6b7280;
 }
 
 /* ④ 버튼 영역 */
@@ -162,7 +162,7 @@ table.status-table td {
 .status-note {
   margin: 0 0 12px;
   font-size: 12px;
-  color: #999999;
+  color: #6b7280;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ table.status-table td {
 
 .proto-note-block .proto-note-title {
   font-size: 12px;
-  color: #999999;
+  color: #6b7280;
   margin-bottom: 12px;
 }
 
@@ -228,9 +228,9 @@ table.reason-table tbody tr:last-child td {
 
 table.reason-table thead th {
   background-color: #f7f7f9;
-  color: #777777;
+  color: #6b7280;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /* ---------- 우측 화면설명 ---------- */
@@ -256,5 +256,5 @@ table.reason-table thead th {
 .desc-pending {
   margin: 0;
   font-size: 13px;
-  color: #999999;
+  color: #6b7280;
 }

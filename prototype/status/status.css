@@ -33,7 +33,7 @@
 
 .policy-section h2 {
   margin: 0 0 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: #222222;
 }
 
@@ -88,7 +88,7 @@
   border-radius: 3px;
   background-color: #fde8e8;
   color: #d12f2f;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -115,14 +115,14 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   white-space: nowrap;
 }
 
 .badge-success { background-color: #e4f5e9; color: #1a8a3f; }
-.badge-warning { background-color: #fff6d8; color: #9a7400; }
-.badge-danger  { background-color: #fde6e6; color: #c81e1e; }
+.badge-warning { background-color: #fff6d8; color: #8a6a00; }
+.badge-danger  { background-color: #fde6e6; color: #d12f2f; }
 .badge-info    { background-color: #e6eaff; color: #3140d6; }
 .badge-neutral { background-color: #eceef2; color: #666666; }
 

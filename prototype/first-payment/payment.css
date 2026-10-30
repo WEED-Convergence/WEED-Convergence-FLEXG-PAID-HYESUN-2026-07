@@ -9,7 +9,7 @@
 
 .screen-header h1 {
   margin: 0 0 8px;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .screen-header .desc {
@@ -27,7 +27,7 @@
 
 .section-title {
   margin: 0 0 12px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -58,7 +58,7 @@
   border-radius: 50%;
   background-color: #e02020;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -69,7 +69,7 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -97,7 +97,7 @@
 .kv-row dt {
   flex: 0 0 60px;
   margin: 0;
-  color: #888888;
+  color: #6b7280;
 }
 
 .kv-row dd {
@@ -109,7 +109,7 @@
 .mono {
   font-family: inherit;
   font-size: 12px;
-  color: #777777;
+  color: #6b7280;
 }
 
 /* ---------- ② 결제 금액: 표 ---------- */
@@ -138,7 +138,7 @@ tr.price-total-row td {
   border-top: 1px solid #e3e4e8;
   padding-top: 14px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   color: #111111;
 }
 
@@ -165,7 +165,7 @@ tr.price-total-row td {
 .pay-method .pm-sub {
   margin: 2px 0 0;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
 }
 
 /* ---------- 결제 권한 없음 배너 ---------- */
@@ -239,13 +239,13 @@ tr.price-total-row td {
 .process-center .desc {
   margin: 0 0 8px;
   font-size: 13px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .process-center .desc-sub {
   margin: 0 0 28px;
   font-size: 12px;
-  color: #aaaaae;
+  color: #6b7280;
 }
 
 /* ---------- 진행 단계 목록 ---------- */
@@ -295,13 +295,13 @@ tr.price-total-row td {
 
 .result-center h1 {
   margin: 0 0 8px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .result-center .desc {
   margin: 0 auto 24px;
   font-size: 13px;
-  color: #777777;
+  color: #6b7280;
   max-width: 420px;
 }
 
@@ -328,7 +328,7 @@ tr.price-total-row td {
 .result-center .fine-print {
   margin: 16px 0 0;
   font-size: 12px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .result-center .btn-row {
@@ -361,7 +361,7 @@ tr.price-total-row td {
 .desc-pending {
   margin: 0;
   font-size: 13px;
-  color: #999999;
+  color: #6b7280;
 }
 
 
@@ -372,28 +372,28 @@ tr.price-total-row td {
 .fp-col .section-box { margin: 0 0 16px; }
 .fp-col .step-list { max-width: none; }
 .fp-mark { margin: 12px 0 0; text-align: center; }
-.fp-note { margin: 12px 0 0; font-size: 12px; color: #aaaaae; text-align: center; }
+.fp-note { margin: 12px 0 0; font-size: 12px; color: #6b7280; text-align: center; }
 /* 미납이 있을 때만 보이는 줄 */
 .price-table tr.unpaid-only td { background-color: #fffaf2; }
 .price-table tr.unpaid-only:first-of-type td,
 .price-table tr.price-total-row + tr.unpaid-only td { border-top: 1px dashed #f0c987; }
-.unpaid-tag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 4px; background-color: #fff1d6; color: #9a6400; font-size: 11px; font-weight: normal; line-height: 18px; vertical-align: 1px; }
+.unpaid-tag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 4px; background-color: #fff1d6; color: #9a6400; font-size: 12px; font-weight: normal; line-height: 18px; vertical-align: 1px; }
 
 /* 결제수단: 카드 없음 */
 .pay-method.is-empty { align-items: center; border: 1px dashed #cfd4dc; background-color: #fafbfc; }
 .pay-method.is-empty .pm-icon { opacity: 0.35; }
 .pay-method.is-empty .pm-main { color: #6b7280; }
 .pay-method .pm-add { margin-left: auto; }
-.price-table tr.unpaid-sub td { padding: 4px 0 4px 16px; border-top: none; color: #666666; font-size: 12.5px; }
+.price-table tr.unpaid-sub td { padding: 4px 0 4px 16px; border-top: none; color: #666666; font-size: 13px; }
 .price-table tr.unpaid-sub td:last-child { padding-right: 0; }
 
 /* ---------- ② 결제 금액 (블록형) ---------- */
 .pay-block { border: 1px solid #e3e4e8; border-radius: 10px; background-color: #ffffff; overflow: hidden; }
 .pay-block + .pay-block { margin-top: 12px; }
 .pay-block-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 11px 16px; border-bottom: 1px solid #eef0f3; font-size: 14px; font-weight: bold; color: #111111; }
-.pay-block-period { font-size: 12.5px; font-weight: normal; color: #6b7280; }
+.pay-block-period { font-size: 13px; font-weight: normal; color: #6b7280; }
 .pay-lines { margin: 0; padding: 6px 16px; list-style: none; }
-.pay-lines li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; font-size: 13.5px; color: #4b5563; }
+.pay-lines li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; font-size: 14px; color: #4b5563; }
 .pay-lines .pl-amt { font-size: 14px; color: #111111; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .pay-lines li.is-discount .pl-amt { color: #1a8a3f; font-weight: bold; }
 .pay-block-sum { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-top: 1px solid #eef0f3; background-color: #f7f8fa; font-size: 14px; font-weight: bold; color: #111111; }
@@ -403,6 +403,6 @@ tr.price-total-row td {
 .pay-block.is-unpaid .pay-block-head { background-color: #fffaf2; border-bottom-color: #f5e2bd; }
 .pay-block.is-unpaid .pay-block-sum { background-color: #fff6e6; border-top-color: #f5e2bd; }
 .pay-block.is-unpaid .pay-block-sum strong { color: #b45309; }
-.pay-grand { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding: 16px 18px; border-radius: 10px; background-color: #eef1ff; font-size: 15px; font-weight: bold; color: #111111; }
-.pay-grand strong { font-size: 24px; color: #3140d6; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pay-grand { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding: 16px 18px; border-radius: 10px; background-color: #eef1ff; font-size: 16px; font-weight: bold; color: #111111; }
+.pay-grand strong { font-size: 22px; color: #3140d6; font-variant-numeric: tabular-nums; white-space: nowrap; }
 @media (max-width: 480px) { .pay-grand { flex-direction: column; align-items: flex-start; } }

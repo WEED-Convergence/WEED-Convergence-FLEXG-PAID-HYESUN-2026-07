@@ -10,7 +10,7 @@
 
 .home-head h1 {
   margin: 0 0 4px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .home-site {
@@ -23,7 +23,7 @@
 .home-site span {
   margin-left: 6px;
   font-weight: normal;
-  color: #888888;
+  color: #6b7280;
 }
 
 .banner {
@@ -35,7 +35,7 @@
   font-size: 13px;
 }
 
-.banner-info { background-color: #eef1ff; color: #2b3ac2; }
+.banner-info { background-color: #eef1ff; color: #3140d6; }
 
 .home-cards {
   display: grid;
@@ -71,7 +71,7 @@
   align-items: center;
   gap: 8px;
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -87,7 +87,7 @@
   padding: 3px 0;
 }
 
-.home-kv dt { color: #888888; }
+.home-kv dt { color: #6b7280; }
 .home-kv dd { margin: 0; color: #222222; text-align: right; }
 
 .home-link {
@@ -125,7 +125,7 @@
   border-radius: 3px;
   background-color: #fde8e8;
   color: #d12f2f;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -170,7 +170,7 @@
   border: 1px solid #e3e4e8;
   border-radius: 8px;
   font-size: 13px;
-  color: #888888;
+  color: #6b7280;
 }
 
 .stepper li span {
@@ -181,7 +181,7 @@
   height: 20px;
   border-radius: 50%;
   background-color: #eceef2;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -217,7 +217,7 @@
 
 .cl-list li:last-child { border-bottom: none; }
 .cl-list li.is-current { background-color: #f5f6ff; font-weight: bold; }
-.cl-no { width: 18px; color: #888888; }
+.cl-no { width: 18px; color: #6b7280; }
 .cl-name { flex: 1 1 auto; }
 
 .cl-check {
@@ -253,4 +253,4 @@
   cursor: pointer;
 }
 
-.path-card b { font-size: 15px; color: #222222; }
+.path-card b { font-size: 16px; color: #222222; }

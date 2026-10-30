@@ -62,7 +62,7 @@
   border-radius: 10px;
   background-color: #f9fafb;
 }
-.screen-main .amount-breakdown li { padding: 5px 0; font-size: 13.5px; }
+.screen-main .amount-breakdown li { padding: 5px 0; font-size: 14px; }
 .screen-main .amount-breakdown li + li { border-top: 1px dashed #e8eaee; }
 
 /* 버튼 */
@@ -87,12 +87,12 @@
 
 /* 안내 박스 · 상태 배너 */
 .screen-main .info-box,
-.screen-main .info-box-danger { border-radius: 12px; font-size: 13.5px; line-height: 1.75; }
+.screen-main .info-box-danger { border-radius: 12px; font-size: 14px; line-height: 1.75; }
 .screen-main .info-box { border: 1px solid var(--t-line); background-color: #ffffff; color: var(--t-text-2); }
 .screen-main .status-banner { border-radius: 12px; box-shadow: var(--t-shadow); }
 
 /* 표 */
-.screen-main .data-table { font-size: 13.5px; }
+.screen-main .data-table { font-size: 14px; }
 .screen-main .data-table thead th { background-color: #f9fafb; color: var(--t-text-3); font-weight: 600; }
 .screen-main .data-table td,
 .screen-main .data-table th { padding-top: 12px; padding-bottom: 12px; border-color: var(--t-line-2); }

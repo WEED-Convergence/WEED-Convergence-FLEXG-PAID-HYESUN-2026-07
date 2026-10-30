@@ -29,7 +29,7 @@
 .mail-meta b {
   display: inline-block;
   width: 56px;
-  color: #888888;
+  color: #6b7280;
   font-weight: normal;
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   gap: 6px;
   margin: 0 0 4px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #222222;
 }
@@ -52,7 +52,7 @@
 
 .mail-logo {
   margin: 0 0 28px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #222222;
 }
@@ -62,7 +62,7 @@
   align-items: center;
   gap: 6px;
   margin: 0 0 12px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
   color: #222222;
 }
@@ -87,7 +87,7 @@
 
 .mail-table th {
   width: 96px;
-  color: #888888;
+  color: #6b7280;
   font-weight: normal;
 }
 
@@ -124,9 +124,9 @@
   gap: 6px;
   padding: 18px 36px 24px;
   border-top: 1px solid #ececf0;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.7;
-  color: #999999;
+  color: #6b7280;
 }
 
 .mail-foot p { margin: 0; }
@@ -280,11 +280,11 @@
 
 .kakao-spec th {
   width: 92px;
-  color: #888888;
+  color: #6b7280;
   font-weight: normal;
 }
 
 .kakao-spec code {
-  font-size: 11px;
+  font-size: 12px;
   color: #3140d6;
 }

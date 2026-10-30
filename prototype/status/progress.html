@@ -18,16 +18,16 @@
 
   .eyebrow { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: var(--text-3); }
   .head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 6px 0 28px; }
-  .head h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+  .head h1 { margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
   .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: var(--good-bg); color: var(--good-text); font-size: 13px; font-weight: 700; white-space: nowrap; }
   .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--good); }
 
   .card { padding: 22px 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); box-shadow: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06); }
-  .card h2 { margin: 0 0 16px; font-size: 15px; font-weight: 800; }
+  .card h2 { margin: 0 0 16px; font-size: 16px; font-weight: 800; }
 
   .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px; }
   .kpi-label { margin: 0; font-size: 13px; color: var(--text-3); }
-  .kpi-value { margin: 8px 0 4px; font-size: 34px; font-weight: 800; letter-spacing: -1px; }
+  .kpi-value { margin: 8px 0 4px; font-size: 32px; font-weight: 800; letter-spacing: -1px; }
   .kpi-value small { margin-left: 4px; font-size: 16px; font-weight: 700; color: var(--text-3); letter-spacing: 0; }
   .kpi-sub { margin: 0; font-size: 13px; color: var(--text-2); }
   .kpi-value.is-good { color: var(--good-text); }
@@ -41,13 +41,13 @@
   .ms { position: absolute; top: 0; transform: translateX(-50%); text-align: center; white-space: nowrap; }
   .ms i { display: block; width: 34px; height: 34px; margin: 0 auto 8px; border: 4px solid #fff; border-radius: 50%; background: #cfd3dc; box-shadow: 0 0 0 1px var(--line); }
   .ms.is-done i { background: var(--primary); }
-  .ms b { display: block; font-size: 15px; font-weight: 800; }
-  .ms em { display: block; margin-top: 2px; font-size: 12.5px; font-style: normal; color: var(--text-3); }
+  .ms b { display: block; font-size: 16px; font-weight: 800; }
+  .ms em { display: block; margin-top: 2px; font-size: 13px; font-style: normal; color: var(--text-3); }
   .ms.is-start { transform: none; text-align: left; }
   .ms.is-start i { margin-left: 0; }
   .ms.is-end { transform: translateX(-100%); text-align: right; }
   .ms.is-end i { margin-right: 0; }
-  .today { position: absolute; top: -6px; transform: translateX(-50%); padding: 3px 8px; border-radius: 6px; background: var(--text); color: #fff; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .today { position: absolute; top: -6px; transform: translateX(-50%); padding: 3px 8px; border-radius: 6px; background: var(--text); color: #fff; font-size: 12px; font-weight: 700; white-space: nowrap; }
   .today::after { content: ""; position: absolute; left: 50%; bottom: -4px; transform: translateX(-50%); border: 4px solid transparent; border-top-color: var(--text); border-bottom: 0; }
   .tl-note { margin: 14px 0 0; font-size: 13px; color: var(--text-2); }
 
@@ -56,17 +56,17 @@
   .tasks li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; padding: 12px 0; border-top: 1px solid #f0f1f4; font-size: 14px; line-height: 1.6; }
   .tasks li:first-child { border-top: 0; padding-top: 0; }
   .tasks li b { display: block; font-weight: 700; }
-  .tasks li span { color: var(--text-2); font-size: 13.5px; }
+  .tasks li span { color: var(--text-2); font-size: 14px; }
   .tasks svg { width: 18px; height: 18px; margin-top: 3px; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
   .groups { margin: 0; padding: 0; list-style: none; }
-  .groups li { display: grid; grid-template-columns: 1fr 90px 54px; align-items: center; gap: 12px; padding: 7px 0; font-size: 13.5px; }
+  .groups li { display: grid; grid-template-columns: 1fr 90px 54px; align-items: center; gap: 12px; padding: 7px 0; font-size: 14px; }
   .groups .g-bar { height: 6px; border-radius: 999px; background: #eef0f3; overflow: hidden; }
   .groups .g-bar span { display: block; height: 100%; background: var(--primary); }
   .groups .g-num { text-align: right; color: var(--text-3); font-variant-numeric: tabular-nums; }
   .legend { margin: 12px 0 0; font-size: 12px; color: var(--text-3); }
 
-  .callout { margin-top: 16px; padding: 18px 22px; border: 1px solid #d6deec; border-left: 4px solid #5b78b0; border-radius: 12px; background: #f5f7fb; font-size: 14.5px; line-height: 1.7; }
+  .callout { margin-top: 16px; padding: 18px 22px; border: 1px solid #d6deec; border-left: 4px solid #5b78b0; border-radius: 12px; background: #f5f7fb; font-size: 14px; line-height: 1.7; }
   .callout b { color: var(--primary-text); }
 
   .ic { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -80,8 +80,8 @@
   .one { margin-top: 16px; }
   .focus-wrap { margin-top: 16px; }
   .card.is-focus { border: 2px solid #c9d4e8; box-shadow: 0 8px 24px rgba(91, 120, 176, 0.12); }
-  .card.is-focus h2 { font-size: 17px; }
-  .card.is-focus .groups li { grid-template-columns: 240px 1fr 52px 70px 72px; gap: 16px; padding: 11px 0; border-top: 1px solid #f0f1f4; font-size: 14.5px; }
+  .card.is-focus h2 { font-size: 18px; }
+  .card.is-focus .groups li { grid-template-columns: 240px 1fr 52px 70px 72px; gap: 16px; padding: 11px 0; border-top: 1px solid #f0f1f4; font-size: 14px; }
   .card.is-focus .groups li:first-child { border-top: 0; }
   .card.is-focus .g-bar { height: 10px; }
   .g-pct { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
@@ -106,29 +106,29 @@
   .card { padding: 18px 20px; }
   .card h2 { margin-bottom: 14px; font-size: 14px; }
   .card h2 .ic { width: 24px; height: 24px; padding: 5px; }
-  .kpi-label { font-size: 12.5px; }
+  .kpi-label { font-size: 13px; }
   .kpi-value { margin: 6px 0 2px; font-size: 28px; }
   .kpi-value small { font-size: 14px; }
-  .kpi-sub { font-size: 12.5px; color: var(--text-3); }
+  .kpi-sub { font-size: 13px; color: var(--text-3); }
   .bar { height: 6px; margin-top: 10px; }
-  .ms b { font-size: 13.5px; }
+  .ms b { font-size: 14px; }
   .ms em { font-size: 12px; }
   .ms i { width: 28px; height: 28px; }
   .track { top: 11px; }
   .timeline { height: 80px; }
-  .tl-note { margin-top: 10px; font-size: 12.5px; color: var(--text-3); }
+  .tl-note { margin-top: 10px; font-size: 13px; color: var(--text-3); }
   .callout.is-top { padding: 16px 20px; font-size: 14px; font-weight: 500; line-height: 1.65; color: var(--text); }
   .callout.is-top .ic.is-callout { width: 26px; height: 26px; padding: 5px; }
   .callout-title { margin-bottom: 4px; font-size: 12px; }
-  .card.is-focus h2 { font-size: 15px; }
-  .card.is-focus .groups li { grid-template-columns: 220px 1fr 46px 62px 64px; gap: 14px; padding: 9px 0; font-size: 13.5px; }
+  .card.is-focus h2 { font-size: 16px; }
+  .card.is-focus .groups li { grid-template-columns: 220px 1fr 46px 62px 64px; gap: 14px; padding: 9px 0; font-size: 14px; }
   .card.is-focus .g-bar { height: 8px; }
-  .g-num { font-size: 12.5px; }
-  .g-badge { font-size: 11.5px; padding: 2px 9px; }
-  .legend { font-size: 11.5px; }
-  .tasks li { padding: 10px 0; font-size: 13.5px; line-height: 1.55; }
-  .tasks li span { font-size: 12.5px; color: var(--text-3); }
-  .foot { font-size: 11.5px; }
+  .g-num { font-size: 13px; }
+  .g-badge { font-size: 12px; padding: 2px 9px; }
+  .legend { font-size: 12px; }
+  .tasks li { padding: 10px 0; font-size: 14px; line-height: 1.55; }
+  .tasks li span { font-size: 13px; color: var(--text-3); }
+  .foot { font-size: 12px; }
   .callout.is-top b { color: var(--primary-text); font-weight: 800; }
 </style>
 </head>
