@@ -632,3 +632,11 @@ button.btn {
 
 /* 폰트 통일: 폼 요소도 본문 폰트 사용 */
 button, input, select, textarea { font-family: inherit; }
+
+/* 기획 메모 (붉은 박스 · 넓은 형태: 여러 줄 설명) */
+.spec-note-red.is-wide { display: block; width: 560px; max-width: calc(100% - 48px); height: auto; padding: 22px 26px; text-align: left; font-size: 14px; }
+.spec-note-red.is-wide p { margin: 0; }
+.spec-note-red.is-wide p + p { margin-top: 8px; }
+.spec-note-red.is-wide .sn-title { font-size: 15px; }
+.spec-note-red.is-wide .sn-sample { margin-top: 10px; padding: 12px 14px; border: 1px dashed #e8a3a3; border-radius: 8px; font-weight: 600; }
+.spec-note-red.is-wide .sn-sample p + p { margin-top: 6px; }
