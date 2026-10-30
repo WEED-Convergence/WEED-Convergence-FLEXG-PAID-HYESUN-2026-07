@@ -807,3 +807,27 @@
 .hb-ro-btn.is-primary { border-color: #d12f2f; background-color: #d12f2f; color: #ffffff; }
 .hb-page-btn.is-disabled,
 .gnb-page.is-disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; filter: grayscale(1); }
+
+/* FLEXG.Page 배너: 파스텔 그라데이션 · 움직임 없음 · 진한 글자로 가독성 강화 */
+.hb-page {
+  background: linear-gradient(115deg, #e0e7ff 0%, #ede9fe 40%, #fae8ff 72%, #fce7f3 100%);
+  animation: none;
+  border: 1px solid #e4dcfb;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.10);
+  color: #1e1b4b;
+}
+.hb-page-glow { display: none; }
+.hb-page-thumb { border-color: rgba(124, 58, 237, 0.18); background-color: rgba(255, 255, 255, 0.55); backdrop-filter: none; }
+.hb-page-pc { box-shadow: 0 8px 20px rgba(76, 29, 149, 0.14); }
+.hb-page-phone { box-shadow: 0 8px 18px rgba(76, 29, 149, 0.18); }
+.hb-page-thumb .hb-page-tag { background-color: #7c3aed; color: #ffffff; box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3); }
+.hb-page-eyebrow { border-color: #d8ccfa; background-color: #ffffff; color: #5b21b6; font-weight: 600; }
+.hb-page-eyebrow i { color: #7c3aed; }
+.hb-page-title { font-size: 22px; font-weight: 700; color: #1e1b4b; }
+.hb-page-title em { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: #6d28d9; }
+.hb-page-chips li { border: 1px solid #ddd3fb; background-color: #ffffff; color: #4c1d95; font-weight: 600; }
+.hb-page-desc { font-size: 14px; color: #3f3a63; }
+.hb-page-btn { padding: 12px 22px; border: 1px solid #c4b5fd; background-color: #ffffff; color: #5b21b6; font-size: 14px; }
+.hb-page-btn.is-primary { border-color: #6d28d9; background-color: #6d28d9; box-shadow: 0 6px 16px rgba(109, 40, 217, 0.28); color: #ffffff; }
+.hb-page-btn.is-primary span { color: #e9d5ff; }
+.hb-page-meta { font-size: 13px; color: #5b5675; }
