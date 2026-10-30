@@ -467,3 +467,17 @@ table.data-table tr:last-child td {
 .pro-apply .pro-intro-price { margin: 0 0 12px; }
 .pro-apply .amount-breakdown { background-color: #ffffff; }
 .apply-note { margin: 10px 0 0; font-size: 13px; color: #6b7280; }
+
+/* 청구 상세 (72~75): 청구 항목 표 — 그룹 · 2줄 항목 */
+.inv-compact td { vertical-align: middle; }
+.inv-compact .inv-name { display: block; font-size: 14px; font-weight: 600; color: #111827; }
+.inv-compact .inv-sub { display: block; margin-top: 3px; font-size: 13px; line-height: 1.55; color: #6b7280; }
+.inv-compact .inv-sub .btn-sm { margin-left: 6px; vertical-align: 1px; }
+.inv-compact td.num { font-size: 15px; font-weight: 600; color: #111827; white-space: nowrap; }
+.inv-compact tr.invoice-discount .inv-name,
+.inv-compact tr.invoice-discount td.num { color: #1a8a3f; }
+.inv-compact tr.inv-group td { padding-top: 10px; padding-bottom: 10px; background-color: #f5f6f8; font-size: 13px; font-weight: 700; color: #374151; }
+.inv-compact tr.inv-group small { margin-left: 6px; font-size: 12px; font-weight: 400; color: #6b7280; }
+.inv-compact tr.invoice-sum td { font-size: 14px; color: #4b5563; }
+.inv-compact tr.invoice-total td { background-color: #eef1ff; font-size: 16px; font-weight: 700; color: #111827; }
+.inv-compact tr.invoice-total td.num { font-size: 18px; color: #3140d6; }
