@@ -384,3 +384,5 @@ tr.price-total-row td {
 .pay-method.is-empty .pm-icon { opacity: 0.35; }
 .pay-method.is-empty .pm-main { color: #6b7280; }
 .pay-method .pm-add { margin-left: auto; }
+.price-table tr.unpaid-sub td { padding: 4px 0 4px 16px; border-top: none; color: #666666; font-size: 12.5px; }
+.price-table tr.unpaid-sub td:last-child { padding-right: 0; }
