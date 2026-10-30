@@ -494,3 +494,12 @@ table.data-table tr:last-child td {
 .inv-compact tr.inv-group ~ tr.invoice-sum td { border-top-width: 1px; }
 .inv-compact tbody tr.invoice-sum td { background-color: #fafafb; }
 .cash-table .nw { white-space: nowrap; }
+
+/* 청구 상세: 합계 영역 가독성 (공급가액 · 부가세 · 청구 금액) */
+.inv-compact tr.invoice-sum.is-supply td { border-top: 2px solid #d1d5db; }
+.inv-compact tr.invoice-sum td { padding-top: 12px; padding-bottom: 12px; background-color: #fafafb; }
+.inv-compact tr.invoice-sum .inv-name { font-size: 14px; font-weight: 600; color: #374151; }
+.inv-compact tr.invoice-sum .inv-sub { font-size: 12px; }
+.inv-compact tr.invoice-sum td.num { font-size: 15px; color: #111827; }
+.inv-compact tr.invoice-total td { padding-top: 16px; padding-bottom: 16px; border-top: 2px solid #3140d6; }
+.inv-compact tr.invoice-total small { display: block; margin-top: 3px; font-size: 12px; font-weight: 400; color: #6b7280; }
