@@ -123,7 +123,7 @@ table.status-table {
 
 table.status-table th,
 table.status-table td {
-  padding: 10px 0;
+  padding: 13px 0;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid #ededf0;
@@ -215,7 +215,7 @@ table.reason-table {
 
 table.reason-table th,
 table.reason-table td {
-  padding: 8px 10px;
+  padding: 11px 10px;
   border-bottom: 1px solid #ededf0;
   text-align: left;
   vertical-align: top;

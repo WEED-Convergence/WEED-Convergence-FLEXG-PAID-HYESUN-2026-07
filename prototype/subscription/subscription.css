@@ -206,7 +206,7 @@ table.data-table {
 
 table.data-table th,
 table.data-table td {
-  padding: 10px 14px;
+  padding: 12px 14px;
   text-align: left;
   border-bottom: 1px solid #ededf0;
 }

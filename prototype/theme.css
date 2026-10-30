@@ -95,7 +95,7 @@
 .screen-main .data-table { font-size: 14px; }
 .screen-main .data-table thead th { background-color: #f9fafb; color: var(--t-text-3); font-weight: 600; }
 .screen-main .data-table td,
-.screen-main .data-table th { padding-top: 12px; padding-bottom: 12px; border-color: var(--t-line-2); }
+.screen-main .data-table th { padding-top: 14px; padding-bottom: 14px; border-color: var(--t-line-2); }
 .screen-main .table-wrap { border-radius: 10px; }
 
 /* 결제수단: 카드 줄 */

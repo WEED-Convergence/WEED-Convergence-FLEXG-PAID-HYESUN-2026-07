@@ -73,7 +73,7 @@
 
 .hp-req { margin-left: 2px; color: #d12f2f; }
 
-.hp-row > .hp-td { padding: 9px 12px; font-size: 13px; }
+.hp-row > .hp-td { padding: 11px 12px; font-size: 13px; }
 
 .hp-input,
 .hp-select,
@@ -178,7 +178,7 @@
 
 .iq-table th,
 .iq-table td {
-  padding: 9px 8px;
+  padding: 11px 8px;
   border-bottom: 1px solid #e3e4e8;
   text-align: center;
   color: #444444;
