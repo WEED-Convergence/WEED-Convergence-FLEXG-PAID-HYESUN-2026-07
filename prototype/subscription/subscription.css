@@ -493,3 +493,4 @@ table.data-table tr:last-child td {
 .inv-compact tr.invoice-sum:first-of-type td,
 .inv-compact tr.inv-group ~ tr.invoice-sum td { border-top-width: 1px; }
 .inv-compact tbody tr.invoice-sum td { background-color: #fafafb; }
+.cash-table .nw { white-space: nowrap; }
